@@ -1,7 +1,7 @@
 # Site settings
 title: Rushiera
 description: A blog about Rushiera
-baseurl: "/particle"	"/myblog"
+#baseurl: "/particle"	"/myblog"
 url: https://rushiera.github.io/
 
 # User settings
