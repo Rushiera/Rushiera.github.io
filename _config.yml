@@ -4,7 +4,8 @@ description: A blog about Rushiera
 #baseurl: "/particle"	"/myblog"
 url: https://rushiera.github.io/
 
-#at call  {{ site.name }}
+# at call  {{ site.name }}
+# User settings
 username: Rushiera
 user_title: I just want to keep on just wait and see
 twitter: undefined
