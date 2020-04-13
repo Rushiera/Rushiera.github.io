@@ -19,4 +19,4 @@ google:  undefined
 google-analytics:
   id: ""
 
-exclude: ['package.json', 'src' , 'node_modules' , 'assets']
+exclude: ['package.json', 'src' , 'node_modules' ]
