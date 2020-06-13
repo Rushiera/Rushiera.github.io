@@ -1,0 +1,21 @@
+    a:hover{
+    background-color:white;
+    color: black;}
+   a:active{
+     background-color: transparent;
+     color:rgb(180, 180, 180);}
+ 
+ 
+ .div {
+  z-index: 1;
+  text-align: center;
+  color:#FFF;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-size: 40px;
+  }
