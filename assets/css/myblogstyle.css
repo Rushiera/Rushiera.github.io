@@ -1,6 +1,7 @@
    .div:link{
     background-color: transparent;
-    color: white;}   
+    color: white;
+    onclick="demo()"}   
    .div:hover{
     background-color:white;
     color: black;}
@@ -8,7 +9,7 @@
       background-color:rgba(228, 74, 74, 0.575);}
     div ul li:hover{
       background-color:rgba(255, 190, 10, 0.575);
-      color: white;}
+      color: white;  }
     div ul li a:hover{
       color: white;
     }
@@ -23,6 +24,7 @@
     }
     ul li{
       list-style: armenian;
+      line-height: 32px;
     }
     table th a{
       display: inline-block;
@@ -60,12 +62,16 @@ display: block;
 background-color: rgba(180, 180, 180, 0.85);
 color: black;
 position: absolute;
-height: 800px;
+height: 760px;
 width: 70%;
 top: 10%;
-left: 20%;
+left: 21%;
 font-size: 16px;
-line-height: 0px;
+text-indent: 32px;
+padding-top: 24px;
+padding-left: 36px;
+padding-right: 36px;
+
 }
 
 table th{
