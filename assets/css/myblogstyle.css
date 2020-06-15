@@ -5,27 +5,41 @@
     background-color:white;
     color: black;}
     table th:hover{
-      background-color:rgba(228, 74, 74, 0.575);
-      color: black;}
+      background-color:rgba(228, 74, 74, 0.575);}
     div ul li:hover{
       background-color:rgba(255, 190, 10, 0.575);
       color: white;}
+    div ul li a:hover{
+      color: white;
+    }
    .div:active{
      background-color: transparent;
      color:rgb(180, 180, 180);}
   
+    div ul li a{
+      color: yellowgreen;
+      display: block;
+      width: 100;
+      height: 30px;
+    }
     ul li{
       list-style: armenian;
     }
+    table th a{
+      display: inline-block;
+      width: 65px;
+      height: 45px;
+      line-height: 45px;
+    }
  
 .nav{
-background-color: #3d4450;
+background-color: #3d445062;
 color: white;
 position: absolute;
 height: 65px;
 width: 100%;
-display: block;
 font-size: 12px;
+display: block;
 }
 
 .blogtable{
@@ -33,7 +47,7 @@ background-color: rgba(255, 255, 255, 0.25);
 color: yellowgreen;
 position: absolute;
 width: 10%;
-height: 300px;
+height: 260px;
 top: 12%;
 left: 7.5%;
 font-size: 24px;
@@ -44,7 +58,7 @@ display: block;
 background-color: rgba(180, 180, 180, 0.85);
 color: black;
 position: absolute;
-height: 900px;
+height: 800px;
 width: 70%;
 top: 10%;
 left: 20%;
@@ -58,7 +72,7 @@ table th{
 }
 
 table td{
-    width: 20px;
+  width: 20px;
 }
  
  .div {
