@@ -1,7 +1,6 @@
    .div:link{
     background-color: transparent;
-    color: white;
-    onclick="demo()"}   
+    color: white;}   
    .div:hover{
     background-color:white;
     color: black;}
