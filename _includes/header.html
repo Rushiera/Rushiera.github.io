@@ -13,7 +13,7 @@
       <div class="header-links">
         <a class="link" href="#about" data-scroll>About Me</a>
         <a class="link" href="/myblog/"> My Blog</a><p>
-        <a class="link" href="#projects" style="text-decoration: line-through;" id="resume" onclick="resumechange()" onmouseout="resumechange2()">个人简历</a>
+        <a class="link" href="#projects" style="text-decoration: line-through;" id="resume" onclick="resumechange()">个人简历</a>
        </div>
   </div>
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -32,7 +32,8 @@
       document.getElementById("resume").href="#projects";
       document.getElementById("resume").style="text-decoration: none;"
       var nv = document.getElementById("resume");
-      nv.innerHTML="别点了,没有的";}
+      nv.innerHTML="别点了,没有的";
+      setTimeout("resumechange2()","1300");}
   function resumechange2(){
       document.getElementById("resume").style="text-decoration: line-through;"
       var nv = document.getElementById("resume");
