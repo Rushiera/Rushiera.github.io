@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="#projects" style="text-decoration: line-through;" id="resume" onclick="resumechange()" onmouseout="resumechange2()">个人简历</a>
+
+    <script>
+        function resumechange(){
+            document.getElementById("resume").href="#projects";
+            document.getElementById("resume").style="text-decoration: none;"
+            var nv = document.getElementById("resume");
+            nv.innerHTML="别点了,没有的";}
+        function resumechange2(){
+            document.getElementById("resume").style="text-decoration: line-through;"
+            var nv = document.getElementById("resume");
+            nv.innerHTML="个人简历";}
+      </script>
+      
+
+</body>
+</html>
