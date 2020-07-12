@@ -177,7 +177,8 @@
     hue = 217,
     stars = [],
     count = 0,
-    maxStars = 900;//星星数量
+    maxStars = 400;//每一轮创建的星星数量
+    
 
   var canvas2 = document.createElement('canvas'),
     ctx2 = canvas2.getContext('2d');
@@ -222,14 +223,14 @@
   var Star = function() {
 
     this.orbitRadius = random(maxOrbit(w, h));
-    this.radius = random(60, this.orbitRadius) / 8; 
+    this.radius = random(60, this.orbitRadius) / 10; 
     //星星大小
     this.orbitX = w / 2;
     this.orbitY = h / 2;
-    this.timePassed = random(0, maxStars);
-    this.speed = random(this.orbitRadius) / 600000; 
+    this.timePassed = random(100000, maxStars);
+    this.speed = random(this.orbitRadius) / 8000; 
     //星星移动速度
-    this.alpha = random(2, 10) / 10;
+    this.alpha = random(2, 10) / 5;
 
     count++;
     stars[count] = this;
@@ -251,14 +252,21 @@
     this.timePassed += this.speed;
   }
 
+  // var addstar = 0
+  // setInterval(function(){ addstar = addstar+ 1
+
+  // if (addstar >400){break;}
+
+  // }, 60);
+
   for (var i = 0; i < maxStars; i++) {
-    new Star();
-  }
+
+    new Star();}
 
   function animation() {
     ctx.globalCompositeOperation = 'source-over';
-    ctx.globalAlpha = 0.5; //尾巴
-    ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 2)';
+    ctx.globalAlpha = 0.05; //尾巴
+    ctx.fillStyle = 'hsla(' + hue + ', 64%, 1%, 2)';
     ctx.fillRect(0, 0, w, h)
 
     ctx.globalCompositeOperation = 'lighter';
