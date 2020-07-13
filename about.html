@@ -6,7 +6,7 @@
   <title>Rushiera -- About Me</title>
   <link rel="shortcut icon" type="image/png" href="https://imglink.win/image/2020/06/16/ytGp1.png" >
 </head>
-<body style="margin: 0px;">
+ <body style="margin: 0px;" > <!-- onload="cre()" -->
   
   
 <div class="technology-body">
@@ -35,11 +35,42 @@
   </div>
 </div>
 
-
+<div class="creation" id="create"></div>
 
 
 <link rel="stylesheet" href="/assets/css/technology.css">
 <script src="/assets/js/jquery-2.0.3.min.js"></script>
 <script src="/assets/js/technology.js"></script>
+
+<script>
+  function cre(){
+    var cr = document.getElementById("create");
+    var treacl = 0;
+    var treacw = 50;
+    cr.style.display="black"
+    cr.style.position="fixed"
+    cr.style.height="1px"
+    cr.style.width="1px"
+    cr.style.top="50%"
+    cr.style.left="50%"
+    cr.style.backgroundColor="white"
+
+
+
+  setInterval(function(){ treacl=treacl+1;
+  if (treacl < 500)
+  {cr.style.width=treacl+'px';
+    if(treacl%20 == 0)
+    treacw--
+    cr.style.left=treacw+'%'
+  }
+
+
+{return;}
+}, 1);
+
+  }
+</script>
+
 </body>
 </html>
