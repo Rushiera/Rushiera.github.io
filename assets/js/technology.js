@@ -132,7 +132,7 @@
   $(document).ready(function ($) {
     $(".anchor").click(function (event) {
       event.preventDefault();
-      $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
+      $('html,body').animate({scrollTop: $(this.hash).offset().top}, 5001111111111111111111);
     });
   });
 
@@ -228,7 +228,7 @@
     this.orbitX = w / 2;
     this.orbitY = h / 2;
     this.timePassed = random(100000, maxStars);
-    this.speed = random(this.orbitRadius) / 8000; 
+    this.speed = random(this.orbitRadius) / 12000; 
     //星星移动速度
     this.alpha = random(2, 10) / 5;
 
@@ -265,7 +265,7 @@
 
   function animation() {
     ctx.globalCompositeOperation = 'source-over';
-    ctx.globalAlpha = 0.05; //尾巴
+    ctx.globalAlpha = 0.06; //尾巴
     ctx.fillStyle = 'hsla(' + hue + ', 64%, 1%, 2)';
     ctx.fillRect(0, 0, w, h)
 

@@ -38,7 +38,14 @@
 <div class="crion" align="center" >
   <div class="creation" id="create">
     <p id="textwata"></p>
-    <div class="progres"id="progress"></div>
+    <ul class="progres">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      
+    </ul>
   </div>
 
 </div>  
@@ -48,8 +55,11 @@
 <script src="/assets/js/jquery-2.0.3.min.js"></script>
 <script src="/assets/js/technology.js"></script>
 
-<style>
-.crion{
+<style>    /* 直接输入, 使用并集选择器可以集体声明 合并代码 */
+ li{
+   list-style: none;
+ }
+.crion{    
     text-align: center;
     position: absolute;
     top: 50%;
@@ -61,18 +71,37 @@
     font-size: 18px;
     text-align: center;
     line-height: 400%;
+    /* margin-top: 50%; */
 }
 .creation{
   border:1.2px solid skyblue;
   -webkit-mask:linear-gradient(to bottom  right, skyblue, blue);
   Color:rgba(16, 16, 34, 0.9);
+  border-radius: 3px;    /*   圆角  */
 }
 .progres{
   linear-gradient:(to bottom  right, skyblue, blue);
+  position: absolute;
+  bottom: 20%;
+  left: 31%;
+
+}
+.progres li{
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0);
+  float: left;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 20%;
+  margin: 3px;
+}
+
+.progred{
+  background-color: skyblue!important;
 }
 
 </style>
-
 
 
 <script>
@@ -85,12 +114,17 @@
     var treacl = 0;
     var treacw = 0;
     var treack = 0;
-    var text2 = "私にも、できることあると思うで。";
+    var text2 = "私にも、     できることあると思うで。";
     var text1 = "";
     cr.style.display="black"
     cr.style.position="absolute"
     cr.style.height="1px"
     cr.style.width="1px"
+    textwata.style.position="absolute"
+    textwata.style.margin="52px"
+    textwata.style.lineHeight="1em"
+    textwata.style.top="8%"
+    textwata.style.left="0%"
 
     cr.style.backgroundColor="rgba(160, 160, 160, 0.8)"
 
@@ -101,10 +135,10 @@
   {cr.style.height=treacl+'px';}
   else if (treacl <600) 
   { cr.style.border="0px"; cr.style.width= (treacl-200) +'px';}
+  else { }
   
-
   textwata.innerText=text1;
-  if (treacl==540||treacl==560||treacl==560||treacl==580||treacl==300||treacl==320||treacl==340||treacl==360||treacl==380||treacl==400||treacl==420||treacl==440||treacl==460||treacl==480||treacl==500||treacl==520||treacl==600){ 
+  if (treacl%25==0 && treacl>=400){ 
     text1 = text1+text2.charAt(treack) 
     treack++}
 
