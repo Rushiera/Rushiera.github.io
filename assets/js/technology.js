@@ -132,7 +132,7 @@
   $(document).ready(function ($) {
     $(".anchor").click(function (event) {
       event.preventDefault();
-      $('html,body').animate({scrollTop: $(this.hash).offset().top}, 5001111111111111111111);
+      $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
     });
   });
 
