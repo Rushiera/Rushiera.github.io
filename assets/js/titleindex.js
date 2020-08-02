@@ -147,6 +147,8 @@ function fixsp(){
 
     //Whatever you do, you should hold on to that foolishly hopeful smile.
     //It's down to each one of you to decide your own level of commitment
+    // The best prize that life offers is the chance to work hard at work worth doing.
+    //能为有价值的工作而努力，就是生活给予的最珍贵的礼物。
 
     //用投资者的思维去创造,以开发者的角度去分析,<br>让工匠精神贯彻生活中的每一个部分。
 
