@@ -433,7 +433,7 @@ base@^0.11.1:
     component-emitter "^1.2.1"
     define-property "^1.0.0"
     isobject "^3.0.1"
-    mixin-deep "^1.2.0"
+    mixin-deep "^1.3.2"
     pascalcase "^0.1.1"
 
 batch@0.6.1:
@@ -642,7 +642,7 @@ buble@^0.12.0:
     acorn-object-spread "^1.0.0"
     chalk "^1.1.3"
     magic-string "^0.14.0"
-    minimist "^1.2.0"
+    minimist "^1.2.3"
     os-homedir "^1.0.1"
 
 bubleify@^0.5.1:
@@ -963,8 +963,8 @@ concat-stream@^1.6.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-concat-with-sourcemaps@^1.0.0:
-  version "1.0.4"
+concat-with-sourcemaps@^1.0.6:
+  version "1.0.6"
   resolved "https://registry.yarnpkg.com/concat-with-sourcemaps/-/concat-with-sourcemaps-1.0.4.tgz#f55b3be2aeb47601b10a2d5259ccfb70fd2f1dd6"
   dependencies:
     source-map "^0.5.1"
@@ -987,7 +987,7 @@ connect@3.6.6:
   resolved "https://registry.yarnpkg.com/connect/-/connect-3.6.6.tgz#09eff6c55af7236e137135a72574858b6786f524"
   integrity sha1-Ce/2xVr3I24TcTWnJXSFi2eG9SQ=
   dependencies:
-    debug "2.6.9"
+    debug "2.7.0"
     finalhandler "1.1.0"
     parseurl "~1.3.2"
     utils-merge "1.0.1"
@@ -1235,7 +1235,7 @@ default-compare@^1.0.0:
   resolved "https://registry.yarnpkg.com/default-compare/-/default-compare-1.0.0.tgz#cb61131844ad84d84788fb68fd01681ca7781a2f"
   integrity sha512-QWfXlM0EkAbqOCbD/6HjdwT19j7WCkMyiRhWilc4H9/5h/RzTF9gv5LYh1+CmDV5d1rki6KAWLtQale0xt20eQ==
   dependencies:
-    kind-of "^5.0.2"
+    kind-of "^6.0.3"
 
 default-resolution@^2.0.0:
   version "2.0.0"
@@ -1399,7 +1399,7 @@ easy-extender@^2.3.4:
   resolved "https://registry.yarnpkg.com/easy-extender/-/easy-extender-2.3.4.tgz#298789b64f9aaba62169c77a2b3b64b4c9589b8f"
   integrity sha512-8cAwm6md1YTiPpOvDULYJL4ZS6WfM5/cTeVVh4JsvyYZAoqlRVUpHL9Gr5Fy7HA6xcSZicUia3DeAgO3Us8E+Q==
   dependencies:
-    lodash "^4.17.10"
+    lodash "^4.17.19"
 
 eazy-logger@^3:
   version "3.0.2"
@@ -3246,7 +3246,7 @@ localtunnel@1.9.1:
   resolved "https://registry.yarnpkg.com/localtunnel/-/localtunnel-1.9.1.tgz#1d1737eab658add5a40266d8e43f389b646ee3b1"
   integrity sha512-HWrhOslklDvxgOGFLxi6fQVnvpl6XdX4sPscfqMZkzi3gtt9V7LKBWYvNUcpHSVvjwCQ6xzXacVvICNbNcyPnQ==
   dependencies:
-    axios "0.17.1"
+    axios "0.18.1"
     debug "2.6.9"
     openurl "1.1.1"
     yargs "6.6.0"
@@ -3284,8 +3284,8 @@ lodash.isstring@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
 
-lodash.mergewith@^4.6.0:
-  version "4.6.0"
+lodash.mergewith@^4.6.2:
+  version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.0.tgz#150cf0a16791f5903b8891eab154609274bdea55"
 
 lodash.pick@^4.2.1:
@@ -4307,8 +4307,8 @@ query-string@^5.0.1:
     object-assign "^4.1.0"
     strict-uri-encode "^1.0.0"
 
-randomatic@^1.1.3:
-  version "1.1.6"
+randomatic@^3.0.0:
+  version "3.0.0"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.6.tgz#110dcabff397e9dcff7c0789ccc0a49adf1ec5bb"
   dependencies:
     is-number "^2.0.2"
@@ -4713,8 +4713,8 @@ set-immediate-shim@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz#4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61"
 
-set-value@^0.4.3:
-  version "0.4.3"
+set-value@^2.0.1:
+  version "2.0.1"
   resolved "https://registry.yarnpkg.com/set-value/-/set-value-0.4.3.tgz#7db08f9d3d22dc7f78e53af3c3bf4666ecdfccf1"
   integrity sha1-fbCPnT0i3H945Trzw79GZuzfzPE=
   dependencies:
@@ -4959,8 +4959,8 @@ squeak@^1.0.0:
     console-stream "^0.1.1"
     lpad-align "^1.0.1"
 
-sshpk@^1.7.0:
-  version "1.10.2"
+sshpk@^1.13.2:
+  version "1.13.2"
   resolved "https://registry.yarnpkg.com/sshpk/-/sshpk-1.10.2.tgz#d5a804ce22695515638e798dbe23273de070a5fa"
   dependencies:
     asn1 "~0.2.3"
@@ -5135,7 +5135,7 @@ svgo@^1.0.5:
     css-tree "1.0.0-alpha.28"
     css-url-regex "^1.1.0"
     csso "^3.5.0"
-    js-yaml "^3.12.0"
+    js-yaml "^3.13.1"
     mkdirp "~0.5.1"
     object.values "^1.0.4"
     sax "~1.2.4"
@@ -5166,7 +5166,7 @@ tar@^2.0.0:
   resolved "https://registry.yarnpkg.com/tar/-/tar-2.2.1.tgz#8e4d2a256c0e2185c6b18ad694aec968b83cb1d1"
   dependencies:
     block-stream "*"
-    fstream "^1.0.2"
+    fstream "^1.0.12"
     inherits "2"
 
 tar@^4:
