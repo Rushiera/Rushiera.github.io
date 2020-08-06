@@ -267,7 +267,7 @@ array-sort@^1.0.0:
   dependencies:
     default-compare "^1.0.0"
     get-value "^2.0.6"
-    kind-of "^5.0.2"
+    kind-of "^6.0.3"
 
 array-union@^1.0.1:
   version "1.0.2"
@@ -373,8 +373,8 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha512-ReZxvNHIOv88FlT7rxcXIIC0fPt4KZqZbOlivyWtXLt8ESx84zd3kMC6iK5jVeS2qt+g7ftS7ye4fi06X5rtRQ==
 
-axios@0.17.1:
-  version "0.17.1"
+axios@0.18.1:
+  version "0.18.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.17.1.tgz#2d8e3e5d0bdbd7327f91bc814f5c57660f81824d"
   integrity sha1-LY4+XQvb1zJ/kbyBT1xXZg+Bgk0=
   dependencies:
@@ -716,7 +716,7 @@ cache-base@^1.0.1:
     get-value "^2.0.6"
     has-value "^1.0.0"
     isobject "^3.0.1"
-    set-value "^2.0.0"
+    set-value "^2.0.1"
     to-object-path "^0.3.0"
     union-value "^1.0.0"
     unset-value "^1.0.0"
@@ -804,7 +804,7 @@ chokidar@^2.0.0, chokidar@^2.0.4:
     inherits "^2.0.1"
     is-binary-path "^1.0.0"
     is-glob "^4.0.0"
-    lodash.debounce "^4.0.8"
+    lodash.debounce "^4.17.19"
     normalize-path "^2.1.1"
     path-is-absolute "^1.0.0"
     readdirp "^2.0.0"
@@ -1136,7 +1136,7 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-debug@2.6.9, debug@^2.1.2, debug@^2.3.3:
+debug@2.6.9, debug@^2.6.9, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -1150,8 +1150,8 @@ debug@=3.1.0, debug@~3.1.0:
   dependencies:
     ms "2.0.0"
 
-debug@^2.2.0:
-  version "2.2.0"
+debug@^2.6.9:
+  version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
   dependencies:
     ms "0.7.1"
@@ -1653,7 +1653,7 @@ expand-brackets@^2.1.4:
   resolved "https://registry.yarnpkg.com/expand-brackets/-/expand-brackets-2.1.4.tgz#b77735e315ce30f6b6eff0f83b04151a22449622"
   integrity sha1-t3c14xXOMPa27/D4OwQVGiJEliI=
   dependencies:
-    debug "^2.3.3"
+    debug "^2.6.9"
     define-property "^0.2.5"
     extend-shallow "^2.0.1"
     posix-character-classes "^0.1.0"
@@ -1700,7 +1700,7 @@ extend-shallow@^1.1.2:
   resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-1.1.4.tgz#19d6bf94dfc09d76ba711f39b872d21ff4dd9071"
   integrity sha1-Gda/lN/AnXa6cR85uHLSH/TdkHE=
   dependencies:
-    kind-of "^1.1.0"
+    kind-of "^6.0.3"
 
 extend-shallow@^2.0.1:
   version "2.0.1"
@@ -2028,8 +2028,8 @@ fsevents@^1.2.2:
     nan "^2.9.2"
     node-pre-gyp "^0.10.0"
 
-fstream@^1.0.0, fstream@^1.0.2:
-  version "1.0.10"
+fstream@^1.0.12, fstream@^1.0.12:
+  version "1.0.12"
   resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.10.tgz#604e8a92fe26ffd9f6fae30399d4984e1ab22822"
   dependencies:
     graceful-fs "^4.1.2"
@@ -2515,7 +2515,7 @@ has-values@^1.0.0:
   integrity sha1-lbC2P+whRmGab+V/51Yo1aOe/k8=
   dependencies:
     is-number "^3.0.0"
-    kind-of "^4.0.0"
+    kind-of "^6.0.3"
 
 has@^1.0.1, has@^1.0.3:
   version "1.0.3"
@@ -2729,14 +2729,14 @@ is-accessor-descriptor@^0.1.6:
   resolved "https://registry.yarnpkg.com/is-accessor-descriptor/-/is-accessor-descriptor-0.1.6.tgz#a9e12cb3ae8d876727eeef3843f8a0897b5c98d6"
   integrity sha1-qeEss66Nh2cn7u84Q/igiXtcmNY=
   dependencies:
-    kind-of "^3.0.2"
+    kind-of "^6.0.3"
 
 is-accessor-descriptor@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-accessor-descriptor/-/is-accessor-descriptor-1.0.0.tgz#169c2f6d3df1f992618072365c9b0ea1f6878656"
   integrity sha512-m5hnHTkcVsPfqx3AKlyttIPb7J+XykHvJP2B9bZDjlhLIoEq4XoK64Vg7boZlVWYK6LUY94dYPEE7Lh0ZkZKcQ==
   dependencies:
-    kind-of "^6.0.0"
+    kind-of "^6.0.3"
 
 is-arrayish@^0.2.1:
   version "0.2.1"
@@ -2773,14 +2773,14 @@ is-data-descriptor@^0.1.4:
   resolved "https://registry.yarnpkg.com/is-data-descriptor/-/is-data-descriptor-0.1.4.tgz#0b5ee648388e2c860282e793f1856fec3f301b56"
   integrity sha1-C17mSDiOLIYCgueT8YVv7D8wG1Y=
   dependencies:
-    kind-of "^3.0.2"
+    kind-of "^6.0.3"
 
 is-data-descriptor@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-data-descriptor/-/is-data-descriptor-1.0.0.tgz#d84876321d0e7add03990406abbbbd36ba9268c7"
   integrity sha512-jbRXy1FmtAoCjQkVmIVYwuuqDFUbaOeDjmed1tOGPrsMhtJA4rD9tkgA0F1qJ3gRFRXcHYVkdeaP50Q5rE/jLQ==
   dependencies:
-    kind-of "^6.0.0"
+    kind-of "^6.0.3"
 
 is-date-object@^1.0.1:
   version "1.0.1"
@@ -2794,7 +2794,7 @@ is-descriptor@^0.1.0:
   dependencies:
     is-accessor-descriptor "^0.1.6"
     is-data-descriptor "^0.1.4"
-    kind-of "^5.0.0"
+    kind-of "^6.0.3"
 
 is-descriptor@^1.0.0, is-descriptor@^1.0.2:
   version "1.0.2"
@@ -2803,7 +2803,7 @@ is-descriptor@^1.0.0, is-descriptor@^1.0.2:
   dependencies:
     is-accessor-descriptor "^1.0.0"
     is-data-descriptor "^1.0.0"
-    kind-of "^6.0.2"
+    kind-of "^6.0.3"
 
 is-dotfile@^1.0.0:
   version "1.0.2"
@@ -2898,14 +2898,14 @@ is-number@^2.0.2, is-number@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-2.1.0.tgz#01fcbbb393463a548f2f466cce16dece49db908f"
   dependencies:
-    kind-of "^3.0.2"
+    kind-of "^6.0.3"
 
 is-number@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-3.0.0.tgz#24fd6201a4782cf50561c810276afc7d12d71195"
   integrity sha1-JP1iAaR4LPUFYcgQJ2r8fRLXEZU=
   dependencies:
-    kind-of "^3.0.2"
+    kind-of "^6.0.3"
 
 is-number@^4.0.0:
   version "4.0.0"
@@ -3084,8 +3084,8 @@ js-base64@^2.1.8:
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.0.tgz#42255ba183ab67ce59a0dee640afdc00ab5ae93e"
   integrity sha512-wlEBIZ5LP8usDylWbDNhKPEFVFdI5hCHpnVoT/Ysvoi/PRhJENm/Rlh9TvjYB38HFfKZN7OzEbRjmjvLkFw11g==
 
-js-yaml@^3.12.0:
-  version "3.12.1"
+js-yaml@^3.13.1:
+  version "3.13.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.1.tgz#295c8632a18a23e054cf5c9d3cecafe678167600"
   integrity sha512-um46hB9wNOKlwkHgiuyEVAybXBjwFUV0Z/RaHJblRd9DXltue9FTYvzCr9ErQrK9Adz5MU4gHWVaNUfdmrC8qA==
   dependencies:
@@ -3151,38 +3151,38 @@ keyv@3.0.0:
   dependencies:
     json-buffer "3.0.0"
 
-kind-of@^1.1.0:
-  version "1.1.0"
+kind-of@^6.0.3:
+  version "6.0.3"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-1.1.0.tgz#140a3d2d41a36d2efcfa9377b62c24f8495a5c44"
   integrity sha1-FAo9LUGjbS78+pN3tiwk+ElaXEQ=
 
-kind-of@^3.0.2:
-  version "3.1.0"
+kind-of@^6.0.3:
+  version "6.0.3"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.1.0.tgz#475d698a5e49ff5e53d14e3e732429dc8bf4cf47"
   dependencies:
     is-buffer "^1.0.2"
 
-kind-of@^3.0.3, kind-of@^3.2.0:
-  version "3.2.2"
+kind-of@^6.0.3, kind-of@^6.0.3:
+  version "6.0.3"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
   integrity sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=
   dependencies:
     is-buffer "^1.1.5"
 
-kind-of@^4.0.0:
-  version "4.0.0"
+kind-of@^6.0.3:
+  version "6.0.3"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-4.0.0.tgz#20813df3d712928b207378691a45066fae72dd57"
   integrity sha1-IIE989cSkosgc3hpGkUGb65y3Vc=
   dependencies:
     is-buffer "^1.1.5"
 
-kind-of@^5.0.0, kind-of@^5.0.2:
+kind-of@^6.0.3, kind-of@^6.0.3:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-5.1.0.tgz#729c91e2d857b7a419a1f9aa65685c4c33f5845d"
   integrity sha512-NGEErnH6F2vUuXDh+OlbcKW7/wOcfdRHaZ7VWtqCztfHri/++YKmP51OdWeGPuqCOba6kk2OTe5d02VmTB80Pw==
 
-kind-of@^6.0.0, kind-of@^6.0.2:
-  version "6.0.2"
+kind-of@^6.0.3, kind-of@^6.0.3:
+  version "6.0.3"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
 
@@ -3296,13 +3296,13 @@ lodash@^4.0.0, lodash@^4.13.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
-lodash@^4.17.10:
-  version "4.17.11"
+lodash@^4.17.19:
+  version "4.17.19"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
 
-lodash@~4.16.4:
-  version "4.16.6"
+lodash@~4.17.19:
+  version "4.17.19"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.16.6.tgz#d22c9ac660288f3843e16ba7d2b5d06cca27d777"
 
 logalot@^2.0.0:
@@ -3375,7 +3375,7 @@ make-iterator@^1.0.0:
   resolved "https://registry.yarnpkg.com/make-iterator/-/make-iterator-1.0.1.tgz#29b33f312aa8f547c4a5e490f56afcec99133ad6"
   integrity sha512-pxiuXh0iVEq7VM7KMIhs5gxsfxCux2URptUQaXo4iZZJxBAzTPOLE2BumO5dbfVYq/hBJFBR/a1mFDmOx5AGmw==
   dependencies:
-    kind-of "^6.0.2"
+    kind-of "^6.0.3"
 
 map-cache@^0.2.0, map-cache@^0.2.2:
   version "0.2.2"
@@ -3416,7 +3416,7 @@ meow@^3.3.0, meow@^3.7.0:
     decamelize "^1.1.2"
     loud-rejection "^1.0.0"
     map-obj "^1.0.1"
-    minimist "^1.1.3"
+    minimist "^1.2.3"
     normalize-package-data "^2.3.4"
     object-assign "^4.0.1"
     read-pkg-up "^1.0.1"
@@ -3440,7 +3440,7 @@ micromatch@2.3.11:
     filename-regex "^2.0.0"
     is-extglob "^1.0.0"
     is-glob "^2.0.1"
-    kind-of "^3.0.2"
+    kind-of "^6.0.3"
     normalize-path "^2.0.1"
     object.omit "^2.0.0"
     parse-glob "^3.0.4"
@@ -3458,7 +3458,7 @@ micromatch@^3.0.4, micromatch@^3.1.10, micromatch@^3.1.4:
     extend-shallow "^3.0.2"
     extglob "^2.0.4"
     fragment-cache "^0.2.1"
-    kind-of "^6.0.2"
+    kind-of "^6.0.3"
     nanomatch "^1.2.9"
     object.pick "^1.3.0"
     regex-not "^1.0.0"
@@ -3510,12 +3510,12 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@0.0.8:
-  version "0.0.8"
+minimist@1.2.3:
+  version "1.2.3"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-minimist@^1.1.3, minimist@^1.2.0:
-  version "1.2.0"
+minimist@^1.2.3, minimist@^1.2.3:
+  version "1.2.3"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
 minipass@^2.2.1, minipass@^2.3.4:
@@ -3538,8 +3538,8 @@ mitt@^1.1.3:
   resolved "https://registry.yarnpkg.com/mitt/-/mitt-1.1.3.tgz#528c506238a05dce11cd914a741ea2cc332da9b8"
   integrity sha512-mUDCnVNsAi+eD6qA0HkRkwYczbLHJ49z17BGe2PYRhZL4wpZUFZGJHU7/5tmvohoma+Hdn0Vh/oJTiPEmgSruA==
 
-mixin-deep@^1.2.0:
-  version "1.3.1"
+mixin-deep@^1.3.2:
+  version "1.3.2"
   resolved "https://registry.yarnpkg.com/mixin-deep/-/mixin-deep-1.3.1.tgz#a49e7268dce1a0d9698e45326c5626df3543d0fe"
   integrity sha512-8ZItLHeEgaqEvd5lYBXfm4EZSFCX29Jb9K+lAHhDKzReKBQKj3R+7NOF6tjqYi9t4oI8VUfaWITJQm86wnXGNQ==
   dependencies:
@@ -3550,7 +3550,7 @@ mixin-deep@^1.2.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
-    minimist "0.0.8"
+    minimist "1.2.3"
 
 ms@0.7.1:
   version "0.7.1"
@@ -3582,7 +3582,7 @@ nanomatch@^1.2.9:
     extend-shallow "^3.0.2"
     fragment-cache "^0.2.1"
     is-windows "^1.0.2"
-    kind-of "^6.0.2"
+    kind-of "^6.0.3"
     object.pick "^1.3.0"
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
@@ -3593,7 +3593,7 @@ needle@^2.2.1:
   resolved "https://registry.yarnpkg.com/needle/-/needle-2.2.4.tgz#51931bff82533b1928b7d1d69e01f1b00ffd2a4e"
   integrity sha512-HyoqEb4wr/rsoaIDfTH2aVL9nWtQqba2/HvMv+++m8u0dz808MaagKILxtfeSN7QU7nvbQ79zk3vYOJp9zsNEA==
   dependencies:
-    debug "^2.1.2"
+    debug "^2.6.9"
     iconv-lite "^0.4.4"
     sax "^1.2.4"
 
@@ -3616,7 +3616,7 @@ node-gyp@^3.8.0:
   resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.8.0.tgz#540304261c330e80d0d5edce253a68cb3964218c"
   integrity sha512-3g8lYefrRRzvGeSowdJKAKyks8oUpLEd/DyPV4eMhVlhJ0aNaZqIrNUIPuEWWTAoPqyFkfGrM67MC69baqn6vA==
   dependencies:
-    fstream "^1.0.0"
+    fstream "^1.0.12"
     glob "^7.0.3"
     graceful-fs "^4.1.2"
     mkdirp "^0.5.0"
@@ -3797,7 +3797,7 @@ object-copy@^0.1.0:
   dependencies:
     copy-descriptor "^0.1.0"
     define-property "^0.2.5"
-    kind-of "^3.0.3"
+    kind-of "^6.0.3"
 
 object-keys@^1.0.11, object-keys@^1.0.12:
   version "1.0.12"
@@ -4312,7 +4312,7 @@ randomatic@^3.0.0:
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.6.tgz#110dcabff397e9dcff7c0789ccc0a49adf1ec5bb"
   dependencies:
     is-number "^2.0.2"
-    kind-of "^3.0.2"
+    kind-of "^6.0.3"
 
 range-parser@~1.2.0:
   version "1.2.0"
@@ -4335,7 +4335,7 @@ rc@^1.2.7:
   dependencies:
     deep-extend "^0.6.0"
     ini "~1.3.0"
-    minimist "^1.2.0"
+    minimist "^1.2.3"
     strip-json-comments "~2.0.1"
 
 read-pkg-up@^1.0.1:
@@ -4541,7 +4541,7 @@ resp-modifier@6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/resp-modifier/-/resp-modifier-6.0.2.tgz#b124de5c4fbafcba541f48ffa73970f4aa456b4f"
   dependencies:
-    debug "^2.2.0"
+    debug "^2.6.9"
     minimatch "^3.0.2"
 
 responselike@1.0.2:
@@ -4723,8 +4723,8 @@ set-value@^2.0.1:
     is-plain-object "^2.0.1"
     to-object-path "^0.3.0"
 
-set-value@^2.0.0:
-  version "2.0.0"
+set-value@^2.0.1:
+  version "2.0.1"
   resolved "https://registry.yarnpkg.com/set-value/-/set-value-2.0.0.tgz#71ae4a88f0feefbbf52d1ea604f3fb315ebb6274"
   integrity sha512-hw0yxk9GT/Hr5yJEYnHNKYXkIA8mVJgd9ditYZCe16ZczcaELYYcfvaXesNACk2O8O0nTiPQcQhGUQj8JLzeeg==
   dependencies:
@@ -4773,7 +4773,7 @@ snapdragon-util@^3.0.1:
   resolved "https://registry.yarnpkg.com/snapdragon-util/-/snapdragon-util-3.0.1.tgz#f956479486f2acd79700693f6f7b805e45ab56e2"
   integrity sha512-mbKkMdQKsjX4BAL4bRYTj21edOf8cN7XHdYUJEe+Zn99hVEYcMvKPct1IqNe7+AZPirn8BCDOQBHQZknqmKlZQ==
   dependencies:
-    kind-of "^3.2.0"
+    kind-of "^6.0.3"
 
 snapdragon@^0.8.1:
   version "0.8.2"
@@ -4781,7 +4781,7 @@ snapdragon@^0.8.1:
   integrity sha512-FtyOnWN/wCHTVXOMwvSv26d+ko5vWlIDD6zoUJ7LW8vh+ZBC8QdljveRP+crNrtBwioEUWy/4dMtbBjA4ioNlg==
   dependencies:
     base "^0.11.1"
-    debug "^2.2.0"
+    debug "^2.6.9"
     define-property "^0.2.5"
     extend-shallow "^2.0.1"
     map-cache "^0.2.2"
@@ -5274,7 +5274,7 @@ to-object-path@^0.3.0:
   resolved "https://registry.yarnpkg.com/to-object-path/-/to-object-path-0.3.0.tgz#297588b7b0e7e0ac08e04e672f85c1f4999e17af"
   integrity sha1-KXWIt7Dn4KwI4E5nL4XB9JmeF68=
   dependencies:
-    kind-of "^3.0.2"
+    kind-of "^6.0.3"
 
 to-regex-range@^2.1.0:
   version "2.1.1"
@@ -5399,7 +5399,7 @@ union-value@^1.0.0:
     arr-union "^3.1.0"
     get-value "^2.0.6"
     is-extendable "^0.1.1"
-    set-value "^0.4.3"
+    set-value "^2.0.1"
 
 unique-stream@^2.0.2:
   version "2.2.1"
