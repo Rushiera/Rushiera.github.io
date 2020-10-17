@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/assets/js/particles.min.js"></script>
+  <script src="/assets/js/main_blog.min.js  "></script>
+  <script src="/assets/js/sweet-scroll.min.js"></script>
+  <title>My Blog   -- Rushiera </title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/myblogstyle.css">
+  <link rel="shortcut icon" type="image/png" href="https://imglink.win/image/2020/06/16/ytGp1.png" >
+</head>
+<body>
+ 
+  <div id="particles-js" style="height: 1024px;width: 100%;" ><canvas class="particles-js-canvas-el"></canvas>
+
+
+<table class="nav">
+<td><a href="#top"></a></td><td></td><td></td><td></td>
+  <td><a href="/index.html"><img src="https://imglink.win/image/2020/06/16/ytbwB.png" alt="转到首页"></a></td> </th><td></td></th><td></td></th><td></td>
+  <th><a href="/myblog/index.html" style="color: white;"><i class="fa fa-home"> 首页</i></a></th> <td></td>
+  <th><a href="#" style="color: white;"><i class="fa fa-wrench"> 工具</i></a>  </th><td></td>
+  <th><a href="#" style="color: white;"><i class="fa fa-taxi"> 资源</i></a>  </th><td></td>
+  <th style="background-color: red;" ><a href="#" style="color: white;"><i class="fa fa-cube"> 归档</i></a>  </th><td></td>
+  <th><a href="#" style="color: white;"><i class="fa fa-home"> 教程</i></a>  </th><td></td>
+  <th><a href="#" style="color: white;"><i class="fa fa-envelope"> 留言板</i></a></th><td></td>
+
+</table>
+
+
+
+
+<div class="blogtable"style="border-left: white solid 2px;border-top: white dashed 2px;" >
+  <a href="/myblog/index.html"class="div" style="left: -20%;
+  text-indent: 43%;"> <i class="fa fa-reply-all"></i></a>
+<ul>
+<li><a href="#"><i class="fa fa-angle-double-right fa-2">难道</i></a></li>
+<li><a href="#"><i class="fa fa-angle-double-right fa-2">要我在这个</i></a></li>
+<li><a href="#"><i class="fa fa-angle-double-right fa-2">鬼地方</i></a></li>
+<li><a href="#"><i class="fa fa-angle-double-right fa-2">写标题吗</i></a></li>
+<li><a href="#"><i class="fa fa-angle-double-right fa-2">啊这</i></a></li>
+<li><a href="#"><i class="fa fa-angle-double-right fa-2">不会吧</i></a></li>
+<li><a href="#"><i class="fa fa-angle-double-right fa-2">不会吧</i></a></li>
+
+
+</ul>
+</div>
+
+
+
+<div class="blog" style="display: inline;">
+  <div align="center" style="top: -2.6%;left: 40%;color: white;font-size: 29px; ">从0开始的博客</div>
+  <p style="margin:0.3em;"contenteditable="true">这个网站本身，目前除开canvas其他部分都是用html+css写的，仅用了相当少量的js，而canvas实际上是我在其他地方收集的,而控制canvas的js文件虽然被压过,实际上变化之处仅仅是改了其中的几个数字</p> 
+  <p style="margin:0.3em;"contenteditable="true">整个设计本身有参考过各种其他网页，有的是直接抄过来的，有的是想办法自己画的，但目前看来我的js水平实在过低，以至于很多东西难以实现，再加上实际上写这个东西是一时兴起压根不知道往里面填什么。</p>
+  <p style="margin:0.3em;"contenteditable="true">左边的标题栏在面对屏幕分辨率不同的情况下兼容性很差，上方的导航栏实际上也是手动调整的，而使用left+top强制控制位置也不是一个很好的方法，如果说真的要拿这玩意写博客估计还有一段路要走，而且肯定是要大改界面的。</p><br><br>
+  <p style="margin:0.3em;"contenteditable="true">在编辑这个框时使用了contenteditable这个html属性，但是很遗憾，并没有提交跟改动的方法，只是“看起来”可以编辑了。</p>
+  <br><br><br><br><br><br><p align="right"></p>
+
+
+</div>
+
+
+
+
+
+
+
+<footer class="footer" >
+  <a class="down" href="#top" data-scroll style="top: 0%; display: none;"id="back-top"><i class="icon fa fa-chevron-up" aria-hidden="true"></i></a>
+  <p>&copy; Rushiera - Shieraru</p>
+  <p>Based to on the <span class="love"><i class="icon fa fa-github-alt" aria-hidden="true"></i></span>  <a href="https://pages.github.com/">Github Pages</a></p>
+</footer>
+
+
+</div>
+</body>
+</html>
+
+
+<script>
+function backtop(){
+  var nv = document.getElementById("back-top");
+    var htmltop = document.documentElement.scrollTop;
+    if (htmltop < 200){
+        nv.style.display="none";
+    }else{
+      nv.style.display="block"; 
+    }
+}
+</script>
