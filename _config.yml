@@ -1,0 +1,22 @@
+# Site settings
+title: Rushiera
+description: A blog about Rushiera
+#baseurl: "/particle"	"/myblog"
+url: https://rushiera.github.io/
+
+# at call  {{ site.name }}
+# User settings
+username: Rushiera
+user_title: 'Tempestissimo'
+twitter: undefined
+email: undefined
+github: undefined
+tencent:  undefined
+google:  undefined
+
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+exclude: ['package.json', 'src' , 'node_modules' ]

@@ -1,0 +1,32 @@
+.bgstyle{
+    height: 600px;
+    width: 100%;
+}
+.bgtable{
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    
+}
+
+.bg1{
+    background: url(https://imglink.win/image/2020/06/16/ytCI7.jpg) no-repeat center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+    background-size: 100%;
+  }
+  .bg2{
+    background: url(https://imglink.win/image/2020/06/18/yxTGu.png) no-repeat center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+    background-size: 100%;
+  }
+  .bg3{
+    background: url(https://imglink.win/image/2020/06/18/yx1HG.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: 100%;
+    margin: 0px;
+    padding: 0px;
+  }

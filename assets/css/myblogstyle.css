@@ -1,0 +1,104 @@
+   .div:link{
+    background-color: transparent;
+    color: white;}   
+   .div:hover{
+    background-color:white;
+    color: black;}
+    table th:hover{
+      background-color:rgba(228, 74, 74, 0.575);
+      border-bottom: 2px soild #00a4ff;}
+    div ul li:hover{
+      background-color:rgba(255, 190, 10, 0.575);
+      color: white;  }
+    div ul li a:hover{
+      color: white;
+    }
+   .div:active{
+     background-color: transparent;
+     color:rgb(180, 180, 180);}
+  
+    div ul li a{
+      color: yellowgreen;
+      display: inline-block;
+      height: 30px;
+    }
+    ul li{
+      list-style: armenian;
+      line-height: 32px;
+    }
+    table th a{
+      display: inline-block;
+      width: 65px;
+      height: 45px;
+      line-height: 45px;
+    }
+    div{
+      position: static;
+    }
+
+
+.nav{
+background-color: #3d445062;
+color: white;
+position: fixed;
+height: 65px;
+width: 100%;
+font-size: 12px;
+display: block;
+}
+
+.blogtable{
+background-color: rgba(255, 255, 255, 0.25);
+color: yellowgreen;
+position: absolute;
+width: 10%;
+height: 260px;
+top: 12%;
+left: 7.5%;
+font-size: 24px;
+display: block;
+}
+
+.blog{
+background-color: rgba(180, 180, 180, 0.85);
+color: black;
+position: absolute;
+height: 760px;
+width: 70%;
+top: 10%;
+left: 21%;
+font-size: 16px;
+text-indent: 32px;
+padding-top: 24px;
+padding-left: 36px;
+padding-right: 36px;
+
+}
+
+table th{
+    width: 65px;
+    height:50px;
+}
+
+table td{
+  width: 20px;
+}
+ 
+ .div {
+    z-index: 1;
+  text-align: left;
+  color:#FFF;
+  position: absolute;
+  left: 10%;
+  /* top需自己指定; */
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-size: 40px;
+  height: 50px;
+  line-height: 50px;
+  width: 70%;
+  display: block;
+  text-indent: 43%;
+  }
