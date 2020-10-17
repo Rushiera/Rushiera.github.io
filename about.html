@@ -113,9 +113,9 @@
     var textwata=document.getElementById("textwata")
     var progress=document.getElementById("progress")
     var treacl = 0;
-    var treacw = 0;
+    var treacw = 1300;
     var treack = 0;
-    var text2 = "Do              or        do not.                 There is no try.";
+    var text2 = "Do    or     do not.        There is no try.";
     var text1 = "";
     cr.style.display="black"
     cr.style.position="absolute"
@@ -133,15 +133,20 @@
 
   setInterval(function(){ treacl=treacl+1;
   if (treacl < 200)
-  {cr.style.height=treacl+'px';}
-  else if (treacl <600) 
-  { cr.style.border="0px"; cr.style.width= (treacl-200) +'px';}
-  else { }
+  { 
+    cr.style.height=treacl+'px';}          /* 当高达到200时，停止 */
+  else if (treacl <600)  
+  { 
+    cr.style.border="0px"; cr.style.width= (treacl-200) +'px';}     /* 当宽达到400（600-200）时，停止 */
+  else { (treacl>= 828 )
+
+  }
   
+
   textwata.innerText=text1;
-  if (treacl%18==0 && treacl>=300){ 
+  if (treacl%12==0 && treacl>=288 && treacl<828 ){         /* 每12个单位输出一个字符  45*12=540  + 288 */ 
     text1 = text1+text2.charAt(treack) 
-    treack++}
+    treack++} else if(treacl>828){ }
 
 {return;}
 }, 1);
