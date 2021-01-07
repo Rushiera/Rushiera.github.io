@@ -7,4 +7,14 @@
 <script src="../assets/js/particles.min.js"></script>
 <script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+<script>
+  //替换footer为gitee相关代码
+if( location.hostname==("rushiera.gitee.io")){
+  var footerObj = document.getElementsByClassName("footer");
+    var pListObj = footerObj[0].getElementsByTagName("p");
+    var iListObj = footerObj[0].getElementsByTagName("i");
+    pListObj[1].innerHTML = '<p>Entrusted to the <span class="love"><i class="icon fa fa-handshake-o" aria-hidden="true"></i></span>  <a href="https://gitee.com/help/articles/4136">Gitee Pages</a></p>';
+    iListObj[1].style.color="rgb(255,40, 40)";
+}
+</script>
 {% include google-analytics.html %}
