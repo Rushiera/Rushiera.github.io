@@ -145,6 +145,12 @@ function fixsp(){
     
 }
 
+
+// The measure of success is how we cope with disappointment.
+// 成功的标准是如何应对失望。
+
+
+
     //Whatever you do, you should hold on to that foolishly hopeful smile.
     //It's down to each one of you to decide your own level of commitment
     // The best prize that life offers is the chance to work hard at work worth doing.
