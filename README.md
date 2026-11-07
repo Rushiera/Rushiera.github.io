@@ -38,6 +38,26 @@ tools/build-map.mjs      生成器：本机项目档案索引 → 上面三个�
 
 分层是**人工建档**（`build-map.mjs` 的 `LAYERS`）——星图本质是判断，不是自动聚类。改层 = 改 `LAYERS` 后重跑。
 
+## 二-B、后续维护归并发协议
+
+这个站是**并发协议项目的展示面**，不是独立演进的东西——数据是派生件，档案才是真相：
+
+| 谁 | 负责什么 |
+|:--|:--|
+| **并发协议**（`WorkSpace:tools/并发协议/`） | 档案索引：扫描项目 → `state/projects/*.json`（todo 计数 / purpose / created / anomalies）。项目增删、归档、待办变化都先在这里反映 |
+| 本站 `tools/build-map.mjs` | 只做搬运：读上述档案 → `data/{arch,projects}.js`。不做判断、不手工补数据 |
+| 人 | 改 `LAYERS`（分层）与 `PUBLIC_PIDS`（公开白名单）；发布前跑 `--public` |
+
+**触发时机**（任一条发生就重跑生成器并发布）：
+
+1. 并发协议面板跑过项目档案扫描（`POST /api/projects/scan`）且卡片有变化；
+2. 有项目新增 / 归档 / 改名；
+3. 重要项目的 `CHANGELOG` 或 `todo` 明显推进。
+
+🔴 **不手改 `data/`**——那是生成物，下次生成即覆盖。要改展示就改 `tools/build-map.mjs`（分层 / 文案 / 白名单），要改数据回并发协议侧。
+
+🔴 **首页与星图同源**——`index.html` 的规模与精选、`projects.html` 的层与时间线都读同一份生成结果，不会出现「首页 35 个、星图 30 个」。
+
 ## 三、生成
 
 ```powershell
