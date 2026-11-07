@@ -13,17 +13,14 @@
   };
 
   /* ---------- 统计 ---------- */
-  var layers = {}, jobs = {}, todo = 0;
+  var jobs = {}, todo = 0;
   items.forEach(function (x) {
-    layers[x.layer] = 1;
     todo += (x.todo || 0);
     (x.jobs || []).forEach(function (j) { jobs[j] = (jobs[j] || 0) + 1; });
   });
   var stats = [
-    { n: items.length, k: '登记项目' },
-    { n: Object.keys(layers).length, k: '工程层' },
-    { n: Object.keys(jobs).length, k: '技术栈' },
-    { n: todo, k: '在跟踪的待办' }
+    { n: items.length, k: '个项目在册' },
+    { n: todo, k: '条待办还没关' }
   ];
   $('stats').innerHTML = stats.map(function (s) {
     return '<div class="stat"><div class="n">' + s.n + '</div><div class="k">' + esc(s.k) + '</div></div>';
