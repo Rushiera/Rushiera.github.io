@@ -23,8 +23,8 @@
     { n: todo, k: '条待办还没关' }
   ];
   $('statline').innerHTML = stats.map(function (s) {
-    return '<span><b>' + s.n + '</b>' + esc(s.k) + '</span>';
-  }).join('<i>·</i>');
+    return '<div><b>' + s.n + '</b>' + esc(s.k) + '</div>';
+  }).join('');
 
   /* ---------- 技术栈（按出现频次排序，取前 14） ---------- */
   var order = Object.keys(jobs).sort(function (a, b) { return jobs[b] - jobs[a]; }).slice(0, 14);

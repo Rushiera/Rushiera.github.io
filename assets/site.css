@@ -24,11 +24,17 @@ body.home a:hover{text-decoration:underline}
 #particles-js{position:fixed;inset:0;z-index:0;pointer-events:none}
 body.home > *:not(#particles-js){position:relative;z-index:1}
 
-.wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
 
 /* ---------- 首屏 ---------- */
-.hero{padding:96px 0 44px;min-height:430px;display:flex;align-items:center}
-.hero > .wrap{width:100%}
+.hero{padding:76px 0 22px;display:flex;align-items:center}
+.hero > .wrap{width:100%;display:flex;align-items:flex-end;justify-content:space-between;gap:48px}
+.hero-copy{max-width:620px}
+/* 规模：右对齐，落在屏幕约 75% 一线（容器 1120 居中 + 右侧 17% 余量） */
+.hero-stats{flex:0 0 auto;text-align:right;display:flex;flex-direction:column;gap:8px;
+  margin-right:17%;margin-bottom:6px}
+.hero-stats div{font-size:13px;color:#7f8d9b}
+.hero-stats b{font-family:var(--mono);font-size:19px;font-weight:600;color:#fff;margin-right:6px;letter-spacing:-.02em}
 .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:#7f8d9b;margin-bottom:18px}
 .hero h1{font-size:38px;line-height:1.25;font-weight:680;letter-spacing:-.02em;margin:0 0 18px;color:#fff}
 .hero h1 em{font-style:normal;color:#9aa9b8}
@@ -39,24 +45,23 @@ body.home > *:not(#particles-js){position:relative;z-index:1}
   background:rgba(255,255,255,.06)}
 .links a.primary:hover{background:rgba(255,255,255,.14);text-decoration:none}
 
-/* ---------- 区块头：标题 + 一行规模（统计并入技术栈这一层，省掉独立统计条的纵向占用） ---------- */
-.blk-hd{display:flex;align-items:baseline;justify-content:flex-start;gap:18px;flex-wrap:wrap;margin-bottom:6px}
-.blk-hd h2{margin:0;font-size:13px;font-family:var(--mono);letter-spacing:.12em;color:#7f8d9b;
-  font-weight:600;text-transform:uppercase}
-.statline{font-size:13px;color:#7f8d9b;display:flex;align-items:baseline;gap:10px}
-.statline b{font-family:var(--mono);font-size:17px;font-weight:600;color:#fff;margin-right:3px;letter-spacing:-.02em}
-.statline i{font-style:normal;color:#3f4a56}
+/* ---------- 技术栈：标题与 chips 同一行 ---------- */
+.stack-row{display:flex;align-items:baseline;gap:14px}
+.stack-row .chips{flex:1 1 auto;min-width:0}
+.stack-label{font-size:13px;font-family:var(--mono);letter-spacing:.12em;color:#7f8d9b;
+  font-weight:600;text-transform:uppercase;margin:0;white-space:nowrap}
+.stack-label span{color:#5c6a78;letter-spacing:0;font-size:11px;margin-left:2px}
 
 /* ---------- 区块 ---------- */
-section.block{padding:26px 0 8px}
+section.block{padding:10px 0 8px}
 section.block > h2{font-size:13px;font-family:var(--mono);letter-spacing:.12em;color:#7f8d9b;
   font-weight:600;margin:0 0 18px;text-transform:uppercase}
 section.block > p.note{color:#7f8d9b;font-size:13px;margin:4px 0 18px}
 
 /* ---------- 技术栈 ---------- */
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:5px 12px;font-size:12.5px;color:#c8d2dc;
-  background:rgba(14,19,25,.6);display:inline-flex;align-items:center;gap:7px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:4px 10px;font-size:12px;color:#c8d2dc;
+  background:rgba(14,19,25,.6);display:inline-flex;align-items:center;gap:6px}
 .chip b{color:#fff;font-weight:600}
 .chip i{font-style:normal;font-family:var(--mono);font-size:10.5px;color:#7f8d9b}
 
