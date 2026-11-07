@@ -59,6 +59,8 @@ git push origin master
 
 GitHub Pages 从 `master` 根目录发布（仓库 `Rushiera/Rushiera.github.io`）。本机直连 github 不通时走仓库级代理 `http://127.0.0.1:7897`（已写入 `.git/config`）。
 
+🔴 **改了 css / js / 数据后必须 bump 版本串**：两页的资源引用都带 `?v=YYYYMMDDx`，Pages 的 CDN 缓存 10 分钟、不带参数的 URL 改完会读到旧文件（HTML 新、CSS 旧 = 页面半新半旧）。改完把两个 html 里的 `?v=` 串一起替换成新值再推。
+
 ## 五、星图渲染器
 
 复制自 `WorkSpace:tools/并发协议/archkit`（并发协议工程的共用件）。数据契约 / 状态语义 / 布局规则见该目录的 `README.md` §三。
