@@ -29,7 +29,7 @@ particlesJS('particles-js', {
       grab: { distance: 240, line_linked: { opacity: 0.5 } },
       bubble: { distance: 300, size: 30, duration: 2, opacity: 4, speed: 2 },
       repulse: { distance: 160, duration: 0.4 },
-      push: { particles_nb: 3 },
+      push: { particles_nb: 1 },
       remove: { particles_nb: 2 }
     }
   },
