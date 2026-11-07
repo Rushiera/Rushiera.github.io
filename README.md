@@ -13,6 +13,9 @@ index.html               主页：定位 / 统计 / 能力面 / 精选工程 / �
 projects.html            项目星图：层 × 项目（视图 tab 可切「起点时间线」）
 assets/
   site.css  site.js      主页样式与渲染（读 data/projects.js）
+  particles.min.js       粒子背景库（旧站原件，原样复用）
+  particles-bg.js        首屏背景参数（复刻旧站画法：白五边形 / 连线 250 / 点击补粒）
+  dev-banner.js          全量档红色告警条（public:false 时出现）
   arch/arch.css          archkit 渲染器样式（复制件，勿在此改）
   arch/arch-render.js    archkit 渲染器（复制件，勿在此改）
 data/
@@ -43,6 +46,8 @@ node tools/build-map.mjs --public   # 公开档：只出白名单项目
 ```
 
 🔴 **发布前必须跑 `--public`**——全量档含私域项目名（求职平台 / 客户协商库 / 商业游戏名），公开到 GitHub Pages 等于外泄。白名单在 `build-map.mjs` 的 `PUBLIC_PIDS`。
+
+门禁：全量档数据带 `public:false`，两个页面底部都会顶一条红色告警条（`assets/dev-banner.js`）——**页面上看得见，不靠记性**。
 
 ## 四、发布
 
