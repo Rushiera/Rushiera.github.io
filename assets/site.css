@@ -27,7 +27,7 @@ body.home > *:not(#particles-js){position:relative;z-index:1}
 .wrap{max-width:1000px;margin:0 auto;padding:0 28px}
 
 /* ---------- 首屏 ---------- */
-.hero{padding:120px 0 72px;min-height:520px;display:flex;align-items:center}
+.hero{padding:96px 0 44px;min-height:430px;display:flex;align-items:center}
 .hero > .wrap{width:100%}
 .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:#7f8d9b;margin-bottom:18px}
 .hero h1{font-size:38px;line-height:1.25;font-weight:680;letter-spacing:-.02em;margin:0 0 18px;color:#fff}
@@ -39,18 +39,19 @@ body.home > *:not(#particles-js){position:relative;z-index:1}
   background:rgba(255,255,255,.06)}
 .links a.primary:hover{background:rgba(255,255,255,.14);text-decoration:none}
 
-/* ---------- 统计条 ---------- */
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.09);
-  border:1px solid rgba(255,255,255,.09);border-radius:8px;overflow:hidden;margin:8px 0}
-.stat{background:rgba(14,19,25,.72);padding:18px 20px}
-.stat .n{font-family:var(--mono);font-size:24px;font-weight:600;letter-spacing:-.02em;color:#fff}
-.stat .k{font-size:12px;color:#7f8d9b;margin-top:4px}
+/* ---------- 区块头：标题 + 一行规模（统计并入技术栈这一层，省掉独立统计条的纵向占用） ---------- */
+.blk-hd{display:flex;align-items:baseline;justify-content:flex-start;gap:18px;flex-wrap:wrap;margin-bottom:6px}
+.blk-hd h2{margin:0;font-size:13px;font-family:var(--mono);letter-spacing:.12em;color:#7f8d9b;
+  font-weight:600;text-transform:uppercase}
+.statline{font-size:13px;color:#7f8d9b;display:flex;align-items:baseline;gap:10px}
+.statline b{font-family:var(--mono);font-size:17px;font-weight:600;color:#fff;margin-right:3px;letter-spacing:-.02em}
+.statline i{font-style:normal;color:#3f4a56}
 
 /* ---------- 区块 ---------- */
-section.block{padding:44px 0 8px}
+section.block{padding:26px 0 8px}
 section.block > h2{font-size:13px;font-family:var(--mono);letter-spacing:.12em;color:#7f8d9b;
   font-weight:600;margin:0 0 18px;text-transform:uppercase}
-section.block > p.note{color:#7f8d9b;font-size:13px;margin:-10px 0 18px}
+section.block > p.note{color:#7f8d9b;font-size:13px;margin:4px 0 18px}
 
 /* ---------- 技术栈 ---------- */
 .chips{display:flex;flex-wrap:wrap;gap:8px}
@@ -95,7 +96,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 @media (max-width:760px){
   .hero{padding:72px 0 48px}
   .hero h1{font-size:28px}
-  .stats{grid-template-columns:repeat(2,1fr)}
   .cards{grid-template-columns:1fr}
 }
 

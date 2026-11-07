@@ -11,4 +11,6 @@
   b.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:999;background:#cf222e;color:#fff;' +
     'font:12px/1.6 -apple-system,"Segoe UI",sans-serif;padding:7px 14px;text-align:center;letter-spacing:.01em';
   document.body.appendChild(b);
+  /* 红条固定贴底，给正文留出高度，避免压住最后一屏内容 */
+  document.body.style.paddingBottom = '42px';
 })();

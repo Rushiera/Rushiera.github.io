@@ -22,9 +22,9 @@
     { n: items.length, k: '个项目在册' },
     { n: todo, k: '条待办还没关' }
   ];
-  $('stats').innerHTML = stats.map(function (s) {
-    return '<div class="stat"><div class="n">' + s.n + '</div><div class="k">' + esc(s.k) + '</div></div>';
-  }).join('');
+  $('statline').innerHTML = stats.map(function (s) {
+    return '<span><b>' + s.n + '</b>' + esc(s.k) + '</span>';
+  }).join('<i>·</i>');
 
   /* ---------- 技术栈（按出现频次排序，取前 14） ---------- */
   var order = Object.keys(jobs).sort(function (a, b) { return jobs[b] - jobs[a]; }).slice(0, 14);
