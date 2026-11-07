@@ -1,3 +1,69 @@
----
-layout: default
----
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rushiera — 工程履历</title>
+<meta name="description" content="本机自持的工程实践：多智能体宿主、并发调度、逆向与二次开发。项目星图与推进记录。">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="hero">
+  <div id="particles-js"></div>
+  <div class="wrap">
+    <div class="eyebrow">RUSHIERA · 本机自持的工程实践</div>
+    <h1>把模型接到真实程序上，<br><em>并证明接上了。</em></h1>
+    <p class="lede">
+      这几个月的工程面：自举宿主与知识网络、跨项目并发调度、逆向与二次开发、数据与工具链。
+      下面是 35 个项目的实际推进状态——不是作品集截图，是带证据的现场。
+    </p>
+    <nav class="links">
+      <a class="primary" href="projects.html">项目星图 →</a>
+      <span class="dot">·</span>
+      <a href="https://github.com/Rushiera" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="stats" id="stats" aria-label="规模统计"></section>
+
+  <section class="block">
+    <h2>能力面</h2>
+    <p class="note">按项目主理技术栈统计出现次数，不是自评。</p>
+    <div class="chips" id="stack"></div>
+  </section>
+
+  <section class="block">
+    <h2>精选工程</h2>
+    <div class="cards" id="featured"></div>
+  </section>
+
+  <section class="block">
+    <h2>最近的起点</h2>
+    <p class="note">立项时间，不是完工时间——这里的项目大多是活的。</p>
+    <ul class="feed" id="feed"></ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>数据源：本机项目档案索引 · 生成于 <span id="gen">—</span></span>
+    <span>完整分层与时间轴 → <a href="projects.html">项目星图</a></span>
+  </div>
+</footer>
+
+<script src="assets/particles.min.js"></script>
+<script src="assets/particles-bg.js"></script>
+<script src="data/projects.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/dev-banner.js"></script>
+<script>
+  (function () {
+    var g = document.getElementById('gen');
+    if (g && window.PROJECTS && window.PROJECTS.generatedAt) g.textContent = window.PROJECTS.generatedAt;
+  })();
+</script>
+</body>
+</html>

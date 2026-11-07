@@ -1,0 +1,254 @@
+/* archkit — 架构图模板样式 v2
+   视觉基线：github.com light（并发协议面板 README 弹层实测量值）
+   设计目标：技术图纸感，不是后台面板感 —— 靠留白、对齐、极细分割线建立秩序，
+   颜色只用于表达语义（类型 / 状态 / 主路径），不做装饰。
+   宽度：架构图按内容自适应（不限宽，窄屏横向滚动）；时间轴单列居中（可读性优先）。 */
+
+:root{
+  --fg:#1f2328; --fg2:#59636e; --fg3:#8c959f; --fg4:#aeb6bf;
+  --line:#d8dee4; --line2:#eef1f4;
+  --bg:#fff; --bg2:#f6f8fa;
+  --link:#0969da;
+  --ok:#1a7f37; --warn:#9a6700; --bad:#cf222e;
+  --c-core:#0969da; --c-sup:#8250df; --c-port:#1a7f37; --c-tgt:#57606a;
+  --c-fb:#bf3989; --c-cli:#953800; --c-phase:#0550ae;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+
+/* ---------- 顶栏 ---------- */
+.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.92);
+  backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line2)}
+.top-in{display:flex;align-items:center;gap:28px;padding:0 32px;height:52px;min-width:max-content}
+.brand{display:flex;align-items:baseline;gap:9px;white-space:nowrap}
+.brand b{font-size:14.5px;font-weight:650;letter-spacing:-.005em}
+.brand .sub{color:var(--fg3);font-size:12.5px}
+.brand .ver{font-family:var(--mono);font-size:10.5px;color:var(--fg2);
+  border:1px solid var(--line2);border-radius:3px;padding:1px 5px}
+.tabs{display:flex;gap:22px;height:100%}
+.tab{font-size:13.5px;padding:0 1px;border:none;border-bottom:2px solid transparent;background:none;
+  color:var(--fg2);cursor:pointer;white-space:nowrap;font-family:inherit;align-self:stretch}
+.tab:hover{color:var(--fg)}
+.tab.on{color:var(--fg);font-weight:600;border-bottom-color:var(--fg)}
+.spacer{flex:1}
+.topmeta{color:var(--fg4);font-size:11.5px;white-space:nowrap;font-family:var(--mono)}
+
+/* ---------- 视图头 ---------- */
+.vhead{padding:44px 32px 0;max-width:1280px}
+.vhead h2{margin:0 0 8px;font-size:27px;font-weight:640;letter-spacing:-.015em;line-height:1.2}
+.vhead p{margin:0;color:var(--fg2);font-size:14px;max-width:96ch;line-height:1.65}
+
+/* 子页 */
+.pages{display:flex;gap:20px;padding:26px 32px 0;flex-wrap:wrap}
+.pg{font-size:12.5px;padding:0 0 5px;border:none;border-bottom:1.5px solid transparent;
+  background:none;color:var(--fg3);cursor:pointer;font-family:inherit;transition:color .15s,border-color .15s}
+.pg:hover{color:var(--fg2)}
+.pg.on{color:var(--fg);font-weight:600;border-bottom-color:var(--fg)}
+
+/* ---------- 画布 ---------- */
+.stage{overflow:auto;padding:0 32px 48px}
+.canvas{position:relative;margin-top:18px;min-width:max-content}
+.band{position:absolute;left:0;right:0;border-top:1px solid var(--line2);pointer-events:none}
+.band-lab{position:absolute;left:0;font-size:10.5px;color:var(--fg3);letter-spacing:.13em;
+  text-transform:uppercase;font-family:var(--mono);background:#fff;padding:0 8px 0 0}
+svg.edges{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
+svg.edges path{fill:none;stroke:#c8d0d8;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}
+svg.edges path.plan{stroke-dasharray:4 4;stroke:#cbd3da}
+svg.edges path.hot{stroke:var(--link);stroke-width:1.9}
+svg.edges text{fill:var(--fg3);font-size:10px;font-family:var(--mono);letter-spacing:.02em}
+
+/* ---------- 节点：色条块，不画整框 ---------- */
+.nodes{position:absolute;left:0;top:0}
+.node{position:absolute;background:#fff;border:1px solid var(--line2);border-left-width:3px;
+  border-left-color:var(--fg4);border-radius:5px;padding:10px 13px 9px;
+  transition:border-color .15s,box-shadow .15s,background .15s}
+.node:hover{border-color:#c7d0d8;border-left-color:inherit;box-shadow:0 2px 8px rgba(31,35,40,.07);z-index:5}
+.node.sel{border-color:var(--link);box-shadow:0 0 0 3px rgba(9,105,218,.12);z-index:6}
+.node .kd{display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.node .dot{width:5px;height:5px;border-radius:50%;background:var(--fg4);flex:none}
+.node .tag{font-size:9.5px;letter-spacing:.13em;color:var(--fg4);font-family:var(--mono);text-transform:uppercase}
+.node .lb{font-size:13.5px;font-weight:620;line-height:1.35;color:var(--fg);letter-spacing:-.005em}
+.node .sb{font-size:11.5px;color:var(--fg2);margin-top:4px;line-height:1.5;white-space:pre-line}
+.node .st{font-size:10.5px;margin-top:7px;color:var(--fg4);font-family:var(--mono);letter-spacing:.02em}
+
+/* 类型色 */
+.node[data-kind="cli"]{border-left-color:var(--c-cli)}   .node[data-kind="cli"] .dot{background:var(--c-cli)}
+.node[data-kind="core"]{border-left-color:var(--c-core)} .node[data-kind="core"] .dot{background:var(--c-core)}
+.node[data-kind="sup"]{border-left-color:var(--c-sup)}   .node[data-kind="sup"] .dot{background:var(--c-sup)}
+.node[data-kind="port"]{border-left-color:var(--c-port)} .node[data-kind="port"] .dot{background:var(--c-port)}
+.node[data-kind="tgt"]{border-left-color:var(--c-tgt)}   .node[data-kind="tgt"] .dot{background:var(--c-tgt)}
+.node[data-kind="fb"]{border-left-color:var(--c-fb)}     .node[data-kind="fb"] .dot{background:var(--c-fb)}
+.node[data-kind="phase"]{border-left-color:var(--c-phase)} .node[data-kind="phase"] .dot{background:var(--c-phase)}
+
+/* 角色色：meta.roleLabels 开启时按 tags[0] 上色——同角色共用同一色（覆盖上面的 kind 色）。
+   色值存进 --role，色条 / 色点 / 标签文字三处共用；次标签同色弱化。 */
+.node[data-role="平台"]{--role:#0969da}
+.node[data-role="运行时库"]{--role:#8250df}
+.node[data-role="工具链"]{--role:#1a7f37}
+.node[data-role="观测台"]{--role:#bf3989}
+.node[data-role="规范"]{--role:#0550ae}
+.node[data-role="资产"]{--role:#bc4c00}
+.node[data-role="参照"]{--role:#57606a}
+.node[data-role="适配器"]{--role:#1b7c83}
+.node[data-role="应用"]{--role:#953800}
+.node[data-role]{border-left-color:var(--role)}
+.node[data-role] .dot{background:var(--role)}
+.node[data-role] .tag{color:var(--role)}
+.node[data-role] .tag + .tag{opacity:.62;letter-spacing:.07em}
+
+/* 状态：未实现 = 虚线 + 斜纹（诚实标注的主要视觉手段） */
+.node[data-status="plan"],.node[data-status="missing"]{
+  background:repeating-linear-gradient(45deg,#fcfcfd 0 5px,#fff 5px 10px);border-style:dashed;
+  border-left-style:solid}
+.node[data-status="missing"]{border-color:#f2d2d2;border-left-color:#cf222e}
+.node[data-status="plan"] .lb{color:#4d5560;font-weight:560}
+.node[data-status="plan"] .st,.node[data-status="missing"] .st{font-size:10px}
+.node[data-status="done"] .st{color:var(--ok)}
+.node[data-status="partial"] .st{color:var(--warn)}
+.node[data-status="missing"] .st{color:var(--bad)}
+
+.node .ribbon{position:absolute;top:-8px;right:9px;font-size:9px;line-height:1;
+  padding:3px 5px;border-radius:3px;border:1px solid #e7dcc4;background:#fffdf6;color:#7d4e00;
+  font-family:var(--mono);letter-spacing:.06em}
+.node[data-status="missing"] .ribbon{border-color:#f0c9c9;background:#fff6f6;color:#a40e26}
+
+/* 归档（人工收口 · 参考部分）：淡灰蓝斜纹底 + 实线边——与「未实现」的灰白斜纹 + 虚线边区分；
+   归档只降权参与度，不改状态语义（状态仍在卡底状态行如实显示，右上角标注只说明「参考」）。 */
+.node[data-archived="1"]{background:repeating-linear-gradient(45deg,#f3f5f8 0 5px,#fafbfd 5px 10px);
+  border-style:solid;border-left-style:solid}
+.node[data-archived="1"] .tag.arch{opacity:1;color:#6e7781;letter-spacing:.07em}
+.node[data-archived="1"] .ribbon{border-color:#d8dee4;background:#f6f8fa;color:#57606a}
+
+.node[data-wide="1"]{display:flex;align-items:center;gap:18px;text-align:left;flex-wrap:wrap}
+.node[data-wide="1"] .kd{margin:0;flex:none}
+.node[data-wide="1"] .lb{flex:none}
+.node[data-wide="1"] .sb{margin:0;flex:1;text-align:left}
+.node[data-wide="1"] .st{margin:0;flex:none;white-space:nowrap}
+.node[data-wide="1"] .as{flex:1 1 100%;margin:6px 0 0;text-align:left}
+.flow{fill:var(--link);opacity:.7}
+
+/* 树布局（思维导图式）：根在中心，视觉权重高一级 */
+.node[data-root="1"]{background:var(--bg2);border-color:#c9d1d9;box-shadow:0 2px 10px rgba(31,35,40,.10)}
+.node[data-root="1"] .lb{font-size:15.5px;font-weight:700}
+.node[data-root="1"] .tag{color:var(--fg2)}
+
+/* ---------- 时间轴（演进） ---------- */
+.tl{max-width:1440px;margin:26px 0 0;position:relative}
+.tl-rail{position:absolute;left:102px;top:0;bottom:0;width:1px;background:var(--line)}
+.tl-rail-future{background:repeating-linear-gradient(to bottom,var(--line) 0 4px,transparent 4px 8px)}
+.tl-group{margin:0 0 4px}
+.tl-ghead{display:flex;align-items:baseline;gap:12px;padding:22px 0 10px;border-bottom:1px solid var(--line2)}
+.tl-ghead b{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--fg2);
+  font-family:var(--mono);font-weight:600}
+.tl-ghead span{font-size:12px;color:var(--fg4)}
+.tl-row{display:grid;grid-template-columns:96px 12px minmax(0,1fr) auto;align-items:start;
+  padding:8px 16px 8px 12px;cursor:pointer;border-radius:0 4px 4px 0;
+  border-left:3px solid var(--lane);transition:background .12s}
+.tl-row:hover{background:#fafbfc}
+.tl-v{font-family:var(--mono);font-size:12px;color:var(--fg);text-align:right;padding-right:10px;
+  line-height:1.35;white-space:nowrap}
+.tl-v i{display:block;font-style:normal;font-size:10px;color:var(--fg4);margin-top:1px}
+.tl-dot{position:relative;display:flex;justify-content:center;padding-top:4px}
+.tl-dot i{width:9px;height:9px;border-radius:50%;background:#fff;border:2px solid var(--lane);
+  display:block;z-index:1}
+.tl-row.future .tl-dot i{border-style:dashed;background:#fff}
+.tl-body{padding-left:16px;min-width:0}
+.tl-t{font-size:13px;color:var(--fg);line-height:1.5;font-weight:500}
+.tl-row.future .tl-t{color:var(--fg2);font-weight:400}
+.tl-sub{font-size:11.5px;color:var(--fg3);margin-top:3px;line-height:1.55}
+.tl-m{font-size:11px;color:var(--fg4);margin-top:2px;font-family:var(--mono)}
+.tl-lane{font-size:9.5px;font-family:var(--mono);letter-spacing:.09em;text-transform:uppercase;
+  color:var(--fg3);border:1px solid var(--line2);border-radius:3px;padding:1px 5px;
+  justify-self:end;align-self:center;white-space:nowrap}
+.tl-now{display:inline-block;font-size:9.5px;font-family:var(--mono);color:#fff;background:var(--fg);
+  border-radius:3px;padding:1px 5px;margin-left:8px;vertical-align:1px}
+
+/* ---------- 侧栏 ---------- */
+.side{position:fixed;right:0;top:0;bottom:0;width:400px;max-width:94vw;background:#fff;
+  border-left:1px solid var(--line2);box-shadow:-10px 0 30px rgba(31,35,40,.06);
+  transform:translateX(102%);transition:transform .22s cubic-bezier(.4,0,.2,1);z-index:40;
+  display:flex;flex-direction:column}
+.side.on{transform:none}
+.side h3{margin:0;padding:16px 20px 12px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--fg3);border-bottom:1px solid var(--line2);display:flex;align-items:center;font-family:var(--mono)}
+.side h3 button{margin-left:auto;border:none;background:none;font-size:12px;padding:0;cursor:pointer;
+  color:var(--fg3);font-family:inherit;letter-spacing:0;text-transform:none}
+.side h3 button:hover{color:var(--fg)}
+.side .bd{padding:18px 20px;overflow:auto;font-size:13.5px;line-height:1.65;color:var(--fg)}
+.side .kv{margin:0 0 14px}
+.side .kv .k{font-size:10px;color:var(--fg4);font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.side .kv .v{margin-top:3px;word-break:break-word}
+.side code{font-family:var(--mono);font-size:12px;background:#f2f4f6;border-radius:3px;padding:.1em .35em}
+.side .ev{font-family:var(--mono);font-size:11.5px;color:var(--fg2);word-break:break-all}
+.side ul{margin:6px 0 0;padding-left:16px}
+.side li{margin:3px 0;font-size:12.5px;color:var(--fg2)}
+
+/* ---------- 图例 / 脚注 ---------- */
+.legend{display:flex;gap:22px;flex-wrap:wrap;padding:22px 32px 0;color:var(--fg3);font-size:11.5px}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend .sq{width:11px;height:11px;border-radius:3px;border:1px solid var(--line2);border-left:3px solid var(--fg4);background:#fff}
+.legend .sq.dash{border-style:dashed;border-left-style:solid;
+  background:repeating-linear-gradient(45deg,#fcfcfd 0 4px,#fff 4px 8px)}
+.legend .sq.arch{border-style:solid;border-left-style:solid;border-color:#d8dee4;
+  background:repeating-linear-gradient(45deg,#f3f5f8 0 4px,#fafbfd 4px 8px)}
+.legend .sw{width:20px;height:0;border-top:1.4px solid #d5dbe1}
+.legend .sw.dash{border-top-style:dashed}
+.legend .dot{width:7px;height:7px;border-radius:50%;border:2px solid var(--fg3);background:#fff}
+.legend .bar{width:3px;height:13px;border-radius:2px;background:var(--fg3)}
+
+.foot{padding:30px 32px 46px;color:var(--fg4);font-size:11.5px;border-top:1px solid var(--line2);
+  margin:36px 32px 0;display:flex;gap:32px;flex-wrap:wrap;max-width:1280px}
+.foot b{color:var(--fg2);font-weight:600;font-family:var(--mono);font-size:10px;
+  letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:3px}
+
+.empty{padding:70px 32px;color:var(--fg3);font-size:13.5px}
+
+/* ---------- 四视图契约：结构增量 / 断言 / 折叠行 ---------- */
+.node[data-then="new"]::before{content:"新";position:absolute;top:-8px;left:9px;font-size:9px;
+  line-height:1;padding:3px 5px;border-radius:3px;border:1px solid #cfe8d5;background:#f2fff6;
+  color:#1a7f37;font-family:var(--mono);letter-spacing:.06em}
+.node[data-then="gone"]{opacity:.55;border-style:dashed;border-left-style:solid}
+.node .as{font-size:10.5px;color:var(--fg3);margin-top:6px;padding-left:7px;
+  border-left:2px solid var(--line2);line-height:1.5}
+.tl-row.rollup{opacity:.9}
+.tl-row.rollup .tl-dot i{width:7px;height:7px;border-width:1.5px}
+.tl-fold{display:inline-block;font-size:9.5px;font-family:var(--mono);color:var(--fg3);
+  border:1px solid var(--line2);border-radius:3px;padding:0 5px;margin-left:8px;vertical-align:1px}
+/* 时间轴结块（结构事件） */
+.tl-block{margin:6px 16px 14px 120px;padding:12px 16px;background:#fafbfc;border:1px solid var(--line2);
+  border-left:3px solid #8250df;border-radius:4px}
+.tl-bh{font-size:11px;font-family:var(--mono);letter-spacing:.08em;color:var(--fg2);margin-bottom:8px}
+.tl-bi{font-size:12px;color:var(--fg2);line-height:1.6;margin:4px 0}
+.tl-bi b{font-family:var(--mono);color:var(--fg);margin-right:6px}
+/* 无限画布：视口固定、画布缩放平移（滚轮缩放 / 左键拖动 / 双击适应） */
+.viewport{position:relative;overflow:hidden;height:calc(100vh - 230px);min-height:520px;
+  border:1px solid var(--line);border-radius:6px;background:#fff;cursor:grab}
+/* 紧凑头（meta.compactHead）：没有顶栏与标题，画框接管整屏——只留图例一行与薄边 */
+body.compact .stage{padding:0 16px 16px}
+body.compact .viewport{height:calc(100vh - 70px);min-height:480px}
+.viewport.on{cursor:grabbing}
+.viewport .canvas{position:absolute;left:0;top:0;transform-origin:0 0}
+.zoom-hint{position:absolute;right:12px;bottom:10px;font-size:10.5px;color:var(--fg4);
+  font-family:var(--mono);background:rgba(255,255,255,.86);border:1px solid var(--line2);
+  border-radius:4px;padding:3px 7px;pointer-events:none}
+
+/* 分类节点（role='group'）：只做分类骨架，视觉上是一级标题——比功能卡更淡、更窄的字重分布 */
+.node[data-group="1"]:not([data-root="1"]){background:linear-gradient(180deg,#f7f9fb,#eef2f6);border-color:#d5dbe2;
+  border-left-width:5px;box-shadow:0 1px 3px rgba(31,35,40,.06)}
+.node[data-group="1"]:not([data-root="1"]) .lb{font-size:13.5px;font-weight:700;letter-spacing:.01em}
+.node[data-group="1"]:not([data-root="1"]) .tag{color:var(--fg2);opacity:.9}
+
+/* 层级字号：越靠近根越大，叶子最小——卡宽也按同一梯度（见 arch-render.js 的 WSCALE） */
+.node[data-depth="0"] .lb{font-size:17px}
+.node[data-depth="0"] .sb{font-size:13px}
+.node[data-depth="1"] .lb{font-size:15px}
+.node[data-depth="1"] .sb{font-size:12.5px}
+.node[data-depth="2"] .lb{font-size:13.5px}
+.node[data-depth="2"] .sb{font-size:11.5px}
+.node[data-depth="3"] .lb{font-size:12px}
+.node[data-depth="3"] .sb{font-size:10.5px;line-height:1.45}
+.node[data-depth="3"] .as{font-size:10.5px}

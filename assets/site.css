@@ -1,0 +1,107 @@
+/* site.css — 主页与站内共享样式
+   视觉与 archkit 同一套值（gh 白底 / 细线 / 等宽数字），不引入第二种语言。 */
+
+:root{
+  --fg:#1f2328; --fg2:#59636e; --fg3:#8c959f; --fg4:#aeb6bf;
+  --line:#d8dee4; --line2:#eef1f4;
+  --bg:#fff; --bg2:#f6f8fa;
+  --link:#0969da; --ok:#1a7f37; --warn:#9a6700; --bad:#cf222e;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.6;
+  -webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+code{font-family:var(--mono);font-size:.92em;background:var(--bg2);padding:1px 5px;border-radius:3px}
+
+.wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+
+/* ---------- 首屏：深色 + 粒子背景（复刻旧站画法：白粒子 / 连线 250 / 点击补粒） ---------- */
+.hero{position:relative;overflow:hidden;background:#1a222c;border-bottom:1px solid #0e151c;
+  padding:96px 0 72px;min-height:520px;display:flex;align-items:center}
+#particles-js{position:absolute;inset:0;z-index:0}
+.hero > .wrap{position:relative;z-index:1;width:100%}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:#7f8d9b;margin-bottom:18px}
+.hero h1{font-size:38px;line-height:1.25;font-weight:680;letter-spacing:-.02em;margin:0 0 18px;color:#fff}
+.hero h1 em{font-style:normal;color:#9aa9b8}
+.hero .lede{font-size:16px;color:#c2ccd6;max-width:640px;margin:0 0 26px}
+.links{display:flex;gap:22px;align-items:center;font-size:14px}
+.links .dot{color:#5c6a78}
+.links a{color:#9fcbff}
+.links a.primary{border:1px solid rgba(255,255,255,.26);border-radius:6px;padding:7px 14px;color:#fff;font-weight:560;
+  background:rgba(255,255,255,.05)}
+.links a.primary:hover{background:rgba(255,255,255,.12);text-decoration:none}
+
+/* ---------- 统计条 ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line2);
+  border:1px solid var(--line2);border-radius:8px;overflow:hidden;margin:40px 0 8px}
+.stat{background:#fff;padding:18px 20px}
+.stat .n{font-family:var(--mono);font-size:24px;font-weight:600;letter-spacing:-.02em}
+.stat .k{font-size:12px;color:var(--fg3);margin-top:4px}
+
+/* ---------- 区块 ---------- */
+section.block{padding:44px 0 8px}
+section.block > h2{font-size:13px;font-family:var(--mono);letter-spacing:.12em;color:var(--fg2);
+  font-weight:600;margin:0 0 18px;text-transform:uppercase}
+section.block > p.note{color:var(--fg3);font-size:13px;margin:-10px 0 18px}
+
+/* ---------- 技术栈 ---------- */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);border-radius:20px;padding:5px 12px;font-size:12.5px;color:var(--fg2);
+  background:#fff;display:inline-flex;align-items:center;gap:7px}
+.chip b{color:var(--fg);font-weight:600}
+.chip i{font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--fg4)}
+
+/* ---------- 项目卡 ---------- */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.card{border:1px solid var(--line);border-radius:8px;padding:18px 20px;background:#fff;
+  display:flex;flex-direction:column;gap:8px;transition:border-color .12s}
+.card:hover{border-color:#b6c0ca}
+.card .hd{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.card .nm{font-weight:640;font-size:15.5px;letter-spacing:-.01em}
+.card .ver{font-family:var(--mono);font-size:11px;color:var(--fg4)}
+.card .tp{font-size:12.5px;color:var(--fg2);line-height:1.55;min-height:38px}
+.card .ft{display:flex;gap:10px;align-items:center;font-size:11.5px;color:var(--fg3);margin-top:2px}
+.card .ft .tag{font-family:var(--mono);font-size:10.5px;border:1px solid var(--line2);border-radius:3px;padding:1px 5px}
+
+/* ---------- 时间流 ---------- */
+.feed{list-style:none;margin:0;padding:0;border-left:1px solid var(--line);}
+.feed li{position:relative;padding:0 0 16px 22px}
+.feed li:before{content:"";position:absolute;left:-4px;top:8px;width:7px;height:7px;border-radius:50%;
+  background:#fff;border:1.5px solid var(--fg4)}
+.feed li.now:before{border-color:var(--fg);background:var(--fg)}
+.feed .d{font-family:var(--mono);font-size:11px;color:var(--fg3);margin-right:10px}
+.feed .t{font-size:13.5px}
+.feed .s{font-size:12px;color:var(--fg3)}
+
+/* ---------- 页脚 ---------- */
+footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0 48px;color:var(--fg3);font-size:12.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+/* ---------- 星图页浮动返回：贴在 archkit 顶栏右侧空白处（不压内容区） ---------- */
+.top-in{padding-right:104px !important}
+.site-home{position:fixed;right:16px;top:9px;z-index:60;font-size:12.5px;color:var(--fg2);
+  background:#fff;border:1px solid var(--line);border-radius:6px;padding:5px 11px;line-height:1.4}
+.site-home:hover{color:var(--fg);text-decoration:none;background:var(--bg2)}
+
+@media (max-width:760px){
+  .hero{padding:56px 0 40px}
+  .hero h1{font-size:28px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:1fr}
+}
+
+/* ---------- 项目星图：卡面不承载「实现状态」 ----------
+   archkit 的状态角标与状态行是架构图语义（已实现 / 部分 / 未实现）。
+   项目星图回答「有哪些、在哪层、谁在做」，不是「做完没有」——
+   满屏黄标会把 35 个在跑的项目读成 35 个半成品。
+   数据里 status 已统一 done；这里再把卡底状态行与角标隐掉，只留角色 / 项目名 / 简述 / note。 */
+.node .st,
+.node .ribbon{display:none}
+
+/* 首屏可读性：左侧压暗渐变——粒子连线不横穿正文，右侧留亮区给人看背景 */
+.hero:after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(26,34,44,.95) 0%,rgba(26,34,44,.86) 40%,rgba(26,34,44,.25) 76%,rgba(26,34,44,0) 100%)}
