@@ -44,6 +44,10 @@ body.home > *:not(#particles-js){position:relative;z-index:1}
 .links a.primary{border:1px solid rgba(255,255,255,.26);border-radius:6px;padding:7px 14px;color:#fff;font-weight:560;
   background:rgba(255,255,255,.06)}
 .links a.primary:hover{background:rgba(255,255,255,.14);text-decoration:none}
+/* 次级按钮：与 primary 并列但不抢主次（起点时间线用） */
+.links a.ghost{border:1px solid rgba(255,255,255,.16);border-radius:6px;padding:7px 14px;
+  color:#c8d2dc;font-weight:520;background:transparent}
+.links a.ghost:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.3);text-decoration:none}
 
 /* ---------- 技术栈：标题与 chips 同一行 ---------- */
 .stack-row{display:flex;align-items:baseline;gap:14px}

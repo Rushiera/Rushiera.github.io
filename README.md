@@ -1,6 +1,7 @@
 # Rushiera.github.io — 个人履历站
 
-纯静态，无构建、无依赖、无框架。三件：**主页（履历）/ 项目星图 / 起点时间线**。
+> 归属：**并发协议项目内件**（`WorkSpace:tools/并发协议/witness/gitpage/`，2026-11-07 收编、同日归拢进 `witness/`）——由并发协议维护；档案面在 `ccbp:Project/并发协议/`。
+> 纯静态，无构建、无依赖、无框架。三件：**主页（履历）/ 项目星图 / 起点时间线**，另加一页仿 GitHub 档案。
 
 旧站（Particle 模板 + 2020 占位内容 + gulp/sass/jQuery 构建链）已退役；内容在 git 历史与回收站里。
 
@@ -10,7 +11,7 @@
 
 ```
 index.html               主页：定位 / 统计 / 能力面 / 精选工程 / 最近的起点
-projects.html            项目星图：层 × 项目（视图 tab 可切「起点时间线」）
+projects.html            一页三内容、同页切换不换页：项目星图 / 起点时间线（顶栏视图 tab）· 提交时间线（左下入口条；?pid=<项目> 可深链）
 assets/
   site.css  site.js      主页样式与渲染（读 data/projects.js）
   particles.min.js       粒子背景库（旧站原件，原样复用）
@@ -20,9 +21,12 @@ assets/
   arch/arch-render.js    archkit 渲染器（复制件，勿在此改）
 data/
   projects.json          项目清单（机器可读）
-  projects.js            window.PROJECTS（页面消费）
+  projects.js            window.PROJECTS（页面消费；stats = 首屏三格：在册 / 本周在推进 / 版本推进）
   arch.js                window.ARCH（星图渲染器消费）
-tools/build-map.mjs      生成器：本机项目档案索引 → 上面三个数据文件
+  git/<pid>-git.js       单项目提交时间线（window.ARCH；公开档只出白名单 pid）
+  git/index.js           window.GIT_TIMELINES（「提交时间线」入口条消费：pid / 次数 / 起止月）
+tools/build-map.mjs          生成器：本机项目档案索引 → 上面三个数据文件
+（时间线生成器在上一级 `witness/tools/`：build-git-timeline.mjs 单仓一份 · build-git-timelines.mjs 批量）
 .nojekyll                跳过 GitHub Pages 的 Jekyll 处理
 ```
 
@@ -63,7 +67,14 @@ tools/build-map.mjs      生成器：本机项目档案索引 → 上面三个�
 ```powershell
 node tools/build-map.mjs            # 全量：本地预览（35 项目，含私域线）
 node tools/build-map.mjs --public   # 公开档：只出白名单项目
+
+node ../tools/build-git-timelines.mjs --dry          # 先看：哪些项目有 git 仓、各几次提交
+node ../tools/build-git-timelines.mjs                # 全量：16 个项目出时间线（本地预览档）
+node ../tools/build-git-timelines.mjs --public       # 公开档：只出白名单，并清掉目录里白名单外的旧数据集
+node ../tools/build-git-timelines.mjs --only=CH4,Mau # 局部重跑（清单里其它项目保留）
 ```
+
+提交时间线这批数据要**面板在跑**才生成得出来（仓库目录由 `/api/projects/{pid}/commits` 解析，脚本不另写一套候选规则）；面板没起会直接报错退出，不产出半份。
 
 🔴 **发布前必须跑 `--public`**——全量档含私域项目名（求职平台 / 客户协商库 / 商业游戏名），公开到 GitHub Pages 等于外泄。白名单在 `build-map.mjs` 的 `PUBLIC_PIDS`。
 
@@ -83,9 +94,9 @@ GitHub Pages 从 `master` 根目录发布（仓库 `Rushiera/Rushiera.github.io`
 
 ## 五、星图渲染器
 
-复制自 `WorkSpace:tools/并发协议/archkit`（并发协议工程的共用件）。数据契约 / 状态语义 / 布局规则见该目录的 `README.md` §三。
+复制自 `WorkSpace:tools/并发协议/witness/archkit`（并发协议工程的共用件）。数据契约 / 状态语义 / 布局规则见该目录的 `README.md` §三。
 
-**同步策略**：archkit 更新后整份覆盖这两个文件，不在本仓改渲染器——差异只留在数据里。
+**同步策略**：archkit 更新后整份覆盖这两个文件——数据契约与布局以后者为准。**表现层例外**：站点独有的深色主题与过渡动画允许落在本仓副本，但必须就地注释、并回写 `ccbp:L3/并发协议/F-见证者与站点.md`。现有站点专属改动两处：`arch.css` 末尾 `body.dark` 覆盖块（深色 + 粒子层叠，模板源仍 light）· `arch-render.js` 的 `renderView(anim)` / `clearShell` / `remount` / `window.ARCHKIT`（同页换数据集 + 淡入淡出）。
 
 ## 六、本地看
 
@@ -96,5 +107,5 @@ GitHub Pages 从 `master` 根目录发布（仓库 `Rushiera/Rushiera.github.io`
 ```powershell
 & 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe' --headless=new --disable-gpu `
   --virtual-time-budget=4000 --window-size=1600,1100 --screenshot=out.png `
-  'file:///D:/Mau/WorkSpace/tools/gitpage/projects.html'
+  'file:///D:/Mau/WorkSpace/tools/并发协议/witness/gitpage/projects.html'
 ```

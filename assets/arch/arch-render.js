@@ -94,7 +94,7 @@
     var tabs = el('div', 'tabs');
     V.forEach(function (v, i) {
       var t = el('button', 'tab', esc(v.name));
-      t.onclick = function () { curView = i; curPage = 0; renderView(); };
+      t.onclick = function () { curView = i; curPage = 0; renderView(true); };
       tabs.appendChild(t);
     });
     inn.appendChild(tabs);
@@ -134,7 +134,27 @@
     return { id: 'merged', name: '', note: '', grid: {}, groups: pages, root: v && v.root };
   }
 
-  function renderView() {
+  /* 视图 / 页面切换走一次淡出→重建→淡入——「不换页」的观感。
+     只动 opacity，不碰 transform：画布的 translate/scale 在 canvasEl 上，动画在包裹层上，互不干扰。 */
+  var fadeTimer = null;
+  function renderView(anim) {
+    if (!anim) { renderViewNow(); return; }
+    var list = [viewHead, pagesBar, legend, stage].filter(Boolean);
+    if (fadeTimer) clearTimeout(fadeTimer);
+    list.forEach(function (n) { n.style.transition = 'opacity .15s ease'; n.style.opacity = '0'; });
+    fadeTimer = setTimeout(function () {
+      renderViewNow();
+      list.forEach(function (n) { n.style.transition = 'none'; n.style.opacity = '0'; });
+      requestAnimationFrame(function () {
+        list.forEach(function (n) {
+          n.style.transition = 'opacity .26s cubic-bezier(.2,.7,.2,1)';
+          n.style.opacity = '1';
+        });
+      });
+    }, 150);
+  }
+
+  function renderViewNow() {
     var v = V[curView];
     each(document.querySelectorAll('.top .tab'), function (t, i) {
       t.className = 'tab' + (i === curView ? ' on' : '');
@@ -150,7 +170,7 @@
     if (pages.length > 1 && !v.merge) {
       pages.forEach(function (p, i) {
         var t = el('button', 'pg' + (i === curPage ? ' on' : ''), esc(p.name));
-        t.onclick = function () { curPage = i; renderView(); };
+        t.onclick = function () { curPage = i; renderView(true); };
         pagesBar.appendChild(t);
       });
       pagesBar.style.display = '';
@@ -916,6 +936,7 @@
     document.body.appendChild(f);
   }
 
+  var bound = false;
   function boot() {
     if (!A || !A.views || !A.views.length) {
       document.body.appendChild(el('div', 'empty', '未加载数据：window.ARCH 为空。'));
@@ -924,17 +945,22 @@
     if (compact) document.body.classList.add('compact');   /* 画框接管整屏（CSS：body.compact .viewport） */
     V = A.views.filter(function (v) { return !v.hidden; });
     buildTop(); buildShell(); buildSide(); buildFoot();
-    window.addEventListener('mousemove', function (e) {
-      if (!drag) return;
-      var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
-      if (Math.abs(dx) + Math.abs(dy) > 3) { drag.moved = true; userMoved = true; }
-      vb.tx = drag.tx + dx; vb.ty = drag.ty + dy; applyView();
-    });
-    window.addEventListener('mouseup', function () {
-      if (drag && drag.moved) { suppressClick = true; setTimeout(function () { suppressClick = false; }, 0); }
-      drag = null;
-      if (vpEl) vpEl.classList.remove('on');
-    });
+    /* 全局监听只在首次 boot 绑一次——remount 会重新 boot，重复绑定会让拖动位移翻倍 */
+    if (!bound) {
+      bound = true;
+      window.addEventListener('mousemove', function (e) {
+        if (!drag) return;
+        var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+        if (Math.abs(dx) + Math.abs(dy) > 3) { drag.moved = true; userMoved = true; }
+        vb.tx = drag.tx + dx; vb.ty = drag.ty + dy; applyView();
+      });
+      window.addEventListener('mouseup', function () {
+        if (drag && drag.moved) { suppressClick = true; setTimeout(function () { suppressClick = false; }, 0); }
+        drag = null;
+        if (vpEl && vpEl.classList) vpEl.classList.remove('on');
+      });
+      window.addEventListener('beforeunload', saveState);
+    }
     var pid = (A.meta && A.meta.project) || 'default';
     stateKey = 'archkit:state:' + pid;
     var saved = loadState();
@@ -956,9 +982,60 @@
         pendingState = saved;
       }
     } catch (e) { /* 无 URLSearchParams 时按默认视图 */ }
-    window.addEventListener('beforeunload', saveState);
     renderView();
   }
+  /* ---------- 同页换数据集（无极跳转） ----------
+     项目星图 ↔ 提交时间线不重载页面：换 window.ARCH 后调 ARCHKIT.remount()。
+     只重建渲染器自己的 DOM 与状态；全局监听不重复绑（见 boot 的 bound）。
+     面板弹层不调本入口——它一页一份数据集，走不到这里。 */
+  function clearShell() {
+    each(document.querySelectorAll('.top,.vhead,.pages,.legend,.stage,.side,.foot'), function (n) {
+      if (n.parentNode) n.parentNode.removeChild(n);
+    });
+    document.body.classList.remove('compact');
+    viewHead = pagesBar = legend = stage = side = null;
+    vpEl = null; canvasEl = null;
+    vb = { k: 1, tx: 0, ty: 0 };
+    drag = null; sel = null; pendingSel = null;
+    if (fadeTimer) { clearTimeout(fadeTimer); fadeTimer = null; }
+  }
+
+  function remount(data) {
+    if (!data || !data.views || !data.views.length) return false;
+    /* 淡出旧内容（含顶栏——品牌与标题会换）→ 重建 → 新内容淡入；顺序固定，不等动画结束不渲染 */
+    var old = [document.querySelector('.top'), viewHead, pagesBar, legend, stage].filter(Boolean);
+    if (fadeTimer) { clearTimeout(fadeTimer); fadeTimer = null; }
+    old.forEach(function (n) { n.style.transition = 'opacity .15s ease'; n.style.opacity = '0'; });
+    fadeTimer = setTimeout(function () {
+      clearShell();
+      A = data;
+      compact = !!(A.meta && A.meta.compactHead);
+      V = []; curView = 0; curPage = 0; stateKey = ''; pendingState = null;
+      boot();
+      window.scrollTo(0, 0);
+      var fresh = [document.querySelector('.top'), viewHead, pagesBar, legend, stage].filter(Boolean);
+      fresh.forEach(function (n) { n.style.transition = 'none'; n.style.opacity = '0'; });
+      requestAnimationFrame(function () {
+        fresh.forEach(function (n) {
+          n.style.transition = 'opacity .3s cubic-bezier(.2,.7,.2,1)';
+          n.style.opacity = '1';
+        });
+      });
+    }, 150);
+    return true;
+  }
+
+  window.ARCHKIT = {
+    remount: remount,
+    /* 切到指定视图 id（同页、带动画）；找不到就不动，返回 false */
+    view: function (id) {
+      for (var i = 0; i < V.length; i++) {
+        if (V[i].id === id) { curView = i; curPage = 0; renderView(true); return true; }
+      }
+      return false;
+    }
+  };
+
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
 })();

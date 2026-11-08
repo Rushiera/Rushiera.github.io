@@ -3,17 +3,182 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#12181f">
 <title>项目星图 · Rushiera</title>
-<link rel="stylesheet" href="assets/arch/arch.css?v=20261107m">
-<link rel="stylesheet" href="assets/site.css?v=20261107m">
+<!-- 首字节即深色：外部样式到位前不留白底——跨页「闪白」的直接成因之一。
+     @view-transition 让「首页 ↔ 本页」这类跨文档导航走交叉淡变（Chrome/Edge 126+；不支持的浏览器静默忽略）。 -->
+<style>html,body{background:#12181f;color-scheme:dark}
+  @view-transition{navigation:auto}
+  ::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}</style>
+<link rel="stylesheet" href="assets/arch/arch.css?v=20261109d">
+<link rel="stylesheet" href="assets/site.css?v=20261109d">
+<style>
+/* 提交时间线入口条——只这一页用，内联不进共用样式。
+   放左下角：渲染器自己在顶部画标题栏、底部画图注，压上去会挡内容。 */
+#gt { position: fixed; left: 14px; bottom: 54px; z-index: 30; max-width: 340px;
+      font: 12px/1.5 -apple-system, "Segoe UI", sans-serif; color: #c9d4df; }
+#gt summary { cursor: pointer; display: inline-block; padding: 5px 12px; background: #182029;
+      border: 1px solid #2a3441; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,.45);
+      list-style: none; user-select: none; }
+#gt summary::-webkit-details-marker { display: none; }
+#gt[open] summary { border-radius: 8px 8px 0 0; }
+#gt .list { background: #141b23; border: 1px solid #2a3441; border-top: 0; border-radius: 0 8px 8px 8px;
+      padding: 6px; max-height: 58vh; overflow: auto; }
+#gt a { display: flex; justify-content: space-between; gap: 12px; padding: 4px 8px;
+      border-radius: 6px; color: #58a6ff; text-decoration: none; }
+#gt a:hover { background: #1c2530; }
+#gt a.cur { background: #1f2b38; color: #e6edf3; font-weight: 600; }
+#gt .n { color: #7f8d9b; font-weight: 400; }
+#gt .home { margin-top: 6px; border-top: 1px solid #212b36; padding-top: 6px; }
+/* 首屏占位：数据集（arch.js 数百 KB）到位前先给一行字，避免「深色空白」被读成卡住 */
+#boot-hint { position: fixed; left: 50%; top: 46%; transform: translate(-50%,-50%);
+      color: #5c6a78; font: 13px/1.6 -apple-system, "Segoe UI", sans-serif; letter-spacing: .04em; }
+</style>
 </head>
-<body>
-<!-- 渲染器与数据契约来自 archkit（tools/并发协议/archkit）：
-     数据集 data/arch.js 由 tools/build-map.mjs 从项目档案索引生成，
-     换数据不改页面；视图切换用渲染器自带顶栏（项目星图 / 起点时间线）。 -->
+<body class="dark">
+<div id="particles-js"></div>
+<!-- 渲染器与数据契约来自 archkit（tools/并发协议/witness/archkit）：
+     数据集 data/arch.js（星图 + 起点时间线）与 data/git/<项目>-git.js（提交时间线）
+     都由 tools/ 下的生成器从项目档案索引产出，换数据不改页面。
+
+     一个页面三种内容、零换页（2026-11-09）：
+       项目星图  ┐
+       起点时间线 ├─ 渲染器内视图切换（顶栏 tab），只做淡出→重建→淡入
+       提交时间线 ┘─ 由左下入口条切，走 window.ARCHKIT.remount()，URL 用 pushState 跟上
+     后退 / 刷新照常成立：popstate 与首屏 ?pid= 走同一条 showGit / showMap 链路。 -->
 <a class="site-home" href="index.html">← 主页</a>
-<script src="data/arch.js?v=20261107m"></script>
-<script src="assets/arch/arch-render.js?v=20261107m"></script>
-<script src="assets/dev-banner.js?v=20261107m"></script>
+<div id="boot-hint">正在绘制…</div>
+<div id="gt"></div>
+<!-- 背景粒子层：与首页同一套（assets/particles-bg.js），压在 body 之下 -->
+<script src="assets/particles.min.js?v=20261109d"></script>
+<script src="assets/particles-bg.js?v=20261109d"></script>
+<script src="data/git/index.js?v=20261109d"></script>
+<script>
+(function () {
+  var q = {}; try { q = new URLSearchParams(location.search); } catch (e) {}
+  var list = (window.GIT_TIMELINES && window.GIT_TIMELINES.items) || [];
+  var MAP = null;        /* 星图数据集缓存——首次从时间线切回时加载一次 */
+  var curPid = '';       /* 当前展示的提交时间线项目（空 = 星图 / 起点时间线） */
+  var VER = '?v=20261109d';
+
+  function findPid(pid) {
+    for (var i = 0; i < list.length; i++) if (list[i].pid === pid) return list[i];
+    return null;
+  }
+
+  /* 入口条：清单驱动。重绘而不是重建——切视图后高亮要跟着走 */
+  function renderGT(pid) {
+    var box = document.getElementById('gt');
+    if (!box) return;
+    if (!list.length) { box.innerHTML = ''; return; }
+    var html = '<details><summary>' +
+      (pid ? '提交时间线 · ' + pid : '提交时间线 · ' + list.length + ' 个项目') + '</summary><div class="list">';
+    for (var j = 0; j < list.length; j++) {
+      var it = list[j];
+      /* 次数口径：全史写总数；被 --max 截断写「N/M」——不许只报一个数冒充全史 */
+      var num = it.shown && it.total && it.shown < it.total ? (it.shown + '/' + it.total) : (it.total || '');
+      html += '<a class="' + (it.pid === pid ? 'cur' : '') + '" href="projects.html?pid=' +
+        encodeURIComponent(it.pid) + '" data-pid="' + encodeURIComponent(it.pid) + '"><span>' + it.pid +
+        '</span><span class="n">' + num + (num ? ' 次' : '') + '</span></a>';
+    }
+    if (pid) html += '<div class="home"><a href="projects.html" data-pid="">← 项目星图</a></div>';
+    box.innerHTML = html + '</div></details>';
+  }
+
+  /* 数据走 <script> 逐段接力，不走 fetch —— file:// 双击直开也成立 */
+  function load(src, ok, fail) {
+    var s = document.createElement('script');
+    s.src = src; s.onload = ok || null; s.onerror = fail || null;
+    document.body.appendChild(s);
+  }
+  function fail(msg) {
+    document.body.insertAdjacentHTML('beforeend', '<div class="empty">' + msg + '</div>');
+  }
+
+  function done(pid, push) {
+    curPid = pid;
+    var hint = document.getElementById('boot-hint');
+    if (hint) hint.remove();       /* 首屏占位：渲染器 boot 完就撤，幂等 */
+    document.title = pid ? pid + ' 提交时间线 · Rushiera' : '项目星图 · Rushiera';
+    if (push) {
+      var url = pid ? 'projects.html?pid=' + encodeURIComponent(pid) : 'projects.html';
+      try { history.pushState({ pid: pid }, '', url); } catch (e) {}
+    }
+    renderGT(pid);
+  }
+
+  /* 切到某个项目的提交时间线：换数据集 → remount（渲染器负责淡出淡入） */
+  function showGit(pid, push) {
+    var it = findPid(pid);
+    if (!it) { showMap(push); return; }
+    load('data/git/' + it.file + VER, function () {
+      if (!window.ARCH) { fail('数据集为空：data/git/' + it.file); return; }
+      /* 时间线数据集只带 git 事实、不带档位；把清单的档位写回，底部红条据此出现 */
+      if (window.GIT_TIMELINES && window.GIT_TIMELINES.public === false) window.ARCH.public = false;
+      if (!window.ARCHKIT) { fail('渲染器未就绪：assets/arch/arch-render.js'); return; }
+      window.ARCHKIT.remount(window.ARCH);
+      done(pid, push);
+    }, function () {
+      fail('数据集不存在：data/git/' + it.file +
+        ' —— 时间线跑 <code>node tools/build-git-timelines.mjs</code> 再重开本页。');
+    });
+  }
+
+  function showMap(push) {
+    if (MAP && window.ARCHKIT) {
+      window.ARCH = MAP;
+      window.ARCHKIT.remount(MAP);
+      done('', push);
+      return;
+    }
+    load('data/arch.js' + VER, function () {
+      MAP = window.ARCH;
+      if (!window.ARCHKIT) { fail('渲染器未就绪：assets/arch/arch-render.js'); return; }
+      window.ARCHKIT.remount(MAP);
+      done('', push);
+    }, function () {
+      fail('数据集不存在：data/arch.js —— 星图跑 <code>node tools/build-map.mjs</code> 再重开本页。');
+    });
+  }
+
+  /* 入口条点击一律同页切换；中键 / Ctrl / Shift 点击仍交给浏览器（新标签 / 新窗口） */
+  document.getElementById('gt').addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+    e.preventDefault();
+    var pid = a.getAttribute('data-pid') || '';
+    if (pid === curPid) return;
+    if (pid) showGit(pid, true); else showMap(true);
+  });
+
+  window.addEventListener('popstate', function () {
+    var pid = '';
+    try { pid = new URLSearchParams(location.search).get('pid') || ''; } catch (e2) {}
+    if (pid === curPid) return;
+    if (pid && findPid(pid)) showGit(pid, false); else showMap(false);
+  });
+
+  /* 首屏：先加载数据集，再加载渲染器（渲染器一加载就 boot 一次，用当前 window.ARCH） */
+  var startPid = q.get('pid') || '';
+  var start = findPid(startPid);
+  if (startPid && !start) startPid = '';      /* 清单里没有的 pid 一律回星图——不按用户输入拼路径 */
+  var data = start ? ('data/git/' + start.file + VER) : 'data/arch.js' + VER;
+
+  load(data, function () {
+    if (start && window.GIT_TIMELINES && window.GIT_TIMELINES.public === false) window.ARCH.public = false;
+    if (!start) MAP = window.ARCH;
+    load('assets/arch/arch-render.js' + VER, function () {
+      load('assets/dev-banner.js' + VER, null, null);
+      done(startPid, false);
+    }, function () {
+      fail('渲染器加载失败：assets/arch/arch-render.js');
+    });
+  }, function () {
+    fail('数据集不存在：' + data +
+      ' —— 时间线跑 <code>node tools/build-git-timelines.mjs</code>，星图跑 <code>node tools/build-map.mjs</code>，再重开本页。');
+  });
+})();
+</script>
 </body>
 </html>

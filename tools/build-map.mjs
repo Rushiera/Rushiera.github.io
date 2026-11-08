@@ -16,10 +16,15 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const STATE = 'D:/Mau/WorkSpace/tools/并发协议/state/projects';
-const HERE = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1'));
-const OUT = path.join(HERE, '..', 'data');
+/* 目录全部从脚本位置推导（R4 归拢后不再写死绝对路径）：
+   本脚本在 <协议根>/witness/gitpage/tools/ → 站点根 = 上两级，协议根 = 再上两级。 */
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const SITE = path.join(HERE, '..');
+const ROOT = path.join(SITE, '..', '..');
+const STATE = path.join(ROOT, 'state', 'projects');
+const OUT = path.join(SITE, 'data');
 /* 默认出全量（本地预览要看到完整星图）；--public 出公开档（白名单、可安全推送）
    全量档在数据里带 public:false，两页都会顶一条红色告警条（assets/dev-banner.js）——误推前看得见。 */
 const PUBLIC = process.argv.includes('--public');
@@ -69,13 +74,33 @@ for (const it of idx.items) {
     jobs: (Array.isArray(it.jobs) ? it.jobs : []).map((j) => clip(j, 12)).filter(Boolean),
     created,
     todo: typeof todo.count === 'number' ? todo.count : null,
+    /* 版本推进条数（CHANGELOG 记录条数，档案现状口径）——供首屏产出格合计 */
+    changelog: typeof it.changelogCount === 'number' ? it.changelogCount : 0,
     purpose: clip(purpose || (card.raw && card.raw['最近推进']) || '', 96),
     archived: archivedSet.has(pid)
   });
 }
 
 fs.mkdirSync(OUT, { recursive: true });
-const light = { generatedAt: new Date().toISOString().slice(0, 16).replace('T', ' '), public: PUBLIC, count: items.length, items };
+/* 首屏三格（2026-11-09 定）：规模 / 动量 / 产出。
+   动量取 order.json 的 focus + 待办两区——活跃度由排序器按七维算好，这里只做计数，不重算（判据单一实现）。
+   产出 = CHANGELOG 记录条数合计（index.json 的 changelogCount，档案现状口径）。
+   🔴 两项都按「在档 items」过滤：公开档白名单外的项目不计入，数字随档变，这是有意行为不是漂移。 */
+const order = readJson(path.join(ROOT, 'state', 'flow', 'order.json'), null);
+const onDisk = new Set(items.map((x) => x.pid));
+const inZone = (k) => (Array.isArray(order?.[k]) ? order[k].filter((o) => o && onDisk.has(o.pid)).length : null);
+const stats = {
+  focus: order ? inZone('focus') : null,
+  todoZone: order ? inZone('todo') : null,
+  active: order ? (inZone('focus') ?? 0) + (inZone('todo') ?? 0) : null,
+  versions: items.reduce((n, x) => n + (x.changelog || 0), 0)
+};
+/* 生成时刻取本机时区——原先用 toISOString（UTC），页脚比本地早 8 小时 */
+const pad2 = (n) => String(n).padStart(2, '0');
+const now = new Date();
+const stamp = now.getFullYear() + '-' + pad2(now.getMonth() + 1) + '-' + pad2(now.getDate())
+  + ' ' + pad2(now.getHours()) + ':' + pad2(now.getMinutes());
+const light = { generatedAt: stamp, public: PUBLIC, count: items.length, stats, items };
 fs.writeFileSync(path.join(OUT, 'projects.json'), JSON.stringify(light, null, 2), 'utf8');
 fs.writeFileSync(path.join(OUT, 'projects.js'), 'window.PROJECTS = ' + JSON.stringify(light, null, 1) + ';\n', 'utf8');
 
@@ -126,7 +151,7 @@ const ARCH = {
     title: 'Rushiera',
     sub: items.length + ' 个项目 · ' + LAYERS.length + ' 层 · 按工程域划分',
     ver: 'v1',
-    updated: new Date().toISOString().slice(0, 10),
+    updated: stamp.slice(0, 10),
     roleLabels: true,
     /* 只按宽度适配：层数多时纵向滚动，不把字号压到 8px（archkit README §三 meta.fit） */
     fit: 'width'
@@ -151,4 +176,4 @@ const ARCH = {
 
 fs.writeFileSync(path.join(OUT, 'arch.js'), 'window.ARCH = ' + JSON.stringify(ARCH, null, 1) + ';\n', 'utf8');
 
-console.log('[build-map] ' + (PUBLIC ? 'PUBLIC' : 'FULL') + ' · 项目 ' + items.length + ' · 节点 ' + nodes.length + ' · 时间轴 ' + entries.length + ' · → ' + path.relative(process.cwd(), OUT));
+console.log('[build-map] ' + (PUBLIC ? 'PUBLIC' : 'FULL') + ' · 项目 ' + items.length + ' · 在推进 ' + (stats.active == null ? '—' : stats.active) + ' · 版本推进 ' + stats.versions + ' · 节点 ' + nodes.length + ' · 时间轴 ' + entries.length + ' · → ' + path.relative(process.cwd(), OUT));

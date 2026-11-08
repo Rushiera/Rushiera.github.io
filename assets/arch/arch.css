@@ -252,3 +252,58 @@ body.compact .viewport{height:calc(100vh - 70px);min-height:480px}
 .node[data-depth="3"] .lb{font-size:12px}
 .node[data-depth="3"] .sb{font-size:10.5px;line-height:1.45}
 .node[data-depth="3"] .as{font-size:10.5px}
+
+/* ==========================================================================
+   深色（站点专用 · 2026-11-09）——与首页同一套底色，跨页不再从深色掉到白底。
+   只覆盖硬编码浅色与语义色，布局一行不动；archkit 模板源仍是 light，
+   面板弹层经 /api/archkit/asset 读的是那份，不受本块影响。
+   ========================================================================== */
+body.dark{--fg:#e6edf3;--fg2:#a9b6c2;--fg3:#7f8d9b;--fg4:#5c6a78;
+  --line:#2a3441;--line2:#212b36;--bg:#12181f;--bg2:#182029;--link:#58a6ff;
+  --ok:#3fb950;--warn:#d29922;--bad:#f85149;
+  --c-core:#58a6ff;--c-sup:#bc8cff;--c-port:#3fb950;--c-tgt:#8b949e;
+  --c-fb:#f778ba;--c-cli:#e3a869;--c-phase:#79c0ff;
+  background:transparent;color:#e6edf3;color-scheme:dark}
+/* 粒子层压在 body 之下：body 透明、底色由 html 的 #12181f 提供（见各页 <head> 内联样式）。
+   这样内容不用逐个抬 z-index，sticky 顶栏与 fixed 侧栏也不会被改掉定位。 */
+body.dark #particles-js{z-index:-1}
+body.dark .top{background:rgba(18,24,31,.86);border-bottom-color:#212b36}
+body.dark .tab.on,body.dark .pg.on{border-bottom-color:#e6edf3}
+body.dark .brand .ver{border-color:#2a3441}
+body.dark .band-lab{background:#12181f}
+body.dark svg.edges path{stroke:#313d4a}
+body.dark svg.edges path.plan{stroke:#38424f}
+body.dark .node{background:rgba(20,27,35,.92);border-color:#2a3441}
+body.dark .node:hover{border-color:#3d4a59;box-shadow:0 2px 10px rgba(0,0,0,.5)}
+body.dark .node[data-status="plan"],body.dark .node[data-status="missing"]{
+  background:repeating-linear-gradient(45deg,#151b23 0 5px,#1a222b 5px 10px)}
+body.dark .node[data-status="missing"]{border-color:#5a2a2a;border-left-color:#f85149}
+body.dark .node[data-status="plan"] .lb{color:#9aa7b4}
+body.dark .node[data-archived="1"]{background:repeating-linear-gradient(45deg,#171f28 0 5px,#1c2530 5px 10px)}
+body.dark .node .ribbon{border-color:#4a3d22;background:#231c0d;color:#d2a24c}
+body.dark .node[data-archived="1"] .ribbon{border-color:#2a3441;background:#182029;color:#8b949e}
+body.dark .node[data-status="missing"] .ribbon{border-color:#5a2a2a;background:#2a1616;color:#ff8b8b}
+body.dark .node[data-root="1"]{background:#1b232c;border-color:#33404f;box-shadow:0 2px 12px rgba(0,0,0,.55)}
+body.dark .node[data-group="1"]:not([data-root="1"]){background:linear-gradient(180deg,#1a222b,#161d25);border-color:#2c3745}
+body.dark .node[data-then="new"]::before{border-color:#2f5a3d;background:#12251a;color:#3fb950}
+body.dark .node[data-then="gone"]{opacity:.5}
+body.dark .viewport{background:rgba(14,20,26,.78);backdrop-filter:blur(3px);border-color:#2a3441}
+body.dark .zoom-hint{background:rgba(18,24,31,.9);border-color:#2a3441}
+body.dark .side{background:#141b23;border-left-color:#212b36;box-shadow:-10px 0 30px rgba(0,0,0,.5)}
+body.dark .side code{background:#1c2530}
+body.dark .legend .sq{background:#151b23}
+body.dark .legend .sq.dash{background:repeating-linear-gradient(45deg,#151b23 0 4px,#1a222b 4px 8px)}
+body.dark .legend .sq.arch{border-color:#2a3441;background:repeating-linear-gradient(45deg,#171f28 0 4px,#1c2530 4px 8px)}
+body.dark .legend .sw{border-top-color:#313d4a}
+body.dark .legend .dot{background:#151b23}
+body.dark .tl-rail{background:#2a3441}
+body.dark .tl-rail-future{background:repeating-linear-gradient(to bottom,#2a3441 0 4px,transparent 4px 8px)}
+body.dark .tl-row:hover{background:#182029}
+body.dark .tl-dot i,body.dark .tl-row.future .tl-dot i{background:#12181f}
+body.dark .tl-block{background:#182029;border-color:#212b36;border-left-color:#bc8cff}
+body.dark .tl-now{background:#e6edf3;color:#12181f}
+body.dark .foot{border-top-color:#212b36}
+body.dark .empty{color:#7f8d9b}
+/* 站内共享件（site.css 里的 .site-home 是浅色底，深色页上要跟着换） */
+body.dark .site-home{background:#182029;border-color:#2a3441;color:#a9b6c2}
+body.dark .site-home:hover{background:#1e2731;color:#e6edf3}

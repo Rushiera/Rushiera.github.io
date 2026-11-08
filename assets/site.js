@@ -13,18 +13,24 @@
   };
 
   /* ---------- 统计 ---------- */
-  var jobs = {}, todo = 0;
+  var jobs = {};
   items.forEach(function (x) {
-    todo += (x.todo || 0);
     (x.jobs || []).forEach(function (j) { jobs[j] = (jobs[j] || 0) + 1; });
   });
+  /* 首屏三格（2026-11-09 定）：规模 / 动量 / 产出。
+     数据来自 build-map 的 stats；缺数据给「—」——不用别的量顶（失败可见）。 */
+  var S = P.stats || {};
   var stats = [
     { n: items.length, k: '个项目在册' },
-    { n: todo, k: '条待办还没关' }
+    { n: S.active != null ? S.active : '—', k: '个本周在推进' },
+    { n: S.versions != null ? S.versions : '—', k: '次版本推进' }
   ];
   $('statline').innerHTML = stats.map(function (s) {
     return '<div><b>' + s.n + '</b>' + esc(s.k) + '</div>';
   }).join('');
+  /* lede 里的项目数取自数据（原先手写「35 个」，与在册数已漂） */
+  var pc = $('pcount');
+  if (pc) pc.textContent = items.length;
 
   /* ---------- 技术栈（按出现频次排序，取前 14） ---------- */
   var order = Object.keys(jobs).sort(function (a, b) { return jobs[b] - jobs[a]; }).slice(0, 14);

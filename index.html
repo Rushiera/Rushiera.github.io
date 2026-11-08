@@ -3,9 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#12181f">
 <title>Rushiera — 工程履历</title>
 <meta name="description" content="本机自持的工程实践：多智能体宿主、并发调度、逆向与二次开发。项目星图与推进记录。">
-<link rel="stylesheet" href="assets/site.css?v=20261107m">
+<!-- 首字节即深色：外部样式到位前不留白底；跨文档导航走交叉淡变（Chrome/Edge 126+，其余静默忽略） -->
+<style>html,body{background:#12181f;color-scheme:dark}
+  @view-transition{navigation:auto}
+  ::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}</style>
+<link rel="stylesheet" href="assets/site.css?v=20261109d">
 </head>
 <body class="home">
 
@@ -18,10 +23,11 @@
       <h1>把模型接到真实程序上，<br><em>并证明接上了。</em></h1>
       <p class="lede">
         这几个月的工程面：自举宿主与知识网络、跨项目并发调度、逆向与二次开发、数据与工具链。
-        下面是 35 个项目的实际推进状态——不是作品集截图，是带证据的现场。
+        下面是 <span id="pcount">—</span> 个项目的实际推进状态——不是作品集截图，是带证据的现场。
       </p>
       <nav class="links">
         <a class="primary" href="projects.html">项目星图 →</a>
+        <a class="ghost" href="projects.html?v=timeline">起点时间线 →</a>
         <span class="dot">·</span>
         <a href="github.html">GitHub ↗</a>
       </nav>
@@ -57,11 +63,11 @@
   </div>
 </footer>
 
-<script src="assets/particles.min.js?v=20261107m"></script>
-<script src="assets/particles-bg.js?v=20261107m"></script>
-<script src="data/projects.js?v=20261107m"></script>
-<script src="assets/site.js?v=20261107m"></script>
-<script src="assets/dev-banner.js?v=20261107m"></script>
+<script src="assets/particles.min.js?v=20261109d"></script>
+<script src="assets/particles-bg.js?v=20261109d"></script>
+<script src="data/projects.js?v=20261109d"></script>
+<script src="assets/site.js?v=20261109d"></script>
+<script src="assets/dev-banner.js?v=20261109d"></script>
 <script>
   (function () {
     var g = document.getElementById('gen');
