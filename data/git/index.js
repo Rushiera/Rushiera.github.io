@@ -1,12 +1,12 @@
 window.GIT_TIMELINES = {
- "generatedAt": "2026-11-08 17:03",
- "public": true,
- "count": 10,
+ "generatedAt": "2026-11-08 17:13",
+ "public": false,
+ "count": 17,
  "items": [
   {
    "pid": "并发协议",
-   "shown": 185,
-   "total": 185,
+   "shown": 187,
+   "total": 187,
    "from": "2020-02",
    "to": "2026-11",
    "file": "并发协议-git.js",
@@ -40,6 +40,15 @@ window.GIT_TIMELINES = {
    "public": true
   },
   {
+   "pid": "CGSS-DMM",
+   "shown": 68,
+   "total": 68,
+   "from": "2026-10",
+   "to": "2026-11",
+   "file": "CGSS-DMM-git.js",
+   "public": false
+  },
+  {
    "pid": "ComfyDock",
    "shown": 41,
    "total": 41,
@@ -49,13 +58,40 @@ window.GIT_TIMELINES = {
    "public": true
   },
   {
+   "pid": "EidolonCGSS",
+   "shown": 1,
+   "total": 1,
+   "from": "2026-11",
+   "to": "2026-11",
+   "file": "EidolonCGSS-git.js",
+   "public": false
+  },
+  {
    "pid": "Mau",
-   "shown": 604,
-   "total": 604,
+   "shown": 605,
+   "total": 605,
    "from": "2026-08",
    "to": "2026-11",
    "file": "Mau-git.js",
    "public": true
+  },
+  {
+   "pid": "PSD2Live",
+   "shown": 2,
+   "total": 2,
+   "from": "2026-11",
+   "to": "2026-11",
+   "file": "PSD2Live-git.js",
+   "public": false
+  },
+  {
+   "pid": "QQBotB",
+   "shown": 259,
+   "total": 259,
+   "from": "2026-09",
+   "to": "2026-11",
+   "file": "QQBotB-git.js",
+   "public": false
   },
   {
    "pid": "REA",
@@ -76,6 +112,15 @@ window.GIT_TIMELINES = {
    "public": true
   },
   {
+   "pid": "协商知识库",
+   "shown": 131,
+   "total": 131,
+   "from": "2026-10",
+   "to": "2026-10",
+   "file": "协商知识库-git.js",
+   "public": false
+  },
+  {
    "pid": "Akasha",
    "shown": 23,
    "total": 23,
@@ -92,6 +137,24 @@ window.GIT_TIMELINES = {
    "to": "2026-10",
    "file": "ECC-git.js",
    "public": true
+  },
+  {
+   "pid": "Gakumas",
+   "shown": 27,
+   "total": 27,
+   "from": "2026-10",
+   "to": "2026-10",
+   "file": "Gakumas-git.js",
+   "public": false
+  },
+  {
+   "pid": "KKManager",
+   "shown": 77,
+   "total": 77,
+   "from": "2026-09",
+   "to": "2026-10",
+   "file": "KKManager-git.js",
+   "public": false
   }
  ]
 };

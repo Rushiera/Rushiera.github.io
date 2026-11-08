@@ -1,8 +1,8 @@
 window.ARCH = {
  "meta": {
-  "project": "rushiera-public",
+  "project": "rushiera-map",
   "title": "Rushiera",
-  "sub": "21 个项目 · 5 层 · 按工程域划分",
+  "sub": "37 个项目 · 5 层 · 按工程域划分",
   "ver": "v1",
   "updated": "2026-11-09",
   "roleLabels": true,
@@ -15,7 +15,7 @@ window.ARCH = {
   "pad": 26,
   "cwMax": 340
  },
- "public": true,
+ "public": false,
  "legend": false,
  "contract": {
   "views": [
@@ -45,6 +45,9 @@ window.ARCH = {
       },
       {
        "label": "工具与数据"
+      },
+      {
+       "label": "私域线"
       }
      ],
      "nodes": [
@@ -140,7 +143,7 @@ window.ARCH = {
         "CSharp",
         "Git"
        ],
-       "note": "1.8.239 · 待办 5",
+       "note": "1.8.242 · 待办 5",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -156,7 +159,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.168 · 待办 27",
+       "note": "v0.169 · 待办 27",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -220,12 +223,43 @@ window.ARCH = {
        "evidence": "Project/REA/project.md"
       },
       {
+       "id": "p-CGSS-DMM",
+       "label": "CGSS-DMM",
+       "sub": "第三方 CGSS（DMM / PC 版）离线服务端发行包 —— 接管 + 二次开发",
+       "kind": "tgt",
+       "status": "done",
+       "col": 0,
+       "row": 2,
+       "tags": [
+        "Coder"
+       ],
+       "note": "v0.19.0 · 待办 5",
+       "evidence": "Project/CGSS-DMM/project.md"
+      },
+      {
+       "id": "p-CatGame",
+       "label": "CatGame",
+       "sub": "框架基建 + 游戏业务",
+       "kind": "tgt",
+       "status": "done",
+       "col": 1,
+       "row": 2,
+       "tags": [
+        "Coder",
+        "CSharp",
+        "Unity",
+        "Git"
+       ],
+       "note": "v0.69 · 待办 28",
+       "evidence": "Project/CatGame/project.md"
+      },
+      {
        "id": "p-ClashVerge",
        "label": "ClashVerge",
        "sub": "本机 Clash Verge Rev 的接管与二次开发——把安装产物与用户数据全部收进…",
        "kind": "tgt",
        "status": "done",
-       "col": 0,
+       "col": 2,
        "row": 2,
        "tags": [
         "Coder"
@@ -239,7 +273,7 @@ window.ARCH = {
        "sub": "第三方安卓 APK —— 二次开发（备份可靠性：后台自动备份 + 同步 bug）",
        "kind": "tgt",
        "status": "done",
-       "col": 1,
+       "col": 3,
        "row": 2,
        "tags": [
         "Coder"
@@ -253,7 +287,7 @@ window.ARCH = {
        "sub": "参考实现研究 + 自研 Godot 工程（OurCosmteer）",
        "kind": "tgt",
        "status": "done",
-       "col": 2,
+       "col": 4,
        "row": 2,
        "tags": [
         "Coder",
@@ -266,12 +300,42 @@ window.ARCH = {
        "evidence": "Project/Cosmoteer/project.md"
       },
       {
+       "id": "p-Gakumas",
+       "label": "Gakumas",
+       "sub": "学園アイドルマスター（DMM / PC 版）本地解锁包 GakumasUnlock 的…",
+       "kind": "tgt",
+       "status": "done",
+       "col": 0,
+       "row": 2,
+       "tags": [
+        "Coder"
+       ],
+       "note": "待办 9",
+       "evidence": "Project/Gakumas/project.md"
+      },
+      {
+       "id": "p-Hime",
+       "label": "Hime",
+       "sub": "Unity 商业游戏二次开发（Mono 后端 · 无壳无混淆无强名）",
+       "kind": "tgt",
+       "status": "done",
+       "col": 1,
+       "row": 2,
+       "tags": [
+        "Coder",
+        "CSharp",
+        "Node"
+       ],
+       "note": "v0.15 · 待办 14",
+       "evidence": "Project/Hime/project.md"
+      },
+      {
        "id": "p-LosslessScaling",
        "label": "LosslessScaling",
        "sub": "商业软件二次开发（.NET 9 WPF 托管宿主 + 原生渲染核心）",
        "kind": "tgt",
        "status": "done",
-       "col": 3,
+       "col": 2,
        "row": 2,
        "tags": [
         "Coder",
@@ -282,12 +346,58 @@ window.ARCH = {
        "evidence": "Project/LosslessScaling/project.md"
       },
       {
+       "id": "p-StarlitSeason",
+       "label": "StarlitSeason",
+       "sub": "アイドルマスター スターリットシーズン（UE4 / PC）的二开试验场 + 跨游戏壳（…",
+       "kind": "tgt",
+       "status": "done",
+       "col": 3,
+       "row": 2,
+       "tags": [
+        "Coder"
+       ],
+       "note": "待办 26",
+       "evidence": "Project/StarlitSeason/project.md"
+      },
+      {
+       "id": "p-TradingView",
+       "label": "TradingView",
+       "sub": "第三方发行包二次开发（TradingView Desktop · MSIX）",
+       "kind": "tgt",
+       "status": "done",
+       "col": 4,
+       "row": 2,
+       "tags": [
+        "Coder",
+        "Node",
+        "CSharp"
+       ],
+       "note": "1.7 · 待办 7",
+       "evidence": "Project/TradingView/project.md"
+      },
+      {
+       "id": "p-TsuruPeta",
+       "label": "TsuruPeta",
+       "sub": "Unity 同人游戏汉化（日 → 中）",
+       "kind": "tgt",
+       "status": "done",
+       "col": 0,
+       "row": 2,
+       "tags": [
+        "Coder",
+        "CSharp",
+        "Mau"
+       ],
+       "note": "待办 12",
+       "evidence": "Project/TsuruPeta/project.md"
+      },
+      {
        "id": "p-sc2api-listen",
        "label": "sc2api-listen",
        "sub": "星际争霸 II 进程内接口（Win64 DLL 注入 + C++ / Python 冒…",
        "kind": "tgt",
        "status": "done",
-       "col": 4,
+       "col": 1,
        "row": 2,
        "tags": [
         "Coder",
@@ -328,12 +438,46 @@ window.ARCH = {
        "evidence": "Project/ComfyDock/project.md"
       },
       {
+       "id": "p-EidolonCGSS",
+       "label": "EidolonCGSS",
+       "sub": "外部仓库二次开发——《偶像大师 灰姑娘女孩》99 位角色的 AI 文字陪聊应用（`ei…",
+       "kind": "cli",
+       "status": "done",
+       "col": 2,
+       "row": 3,
+       "tags": [
+        "Coder",
+        "Node",
+        "Git",
+        "Python 后端无对…"
+       ],
+       "note": "v0.1 · 待办 7",
+       "evidence": "Project/EidolonCGSS/project.md"
+      },
+      {
+       "id": "p-KKManager",
+       "label": "KKManager",
+       "sub": "Koikatsu 卡片 ↔ zipmod 关联管理器（C# / .NET 8）",
+       "kind": "cli",
+       "status": "done",
+       "col": 3,
+       "row": 3,
+       "tags": [
+        "Coder",
+        "CSharp",
+        "Release",
+        "Html"
+       ],
+       "note": "v0.21.6 · 待办 47",
+       "evidence": "Project/KKManager/project.md"
+      },
+      {
        "id": "p-KkFetch",
        "label": "KkFetch",
        "sub": "外部站点资源链接采集器（C# / .NET 8 工具链）",
        "kind": "cli",
        "status": "done",
-       "col": 2,
+       "col": 4,
        "row": 3,
        "tags": [
         "Coder",
@@ -348,7 +492,7 @@ window.ARCH = {
        "sub": "图库索引与检索服务（C# / .NET 10 + TypeScript 前端）",
        "kind": "cli",
        "status": "done",
-       "col": 3,
+       "col": 0,
        "row": 3,
        "tags": [
         "Coder",
@@ -359,12 +503,26 @@ window.ARCH = {
        "evidence": "Project/MOSSCatalog/project.md"
       },
       {
+       "id": "p-PSD2Live",
+       "label": "PSD2Live",
+       "sub": "外部开源工程 + 二次开发工作区（分层 PSD → 2D 角色绑定 / 网格 / 物理…",
+       "kind": "cli",
+       "status": "done",
+       "col": 1,
+       "row": 3,
+       "tags": [
+        "Coder"
+       ],
+       "note": "v0.1 · 待办 4",
+       "evidence": "Project/PSD2Live/project.md"
+      },
+      {
        "id": "p-SC2Replay",
        "label": "SC2Replay",
        "sub": "星际争霸 II 回放分析工具（C# / .NET 8 · 单文件 exe + 自包含 …",
        "kind": "cli",
        "status": "done",
-       "col": 4,
+       "col": 2,
        "row": 3,
        "tags": [
         "Coder",
@@ -374,6 +532,92 @@ window.ARCH = {
        ],
        "note": "v0.8 · 待办 28",
        "evidence": "Project/SC2Replay/project.md"
+      },
+      {
+       "id": "p-ThrottleStop",
+       "label": "ThrottleStop",
+       "sub": "本机（Hasee QNLXS / i7-12650H）稳定性遥测与取证台——外挂采集 …",
+       "kind": "cli",
+       "status": "done",
+       "col": 3,
+       "row": 3,
+       "tags": [
+        "Majordomo"
+       ],
+       "note": "v0.7 · 待办 6",
+       "evidence": "Project/ThrottleStop/project.md"
+      },
+      {
+       "id": "p-Vault",
+       "label": "Vault",
+       "sub": "工具类项目（本机自用，不对外分发）",
+       "kind": "cli",
+       "status": "done",
+       "col": 4,
+       "row": 3,
+       "tags": [
+        "Coder"
+       ],
+       "note": "v0.2 · 待办 12",
+       "evidence": "Project/Vault/project.md"
+      },
+      {
+       "id": "p-挂载盘清理器",
+       "label": "挂载盘清理器",
+       "sub": "运维脚本工具集",
+       "kind": "cli",
+       "status": "done",
+       "col": 0,
+       "row": 3,
+       "tags": [
+        "Coder"
+       ],
+       "note": "v0.8 · 待办 14",
+       "evidence": "Project/挂载盘清理器/project.md"
+      },
+      {
+       "id": "p-QQBotB",
+       "label": "QQBotB",
+       "sub": "QQ 消息桥接（模式 B）——专用 QQ 号 + OneBot 11 协议端",
+       "kind": "fb",
+       "status": "done",
+       "col": 0,
+       "row": 4,
+       "tags": [
+        "Coder",
+        "CSharp",
+        "Git"
+       ],
+       "note": "v1.43 · 待办 52",
+       "evidence": "Project/QQBotB/project.md"
+      },
+      {
+       "id": "p-BOSS直聘",
+       "label": "BOSS直聘",
+       "sub": "求职平台工作线（套壳浏览器采集 + 岗位库分析 + 真人简历参考 + 站点内容与交互 …",
+       "kind": "fb",
+       "status": "done",
+       "col": 1,
+       "row": 4,
+       "tags": [
+        "Majordomo"
+       ],
+       "note": "v0.20.2 · 待办 10",
+       "evidence": "Project/BOSS直聘/project.md"
+      },
+      {
+       "id": "p-协商知识库",
+       "label": "协商知识库",
+       "sub": "录音 → 带说话人标注的可检索文本 + 客户协商知识库（网页面板 + 本地后端 · 一…",
+       "kind": "fb",
+       "status": "done",
+       "col": 2,
+       "row": 4,
+       "tags": [
+        "Majordomo"
+       ],
+       "note": "v1.44 · 待办 86",
+       "evidence": "Project/协商知识库/project.md"
       }
      ],
      "edges": []
@@ -437,7 +681,7 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · Mau 地基区块——CH4 自举工具箱（私人方言）",
        "items": [
-        "1.8.239",
+        "1.8.242",
         "待办 5"
        ],
        "status": "partial",
@@ -500,6 +744,32 @@ window.ARCH = {
        "date": "",
        "group": "2026-09",
        "lane": "tool",
+       "title": "KKManager · Koikatsu 卡片 ↔ zipmod 关联管理器（C# / .NET 8）",
+       "items": [
+        "v0.21.6",
+        "待办 47"
+       ],
+       "status": "partial",
+       "evidence": "Project/KKManager/project.md"
+      },
+      {
+       "v": "09-26",
+       "date": "",
+       "group": "2026-09",
+       "lane": "private",
+       "title": "QQBotB · QQ 消息桥接（模式 B）——专用 QQ 号 + OneBot 11 协议端",
+       "items": [
+        "v1.43",
+        "待办 52"
+       ],
+       "status": "partial",
+       "evidence": "Project/QQBotB/project.md"
+      },
+      {
+       "v": "09-26",
+       "date": "",
+       "group": "2026-09",
+       "lane": "tool",
        "title": "SC2Replay · 星际争霸 II 回放分析工具（C# / .NET 8 · 单文件 exe + 自包含 …",
        "items": [
         "v0.8",
@@ -507,6 +777,19 @@ window.ARCH = {
        ],
        "status": "partial",
        "evidence": "Project/SC2Replay/project.md"
+      },
+      {
+       "v": "09-27",
+       "date": "",
+       "group": "2026-09",
+       "lane": "game",
+       "title": "TsuruPeta · Unity 同人游戏汉化（日 → 中）",
+       "items": [
+        "版本未记",
+        "待办 12"
+       ],
+       "status": "partial",
+       "evidence": "Project/TsuruPeta/project.md"
       },
       {
        "v": "10-01",
@@ -522,6 +805,45 @@ window.ARCH = {
        "evidence": "Project/ApiSiteAnalyzer/project.md"
       },
       {
+       "v": "10-01",
+       "date": "",
+       "group": "2026-10",
+       "lane": "private",
+       "title": "协商知识库 · 录音 → 带说话人标注的可检索文本 + 客户协商知识库（网页面板 + 本地后端 · 一…",
+       "items": [
+        "v1.44",
+        "待办 86"
+       ],
+       "status": "partial",
+       "evidence": "Project/协商知识库/project.md"
+      },
+      {
+       "v": "10-03",
+       "date": "",
+       "group": "2026-10",
+       "lane": "game",
+       "title": "CGSS-DMM · 第三方 CGSS（DMM / PC 版）离线服务端发行包 —— 接管 + 二次开发",
+       "items": [
+        "v0.19.0",
+        "待办 5"
+       ],
+       "status": "partial",
+       "evidence": "Project/CGSS-DMM/project.md"
+      },
+      {
+       "v": "10-05",
+       "date": "",
+       "group": "2026-10",
+       "lane": "tool",
+       "title": "挂载盘清理器 · 运维脚本工具集",
+       "items": [
+        "v0.8",
+        "待办 14"
+       ],
+       "status": "partial",
+       "evidence": "Project/挂载盘清理器/project.md"
+      },
+      {
        "v": "10-06",
        "date": "",
        "group": "2026-10",
@@ -535,6 +857,19 @@ window.ARCH = {
        "evidence": "Project/CloudDrive2/project.md"
       },
       {
+       "v": "10-16",
+       "date": "",
+       "group": "2026-10",
+       "lane": "private",
+       "title": "BOSS直聘 · 求职平台工作线（套壳浏览器采集 + 岗位库分析 + 真人简历参考 + 站点内容与交互 …",
+       "items": [
+        "v0.20.2",
+        "待办 10"
+       ],
+       "status": "partial",
+       "evidence": "Project/BOSS直聘/project.md"
+      },
+      {
        "v": "10-21",
        "date": "",
        "group": "2026-10",
@@ -546,6 +881,19 @@ window.ARCH = {
        ],
        "status": "partial",
        "evidence": "Project/REA/project.md"
+      },
+      {
+       "v": "10-21",
+       "date": "",
+       "group": "2026-10",
+       "lane": "tool",
+       "title": "ThrottleStop · 本机（Hasee QNLXS / i7-12650H）稳定性遥测与取证台——外挂采集 …",
+       "items": [
+        "v0.7",
+        "待办 6"
+       ],
+       "status": "partial",
+       "evidence": "Project/ThrottleStop/project.md"
       },
       {
        "v": "10-22",
@@ -574,6 +922,32 @@ window.ARCH = {
        "evidence": "Project/MOSSCatalog/project.md"
       },
       {
+       "v": "10-25",
+       "date": "",
+       "group": "2026-10",
+       "lane": "game",
+       "title": "Gakumas · 学園アイドルマスター（DMM / PC 版）本地解锁包 GakumasUnlock 的…",
+       "items": [
+        "版本未记",
+        "待办 9"
+       ],
+       "status": "partial",
+       "evidence": "Project/Gakumas/project.md"
+      },
+      {
+       "v": "10-28",
+       "date": "",
+       "group": "2026-10",
+       "lane": "game",
+       "title": "StarlitSeason · アイドルマスター スターリットシーズン（UE4 / PC）的二开试验场 + 跨游戏壳（…",
+       "items": [
+        "版本未记",
+        "待办 26"
+       ],
+       "status": "partial",
+       "evidence": "Project/StarlitSeason/project.md"
+      },
+      {
        "v": "10-30",
        "date": "",
        "group": "2026-10",
@@ -598,6 +972,19 @@ window.ARCH = {
        ],
        "status": "partial",
        "evidence": "Project/LosslessScaling/project.md"
+      },
+      {
+       "v": "10-31",
+       "date": "",
+       "group": "2026-10",
+       "lane": "game",
+       "title": "Hime · Unity 商业游戏二次开发（Mono 后端 · 无壳无混淆无强名）",
+       "items": [
+        "v0.15",
+        "待办 14"
+       ],
+       "status": "partial",
+       "evidence": "Project/Hime/project.md"
       },
       {
        "v": "10-31",
@@ -652,6 +1039,45 @@ window.ARCH = {
        "evidence": "Project/ECC/project.md"
       },
       {
+       "v": "11-04",
+       "date": "",
+       "group": "2026-11",
+       "lane": "game",
+       "title": "TradingView · 第三方发行包二次开发（TradingView Desktop · MSIX）",
+       "items": [
+        "1.7",
+        "待办 7"
+       ],
+       "status": "partial",
+       "evidence": "Project/TradingView/project.md"
+      },
+      {
+       "v": "11-07",
+       "date": "",
+       "group": "2026-11",
+       "lane": "tool",
+       "title": "EidolonCGSS · 外部仓库二次开发——《偶像大师 灰姑娘女孩》99 位角色的 AI 文字陪聊应用（`ei…",
+       "items": [
+        "v0.1",
+        "待办 7"
+       ],
+       "status": "partial",
+       "evidence": "Project/EidolonCGSS/project.md"
+      },
+      {
+       "v": "11-08",
+       "date": "",
+       "group": "2026-11",
+       "lane": "tool",
+       "title": "PSD2Live · 外部开源工程 + 二次开发工作区（分层 PSD → 2D 角色绑定 / 网格 / 物理…",
+       "items": [
+        "v0.1",
+        "待办 4"
+       ],
+       "status": "partial",
+       "evidence": "Project/PSD2Live/project.md"
+      },
+      {
        "v": "—",
        "date": "",
        "group": "未记起点",
@@ -663,6 +1089,19 @@ window.ARCH = {
        ],
        "status": "partial",
        "evidence": "Project/Akasha/project.md"
+      },
+      {
+       "v": "—",
+       "date": "",
+       "group": "未记起点",
+       "lane": "game",
+       "title": "CatGame · 框架基建 + 游戏业务",
+       "items": [
+        "v0.69",
+        "待办 28"
+       ],
+       "status": "partial",
+       "evidence": "Project/CatGame/project.md"
       },
       {
        "v": "—",
@@ -681,10 +1120,23 @@ window.ARCH = {
        "v": "—",
        "date": "",
        "group": "未记起点",
+       "lane": "tool",
+       "title": "Vault · 工具类项目（本机自用，不对外分发）",
+       "items": [
+        "v0.2",
+        "待办 12"
+       ],
+       "status": "partial",
+       "evidence": "Project/Vault/project.md"
+      },
+      {
+       "v": "—",
+       "date": "",
+       "group": "未记起点",
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.168",
+        "v0.169",
         "待办 27"
        ],
        "status": "partial",

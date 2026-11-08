@@ -10,8 +10,8 @@
 <style>html,body{background:#12181f;color-scheme:dark}
   @view-transition{navigation:auto}
   ::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}</style>
-<link rel="stylesheet" href="assets/arch/arch.css?v=20261109d">
-<link rel="stylesheet" href="assets/site.css?v=20261109d">
+<link rel="stylesheet" href="assets/arch/arch.css?v=20261109e">
+<link rel="stylesheet" href="assets/site.css?v=20261109e">
 <style>
 /* 提交时间线入口条——只这一页用，内联不进共用样式。
    放左下角：渲染器自己在顶部画标题栏、底部画图注，压上去会挡内容。 */
@@ -50,16 +50,16 @@
 <div id="boot-hint">正在绘制…</div>
 <div id="gt"></div>
 <!-- 背景粒子层：与首页同一套（assets/particles-bg.js），压在 body 之下 -->
-<script src="assets/particles.min.js?v=20261109d"></script>
-<script src="assets/particles-bg.js?v=20261109d"></script>
-<script src="data/git/index.js?v=20261109d"></script>
+<script src="assets/particles.min.js?v=20261109e"></script>
+<script src="assets/particles-bg.js?v=20261109e"></script>
+<script src="data/git/index.js?v=20261109e"></script>
 <script>
 (function () {
   var q = {}; try { q = new URLSearchParams(location.search); } catch (e) {}
   var list = (window.GIT_TIMELINES && window.GIT_TIMELINES.items) || [];
   var MAP = null;        /* 星图数据集缓存——首次从时间线切回时加载一次 */
   var curPid = '';       /* 当前展示的提交时间线项目（空 = 星图 / 起点时间线） */
-  var VER = '?v=20261109d';
+  var VER = '?v=20261109e';
 
   function findPid(pid) {
     for (var i = 0; i < list.length; i++) if (list[i].pid === pid) return list[i];

@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "185 次提交 · 2020-02 → 2026-11",
-    "ver": "48ecea8",
+    "sub": "187 次提交 · 2020-02 → 2026-11",
+    "ver": "1ba0862",
     "updated": "2026-11-08",
     "contract": {
       "views": [
@@ -2477,6 +2477,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 48ecea8"
+            },
+            {
+              "v": "894d91e",
+              "date": "11-07",
+              "group": "2026-11",
+              "lane": "docs",
+              "title": "docs: 后续维护归并发协议（数据派生链 / 触发时机 / 白名单与分层改法）",
+              "items": [
+                "Rushiera",
+                "894d91e2a5"
+              ],
+              "status": "done",
+              "evidence": "git 894d91e"
+            },
+            {
+              "v": "1ba0862",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "site: dark theme with particles, three-stat hero, in-page view switching, public data",
+              "items": [
+                "Rushiera",
+                "1ba08624ac"
+              ],
+              "status": "done",
+              "evidence": "git 1ba0862"
             }
           ]
         }

@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "604 次提交 · 2026-08 → 2026-11",
-    "ver": "2fa4e627",
+    "sub": "605 次提交 · 2026-08 → 2026-11",
+    "ver": "8266b6fc",
     "updated": "2026-11-08",
     "contract": {
       "views": [
@@ -7924,6 +7924,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 2fa4e627"
+            },
+            {
+              "v": "8266b6fc",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.8.242 项目挂载专家模式（L3 全挂/仅 readme）+ 挂载预览端点；并发协议前文装配改读宿主",
+              "items": [
+                "Rushiera",
+                "8266b6fc89"
+              ],
+              "status": "done",
+              "evidence": "git 8266b6fc"
             }
           ]
         }

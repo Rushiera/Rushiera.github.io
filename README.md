@@ -65,20 +65,20 @@ tools/build-map.mjs          生成器：本机项目档案索引 → 上面三�
 ## 三、生成
 
 ```powershell
-node tools/build-map.mjs            # 全量：本地预览（35 项目，含私域线）
-node tools/build-map.mjs --public   # 公开档：只出白名单项目
+node tools/build-map.mjs            # 全量：全部项目（含私域线）—— 现行默认发布档
+node tools/build-map.mjs --public   # 公开档：只出白名单项目（临时收窄用）
 
 node ../tools/build-git-timelines.mjs --dry          # 先看：哪些项目有 git 仓、各几次提交
-node ../tools/build-git-timelines.mjs                # 全量：16 个项目出时间线（本地预览档）
+node ../tools/build-git-timelines.mjs                # 全量：全部可解析仓库的项目各出一份
 node ../tools/build-git-timelines.mjs --public       # 公开档：只出白名单，并清掉目录里白名单外的旧数据集
 node ../tools/build-git-timelines.mjs --only=CH4,Mau # 局部重跑（清单里其它项目保留）
 ```
 
 提交时间线这批数据要**面板在跑**才生成得出来（仓库目录由 `/api/projects/{pid}/commits` 解析，脚本不另写一套候选规则）；面板没起会直接报错退出，不产出半份。
 
-🔴 **发布前必须跑 `--public`**——全量档含私域项目名（求职平台 / 客户协商库 / 商业游戏名），公开到 GitHub Pages 等于外泄。白名单在 `build-map.mjs` 的 `PUBLIC_PIDS`。
+🟠 **发布档位（2026-11-09 裁定）**——默认推**全量档**：私域项目的名称与描述可以放到公开站上，保密按**点名制**处理（Rushiera 后续单独对某项目提保密要求时，才把该项目移出 `PUBLIC_PIDS` 或加进隐藏名单）。`--public` 保留为临时收窄手段（白名单 21 项），不再作为发布前置。
 
-门禁：全量档数据带 `public:false`，两个页面底部都会顶一条红色告警条（`assets/dev-banner.js`）——**页面上看得见，不靠记性**。
+门禁：全量档数据带 `public:false`，本地预览（`file://` / `localhost`）时两页底部顶一条红色告警条（`assets/dev-banner.js`）——**推之前看得见，不靠记性**；线上按上面的裁定不顶。
 
 ## 四、发布
 
