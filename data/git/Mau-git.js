@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "605 次提交 · 2026-08 → 2026-11",
-    "ver": "8266b6fc",
-    "updated": "2026-11-08",
+    "sub": "607 次提交 · 2026-08 → 2026-11",
+    "ver": "ffe543cf",
+    "updated": "2026-11-09",
     "contract": {
       "views": [
         "git"
@@ -7937,6 +7937,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 8266b6fc"
+            },
+            {
+              "v": "17ec2ad6",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "1.8.243 挂载离场自动取消（180s 在场不摘，回来即不取消）+ 首条消息上工X自动挂载",
+              "items": [
+                "Rushiera",
+                "17ec2ad640"
+              ],
+              "status": "done",
+              "evidence": "git 17ec2ad6"
+            },
+            {
+              "v": "ffe543cf",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.8.244: localgit 升系统根（固定根表 + 探测创建 + 测试同步）",
+              "items": [
+                "Rushiera",
+                "ffe543cf5a"
+              ],
+              "status": "done",
+              "evidence": "git ffe543cf"
             }
           ]
         }

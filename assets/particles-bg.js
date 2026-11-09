@@ -1,7 +1,7 @@
 /* particles-bg.js — 全站背景粒子层（旧站画法，慢速 + 鼠标跟随）
  *
  * 底子取自旧站 assets/js/main.js：白色五边形粒子 / 连线。
- * 相对旧站的调整：速度 6 → 1.4（慢速漂浮），不透明度下调（当背景用，不抢文字），
+ * 相对旧站的调整：速度降至 0.55（2026-11-09 拍板——慢速漂浮），不透明度下调（当背景用，不抢文字），
  * 开启鼠标交互（detect_on: 'window' —— 粒子层在内容之下且 pointer-events:none，
  * 只有监听 window 才能在整页收起 mousemove）。
  */
@@ -14,7 +14,7 @@ particlesJS('particles-js', {
     size: { value: 2.6, random: true, anim: { enable: false, speed: 19.18, size_min: 0.4, sync: false } },
     line_linked: { enable: true, distance: 200, color: '#ffffff', opacity: 0.22, width: 1 },
     move: {
-      enable: true, speed: 0.42, direction: 'none', random: true, straight: false,
+      enable: true, speed: 0.55, direction: 'none', random: true, straight: false,
       out_mode: 'out', bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 }
     }
   },

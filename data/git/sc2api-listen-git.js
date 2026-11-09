@@ -4,7 +4,7 @@ window.ARCH = {
     "title": "sc2api-listen 提交时间线",
     "sub": "30 次提交 · 2026-10 → 2026-11",
     "ver": "7cb967c",
-    "updated": "2026-11-08",
+    "updated": "2026-11-09",
     "contract": {
       "views": [
         "git"

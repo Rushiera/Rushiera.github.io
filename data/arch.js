@@ -97,7 +97,7 @@ window.ARCH = {
         "Html",
         "WinForms"
        ],
-       "note": "1.8.239 · 待办 2",
+       "note": "1.8.244 · 待办 2",
        "evidence": "Project/CH4/project.md"
       },
       {
@@ -143,7 +143,7 @@ window.ARCH = {
         "CSharp",
         "Git"
        ],
-       "note": "1.8.242 · 待办 5",
+       "note": "1.8.244 · 待办 5",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -159,7 +159,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.169 · 待办 27",
+       "note": "v0.173 · 待办 26",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -264,7 +264,7 @@ window.ARCH = {
        "tags": [
         "Coder"
        ],
-       "note": "v1.45 · 待办 33",
+       "note": "v1.46 · 待办 33",
        "evidence": "Project/ClashVerge/project.md"
       },
       {
@@ -681,7 +681,7 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · Mau 地基区块——CH4 自举工具箱（私人方言）",
        "items": [
-        "1.8.242",
+        "1.8.244",
         "待办 5"
        ],
        "status": "partial",
@@ -694,7 +694,7 @@ window.ARCH = {
        "lane": "host",
        "title": "CH4 · Mau 自举循环宿主（多智能体 OS 能力后置）",
        "items": [
-        "1.8.239",
+        "1.8.244",
         "待办 2"
        ],
        "status": "partial",
@@ -954,7 +954,7 @@ window.ARCH = {
        "lane": "game",
        "title": "ClashVerge · 本机 Clash Verge Rev 的接管与二次开发——把安装产物与用户数据全部收进…",
        "items": [
-        "v1.45",
+        "v1.46",
         "待办 33"
        ],
        "status": "partial",
@@ -1136,8 +1136,8 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.169",
-        "待办 27"
+        "v0.173",
+        "待办 26"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"
