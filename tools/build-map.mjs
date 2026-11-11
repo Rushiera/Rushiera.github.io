@@ -17,6 +17,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { PUBLIC_PIDS } from './public-pids.mjs';
 
 /* 目录全部从脚本位置推导（R4 归拢后不再写死绝对路径）：
    本脚本在 <协议根>/witness/gitpage/tools/ → 站点根 = 上两级，协议根 = 再上两级。 */
@@ -38,10 +39,7 @@ const LAYERS = [
   { id: 'private', label: '私域线', kind: 'fb', pids: ['BOSS直聘', 'QQBotB', '协商知识库'] }
 ];
 
-/* 公开档白名单：技术性 / 可公开的项目。增删改这一行即可。 */
-const PUBLIC_PIDS = ['CH4', 'Mau', 'Akasha', '并发协议', 'CH3', 'CatHome2.0', 'ACS', 'REA', 'ECC',
-  'CGSE_CORE', 'MOSSCatalog', 'ComfyDock', 'SC2Replay', 'ApiSiteAnalyzer', 'KkFetch',
-  'sc2api-listen', 'FileSync', 'Cosmoteer', 'ClashVerge', 'LosslessScaling', 'CloudDrive2'];
+/* 公开档白名单 → tools/public-pids.mjs（站点与提交时间线共用的单一真相源）。 */
 
 const readJson = (p, fb) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch (e) { return fb; } };
 const normDate = (s) => { const m = String(s || '').match(/(\d{4})-(\d{2})-(\d{2})/); return m ? `${m[1]}-${m[2]}-${m[3]}` : ''; };
@@ -49,18 +47,33 @@ const clip = (s, n) => { const t = String(s || '').replace(/\s+/g, ' ').trim(); 
 /* worker 字段在档案里可能带整句括注（「Coder（无 Job——…）」）——卡片标签只取角色词 */
 const roleOf = (s) => { const m = String(s || '').match(/^\s*([A-Za-z]{3,12})/); return m ? m[1] : ''; };
 
-const idx = readJson(STATE + '/index.json', { items: [] });
-const archived = readJson(STATE + '/archive.json', {});
+const INDEX_FILE = STATE + '/index.json';
+const idx = readJson(INDEX_FILE, { items: [] });
+/* 索引是唯一输入：缺失 / 为空时退出并出声——空数据集会被两页当成「没有项目」静默渲染 */
+if (!Array.isArray(idx.items) || !idx.items.length) {
+  console.error('[build-map] 索引为空或不存在：' + INDEX_FILE + '——先 POST /api/projects/scan；本脚本不产空数据。');
+  process.exit(1);
+}
+/* 归档名单：现行落点 state/knobs/archive.json（面板写面）；旧落点 state/archive.json 兼容读。
+   两处都缺 → 出声（归档标签静默消失会让人把「没有归档」当成事实）。 */
+const archivePath = [path.join(ROOT, 'state', 'knobs', 'archive.json'), path.join(ROOT, 'state', 'archive.json')]
+  .find((p) => fs.existsSync(p));
+const archived = archivePath ? readJson(archivePath, {}) : {};
+if (!archivePath) console.warn('[build-map] WARN 归档名单不在位（state/knobs/archive.json）——归档标签按空集处理');
+else console.log('[build-map] 归档名单 ' + path.relative(ROOT, archivePath) + ' · ' + Object.keys(archived || {}).length + ' 项');
 const archivedSet = new Set(Object.keys(archived || {}));
 
 const layerOf = {};
 for (const L of LAYERS) for (const pid of L.pids) layerOf[pid] = L.id;
 
 const items = [];
+let cardsMissing = 0;
 for (const it of idx.items) {
   const pid = it.pid;
   if (PUBLIC && !PUBLIC_PIDS.includes(pid)) continue;
-  const card = readJson(STATE + '/' + pid + '.json', {});
+  const cardPath = STATE + '/' + pid + '.json';
+  const card = readJson(cardPath, {});
+  if (!fs.existsSync(cardPath)) cardsMissing += 1;
   const five = card.five || {};
   const todo = five.todo || {};
   const purpose = five.purpose ? five.purpose.summary : '';
@@ -81,6 +94,7 @@ for (const it of idx.items) {
   });
 }
 
+if (cardsMissing) console.warn('[build-map] WARN 索引有卡却缺卡片 ' + cardsMissing + ' 份（purpose / created 会回落空）——先 POST /api/projects/scan');
 fs.mkdirSync(OUT, { recursive: true });
 /* 首屏三格（2026-11-09 定）：规模 / 动量 / 产出。
    动量取 order.json 的 focus + 待办两区——活跃度由排序器按七维算好，这里只做计数，不重算（判据单一实现）。

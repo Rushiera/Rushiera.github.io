@@ -2,9 +2,9 @@ window.ARCH = {
  "meta": {
   "project": "rushiera-map",
   "title": "Rushiera",
-  "sub": "37 个项目 · 5 层 · 按工程域划分",
+  "sub": "42 个项目 · 5 层 · 按工程域划分",
   "ver": "v1",
-  "updated": "2026-11-09",
+  "updated": "2026-11-11",
   "roleLabels": true,
   "fit": "width"
  },
@@ -60,9 +60,10 @@ window.ARCH = {
        "col": 0,
        "row": 0,
        "tags": [
+        "Majordomo",
         "Akasha"
        ],
-       "note": "v1.92 · 待办 2",
+       "note": "v1.93 · 待办 2",
        "evidence": "Project/Akasha/project.md"
       },
       {
@@ -97,7 +98,7 @@ window.ARCH = {
         "Html",
         "WinForms"
        ],
-       "note": "1.8.244 · 待办 2",
+       "note": "1.8.262 · 待办 2",
        "evidence": "Project/CH4/project.md"
       },
       {
@@ -141,9 +142,10 @@ window.ARCH = {
        "tags": [
         "Coder",
         "CSharp",
+        "Mau",
         "Git"
        ],
-       "note": "1.8.244 · 待办 5",
+       "note": "1.8.262 · 待办 6",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -159,7 +161,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.173 · 待办 26",
+       "note": "v0.236 · 待办 31",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -175,7 +177,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "v0.22.7 · 待办 21",
+       "note": "v0.40.0 · 待办 14",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -187,23 +189,29 @@ window.ARCH = {
        "col": 1,
        "row": 1,
        "tags": [
-        "Coder"
+        "Coder",
+        "CGSE_CORE`—…",
+        "powershell",
+        "py-run"
        ],
-       "note": "v0.38 · 待办 4",
+       "note": "v0.43 · 待办 5",
        "evidence": "Project/CGSE_CORE/project.md"
       },
       {
        "id": "p-ECC",
        "label": "ECC",
-       "sub": "外部开源工具仓 + 二次开发工作区（Agent Harness 操作系统）——技能",
+       "sub": "可移植的 Agent 工作流层（reusable workflow layer）+ 二…",
        "kind": "sup",
        "status": "done",
        "col": 2,
        "row": 1,
        "tags": [
-        "Majordomo"
+        "Majordomo",
+        "ECC；工具面 = `…",
+        "file-*",
+        "powershell`…"
        ],
-       "note": "v0.10 · 待办 6",
+       "note": "v0.25 · 待办 0",
        "evidence": "Project/ECC/project.md"
       },
       {
@@ -219,7 +227,7 @@ window.ARCH = {
         "Node",
         "Git"
        ],
-       "note": "v0.33 · 上游基线 `c3647ade1` · 待办 15",
+       "note": "v0.37 · 上游基线 `c3647ade1` · 待办 14",
        "evidence": "Project/REA/project.md"
       },
       {
@@ -264,7 +272,7 @@ window.ARCH = {
        "tags": [
         "Coder"
        ],
-       "note": "v1.46 · 待办 33",
+       "note": "v1.60 · 待办 34",
        "evidence": "Project/ClashVerge/project.md"
       },
       {
@@ -296,7 +304,7 @@ window.ARCH = {
         "Node",
         "Git"
        ],
-       "note": "v0.68 · 待办 17",
+       "note": "v0.69 · 待办 17",
        "evidence": "Project/Cosmoteer/project.md"
       },
       {
@@ -310,7 +318,7 @@ window.ARCH = {
        "tags": [
         "Coder"
        ],
-       "note": "待办 9",
+       "note": "v0.15 · 待办 8",
        "evidence": "Project/Gakumas/project.md"
       },
       {
@@ -326,7 +334,7 @@ window.ARCH = {
         "CSharp",
         "Node"
        ],
-       "note": "v0.15 · 待办 14",
+       "note": "v0.17 · 待办 14",
        "evidence": "Project/Hime/project.md"
       },
       {
@@ -340,9 +348,10 @@ window.ARCH = {
        "tags": [
         "Coder",
         "CSharp",
+        "LosslessSca…",
         "Mau"
        ],
-       "note": "v1.3 · 待办 12",
+       "note": "v1.4 · 待办 14",
        "evidence": "Project/LosslessScaling/project.md"
       },
       {
@@ -372,7 +381,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "1.7 · 待办 7",
+       "note": "1.8 · 待办 7",
        "evidence": "Project/TradingView/project.md"
       },
       {
@@ -401,9 +410,10 @@ window.ARCH = {
        "row": 2,
        "tags": [
         "Coder",
+        "sc2api-list…",
         "Git"
        ],
-       "note": "v0.24 · 待办 34",
+       "note": "v0.25 · 待办 34",
        "evidence": "Project/sc2api-listen/project.md"
       },
       {
@@ -416,11 +426,29 @@ window.ARCH = {
        "row": 3,
        "tags": [
         "Coder",
+        "ApiSiteAnal…",
         "CSharp",
         "Html"
        ],
-       "note": "分析器 v0.26.4 · 壳 0.46.0 · 待办 5",
+       "note": "分析器 v0.26.4 · 壳源码 0.46.0 · 待办 5",
        "evidence": "Project/ApiSiteAnalyzer/project.md"
+      },
+      {
+       "id": "p-CatHome5",
+       "label": "CatHome5",
+       "sub": "Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
+       "kind": "cli",
+       "status": "done",
+       "col": 1,
+       "row": 3,
+       "tags": [
+        "Coder",
+        "Go",
+        "Mau",
+        "CSharp"
+       ],
+       "note": "0.7.1 · 待办 21",
+       "evidence": "Project/CatHome5/project.md"
       },
       {
        "id": "p-ComfyDock",
@@ -428,7 +456,7 @@ window.ARCH = {
        "sub": "ComfyUI 本地",
        "kind": "cli",
        "status": "done",
-       "col": 1,
+       "col": 2,
        "row": 3,
        "tags": [
         "Coder",
@@ -443,7 +471,7 @@ window.ARCH = {
        "sub": "外部仓库二次开发——《偶像大师 灰姑娘女孩》99 位角色的 AI 文字陪聊应用（`ei…",
        "kind": "cli",
        "status": "done",
-       "col": 2,
+       "col": 3,
        "row": 3,
        "tags": [
         "Coder",
@@ -451,8 +479,23 @@ window.ARCH = {
         "Git",
         "Python 后端无对…"
        ],
-       "note": "v0.1 · 待办 7",
+       "note": "v0.5 · 待办 7",
        "evidence": "Project/EidolonCGSS/project.md"
+      },
+      {
+       "id": "p-FileClean",
+       "label": "FileClean",
+       "sub": "文件清理工具（项目名 FileClean——2026-11-10 由「挂载盘清理器」更…",
+       "kind": "cli",
+       "status": "done",
+       "col": 4,
+       "row": 3,
+       "tags": [
+        "Coder",
+        "CSharp；原脚本链…"
+       ],
+       "note": "v0.19 · 待办 15",
+       "evidence": "Project/FileClean/project.md"
       },
       {
        "id": "p-KKManager",
@@ -460,7 +503,7 @@ window.ARCH = {
        "sub": "Koikatsu 卡片 ↔ zipmod 关联管理器（C# / .NET 8）",
        "kind": "cli",
        "status": "done",
-       "col": 3,
+       "col": 0,
        "row": 3,
        "tags": [
         "Coder",
@@ -468,7 +511,7 @@ window.ARCH = {
         "Release",
         "Html"
        ],
-       "note": "v0.21.6 · 待办 47",
+       "note": "v0.21.7 · 待办 52",
        "evidence": "Project/KKManager/project.md"
       },
       {
@@ -477,14 +520,31 @@ window.ARCH = {
        "sub": "外部站点资源链接采集器（C# / .NET 8 工具链）",
        "kind": "cli",
        "status": "done",
-       "col": 4,
+       "col": 1,
        "row": 3,
        "tags": [
         "Coder",
         "CSharp"
        ],
-       "note": "v0.31 · 待办 8",
+       "note": "v0.32 · 待办 8",
        "evidence": "Project/KkFetch/project.md"
+      },
+      {
+       "id": "p-Livo",
+       "label": "Livo",
+       "sub": "自研产品工程（照规格重写，不 fork 不二开）",
+       "kind": "cli",
+       "status": "done",
+       "col": 2,
+       "row": 3,
+       "tags": [
+        "Coder",
+        "Livo",
+        "CSharp",
+        "Go"
+       ],
+       "note": "v0.40 · 待办 1",
+       "evidence": "Project/Livo/project.md"
       },
       {
        "id": "p-MOSSCatalog",
@@ -492,29 +552,48 @@ window.ARCH = {
        "sub": "图库索引与检索服务（C# / .NET 10 + TypeScript 前端）",
        "kind": "cli",
        "status": "done",
-       "col": 0,
+       "col": 3,
        "row": 3,
        "tags": [
         "Coder",
         "CSharp",
         "Html"
        ],
-       "note": "v0.4 · 待办 1",
+       "note": "v0.5 · 待办 4",
        "evidence": "Project/MOSSCatalog/project.md"
       },
       {
-       "id": "p-PSD2Live",
-       "label": "PSD2Live",
-       "sub": "外部开源工程 + 二次开发工作区（分层 PSD → 2D 角色绑定 / 网格 / 物理…",
+       "id": "p-Mau-Go",
+       "label": "Mau-Go",
+       "sub": "Mau 体系 Go 重新实现（语料解释器 + 运行时 + 积木库）",
        "kind": "cli",
        "status": "done",
-       "col": 1,
+       "col": 4,
        "row": 3,
        "tags": [
-        "Coder"
+        "Coder",
+        "Go",
+        "Mau",
+        "CSharp"
        ],
-       "note": "v0.1 · 待办 4",
-       "evidence": "Project/PSD2Live/project.md"
+       "note": "0.1.14 · 待办 3",
+       "evidence": "Project/Mau-Go/project.md"
+      },
+      {
+       "id": "p-OfflineNovel",
+       "label": "OfflineNovel",
+       "sub": "可离线的便携式剧情播放器（产品线）",
+       "kind": "cli",
+       "status": "done",
+       "col": 0,
+       "row": 3,
+       "tags": [
+        "Majordomo",
+        "OfflineNovel",
+        "CSharp"
+       ],
+       "note": "v0.9 · 待办 9",
+       "evidence": "Project/OfflineNovel/project.md"
       },
       {
        "id": "p-SC2Replay",
@@ -522,7 +601,7 @@ window.ARCH = {
        "sub": "星际争霸 II 回放分析工具（C# / .NET 8 · 单文件 exe + 自包含 …",
        "kind": "cli",
        "status": "done",
-       "col": 2,
+       "col": 1,
        "row": 3,
        "tags": [
         "Coder",
@@ -539,12 +618,12 @@ window.ARCH = {
        "sub": "本机（Hasee QNLXS / i7-12650H）稳定性遥测与取证台——外挂采集 …",
        "kind": "cli",
        "status": "done",
-       "col": 3,
+       "col": 2,
        "row": 3,
        "tags": [
         "Majordomo"
        ],
-       "note": "v0.7 · 待办 6",
+       "note": "v0.16 · 待办 9",
        "evidence": "Project/ThrottleStop/project.md"
       },
       {
@@ -553,27 +632,45 @@ window.ARCH = {
        "sub": "工具类项目（本机自用，不对外分发）",
        "kind": "cli",
        "status": "done",
+       "col": 3,
+       "row": 3,
+       "tags": [
+        "Coder"
+       ],
+       "note": "v0.3 · 待办 14",
+       "evidence": "Project/Vault/project.md"
+      },
+      {
+       "id": "p-rs_jxl",
+       "label": "rs_jxl",
+       "sub": "外部开源项目协作开发（Rust edition 2024 · rust-version…",
+       "kind": "cli",
+       "status": "done",
        "col": 4,
        "row": 3,
        "tags": [
         "Coder"
        ],
-       "note": "v0.2 · 待办 12",
-       "evidence": "Project/Vault/project.md"
+       "note": "待办 6",
+       "evidence": "Project/rs_jxl/project.md"
       },
       {
-       "id": "p-挂载盘清理器",
-       "label": "挂载盘清理器",
-       "sub": "运维脚本工具集",
+       "id": "p-sms-szfang",
+       "label": "sms-szfang",
+       "sub": "恶意样本静态取证（接码平台作业端）",
        "kind": "cli",
        "status": "done",
        "col": 0,
        "row": 3,
        "tags": [
-        "Coder"
+        "Majordomo",
+        "REA",
+        "sms-szfang",
+        "Node",
+        "CSharp"
        ],
-       "note": "v0.8 · 待办 14",
-       "evidence": "Project/挂载盘清理器/project.md"
+       "note": "v0.16 · 待办 9",
+       "evidence": "Project/sms-szfang/project.md"
       },
       {
        "id": "p-QQBotB",
@@ -588,7 +685,7 @@ window.ARCH = {
         "CSharp",
         "Git"
        ],
-       "note": "v1.43 · 待办 52",
+       "note": "v1.67 · 待办 74",
        "evidence": "Project/QQBotB/project.md"
       },
       {
@@ -600,7 +697,8 @@ window.ARCH = {
        "col": 1,
        "row": 4,
        "tags": [
-        "Majordomo"
+        "Majordomo",
+        "BOSS直聘"
        ],
        "note": "v0.20.2 · 待办 10",
        "evidence": "Project/BOSS直聘/project.md"
@@ -614,9 +712,10 @@ window.ARCH = {
        "col": 2,
        "row": 4,
        "tags": [
-        "Majordomo"
+        "Majordomo",
+        "协商知识库"
        ],
-       "note": "v1.44 · 待办 86",
+       "note": "v1.45 · 待办 41",
        "evidence": "Project/协商知识库/project.md"
       }
      ],
@@ -681,8 +780,8 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · Mau 地基区块——CH4 自举工具箱（私人方言）",
        "items": [
-        "1.8.244",
-        "待办 5"
+        "1.8.262",
+        "待办 6"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"
@@ -694,7 +793,7 @@ window.ARCH = {
        "lane": "host",
        "title": "CH4 · Mau 自举循环宿主（多智能体 OS 能力后置）",
        "items": [
-        "1.8.244",
+        "1.8.262",
         "待办 2"
        ],
        "status": "partial",
@@ -720,7 +819,7 @@ window.ARCH = {
        "lane": "tool",
        "title": "KkFetch · 外部站点资源链接采集器（C# / .NET 8 工具链）",
        "items": [
-        "v0.31",
+        "v0.32",
         "待办 8"
        ],
        "status": "partial",
@@ -746,8 +845,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "KKManager · Koikatsu 卡片 ↔ zipmod 关联管理器（C# / .NET 8）",
        "items": [
-        "v0.21.6",
-        "待办 47"
+        "v0.21.7",
+        "待办 52"
        ],
        "status": "partial",
        "evidence": "Project/KKManager/project.md"
@@ -759,8 +858,8 @@ window.ARCH = {
        "lane": "private",
        "title": "QQBotB · QQ 消息桥接（模式 B）——专用 QQ 号 + OneBot 11 协议端",
        "items": [
-        "v1.43",
-        "待办 52"
+        "v1.67",
+        "待办 74"
        ],
        "status": "partial",
        "evidence": "Project/QQBotB/project.md"
@@ -798,7 +897,7 @@ window.ARCH = {
        "lane": "tool",
        "title": "ApiSiteAnalyzer · API 站用量分析器 + 本机 work 壳（C# / .NET 8 · 三层程序集 …",
        "items": [
-        "分析器 v0.26.4 · 壳 0.46.0",
+        "分析器 v0.26.4 · 壳源码 0.46.0",
         "待办 5"
        ],
        "status": "partial",
@@ -811,8 +910,8 @@ window.ARCH = {
        "lane": "private",
        "title": "协商知识库 · 录音 → 带说话人标注的可检索文本 + 客户协商知识库（网页面板 + 本地后端 · 一…",
        "items": [
-        "v1.44",
-        "待办 86"
+        "v1.45",
+        "待办 41"
        ],
        "status": "partial",
        "evidence": "Project/协商知识库/project.md"
@@ -835,13 +934,13 @@ window.ARCH = {
        "date": "",
        "group": "2026-10",
        "lane": "tool",
-       "title": "挂载盘清理器 · 运维脚本工具集",
+       "title": "FileClean · 文件清理工具（项目名 FileClean——2026-11-10 由「挂载盘清理器」更…",
        "items": [
-        "v0.8",
-        "待办 14"
+        "v0.19",
+        "待办 15"
        ],
        "status": "partial",
-       "evidence": "Project/挂载盘清理器/project.md"
+       "evidence": "Project/FileClean/project.md"
       },
       {
        "v": "10-06",
@@ -876,8 +975,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "REA · 逆向工程 MCP server + CLI（TypeScript / Node 24）",
        "items": [
-        "v0.33 · 上游基线 `c3647ade1`",
-        "待办 15"
+        "v0.37 · 上游基线 `c3647ade1`",
+        "待办 14"
        ],
        "status": "partial",
        "evidence": "Project/REA/project.md"
@@ -889,8 +988,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "ThrottleStop · 本机（Hasee QNLXS / i7-12650H）稳定性遥测与取证台——外挂采集 …",
        "items": [
-        "v0.7",
-        "待办 6"
+        "v0.16",
+        "待办 9"
        ],
        "status": "partial",
        "evidence": "Project/ThrottleStop/project.md"
@@ -902,7 +1001,7 @@ window.ARCH = {
        "lane": "game",
        "title": "Cosmoteer · 参考实现研究 + 自研 Godot 工程（OurCosmteer）",
        "items": [
-        "v0.68",
+        "v0.69",
         "待办 17"
        ],
        "status": "partial",
@@ -915,8 +1014,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "MOSSCatalog · 图库索引与检索服务（C# / .NET 10 + TypeScript 前端）",
        "items": [
-        "v0.4",
-        "待办 1"
+        "v0.5",
+        "待办 4"
        ],
        "status": "partial",
        "evidence": "Project/MOSSCatalog/project.md"
@@ -928,8 +1027,8 @@ window.ARCH = {
        "lane": "game",
        "title": "Gakumas · 学園アイドルマスター（DMM / PC 版）本地解锁包 GakumasUnlock 的…",
        "items": [
-        "版本未记",
-        "待办 9"
+        "v0.15",
+        "待办 8"
        ],
        "status": "partial",
        "evidence": "Project/Gakumas/project.md"
@@ -954,8 +1053,8 @@ window.ARCH = {
        "lane": "game",
        "title": "ClashVerge · 本机 Clash Verge Rev 的接管与二次开发——把安装产物与用户数据全部收进…",
        "items": [
-        "v1.46",
-        "待办 33"
+        "v1.60",
+        "待办 34"
        ],
        "status": "partial",
        "evidence": "Project/ClashVerge/project.md"
@@ -967,8 +1066,8 @@ window.ARCH = {
        "lane": "game",
        "title": "LosslessScaling · 商业软件二次开发（.NET 9 WPF 托管宿主 + 原生渲染核心）",
        "items": [
-        "v1.3",
-        "待办 12"
+        "v1.4",
+        "待办 14"
        ],
        "status": "partial",
        "evidence": "Project/LosslessScaling/project.md"
@@ -980,7 +1079,7 @@ window.ARCH = {
        "lane": "game",
        "title": "Hime · Unity 商业游戏二次开发（Mono 后端 · 无壳无混淆无强名）",
        "items": [
-        "v0.15",
+        "v0.17",
         "待办 14"
        ],
        "status": "partial",
@@ -993,7 +1092,7 @@ window.ARCH = {
        "lane": "game",
        "title": "sc2api-listen · 星际争霸 II 进程内接口（Win64 DLL 注入 + C++ / Python 冒…",
        "items": [
-        "v0.24",
+        "v0.25",
         "待办 34"
        ],
        "status": "partial",
@@ -1006,8 +1105,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
-        "v0.22.7",
-        "待办 21"
+        "v0.40.0",
+        "待办 14"
        ],
        "status": "partial",
        "evidence": "Project/ACS/project.md"
@@ -1019,8 +1118,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "CGSE_CORE · 外部开源项目协作开发（Java 17 + Gradle 8.8 · MPL-2.0）",
        "items": [
-        "v0.38",
-        "待办 4"
+        "v0.43",
+        "待办 5"
        ],
        "status": "partial",
        "evidence": "Project/CGSE_CORE/project.md"
@@ -1030,12 +1129,12 @@ window.ARCH = {
        "date": "",
        "group": "2026-11",
        "lane": "agent",
-       "title": "ECC · 外部开源工具仓 + 二次开发工作区（Agent Harness 操作系统）——技能",
+       "title": "ECC · 可移植的 Agent 工作流层（reusable workflow layer）+ 二…",
        "items": [
-        "v0.10",
-        "待办 6"
+        "v0.25",
+        "待办 0"
        ],
-       "status": "partial",
+       "status": "done",
        "evidence": "Project/ECC/project.md"
       },
       {
@@ -1045,7 +1144,7 @@ window.ARCH = {
        "lane": "game",
        "title": "TradingView · 第三方发行包二次开发（TradingView Desktop · MSIX）",
        "items": [
-        "1.7",
+        "1.8",
         "待办 7"
        ],
        "status": "partial",
@@ -1058,24 +1157,89 @@ window.ARCH = {
        "lane": "tool",
        "title": "EidolonCGSS · 外部仓库二次开发——《偶像大师 灰姑娘女孩》99 位角色的 AI 文字陪聊应用（`ei…",
        "items": [
-        "v0.1",
+        "v0.5",
         "待办 7"
        ],
        "status": "partial",
        "evidence": "Project/EidolonCGSS/project.md"
       },
       {
-       "v": "11-08",
+       "v": "11-10",
        "date": "",
        "group": "2026-11",
        "lane": "tool",
-       "title": "PSD2Live · 外部开源工程 + 二次开发工作区（分层 PSD → 2D 角色绑定 / 网格 / 物理…",
+       "title": "Livo · 自研产品工程（照规格重写，不 fork 不二开）",
        "items": [
-        "v0.1",
-        "待办 4"
+        "v0.40",
+        "待办 1"
        ],
        "status": "partial",
-       "evidence": "Project/PSD2Live/project.md"
+       "evidence": "Project/Livo/project.md"
+      },
+      {
+       "v": "11-10",
+       "date": "",
+       "group": "2026-11",
+       "lane": "tool",
+       "title": "OfflineNovel · 可离线的便携式剧情播放器（产品线）",
+       "items": [
+        "v0.9",
+        "待办 9"
+       ],
+       "status": "partial",
+       "evidence": "Project/OfflineNovel/project.md"
+      },
+      {
+       "v": "11-10",
+       "date": "",
+       "group": "2026-11",
+       "lane": "tool",
+       "title": "sms-szfang · 恶意样本静态取证（接码平台作业端）",
+       "items": [
+        "v0.16",
+        "待办 9"
+       ],
+       "status": "partial",
+       "evidence": "Project/sms-szfang/project.md"
+      },
+      {
+       "v": "11-11",
+       "date": "",
+       "group": "2026-11",
+       "lane": "tool",
+       "title": "CatHome5 · Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
+       "items": [
+        "0.7.1",
+        "待办 21"
+       ],
+       "status": "partial",
+       "evidence": "Project/CatHome5/project.md"
+      },
+      {
+       "v": "11-11",
+       "date": "",
+       "group": "2026-11",
+       "lane": "tool",
+       "title": "Mau-Go · Mau 体系 Go 重新实现（语料解释器 + 运行时 + 积木库）",
+       "items": [
+        "0.1.14",
+        "待办 3"
+       ],
+       "status": "partial",
+       "evidence": "Project/Mau-Go/project.md"
+      },
+      {
+       "v": "11-11",
+       "date": "",
+       "group": "2026-11",
+       "lane": "tool",
+       "title": "rs_jxl · 外部开源项目协作开发（Rust edition 2024 · rust-version…",
+       "items": [
+        "版本未记",
+        "待办 6"
+       ],
+       "status": "partial",
+       "evidence": "Project/rs_jxl/project.md"
       },
       {
        "v": "—",
@@ -1084,7 +1248,7 @@ window.ARCH = {
        "lane": "host",
        "title": "Akasha · 知识数据库 + CCBP 维护工作台",
        "items": [
-        "v1.92",
+        "v1.93",
         "待办 2"
        ],
        "status": "partial",
@@ -1123,8 +1287,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "Vault · 工具类项目（本机自用，不对外分发）",
        "items": [
-        "v0.2",
-        "待办 12"
+        "v0.3",
+        "待办 14"
        ],
        "status": "partial",
        "evidence": "Project/Vault/project.md"
@@ -1136,8 +1300,8 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.173",
-        "待办 26"
+        "v0.236",
+        "待办 31"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"
