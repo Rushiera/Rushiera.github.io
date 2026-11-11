@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "KKManager",
     "title": "KKManager 提交时间线",
-    "sub": "77 次提交 · 2026-09 → 2026-10",
-    "ver": "532285b",
-    "updated": "2026-11-09",
+    "sub": "84 次提交 · 2026-09 → 2026-11",
+    "ver": "0d67c7b",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -1073,6 +1073,97 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 532285b"
+            },
+            {
+              "v": "15cdbf0",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.21.6: .gitignore 忽略 kkc 收件箱与整理目录",
+              "items": [
+                "Rushiera",
+                "15cdbf0cee"
+              ],
+              "status": "done",
+              "evidence": "git 15cdbf0"
+            },
+            {
+              "v": "8092843",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.21.7: card-sort 卡片整理命令（计划 / 执行 / 规则学习）",
+              "items": [
+                "Rushiera",
+                "809284314c"
+              ],
+              "status": "done",
+              "evidence": "git 8092843"
+            },
+            {
+              "v": "eccab24",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.21.7: card-sort layout 物理布局切换",
+              "items": [
+                "Rushiera",
+                "eccab24907"
+              ],
+              "status": "done",
+              "evidence": "git eccab24"
+            },
+            {
+              "v": "2b8e0fb",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.21.8: 索引兼容模式——index-import / idx / refs-read / card-sort refs；库路由修复（mod 根不展开分片）；RekeyRoot / PurgeRoot / idx_meta / index_source",
+              "items": [
+                "Rushiera",
+                "2b8e0fb9a7"
+              ],
+              "status": "done",
+              "evidence": "git 2b8e0fb"
+            },
+            {
+              "v": "7e2f030",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.21.8: index-import 包事务（每 2,000 行提交）+ 重活跑测手册（墙钟 12,970→2,475 ms · kernel 秒 0.91→0.06 s）",
+              "items": [
+                "Rushiera",
+                "7e2f030b5d"
+              ],
+              "status": "done",
+              "evidence": "git 7e2f030"
+            },
+            {
+              "v": "5eb5642",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.21.8: 冷扫描对照 harness（KKM_SCAN_WORKERS 4 vs 32 · 113 张样本 · 4 workers +9.2% 墙钟 / ⅓ CPU）",
+              "items": [
+                "Rushiera",
+                "5eb5642e24"
+              ],
+              "status": "done",
+              "evidence": "git 5eb5642"
+            },
+            {
+              "v": "0d67c7b",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.21.9: 卡片整理链 DB 化——规则入 card_rule、五道执行闸门、card_move 认领与导入消费、rollback",
+              "items": [
+                "Rushiera",
+                "0d67c7b658"
+              ],
+              "status": "done",
+              "evidence": "git 0d67c7b"
             }
           ]
         }

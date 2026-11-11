@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "30 次提交 · 2026-10 → 2026-11",
-    "ver": "7269df1",
-    "updated": "2026-11-09",
+    "sub": "31 次提交 · 2026-10 → 2026-11",
+    "ver": "806c29a",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -462,6 +462,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 7269df1"
+            },
+            {
+              "v": "806c29a",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.38: TreeSize 逆向报告与形态建议",
+              "items": [
+                "Rushiera",
+                "806c29a080"
+              ],
+              "status": "done",
+              "evidence": "git 806c29a"
             }
           ]
         }

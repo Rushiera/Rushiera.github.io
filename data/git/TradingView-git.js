@@ -4,7 +4,7 @@ window.ARCH = {
     "title": "TradingView 提交时间线",
     "sub": "1 次提交 · 2026-11 → 2026-11",
     "ver": "af55019",
-    "updated": "2026-11-09",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"

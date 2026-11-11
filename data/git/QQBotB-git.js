@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "QQBotB",
     "title": "QQBotB 提交时间线",
-    "sub": "259 次提交 · 2026-09 → 2026-11",
-    "ver": "167f174",
-    "updated": "2026-11-09",
+    "sub": "273 次提交 · 2026-09 → 2026-11",
+    "ver": "29c217b",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -3439,6 +3439,188 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 167f174"
+            },
+            {
+              "v": "0eb3707",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.46: 领航员面板操作台 + v2 排版 + 撤勾选与发到群口径",
+              "items": [
+                "Rushiera",
+                "0eb37077c8"
+              ],
+              "status": "done",
+              "evidence": "git 0eb3707"
+            },
+            {
+              "v": "4fa83c5",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.47: reset rebuild - temp rescuer cat + per-cat inflight gate + source logging + panel debounce",
+              "items": [
+                "Rushiera",
+                "4fa83c5979"
+              ],
+              "status": "done",
+              "evidence": "git 4fa83c5"
+            },
+            {
+              "v": "7677007",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "chore",
+              "title": "chore: sync personas/yoshino.md leftover from v1.46",
+              "items": [
+                "Rushiera",
+                "7677007759"
+              ],
+              "status": "done",
+              "evidence": "git 7677007"
+            },
+            {
+              "v": "b3d9710",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.48: 开发期热重载——改业务面代码自动换子进程，不再手动重启应用",
+              "items": [
+                "Rushiera",
+                "b3d97101e0"
+              ],
+              "status": "done",
+              "evidence": "git b3d9710"
+            },
+            {
+              "v": "5886184",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.50: 来源自报头（self-tag 七头 + 群消息标签）",
+              "items": [
+                "Rushiera",
+                "58861847ea"
+              ],
+              "status": "done",
+              "evidence": "git 5886184"
+            },
+            {
+              "v": "6ff47d8",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.51: 领航员线表——出站粒度从轮改成线（一条活只发一次群 / 线外静默 / 主动回执走 force）",
+              "items": [
+                "Rushiera",
+                "6ff47d88a1"
+              ],
+              "status": "done",
+              "evidence": "git 6ff47d8"
+            },
+            {
+              "v": "0769e23",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.54: memory consolidate rework (pending blocks + rollover batch)",
+              "items": [
+                "Rushiera",
+                "0769e23919"
+              ],
+              "status": "done",
+              "evidence": "git 0769e23"
+            },
+            {
+              "v": "ff7b3d8",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.57 领航员页对齐并发协议 + 猫实体条全档 + 右键菜单",
+              "items": [
+                "Rushiera",
+                "ff7b3d8911"
+              ],
+              "status": "done",
+              "evidence": "git ff7b3d8"
+            },
+            {
+              "v": "2e022dd",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.61: navigator delivery target persisted server-side; single dropdown for chat target",
+              "items": [
+                "Rushiera",
+                "2e022ddca4"
+              ],
+              "status": "done",
+              "evidence": "git 2e022dd"
+            },
+            {
+              "v": "8f39ce0",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.63: per-kind group-send switches (5 kinds + all/none), decoupled from navigator toggle",
+              "items": [
+                "Rushiera",
+                "8f39ce0598"
+              ],
+              "status": "done",
+              "evidence": "git 8f39ce0"
+            },
+            {
+              "v": "b66f772",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.64: 领航员页重排（领航员输入置顶 / 单猫详情改 mau 实体猫链接 / 原详情沉底）+ 业务面 POST /api/nav/lead",
+              "items": [
+                "Rushiera",
+                "b66f7729c2"
+              ],
+              "status": "done",
+              "evidence": "git b66f772"
+            },
+            {
+              "v": "7d8205a",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.65: 单猫详情改成内嵌猫对话页（跨源 iframe，撤掉卡内文字）",
+              "items": [
+                "Rushiera",
+                "7d8205a021"
+              ],
+              "status": "done",
+              "evidence": "git 7d8205a"
+            },
+            {
+              "v": "108b6a3",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.66: 领航员页改单栏纵排（撤投递卡 · 单猫详情全宽打头 · 其余功能下放）",
+              "items": [
+                "Rushiera",
+                "108b6a3f1e"
+              ],
+              "status": "done",
+              "evidence": "git 108b6a3"
+            },
+            {
+              "v": "29c217b",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.69: 面板右栏停止/继续 + 猫会话只读映射 + 对猫说话",
+              "items": [
+                "Rushiera",
+                "29c217b660"
+              ],
+              "status": "done",
+              "evidence": "git 29c217b"
             }
           ]
         }

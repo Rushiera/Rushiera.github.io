@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "LosslessScaling",
     "title": "LosslessScaling 提交时间线",
-    "sub": "1 次提交 · 2026-11 → 2026-11",
-    "ver": "7a871c3",
-    "updated": "2026-11-09",
+    "sub": "2 次提交 · 2026-11 → 2026-11",
+    "ver": "fae68d0",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -85,6 +85,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 7a871c3"
+            },
+            {
+              "v": "fae68d0",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.4: patch set rebuilt 19 files; launcher path fixed; L2/L3 docs",
+              "items": [
+                "Rushiera",
+                "fae68d0ae7"
+              ],
+              "status": "done",
+              "evidence": "git fae68d0"
             }
           ]
         }

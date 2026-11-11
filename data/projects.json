@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-11-11 15:06",
+  "generatedAt": "2026-11-11 15:53",
   "public": false,
   "count": 42,
   "stats": {
     "focus": 10,
     "todoZone": 18,
     "active": 28,
-    "versions": 2242
+    "versions": 2250
   },
   "items": [
     {
       "pid": "ACS",
       "layer": "agent",
       "type": "应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
-      "version": "v0.40.0",
+      "version": "v0.41.0",
       "worker": "Coder",
       "jobs": [
         "Node",
         "CSharp"
       ],
       "created": "2026-11-01",
-      "todo": 14,
-      "changelog": 50,
+      "todo": 13,
+      "changelog": 51,
       "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
       "archived": false
     },
@@ -159,7 +159,7 @@
       "pid": "CatHome5",
       "layer": "tool",
       "type": "Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
-      "version": "0.7.1",
+      "version": "0.7.3",
       "worker": "Coder",
       "jobs": [
         "Go",
@@ -167,8 +167,8 @@
         "CSharp"
       ],
       "created": "2026-11-11",
-      "todo": 21,
-      "changelog": 24,
+      "todo": 18,
+      "changelog": 26,
       "purpose": "把 CatHome4 的功能在 Go 里重新实现，版本号递进为 CatHome5。",
       "archived": false
     },
@@ -358,7 +358,7 @@
       "pid": "Livo",
       "layer": "tool",
       "type": "自研产品工程（照规格重写，不 fork 不二开）",
-      "version": "v0.40",
+      "version": "v0.41",
       "worker": "Coder",
       "jobs": [
         "Livo",
@@ -366,8 +366,8 @@
         "Go"
       ],
       "created": "2026-11-10",
-      "todo": 1,
-      "changelog": 41,
+      "todo": 2,
+      "changelog": 42,
       "purpose": "自己的实现，自己的许可。",
       "archived": false
     },
@@ -458,7 +458,7 @@
       "pid": "QQBotB",
       "layer": "private",
       "type": "QQ 消息桥接（模式 B）——专用 QQ 号 + OneBot 11 协议端",
-      "version": "v1.67",
+      "version": "v1.69",
       "worker": "Coder",
       "jobs": [
         "CSharp",
@@ -466,7 +466,7 @@
       ],
       "created": "2026-09-26",
       "todo": 74,
-      "changelog": 169,
+      "changelog": 171,
       "purpose": "不受被动回复限制",
       "archived": false
     },
@@ -625,7 +625,7 @@
       "pid": "并发协议",
       "layer": "host",
       "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-      "version": "v0.236",
+      "version": "v0.238",
       "worker": "Majordomo",
       "jobs": [
         "CSharp",
@@ -633,7 +633,7 @@
       ],
       "created": "",
       "todo": 31,
-      "changelog": 258,
+      "changelog": 260,
       "purpose": "两件事，一条主线：让自主推进有据可依。",
       "archived": false
     },

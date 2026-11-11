@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "ECC",
     "title": "ECC 提交时间线",
-    "sub": "1 次提交 · 2026-11 → 2026-11",
-    "ver": "3eff256",
-    "updated": "2026-11-09",
+    "sub": "3 次提交 · 2026-11 → 2026-11",
+    "ver": "a1404507",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -74,7 +74,7 @@ window.ARCH = {
           ],
           "entries": [
             {
-              "v": "3eff256",
+              "v": "3eff256a",
               "date": "11-09",
               "group": "2026-11",
               "lane": "other",
@@ -84,7 +84,33 @@ window.ARCH = {
                 "3eff256a11"
               ],
               "status": "done",
-              "evidence": "git 3eff256"
+              "evidence": "git 3eff256a"
+            },
+            {
+              "v": "5b439045",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "chore",
+              "title": "chore: 同步上游 main b38be6a7..d2ef2680（PR 治理 CI 六文件）",
+              "items": [
+                "Rushiera",
+                "5b4390455b"
+              ],
+              "status": "done",
+              "evidence": "git 5b439045"
+            },
+            {
+              "v": "a1404507",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "feat",
+              "title": "feat(tests): run-all 逐文件超时",
+              "items": [
+                "Rushiera",
+                "a1404507aa"
+              ],
+              "status": "done",
+              "evidence": "git a1404507"
             }
           ]
         }

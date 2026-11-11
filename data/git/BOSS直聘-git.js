@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "BOSS直聘",
     "title": "BOSS直聘 提交时间线",
-    "sub": "1 次提交 · 2026-11 → 2026-11",
-    "ver": "0d78402",
-    "updated": "2026-11-09",
+    "sub": "4 次提交 · 2026-11 → 2026-11",
+    "ver": "46a1d2e",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -85,6 +85,45 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 0d78402"
+            },
+            {
+              "v": "f30406b",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "档案：补仓库入口与历史取数根（并发协议 v0.173 同名轮）",
+              "items": [
+                "Rushiera",
+                "f30406b456"
+              ],
+              "status": "done",
+              "evidence": "git f30406b"
+            },
+            {
+              "v": "f4151c7",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "docs",
+              "title": "docs: L3 首版与项目档案索引对齐",
+              "items": [
+                "Rushiera",
+                "f4151c7756"
+              ],
+              "status": "done",
+              "evidence": "git f4151c7"
+            },
+            {
+              "v": "46a1d2e",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.20.2: L2 routing + history index",
+              "items": [
+                "Rushiera",
+                "46a1d2ee79"
+              ],
+              "status": "done",
+              "evidence": "git 46a1d2e"
             }
           ]
         }

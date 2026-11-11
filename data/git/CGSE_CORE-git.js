@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "CGSE_CORE",
     "title": "CGSE_CORE 提交时间线",
-    "sub": "316 次提交 · 2026-09 → 2026-11",
-    "ver": "29439f9e",
-    "updated": "2026-11-09",
+    "sub": "317 次提交 · 2026-09 → 2026-11",
+    "ver": "90934ed7",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -4180,6 +4180,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 29439f9e"
+            },
+            {
+              "v": "90934ed7",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "fix",
+              "title": "fix: keep the trial face verdict through the symmetry stage",
+              "items": [
+                "Rushiera",
+                "90934ed7c6"
+              ],
+              "status": "done",
+              "evidence": "git 90934ed7"
             }
           ]
         }

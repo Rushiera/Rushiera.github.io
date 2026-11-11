@@ -161,7 +161,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.236 · 待办 31",
+       "note": "v0.238 · 待办 31",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -177,7 +177,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "v0.40.0 · 待办 14",
+       "note": "v0.41.0 · 待办 13",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -447,7 +447,7 @@ window.ARCH = {
         "Mau",
         "CSharp"
        ],
-       "note": "0.7.1 · 待办 21",
+       "note": "0.7.3 · 待办 18",
        "evidence": "Project/CatHome5/project.md"
       },
       {
@@ -543,7 +543,7 @@ window.ARCH = {
         "CSharp",
         "Go"
        ],
-       "note": "v0.40 · 待办 1",
+       "note": "v0.41 · 待办 2",
        "evidence": "Project/Livo/project.md"
       },
       {
@@ -685,7 +685,7 @@ window.ARCH = {
         "CSharp",
         "Git"
        ],
-       "note": "v1.67 · 待办 74",
+       "note": "v1.69 · 待办 74",
        "evidence": "Project/QQBotB/project.md"
       },
       {
@@ -858,7 +858,7 @@ window.ARCH = {
        "lane": "private",
        "title": "QQBotB · QQ 消息桥接（模式 B）——专用 QQ 号 + OneBot 11 协议端",
        "items": [
-        "v1.67",
+        "v1.69",
         "待办 74"
        ],
        "status": "partial",
@@ -1105,8 +1105,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
-        "v0.40.0",
-        "待办 14"
+        "v0.41.0",
+        "待办 13"
        ],
        "status": "partial",
        "evidence": "Project/ACS/project.md"
@@ -1170,8 +1170,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "Livo · 自研产品工程（照规格重写，不 fork 不二开）",
        "items": [
-        "v0.40",
-        "待办 1"
+        "v0.41",
+        "待办 2"
        ],
        "status": "partial",
        "evidence": "Project/Livo/project.md"
@@ -1209,8 +1209,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "CatHome5 · Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
        "items": [
-        "0.7.1",
-        "待办 21"
+        "0.7.3",
+        "待办 18"
        ],
        "status": "partial",
        "evidence": "Project/CatHome5/project.md"
@@ -1300,7 +1300,7 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.236",
+        "v0.238",
         "待办 31"
        ],
        "status": "partial",

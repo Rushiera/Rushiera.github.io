@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "607 次提交 · 2026-08 → 2026-11",
-    "ver": "ffe543cf",
-    "updated": "2026-11-09",
+    "sub": "622 次提交 · 2026-08 → 2026-11",
+    "ver": "2d2499c0",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -7963,6 +7963,201 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git ffe543cf"
+            },
+            {
+              "v": "6334f352",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.8.248: 挂载自动识别兼容层与开关全链",
+              "items": [
+                "Rushiera",
+                "6334f3524b"
+              ],
+              "status": "done",
+              "evidence": "git 6334f352"
+            },
+            {
+              "v": "ea0bf0ab",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "A319/A320 群聊成员球列与 Cat 主题色（1.8.237）",
+              "items": [
+                "雾理莎",
+                "ea0bf0ab1f"
+              ],
+              "status": "done",
+              "evidence": "git ea0bf0ab"
+            },
+            {
+              "v": "4e8cc066",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.8.238: A321 db 根 path 转可配置——默认并列 data",
+              "items": [
+                "雾理莎",
+                "4e8cc06601"
+              ],
+              "status": "done",
+              "evidence": "git 4e8cc066"
+            },
+            {
+              "v": "62df679c",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.8.251: 挂载随页面销毁 + 首跑误清修复 + 主干自报补项目挂载",
+              "items": [
+                "Rushiera",
+                "62df679c95"
+              ],
+              "status": "done",
+              "evidence": "git 62df679c"
+            },
+            {
+              "v": "e587ad9d",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.8.241: A322 组内配置面三件 + 受限工具名单（工具面拦 / 人面可配）",
+              "items": [
+                "雾理莎",
+                "e587ad9d2a"
+              ],
+              "status": "done",
+              "evidence": "git e587ad9d"
+            },
+            {
+              "v": "4c7a5c19",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.8.252: workspace 独立立项项目挂载（ccbp / workspace 双落点）+ 思考挡位盘值兜底",
+              "items": [
+                "Rushiera",
+                "4c7a5c191f"
+              ],
+              "status": "done",
+              "evidence": "git 4c7a5c19"
+            },
+            {
+              "v": "feee31f9",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.8.255: ProcCat 工具组上线（进程槽四件）+ 台账序列化修复",
+              "items": [
+                "Rushiera",
+                "feee31f91f"
+              ],
+              "status": "done",
+              "evidence": "git feee31f9"
+            },
+            {
+              "v": "8a72e851",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "1.8.257: FileCat 三件上线（file-stat / file-hash / file-diff）+ ProcService 五条编译警告清零",
+              "items": [
+                "Rushiera",
+                "8a72e851bd"
+              ],
+              "status": "done",
+              "evidence": "git 8a72e851"
+            },
+            {
+              "v": "4cc03b60",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "1.8.257: file-hash 回执补回正文（StringBuilder 拼好未接入 result）+ 积木索引重算",
+              "items": [
+                "Rushiera",
+                "4cc03b60b0"
+              ],
+              "status": "done",
+              "evidence": "git 4cc03b60"
+            },
+            {
+              "v": "bab6bd92",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "1.8.259: WebCat http 三件上线（http-get / http-post / http-probe）+ 参数面不伪装成不可达 + 代理 502 提示",
+              "items": [
+                "Rushiera",
+                "bab6bd9296"
+              ],
+              "status": "done",
+              "evidence": "git bab6bd92"
+            },
+            {
+              "v": "d4b76e76",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "1.8.261: GitCat 六件上线（git-status/log/diff/show/commit/push）",
+              "items": [
+                "Rushiera",
+                "d4b76e76ef"
+              ],
+              "status": "done",
+              "evidence": "git d4b76e76"
+            },
+            {
+              "v": "da1df2a0",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "1.8.261: 部署链切换重试窗口扩至 30s + 部署诊断补子目录递归扫描",
+              "items": [
+                "Rushiera",
+                "da1df2a08c"
+              ],
+              "status": "done",
+              "evidence": "git da1df2a0"
+            },
+            {
+              "v": "4337f0ff",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.8.262: 合并 origin/master（A319/A320 群聊成员球列与 Cat 主题色 + A321 db 根 path 可配置 + A322 组内配置面三件 + 受限工具名单）",
+              "items": [
+                "Rushiera",
+                "4337f0ffbc"
+              ],
+              "status": "done",
+              "evidence": "git 4337f0ff"
+            },
+            {
+              "v": "b9ac1aac",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "交接收工预填：对话页 input.js 支持 ?draft=（并发协议 v0.225 配套 · 只填不发）",
+              "items": [
+                "Rushiera",
+                "b9ac1aac33"
+              ],
+              "status": "done",
+              "evidence": "git b9ac1aac"
+            },
+            {
+              "v": "2d2499c0",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "chat.html: 嵌入模式 ?embed=1（QQBotB 领航员面板只读映射）",
+              "items": [
+                "Rushiera",
+                "2d2499c029"
+              ],
+              "status": "done",
+              "evidence": "git 2d2499c0"
             }
           ]
         }

@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "39 次提交 · 2026-11 → 2026-11",
-    "ver": "dcb9a48",
-    "updated": "2026-11-09",
+    "sub": "62 次提交 · 2026-11 → 2026-11",
+    "ver": "7323d01",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -579,6 +579,305 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git dcb9a48"
+            },
+            {
+              "v": "fe28cf0",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.23.0: P0-P3 —— agent 面五条判据 + 形态二矩阵 + 长期驻留运维面 + 指令集与幂等",
+              "items": [
+                "Rushiera",
+                "fe28cf017e"
+              ],
+              "status": "done",
+              "evidence": "git fe28cf0"
+            },
+            {
+              "v": "4eb9080",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.24.0: /exec 落地 + P4 阶段 B 复审",
+              "items": [
+                "Rushiera",
+                "4eb9080b5f"
+              ],
+              "status": "done",
+              "evidence": "git 4eb9080"
+            },
+            {
+              "v": "425dee9",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.24.1: 发现面标准条款 §2.10（B3 正文）",
+              "items": [
+                "Rushiera",
+                "425dee9740"
+              ],
+              "status": "done",
+              "evidence": "git 425dee9"
+            },
+            {
+              "v": "5f2b501",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.25.0: /exec 事件留档（A+B 混合 · docs/04 §2.11）——A 写 Run Event（exec 层 Span + kind=exec）· B 按日期聚合 ndjson；留档不阻断执行；单测 26 文件 207/207",
+              "items": [
+                "Rushiera",
+                "5f2b5014f6"
+              ],
+              "status": "done",
+              "evidence": "git 5f2b501"
+            },
+            {
+              "v": "4ba64dc",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.26.0 — B3 发现面标准件：模板五键/五头/变体 + 补丁脚本 + S33",
+              "items": [
+                "Rushiera",
+                "4ba64dc7b4"
+              ],
+              "status": "done",
+              "evidence": "git 4ba64dc"
+            },
+            {
+              "v": "531ef8a",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.27.0 B1 形态 f 骨架四件 + PITFALLS（择主窗 / PID 自愈 / 首帧预热 / 输入自证）",
+              "items": [
+                "Rushiera",
+                "531ef8af71"
+              ],
+              "status": "done",
+              "evidence": "git 531ef8a"
+            },
+            {
+              "v": "2fbb68c",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.28.0 — B4 夹具与生成器（fixture-target + fixture-run「起→就绪→跑→收尾」+ form d StartupHook）+ 模板 actor（拍板 29）；单测 28 文件 227/227",
+              "items": [
+                "Rushiera",
+                "2fbb68c938"
+              ],
+              "status": "done",
+              "evidence": "git 2fbb68c"
+            },
+            {
+              "v": "3d0e1ae",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.29.0: B2 自绘 UI 四件（templates/ui-read：区域表 / 字格 / 断言 / 深路径 + 32 例单测）；文档偏移勘误（PROBE_VERSION / README 目录块 / docs09 / guide.json）",
+              "items": [
+                "Rushiera",
+                "3d0e1aef83"
+              ],
+              "status": "done",
+              "evidence": "git 3d0e1ae"
+            },
+            {
+              "v": "9d403c4",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.30.0 P5：L3 /baseline 三动作 + L4 attribution 接事件流",
+              "items": [
+                "Rushiera",
+                "9d403c4c0f"
+              ],
+              "status": "done",
+              "evidence": "git 9d403c4"
+            },
+            {
+              "v": "16a3163",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.31.0: Livo 文件面适配器 + 真实 Run（31 文件 284 单测）",
+              "items": [
+                "Rushiera",
+                "16a3163593"
+              ],
+              "status": "done",
+              "evidence": "git 16a3163"
+            },
+            {
+              "v": "4f9756c",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.32.0: 阶段 C 作证（L3 基线对照 + L4 归因）· Livo outputs + 同日续号",
+              "items": [
+                "Rushiera",
+                "4f9756c4f1"
+              ],
+              "status": "done",
+              "evidence": "git 4f9756c"
+            },
+            {
+              "v": "94b935d",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.33.0 — 形态二第二目标 rs_jxl（文件面）+ 目标接入手册 docs/12",
+              "items": [
+                "Rushiera",
+                "94b935d9c2"
+              ],
+              "status": "done",
+              "evidence": "git 94b935d"
+            },
+            {
+              "v": "347ed5b",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.34.0 协议面：执行线程契约 docs/04 §2.12（thread 声明 / 受理四态 / pending 票据幂等 / 入队上限）",
+              "items": [
+                "Rushiera",
+                "347ed5bbda"
+              ],
+              "status": "done",
+              "evidence": "git 347ed5b"
+            },
+            {
+              "v": "592e7b1",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.35.0: 协议面族 8——消耗性动作与重试禁令（04 §2.13）",
+              "items": [
+                "Rushiera",
+                "592e7b1113"
+              ],
+              "status": "done",
+              "evidence": "git 592e7b1"
+            },
+            {
+              "v": "bc339bc",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.36.0 — /cmd 面落地（§2.12 + §2.13 实现）",
+              "items": [
+                "Rushiera",
+                "bc339bccfb"
+              ],
+              "status": "done",
+              "evidence": "git bc339bc"
+            },
+            {
+              "v": "6574466",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.36.0 — 票据三终态断言补全（§2.12 D6 expired）",
+              "items": [
+                "Rushiera",
+                "65744668f7"
+              ],
+              "status": "done",
+              "evidence": "git 6574466"
+            },
+            {
+              "v": "e351e8a",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.37.0: 协议面 TapPort 旁听语义（04 §2.14 · 可选第五端口 + 第五码）",
+              "items": [
+                "Rushiera",
+                "e351e8a223"
+              ],
+              "status": "done",
+              "evidence": "git e351e8a"
+            },
+            {
+              "v": "16df9e9",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.38.0: 协议面输入通道档位 / 地图几何 / launcher.reload（04 §2.15–§2.17）",
+              "items": [
+                "Rushiera",
+                "16df9e9c64"
+              ],
+              "status": "done",
+              "evidence": "git 16df9e9"
+            },
+            {
+              "v": "f343ed2",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.38.0: 04 §2.15 澄清 /exec 与文件面命令面的 channel 口径",
+              "items": [
+                "Rushiera",
+                "f343ed2331"
+              ],
+              "status": "done",
+              "evidence": "git f343ed2"
+            },
+            {
+              "v": "23f97ca",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.38.0: 阶段 B 复审 §五 标记协议面 7 条全部落笔",
+              "items": [
+                "Rushiera",
+                "23f97caa8c"
+              ],
+              "status": "done",
+              "evidence": "git 23f97ca"
+            },
+            {
+              "v": "afce580",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.39.0: 通道余三族（04 §2.18 层模型 / §2.19 数据面 / §2.20 反射面）+ 自检 S38–S41 + 单测 339",
+              "items": [
+                "Rushiera",
+                "afce580561"
+              ],
+              "status": "done",
+              "evidence": "git afce580"
+            },
+            {
+              "v": "b60d59f",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.40.0: 自检 S17–S26 补齐 + 状态四档 WARN（S17/S18 纯断言 · S19≡S13 / S21≡S15 / S22≡S16 / S26≡S5 同源别名 · S20/S24/S25 目标侧；WARN 不参与退出码）",
+              "items": [
+                "Rushiera",
+                "b60d59fc1c"
+              ],
+              "status": "done",
+              "evidence": "git b60d59f"
+            },
+            {
+              "v": "7323d01",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.41.0 六通道差量 6/6：channels.mjs（色相/边缘/连通域/投影）+ 三个真缺陷修复（中值翻转 → splitThreshold 分位中点 · 无对比度回 thr:null · shift 归类认列投影）；ui-read 55 例 / 全量 362",
+              "items": [
+                "Rushiera",
+                "7323d01cbd"
+              ],
+              "status": "done",
+              "evidence": "git 7323d01"
             }
           ]
         }

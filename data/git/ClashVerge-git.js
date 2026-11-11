@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "1 次提交 · 2026-11 → 2026-11",
-    "ver": "835f219",
-    "updated": "2026-11-09",
+    "sub": "3 次提交 · 2026-11 → 2026-11",
+    "ver": "f52e185",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -85,6 +85,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 835f219"
+            },
+            {
+              "v": "eb64093",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.50: mihomo-driver 控制台（9 项菜单 + relay 启停 + 断网预警）",
+              "items": [
+                "Rushiera",
+                "eb64093ef8"
+              ],
+              "status": "done",
+              "evidence": "git eb64093"
+            },
+            {
+              "v": "f52e185",
+              "date": "11-10",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.52: 驱动审核通过 + D 档只读 PASS + NAT step1 未闭合",
+              "items": [
+                "Rushiera",
+                "f52e1850b4"
+              ],
+              "status": "done",
+              "evidence": "git f52e185"
             }
           ]
         }

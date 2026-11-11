@@ -29,6 +29,7 @@ const OUT = path.join(SITE, 'data');
 /* 默认出全量（本地预览要看到完整星图）；--public 出公开档（白名单、可安全推送）
    全量档在数据里带 public:false，两页都会顶一条红色告警条（assets/dev-banner.js）——误推前看得见。 */
 const PUBLIC = process.argv.includes('--public');
+const DRY = process.argv.includes('--dry');   // 只算不写：refresh.mjs 的 dry 同口径
 
 /* 五层：id 用于泳道与颜色，label 是图上带名，kind 只影响色点 */
 const LAYERS = [
@@ -95,7 +96,7 @@ for (const it of idx.items) {
 }
 
 if (cardsMissing) console.warn('[build-map] WARN 索引有卡却缺卡片 ' + cardsMissing + ' 份（purpose / created 会回落空）——先 POST /api/projects/scan');
-fs.mkdirSync(OUT, { recursive: true });
+if (!DRY) fs.mkdirSync(OUT, { recursive: true });
 /* 首屏三格（2026-11-09 定）：规模 / 动量 / 产出。
    动量取 order.json 的 focus + 待办两区——活跃度由排序器按七维算好，这里只做计数，不重算（判据单一实现）。
    产出 = CHANGELOG 记录条数合计（index.json 的 changelogCount，档案现状口径）。
@@ -115,8 +116,10 @@ const now = new Date();
 const stamp = now.getFullYear() + '-' + pad2(now.getMonth() + 1) + '-' + pad2(now.getDate())
   + ' ' + pad2(now.getHours()) + ':' + pad2(now.getMinutes());
 const light = { generatedAt: stamp, public: PUBLIC, count: items.length, stats, items };
-fs.writeFileSync(path.join(OUT, 'projects.json'), JSON.stringify(light, null, 2), 'utf8');
-fs.writeFileSync(path.join(OUT, 'projects.js'), 'window.PROJECTS = ' + JSON.stringify(light, null, 1) + ';\n', 'utf8');
+if (!DRY) {
+  fs.writeFileSync(path.join(OUT, 'projects.json'), JSON.stringify(light, null, 2), 'utf8');
+  fs.writeFileSync(path.join(OUT, 'projects.js'), 'window.PROJECTS = ' + JSON.stringify(light, null, 1) + ';\n', 'utf8');
+}
 
 /* ---------- 视图一：项目星图（分层带） ---------- */
 const COL = 5;
@@ -188,6 +191,6 @@ const ARCH = {
   ]
 };
 
-fs.writeFileSync(path.join(OUT, 'arch.js'), 'window.ARCH = ' + JSON.stringify(ARCH, null, 1) + ';\n', 'utf8');
+if (!DRY) fs.writeFileSync(path.join(OUT, 'arch.js'), 'window.ARCH = ' + JSON.stringify(ARCH, null, 1) + ';\n', 'utf8');
 
-console.log('[build-map] ' + (PUBLIC ? 'PUBLIC' : 'FULL') + ' · 项目 ' + items.length + ' · 在推进 ' + (stats.active == null ? '—' : stats.active) + ' · 版本推进 ' + stats.versions + ' · 节点 ' + nodes.length + ' · 时间轴 ' + entries.length + ' · → ' + path.relative(process.cwd(), OUT));
+console.log('[build-map] ' + (DRY ? 'DRY · ' : '') + (PUBLIC ? 'PUBLIC' : 'FULL') + ' · 项目 ' + items.length + ' · 在推进 ' + (stats.active == null ? '—' : stats.active) + ' · 版本推进 ' + stats.versions + ' · 节点 ' + nodes.length + ' · 时间轴 ' + entries.length + ' · → ' + path.relative(process.cwd(), OUT));

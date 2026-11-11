@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "协商知识库",
     "title": "协商知识库 提交时间线",
-    "sub": "131 次提交 · 2026-10 → 2026-10",
-    "ver": "08f2292",
-    "updated": "2026-11-09",
+    "sub": "133 次提交 · 2026-10 → 2026-11",
+    "ver": "e70d13a",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -1775,6 +1775,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 08f2292"
+            },
+            {
+              "v": "5ed5da9",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.45: 项目档案对齐实况（L2/L3/design-status）",
+              "items": [
+                "Rushiera",
+                "5ed5da9c82"
+              ],
+              "status": "done",
+              "evidence": "git 5ed5da9"
+            },
+            {
+              "v": "e70d13a",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.45: git-profile 同步",
+              "items": [
+                "Rushiera",
+                "e70d13a731"
+              ],
+              "status": "done",
+              "evidence": "git e70d13a"
             }
           ]
         }

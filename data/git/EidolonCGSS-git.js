@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "EidolonCGSS",
     "title": "EidolonCGSS 提交时间线",
-    "sub": "1 次提交 · 2026-11 → 2026-11",
-    "ver": "4ce0995",
-    "updated": "2026-11-09",
+    "sub": "2 次提交 · 2026-11 → 2026-11",
+    "ver": "67022ca",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -85,6 +85,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 4ce0995"
+            },
+            {
+              "v": "67022ca",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "test",
+              "title": "tests: pass adult_sheet slot so Character construction matches",
+              "items": [
+                "Rushiera",
+                "67022cab82"
+              ],
+              "status": "done",
+              "evidence": "git 67022ca"
             }
           ]
         }

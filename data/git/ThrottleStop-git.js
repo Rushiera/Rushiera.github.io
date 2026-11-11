@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "ThrottleStop",
     "title": "ThrottleStop 提交时间线",
-    "sub": "1 次提交 · 2026-11 → 2026-11",
-    "ver": "f3a6f92",
-    "updated": "2026-11-09",
+    "sub": "4 次提交 · 2026-11 → 2026-11",
+    "ver": "a75ae99",
+    "updated": "2026-11-11",
     "contract": {
       "views": [
         "git"
@@ -85,6 +85,45 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git f3a6f92"
+            },
+            {
+              "v": "5477f55",
+              "date": "11-09",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.9: 采集器 v5 丢秒自证与卡顿留证",
+              "items": [
+                "Rushiera",
+                "5477f55627"
+              ],
+              "status": "done",
+              "evidence": "git 5477f55"
+            },
+            {
+              "v": "97a4746",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.16: collector v8 (self-harm fix) + clean boot baseline + ts_bench + perf-report 10/11",
+              "items": [
+                "Rushiera",
+                "97a4746818"
+              ],
+              "status": "done",
+              "evidence": "git 97a4746"
+            },
+            {
+              "v": "a75ae99",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.17: supplement 12 + report index",
+              "items": [
+                "Rushiera",
+                "a75ae992fc"
+              ],
+              "status": "done",
+              "evidence": "git a75ae99"
             }
           ]
         }
