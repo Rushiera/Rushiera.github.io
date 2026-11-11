@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Livo",
     "title": "Livo 提交时间线",
-    "sub": "22 次提交 · 2026-11 → 2026-11",
-    "ver": "5b6336e",
+    "sub": "23 次提交 · 2026-11 → 2026-11",
+    "ver": "2b4b9a0",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -358,6 +358,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 5b6336e"
+            },
+            {
+              "v": "2b4b9a0",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.46: S4 全量回归——samples 基线 + Core 四项 + 动画链 181/181",
+              "items": [
+                "Rushiera",
+                "2b4b9a0c57"
+              ],
+              "status": "done",
+              "evidence": "git 2b4b9a0"
             }
           ]
         }

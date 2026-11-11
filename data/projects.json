@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-11 18:40",
+  "generatedAt": "2026-11-11 18:48",
   "public": false,
   "count": 42,
   "stats": {
     "focus": 10,
     "todoZone": 18,
     "active": 28,
-    "versions": 2274
+    "versions": 2275
   },
   "items": [
     {
@@ -358,7 +358,7 @@
       "pid": "Livo",
       "layer": "tool",
       "type": "自研产品工程（照规格重写，不 fork 不二开）",
-      "version": "v0.45",
+      "version": "v0.46",
       "worker": "Coder",
       "jobs": [
         "Livo",
@@ -366,8 +366,8 @@
         "Go"
       ],
       "created": "2026-11-10",
-      "todo": 2,
-      "changelog": 46,
+      "todo": 1,
+      "changelog": 47,
       "purpose": "自己的实现，自己的许可。",
       "archived": false
     },

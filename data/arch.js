@@ -543,7 +543,7 @@ window.ARCH = {
         "CSharp",
         "Go"
        ],
-       "note": "v0.45 · 待办 2",
+       "note": "v0.46 · 待办 1",
        "evidence": "Project/Livo/project.md"
       },
       {
@@ -1170,8 +1170,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "Livo · 自研产品工程（照规格重写，不 fork 不二开）",
        "items": [
-        "v0.45",
-        "待办 2"
+        "v0.46",
+        "待办 1"
        ],
        "status": "partial",
        "evidence": "Project/Livo/project.md"
