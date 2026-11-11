@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "65 次提交 · 2026-11 → 2026-11",
-    "ver": "b73ce86",
+    "sub": "66 次提交 · 2026-11 → 2026-11",
+    "ver": "aaa45fd",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -917,6 +917,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git b73ce86"
+            },
+            {
+              "v": "aaa45fd",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.43.0(docs): 极性列举与基线计数勘误（上工复核 7 处）",
+              "items": [
+                "Rushiera",
+                "aaa45fd463"
+              ],
+              "status": "done",
+              "evidence": "git aaa45fd"
             }
           ]
         }

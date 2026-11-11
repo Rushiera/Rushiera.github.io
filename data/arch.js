@@ -592,7 +592,7 @@ window.ARCH = {
         "OfflineNovel",
         "CSharp"
        ],
-       "note": "v0.12 · 待办 9",
+       "note": "v0.13 · 待办 9",
        "evidence": "Project/OfflineNovel/project.md"
       },
       {
@@ -1183,7 +1183,7 @@ window.ARCH = {
        "lane": "tool",
        "title": "OfflineNovel · 可离线的便携式剧情播放器（产品线）",
        "items": [
-        "v0.12",
+        "v0.13",
         "待办 9"
        ],
        "status": "partial",

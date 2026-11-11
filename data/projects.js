@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-11 17:37",
+ "generatedAt": "2026-11-11 17:54",
  "public": false,
  "count": 42,
  "stats": {
   "focus": 10,
   "todoZone": 18,
   "active": 28,
-  "versions": 2268
+  "versions": 2269
  },
  "items": [
   {
@@ -442,7 +442,7 @@ window.PROJECTS = {
    "pid": "OfflineNovel",
    "layer": "tool",
    "type": "可离线的便携式剧情播放器（产品线）",
-   "version": "v0.12",
+   "version": "v0.13",
    "worker": "Majordomo",
    "jobs": [
     "OfflineNovel",
@@ -450,7 +450,7 @@ window.PROJECTS = {
    ],
    "created": "2026-11-10",
    "todo": 9,
-   "changelog": 12,
+   "changelog": 13,
    "purpose": "可复用的处置能力",
    "archived": false
   },

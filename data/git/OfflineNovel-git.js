@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "OfflineNovel",
     "title": "OfflineNovel 提交时间线",
-    "sub": "10 次提交 · 2026-11 → 2026-11",
-    "ver": "8a5f481",
+    "sub": "11 次提交 · 2026-11 → 2026-11",
+    "ver": "3bb8a50",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -202,6 +202,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 8a5f481"
+            },
+            {
+              "v": "3bb8a50",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.13: Himegari 启动链修复（--port/实例复用/占用提示/api status）+ verify_scenes 数据面验收 + 角色鉴赏 ShowCh 与破图降级",
+              "items": [
+                "Rushiera",
+                "3bb8a50a35"
+              ],
+              "status": "done",
+              "evidence": "git 3bb8a50"
             }
           ]
         }
