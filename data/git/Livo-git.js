@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Livo",
     "title": "Livo 提交时间线",
-    "sub": "23 次提交 · 2026-11 → 2026-11",
-    "ver": "2b4b9a0",
+    "sub": "24 次提交 · 2026-11 → 2026-11",
+    "ver": "c98f061",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -371,6 +371,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 2b4b9a0"
+            },
+            {
+              "v": "c98f061",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.46.1: S4 验收脚本补上轮基线对账（首轮 181 → 224 项，不一致保留旧基线）",
+              "items": [
+                "Rushiera",
+                "c98f061210"
+              ],
+              "status": "done",
+              "evidence": "git c98f061"
             }
           ]
         }

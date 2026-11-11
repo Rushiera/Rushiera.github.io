@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "67 次提交 · 2026-11 → 2026-11",
-    "ver": "7353f6a",
+    "sub": "69 次提交 · 2026-11 → 2026-11",
+    "ver": "82c07dd",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -943,6 +943,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 7353f6a"
+            },
+            {
+              "v": "83da50d",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.43.0 条款轮：docs/04 §2.21 两模式入口取得与边界 + 同步面（五文件）",
+              "items": [
+                "Rushiera",
+                "83da50ded1"
+              ],
+              "status": "done",
+              "evidence": "git 83da50d"
+            },
+            {
+              "v": "82c07dd",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.43.0 条款轮：指针勘误（Contract 两档 → 00 §3.0）",
+              "items": [
+                "Rushiera",
+                "82c07dd0b2"
+              ],
+              "status": "done",
+              "evidence": "git 82c07dd"
             }
           ]
         }
