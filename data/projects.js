@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-11 15:53",
+ "generatedAt": "2026-11-11 16:29",
  "public": false,
  "count": 42,
  "stats": {
   "focus": 10,
   "todoZone": 18,
   "active": 28,
-  "versions": 2250
+  "versions": 2254
  },
  "items": [
   {
@@ -21,7 +21,7 @@ window.PROJECTS = {
    ],
    "created": "2026-11-01",
    "todo": 13,
-   "changelog": 51,
+   "changelog": 52,
    "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
    "archived": false
   },
@@ -159,7 +159,7 @@ window.PROJECTS = {
    "pid": "CatHome5",
    "layer": "tool",
    "type": "Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
-   "version": "0.7.3",
+   "version": "0.7.5",
    "worker": "Coder",
    "jobs": [
     "Go",
@@ -167,8 +167,8 @@ window.PROJECTS = {
     "CSharp"
    ],
    "created": "2026-11-11",
-   "todo": 18,
-   "changelog": 26,
+   "todo": 22,
+   "changelog": 28,
    "purpose": "把 CatHome4 的功能在 Go 里重新实现，版本号递进为 CatHome5。",
    "archived": false
   },
@@ -358,7 +358,7 @@ window.PROJECTS = {
    "pid": "Livo",
    "layer": "tool",
    "type": "自研产品工程（照规格重写，不 fork 不二开）",
-   "version": "v0.41",
+   "version": "v0.42",
    "worker": "Coder",
    "jobs": [
     "Livo",
@@ -367,7 +367,7 @@ window.PROJECTS = {
    ],
    "created": "2026-11-10",
    "todo": 2,
-   "changelog": 42,
+   "changelog": 43,
    "purpose": "自己的实现，自己的许可。",
    "archived": false
   },

@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "33 次提交 · 2026-11 → 2026-11",
-    "ver": "ab5e8f6",
+    "sub": "34 次提交 · 2026-11 → 2026-11",
+    "ver": "9a4b651",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -501,6 +501,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git ab5e8f6"
+            },
+            {
+              "v": "9a4b651",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.238: check.mjs 备份落点与独立立项回落 + maintain --site 站点自更新",
+              "items": [
+                "Rushiera",
+                "9a4b651377"
+              ],
+              "status": "done",
+              "evidence": "git 9a4b651"
             }
           ]
         }

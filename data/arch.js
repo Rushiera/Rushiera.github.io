@@ -447,7 +447,7 @@ window.ARCH = {
         "Mau",
         "CSharp"
        ],
-       "note": "0.7.3 · 待办 18",
+       "note": "0.7.5 · 待办 22",
        "evidence": "Project/CatHome5/project.md"
       },
       {
@@ -543,7 +543,7 @@ window.ARCH = {
         "CSharp",
         "Go"
        ],
-       "note": "v0.41 · 待办 2",
+       "note": "v0.42 · 待办 2",
        "evidence": "Project/Livo/project.md"
       },
       {
@@ -1170,7 +1170,7 @@ window.ARCH = {
        "lane": "tool",
        "title": "Livo · 自研产品工程（照规格重写，不 fork 不二开）",
        "items": [
-        "v0.41",
+        "v0.42",
         "待办 2"
        ],
        "status": "partial",
@@ -1209,8 +1209,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "CatHome5 · Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
        "items": [
-        "0.7.3",
-        "待办 18"
+        "0.7.5",
+        "待办 22"
        ],
        "status": "partial",
        "evidence": "Project/CatHome5/project.md"
