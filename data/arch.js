@@ -161,7 +161,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.241 · 待办 31",
+       "note": "v0.242 · 待办 31",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -447,7 +447,7 @@ window.ARCH = {
         "Mau",
         "CSharp"
        ],
-       "note": "0.7.5 · 待办 22",
+       "note": "0.7.8 · 待办 23",
        "evidence": "Project/CatHome5/project.md"
       },
       {
@@ -543,7 +543,7 @@ window.ARCH = {
         "CSharp",
         "Go"
        ],
-       "note": "v0.44 · 待办 2",
+       "note": "v0.45 · 待办 2",
        "evidence": "Project/Livo/project.md"
       },
       {
@@ -1170,7 +1170,7 @@ window.ARCH = {
        "lane": "tool",
        "title": "Livo · 自研产品工程（照规格重写，不 fork 不二开）",
        "items": [
-        "v0.44",
+        "v0.45",
         "待办 2"
        ],
        "status": "partial",
@@ -1209,8 +1209,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "CatHome5 · Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
        "items": [
-        "0.7.5",
-        "待办 22"
+        "0.7.8",
+        "待办 23"
        ],
        "status": "partial",
        "evidence": "Project/CatHome5/project.md"
@@ -1300,7 +1300,7 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.241",
+        "v0.242",
         "待办 31"
        ],
        "status": "partial",

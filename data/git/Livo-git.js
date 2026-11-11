@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Livo",
     "title": "Livo 提交时间线",
-    "sub": "21 次提交 · 2026-11 → 2026-11",
-    "ver": "9e05efb",
+    "sub": "22 次提交 · 2026-11 → 2026-11",
+    "ver": "5b6336e",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -345,6 +345,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 9e05efb"
+            },
+            {
+              "v": "5b6336e",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.45: S3 Spine animations 导出",
+              "items": [
+                "Rushiera",
+                "5b6336e78c"
+              ],
+              "status": "done",
+              "evidence": "git 5b6336e"
             }
           ]
         }

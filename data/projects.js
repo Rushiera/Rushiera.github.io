@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-11 17:54",
+ "generatedAt": "2026-11-11 18:28",
  "public": false,
  "count": 42,
  "stats": {
   "focus": 10,
   "todoZone": 18,
   "active": 28,
-  "versions": 2269
+  "versions": 2272
  },
  "items": [
   {
@@ -159,7 +159,7 @@ window.PROJECTS = {
    "pid": "CatHome5",
    "layer": "tool",
    "type": "Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
-   "version": "0.7.5",
+   "version": "0.7.8",
    "worker": "Coder",
    "jobs": [
     "Go",
@@ -167,8 +167,8 @@ window.PROJECTS = {
     "CSharp"
    ],
    "created": "2026-11-11",
-   "todo": 22,
-   "changelog": 30,
+   "todo": 23,
+   "changelog": 31,
    "purpose": "把 CatHome4 的功能在 Go 里重新实现，版本号递进为 CatHome5。",
    "archived": false
   },
@@ -358,7 +358,7 @@ window.PROJECTS = {
    "pid": "Livo",
    "layer": "tool",
    "type": "自研产品工程（照规格重写，不 fork 不二开）",
-   "version": "v0.44",
+   "version": "v0.45",
    "worker": "Coder",
    "jobs": [
     "Livo",
@@ -367,7 +367,7 @@ window.PROJECTS = {
    ],
    "created": "2026-11-10",
    "todo": 2,
-   "changelog": 45,
+   "changelog": 46,
    "purpose": "自己的实现，自己的许可。",
    "archived": false
   },
@@ -625,7 +625,7 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.241",
+   "version": "v0.242",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
@@ -633,7 +633,7 @@ window.PROJECTS = {
    ],
    "created": "",
    "todo": 31,
-   "changelog": 263,
+   "changelog": 264,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   },
