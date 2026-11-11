@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "62 次提交 · 2026-11 → 2026-11",
-    "ver": "7323d01",
+    "sub": "63 次提交 · 2026-11 → 2026-11",
+    "ver": "24daf86",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -878,6 +878,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 7323d01"
+            },
+            {
+              "v": "24daf86",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.42.0: 频率分离（templates/ui-read/temporal.mjs）+ 文档同步",
+              "items": [
+                "Rushiera",
+                "24daf86a63"
+              ],
+              "status": "done",
+              "evidence": "git 24daf86"
             }
           ]
         }

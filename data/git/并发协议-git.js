@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "34 次提交 · 2026-11 → 2026-11",
-    "ver": "9a4b651",
+    "sub": "35 次提交 · 2026-11 → 2026-11",
+    "ver": "e3743a3",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -514,6 +514,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 9a4b651"
+            },
+            {
+              "v": "e3743a3",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.239: 兜底补记（0.229 面板架构图弹层视口高改动 + state 两件；本会话无 panel/witness 代码改动）",
+              "items": [
+                "Rushiera",
+                "e3743a3005"
+              ],
+              "status": "done",
+              "evidence": "git e3743a3"
             }
           ]
         }

@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Livo",
     "title": "Livo 提交时间线",
-    "sub": "19 次提交 · 2026-11 → 2026-11",
-    "ver": "f100796",
+    "sub": "20 次提交 · 2026-11 → 2026-11",
+    "ver": "701895c",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -319,6 +319,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git f100796"
+            },
+            {
+              "v": "701895c",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.43 S1: 动画 IR v9 双栈结构 + 不变量 44-55 + 两条样例",
+              "items": [
+                "Rushiera",
+                "701895c7d3"
+              ],
+              "status": "done",
+              "evidence": "git 701895c"
             }
           ]
         }

@@ -1,26 +1,26 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-11 16:29",
+ "generatedAt": "2026-11-11 17:05",
  "public": false,
  "count": 42,
  "stats": {
   "focus": 10,
   "todoZone": 18,
   "active": 28,
-  "versions": 2254
+  "versions": 2261
  },
  "items": [
   {
    "pid": "ACS",
    "layer": "agent",
    "type": "应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
-   "version": "v0.41.0",
+   "version": "v0.42.0",
    "worker": "Coder",
    "jobs": [
     "Node",
     "CSharp"
    ],
    "created": "2026-11-01",
-   "todo": 13,
+   "todo": 12,
    "changelog": 52,
    "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
    "archived": false
@@ -167,8 +167,8 @@ window.PROJECTS = {
     "CSharp"
    ],
    "created": "2026-11-11",
-   "todo": 22,
-   "changelog": 28,
+   "todo": 21,
+   "changelog": 29,
    "purpose": "把 CatHome4 的功能在 Go 里重新实现，版本号递进为 CatHome5。",
    "archived": false
   },
@@ -275,8 +275,8 @@ window.PROJECTS = {
     "CSharp；原脚本链…"
    ],
    "created": "2026-10-05",
-   "todo": 15,
-   "changelog": 17,
+   "todo": 18,
+   "changelog": 18,
    "purpose": "可直接运行的工具",
    "archived": false
   },
@@ -358,7 +358,7 @@ window.PROJECTS = {
    "pid": "Livo",
    "layer": "tool",
    "type": "自研产品工程（照规格重写，不 fork 不二开）",
-   "version": "v0.42",
+   "version": "v0.43",
    "worker": "Coder",
    "jobs": [
     "Livo",
@@ -367,7 +367,7 @@ window.PROJECTS = {
    ],
    "created": "2026-11-10",
    "todo": 2,
-   "changelog": 43,
+   "changelog": 44,
    "purpose": "自己的实现，自己的许可。",
    "archived": false
   },
@@ -450,7 +450,7 @@ window.PROJECTS = {
    ],
    "created": "2026-11-10",
    "todo": 9,
-   "changelog": 9,
+   "changelog": 11,
    "purpose": "可复用的处置能力",
    "archived": false
   },
@@ -582,7 +582,7 @@ window.PROJECTS = {
    "worker": "Coder",
    "jobs": [],
    "created": "2026-11-11",
-   "todo": 6,
+   "todo": 7,
    "changelog": 28,
    "purpose": "可参与的性能优化工程",
    "archived": false
@@ -625,7 +625,7 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.238",
+   "version": "v0.240",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
@@ -633,7 +633,7 @@ window.PROJECTS = {
    ],
    "created": "",
    "todo": 31,
-   "changelog": 260,
+   "changelog": 262,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   },

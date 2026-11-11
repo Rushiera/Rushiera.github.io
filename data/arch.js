@@ -161,7 +161,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.238 · 待办 31",
+       "note": "v0.240 · 待办 31",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -177,7 +177,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "v0.41.0 · 待办 13",
+       "note": "v0.42.0 · 待办 12",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -447,7 +447,7 @@ window.ARCH = {
         "Mau",
         "CSharp"
        ],
-       "note": "0.7.5 · 待办 22",
+       "note": "0.7.5 · 待办 21",
        "evidence": "Project/CatHome5/project.md"
       },
       {
@@ -494,7 +494,7 @@ window.ARCH = {
         "Coder",
         "CSharp；原脚本链…"
        ],
-       "note": "v0.19 · 待办 15",
+       "note": "v0.19 · 待办 18",
        "evidence": "Project/FileClean/project.md"
       },
       {
@@ -543,7 +543,7 @@ window.ARCH = {
         "CSharp",
         "Go"
        ],
-       "note": "v0.42 · 待办 2",
+       "note": "v0.43 · 待办 2",
        "evidence": "Project/Livo/project.md"
       },
       {
@@ -651,7 +651,7 @@ window.ARCH = {
        "tags": [
         "Coder"
        ],
-       "note": "待办 6",
+       "note": "待办 7",
        "evidence": "Project/rs_jxl/project.md"
       },
       {
@@ -937,7 +937,7 @@ window.ARCH = {
        "title": "FileClean · 文件清理工具（项目名 FileClean——2026-11-10 由「挂载盘清理器」更…",
        "items": [
         "v0.19",
-        "待办 15"
+        "待办 18"
        ],
        "status": "partial",
        "evidence": "Project/FileClean/project.md"
@@ -1105,8 +1105,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
-        "v0.41.0",
-        "待办 13"
+        "v0.42.0",
+        "待办 12"
        ],
        "status": "partial",
        "evidence": "Project/ACS/project.md"
@@ -1170,7 +1170,7 @@ window.ARCH = {
        "lane": "tool",
        "title": "Livo · 自研产品工程（照规格重写，不 fork 不二开）",
        "items": [
-        "v0.42",
+        "v0.43",
         "待办 2"
        ],
        "status": "partial",
@@ -1210,7 +1210,7 @@ window.ARCH = {
        "title": "CatHome5 · Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
        "items": [
         "0.7.5",
-        "待办 22"
+        "待办 21"
        ],
        "status": "partial",
        "evidence": "Project/CatHome5/project.md"
@@ -1236,7 +1236,7 @@ window.ARCH = {
        "title": "rs_jxl · 外部开源项目协作开发（Rust edition 2024 · rust-version…",
        "items": [
         "版本未记",
-        "待办 6"
+        "待办 7"
        ],
        "status": "partial",
        "evidence": "Project/rs_jxl/project.md"
@@ -1300,7 +1300,7 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.238",
+        "v0.240",
         "待办 31"
        ],
        "status": "partial",
