@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "OfflineNovel",
     "title": "OfflineNovel 提交时间线",
-    "sub": "11 次提交 · 2026-11 → 2026-11",
-    "ver": "3bb8a50",
+    "sub": "12 次提交 · 2026-11 → 2026-11",
+    "ver": "aaec9c5",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -215,6 +215,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 3bb8a50"
+            },
+            {
+              "v": "aaec9c5",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.14: AbyssPlayer 启动链同形（--port / 实例复用 / 占用提示 / status 带 pid·port）+ WinFsp 挂载失败可见化 + launcher.md",
+              "items": [
+                "Rushiera",
+                "aaec9c568f"
+              ],
+              "status": "done",
+              "evidence": "git aaec9c5"
             }
           ]
         }

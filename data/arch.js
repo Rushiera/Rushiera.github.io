@@ -177,7 +177,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "v0.43.0 · 待办 12",
+       "note": "v0.43.0 · 待办 11",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -447,7 +447,7 @@ window.ARCH = {
         "Mau",
         "CSharp"
        ],
-       "note": "0.7.8 · 待办 23",
+       "note": "0.7.9 · 待办 22",
        "evidence": "Project/CatHome5/project.md"
       },
       {
@@ -592,7 +592,7 @@ window.ARCH = {
         "OfflineNovel",
         "CSharp"
        ],
-       "note": "v0.13 · 待办 9",
+       "note": "v0.14 · 待办 9",
        "evidence": "Project/OfflineNovel/project.md"
       },
       {
@@ -1106,7 +1106,7 @@ window.ARCH = {
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
         "v0.43.0",
-        "待办 12"
+        "待办 11"
        ],
        "status": "partial",
        "evidence": "Project/ACS/project.md"
@@ -1183,7 +1183,7 @@ window.ARCH = {
        "lane": "tool",
        "title": "OfflineNovel · 可离线的便携式剧情播放器（产品线）",
        "items": [
-        "v0.13",
+        "v0.14",
         "待办 9"
        ],
        "status": "partial",
@@ -1209,8 +1209,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "CatHome5 · Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
        "items": [
-        "0.7.8",
-        "待办 23"
+        "0.7.9",
+        "待办 22"
        ],
        "status": "partial",
        "evidence": "Project/CatHome5/project.md"

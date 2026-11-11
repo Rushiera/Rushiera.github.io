@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-11 18:28",
+  "generatedAt": "2026-11-11 18:40",
   "public": false,
   "count": 42,
   "stats": {
     "focus": 10,
     "todoZone": 18,
     "active": 28,
-    "versions": 2272
+    "versions": 2274
   },
   "items": [
     {
@@ -20,7 +20,7 @@
         "CSharp"
       ],
       "created": "2026-11-01",
-      "todo": 12,
+      "todo": 11,
       "changelog": 53,
       "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
       "archived": false
@@ -159,7 +159,7 @@
       "pid": "CatHome5",
       "layer": "tool",
       "type": "Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
-      "version": "0.7.8",
+      "version": "0.7.9",
       "worker": "Coder",
       "jobs": [
         "Go",
@@ -167,8 +167,8 @@
         "CSharp"
       ],
       "created": "2026-11-11",
-      "todo": 23,
-      "changelog": 31,
+      "todo": 22,
+      "changelog": 32,
       "purpose": "把 CatHome4 的功能在 Go 里重新实现，版本号递进为 CatHome5。",
       "archived": false
     },
@@ -442,7 +442,7 @@
       "pid": "OfflineNovel",
       "layer": "tool",
       "type": "可离线的便携式剧情播放器（产品线）",
-      "version": "v0.13",
+      "version": "v0.14",
       "worker": "Majordomo",
       "jobs": [
         "OfflineNovel",
@@ -450,7 +450,7 @@
       ],
       "created": "2026-11-10",
       "todo": 9,
-      "changelog": 13,
+      "changelog": 14,
       "purpose": "可复用的处置能力",
       "archived": false
     },
