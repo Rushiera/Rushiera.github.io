@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "OfflineNovel",
     "title": "OfflineNovel 提交时间线",
-    "sub": "9 次提交 · 2026-11 → 2026-11",
-    "ver": "ec3d8ac",
+    "sub": "10 次提交 · 2026-11 → 2026-11",
+    "ver": "8a5f481",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -189,6 +189,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git ec3d8ac"
+            },
+            {
+              "v": "8a5f481",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.12: Legeclo 启动链修复 + 全场景验收；并入 Senpri v0.10 / MistTrainGirls v0.11",
+              "items": [
+                "Rushiera",
+                "8a5f4813ac"
+              ],
+              "status": "done",
+              "evidence": "git 8a5f481"
             }
           ]
         }

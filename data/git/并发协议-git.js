@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "35 次提交 · 2026-11 → 2026-11",
-    "ver": "e3743a3",
+    "sub": "36 次提交 · 2026-11 → 2026-11",
+    "ver": "ab9abb2",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -527,6 +527,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git e3743a3"
+            },
+            {
+              "v": "ab9abb2",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.240 check.mjs parseTodoItems 编号第五形态（S1.6 / P5.1 / M1.5）",
+              "items": [
+                "Rushiera",
+                "ab9abb26e9"
+              ],
+              "status": "done",
+              "evidence": "git ab9abb2"
             }
           ]
         }

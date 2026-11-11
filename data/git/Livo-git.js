@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Livo",
     "title": "Livo 提交时间线",
-    "sub": "20 次提交 · 2026-11 → 2026-11",
-    "ver": "701895c",
+    "sub": "21 次提交 · 2026-11 → 2026-11",
+    "ver": "9e05efb",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -332,6 +332,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 701895c"
+            },
+            {
+              "v": "9e05efb",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.44: P2 S2 motion3 导出 + model3.json Motions 接线",
+              "items": [
+                "Rushiera",
+                "9e05efb78f"
+              ],
+              "status": "done",
+              "evidence": "git 9e05efb"
             }
           ]
         }

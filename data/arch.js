@@ -161,7 +161,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.240 · 待办 31",
+       "note": "v0.241 · 待办 31",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -177,7 +177,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "v0.42.0 · 待办 12",
+       "note": "v0.43.0 · 待办 12",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -447,7 +447,7 @@ window.ARCH = {
         "Mau",
         "CSharp"
        ],
-       "note": "0.7.5 · 待办 21",
+       "note": "0.7.5 · 待办 22",
        "evidence": "Project/CatHome5/project.md"
       },
       {
@@ -494,7 +494,7 @@ window.ARCH = {
         "Coder",
         "CSharp；原脚本链…"
        ],
-       "note": "v0.19 · 待办 18",
+       "note": "v0.22 · 待办 17",
        "evidence": "Project/FileClean/project.md"
       },
       {
@@ -543,7 +543,7 @@ window.ARCH = {
         "CSharp",
         "Go"
        ],
-       "note": "v0.43 · 待办 2",
+       "note": "v0.44 · 待办 2",
        "evidence": "Project/Livo/project.md"
       },
       {
@@ -592,7 +592,7 @@ window.ARCH = {
         "OfflineNovel",
         "CSharp"
        ],
-       "note": "v0.9 · 待办 9",
+       "note": "v0.12 · 待办 9",
        "evidence": "Project/OfflineNovel/project.md"
       },
       {
@@ -936,8 +936,8 @@ window.ARCH = {
        "lane": "tool",
        "title": "FileClean · 文件清理工具（项目名 FileClean——2026-11-10 由「挂载盘清理器」更…",
        "items": [
-        "v0.19",
-        "待办 18"
+        "v0.22",
+        "待办 17"
        ],
        "status": "partial",
        "evidence": "Project/FileClean/project.md"
@@ -1105,7 +1105,7 @@ window.ARCH = {
        "lane": "agent",
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
-        "v0.42.0",
+        "v0.43.0",
         "待办 12"
        ],
        "status": "partial",
@@ -1170,7 +1170,7 @@ window.ARCH = {
        "lane": "tool",
        "title": "Livo · 自研产品工程（照规格重写，不 fork 不二开）",
        "items": [
-        "v0.43",
+        "v0.44",
         "待办 2"
        ],
        "status": "partial",
@@ -1183,7 +1183,7 @@ window.ARCH = {
        "lane": "tool",
        "title": "OfflineNovel · 可离线的便携式剧情播放器（产品线）",
        "items": [
-        "v0.9",
+        "v0.12",
         "待办 9"
        ],
        "status": "partial",
@@ -1210,7 +1210,7 @@ window.ARCH = {
        "title": "CatHome5 · Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
        "items": [
         "0.7.5",
-        "待办 21"
+        "待办 22"
        ],
        "status": "partial",
        "evidence": "Project/CatHome5/project.md"
@@ -1300,7 +1300,7 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.240",
+        "v0.241",
         "待办 31"
        ],
        "status": "partial",

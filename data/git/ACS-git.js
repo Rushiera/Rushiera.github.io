@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "63 次提交 · 2026-11 → 2026-11",
-    "ver": "24daf86",
+    "sub": "65 次提交 · 2026-11 → 2026-11",
+    "ver": "b73ce86",
     "updated": "2026-11-11",
     "contract": {
       "views": [
@@ -891,6 +891,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 24daf86"
+            },
+            {
+              "v": "d57d588",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.43.0 ui-read 极性自适应（亮底暗字）+ docs 勘误（selfcheck 现行 S1–S41）",
+              "items": [
+                "Rushiera",
+                "d57d588f7d"
+              ],
+              "status": "done",
+              "evidence": "git d57d588"
+            },
+            {
+              "v": "b73ce86",
+              "date": "11-11",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.43.0 补丁 ui-read README：硬约束条数 4→5",
+              "items": [
+                "Rushiera",
+                "b73ce860ff"
+              ],
+              "status": "done",
+              "evidence": "git b73ce86"
             }
           ]
         }
