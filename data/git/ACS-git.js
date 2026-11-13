@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "141 次提交 · 2026-11 → 2026-11",
-    "ver": "194ba6d",
+    "sub": "142 次提交 · 2026-11 → 2026-11",
+    "ver": "77c5e12",
     "updated": "2026-11-13",
     "contract": {
       "views": [
@@ -1905,6 +1905,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 194ba6d"
+            },
+            {
+              "v": "77c5e12",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.73.0 判形能力扩展第一批：证据结构化（23 条带 evidence/状态，无证据降 UNVERIFIED）+ 差异视图（快照 added/removed/bucket_changed，新增触发重勘）+ 检索导出（服务端过滤 + Markdown，人粘贴）+ 扫描结果进判形总表与候选登记并入",
+              "items": [
+                "Rushiera",
+                "77c5e122e2"
+              ],
+              "status": "done",
+              "evidence": "git 77c5e12"
             }
           ]
         }

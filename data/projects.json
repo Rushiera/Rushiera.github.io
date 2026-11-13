@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-11-14 00:11",
+  "generatedAt": "2026-11-14 00:30",
   "public": true,
   "count": 21,
   "stats": {
     "focus": 5,
-    "todoZone": 4,
-    "active": 9,
-    "versions": 1636
+    "todoZone": 3,
+    "active": 8,
+    "versions": 1638
   },
   "items": [
     {
       "pid": "ACS",
       "layer": "agent",
       "type": "应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
-      "version": "v0.86.0",
+      "version": "v0.87.0",
       "worker": "Coder",
       "jobs": [
         "Node",
         "CSharp"
       ],
       "created": "2026-11-01",
-      "todo": 23,
-      "changelog": 124,
+      "todo": 24,
+      "changelog": 125,
       "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
       "archived": false
     },
@@ -332,7 +332,7 @@
       "pid": "并发协议",
       "layer": "host",
       "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-      "version": "v0.287",
+      "version": "v0.288",
       "worker": "Majordomo",
       "jobs": [
         "CSharp",
@@ -340,7 +340,7 @@
       ],
       "created": "",
       "todo": 38,
-      "changelog": 314,
+      "changelog": 315,
       "purpose": "两件事，一条主线：让自主推进有据可依。",
       "archived": false
     }
