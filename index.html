@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#12181f">
-<title>Rushiera — 工程履历</title>
-<meta name="description" content="本机自持的工程实践：多智能体宿主、并发调度、逆向与二次开发。项目星图与推进记录。">
+<title>Rushiera · AI 接入与工程交付</title>
+<meta name="description" content="把模型接进真实系统，并证明它真的接上了：自举宿主、多智能体调度、逆向与二次开发。每个交付都带可复跑的判据。">
 <!-- 首字节即深色：外部样式到位前不留白底；跨文档导航走交叉淡变（Chrome/Edge 126+，其余静默忽略） -->
 <style>html,body{background:#12181f;color-scheme:dark}
   @view-transition{navigation:auto}
   ::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}</style>
-<link rel="stylesheet" href="assets/site.css?v=20261109e">
+<link rel="stylesheet" href="assets/site.css?v=f2a3f303">
 </head>
 <body class="home">
 
@@ -19,16 +19,16 @@
 <header class="hero">
   <div class="wrap hero-in">
     <div class="hero-copy">
-      <div class="eyebrow">RUSHIERA · 本机自持的工程实践</div>
-      <h1>把模型接到真实程序上，<br><em>并证明接上了。</em></h1>
+      <div class="eyebrow">RUSHIERA · AI 接入 · 工程交付</div>
+      <h1>把 AI 接进你的系统，<br><em>并且证明它真的接上了。</em></h1>
       <p class="lede">
-        这几个月的工程面：自举宿主与知识网络、跨项目并发调度、逆向与二次开发、数据与工具链。
-        下面是 <span id="pcount">—</span> 个项目的实际推进状态——不是作品集截图，是带证据的现场。
+        交付的不是演示视频，是能上手用的东西——附一份可复跑的判据。
+        从模型到真实进程、从调度到验收，每一步都能回溯到具体的文件与命令。
+        下面是 <span id="pcount">—</span> 个在维护的工程，是现场，不是截图。
       </p>
       <nav class="links">
-        <a class="primary" href="projects.html">项目星图 →</a>
-        <a class="ghost" href="projects.html?v=timeline">起点时间线 →</a>
-        <span class="dot">·</span>
+        <a class="primary" href="client.html">看案例 →</a>
+        <a class="ghost" href="projects.html">项目星图 →</a>
         <a href="github.html">GitHub ↗</a>
       </nav>
     </div>
@@ -38,6 +38,27 @@
 
 <main class="wrap">
   <section class="block">
+    <h2>能做什么</h2>
+    <div class="cards three">
+      <div class="card">
+        <div class="hd"><span class="nm">AI 接入与自举宿主</span></div>
+        <div class="tp">把大模型接到真实程序、工具链和桌面宿主上。工具面、权限边界、注入面分开管，改动按层走各自的生效链。</div>
+        <div class="ft"><span>怎么验：改完按层部署 → 探活 → 真调一次</span></div>
+      </div>
+      <div class="card">
+        <div class="hd"><span class="nm">多智能体并发调度</span></div>
+        <div class="tp">把「谁做什么、做到哪、算不算完」写成机器可读的委托单。重复的机械动作交给调度器，判断留给人。</div>
+        <div class="ft"><span>怎么验：派活留授权 / 流水 / 相位，核销由档案事实判定</span></div>
+      </div>
+      <div class="card">
+        <div class="hd"><span class="nm">逆向 · 二次开发 · 取证</span></div>
+        <div class="tp">在别人的成品上做可控改造：先判类型再选路线，静态面先于运行时，改造留补丁与回滚路径。</div>
+        <div class="ft"><span>怎么验：证据分级 + 对拍，结论追到文件与行</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
     <div class="stack-row">
       <h2 class="stack-label">技术栈<span>（实际出现）</span></h2>
       <div class="chips" id="stack"></div>
@@ -45,29 +66,35 @@
   </section>
 
   <section class="block">
-    <h2>精选工程</h2>
+    <h2>工程现场</h2>
+    <p class="note">数据实时取自项目档案，不是人工挑过的清单——版本号与推进记录都在 <a href="projects.html">项目星图</a> 里。</p>
     <div class="cards" id="featured"></div>
   </section>
 
   <section class="block">
+    <h2>案例</h2>
+    <p class="note">三个已交付的场景：多智能体调度台 · 自举宿主与知识网络 · 逆向取证。每个都写了做法与可核证据 → <a href="client.html">案例页</a></p>
+  </section>
+
+  <section class="block">
     <h2>最近的起点</h2>
-    <p class="note">立项时间，不是完工时间——这里的项目大多是活的。</p>
+    <p class="note">立项时间，不是完工时间——这里的工程大多是活的。</p>
     <ul class="feed" id="feed"></ul>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>数据源：本机项目档案索引 · 生成于 <span id="gen">—</span></span>
-    <span>完整分层与时间轴 → <a href="projects.html">项目星图</a></span>
+    <span>数据源：本地项目档案索引 · 生成于 <span id="gen">—</span></span>
+    <span><a href="client.html">案例</a> · <a href="projects.html">项目星图</a> · <a href="github.html">GitHub</a></span>
   </div>
 </footer>
 
-<script src="assets/particles.min.js?v=20261109e"></script>
-<script src="assets/particles-bg.js?v=20261109e"></script>
-<script src="data/projects.js?v=20261109e"></script>
-<script src="assets/site.js?v=20261109e"></script>
-<script src="assets/dev-banner.js?v=20261109e"></script>
+<script src="assets/particles.min.js?v=f2a3f303"></script>
+<script src="assets/particles-bg.js?v=f2a3f303"></script>
+<script src="data/projects.js?v=f2a3f303"></script>
+<script src="assets/site.js?v=f2a3f303"></script>
+<script src="assets/dev-banner.js?v=f2a3f303"></script>
 <script>
   (function () {
     var g = document.getElementById('gen');

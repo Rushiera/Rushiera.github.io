@@ -22,6 +22,7 @@
  * 依赖：面板在跑（8767，ACS_PANEL 可覆盖）——提交时间线读它的仓库解析结论。
  * 边界：只写站点目录；不 commit、不 push（推送归调度器 job，见 panel/SitePublisher.cs）。
  */
+import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -43,7 +44,7 @@ const opt = (k, d) => {
 const DRY = has('dry');
 const JSON_OUT = has('json');
 const PROFILE = opt('profile', 'public');
-const PAGES = ['index.html', 'projects.html', 'github.html'];
+const PAGES = ['index.html', 'projects.html', 'github.html', 'client.html'];
 const ASSETS = 'assets';
 
 if (!['public', 'full', 'both'].includes(PROFILE)) {
@@ -92,6 +93,48 @@ function copyDir(src, dest) {
   return true;
 }
 
+/** assets 版本串（构建期注入）：按 assets/ 全部文件的内容算——改一个字节就换串。
+ *  页面源里不再手写日期串（旧做法：改 css/js 后要记得同改三个 html，漏一处就是半新半旧）。
+ *  取内容哈希而非日期：同一份 assets 重跑得同一个串（幂等），内容变了才变（真实失效）。 */
+function assetVersion() {
+  const files = [];
+  (function walk(dir, rel) {
+    if (!fs.existsSync(dir)) return;
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const r = rel ? rel + '/' + e.name : e.name;
+      if (e.isDirectory()) walk(path.join(dir, e.name), r);
+      else files.push(r);
+    }
+  })(path.join(SITE, ASSETS), '');
+  files.sort();
+  const h = crypto.createHash('sha256');
+  for (const r of files) {
+    h.update(r); h.update('\0');
+    h.update(fs.readFileSync(path.join(SITE, ASSETS, r))); h.update('\0');
+  }
+  return { token: h.digest('hex').slice(0, 8), files: files.length };
+}
+
+/** 把 ?v=<旧串> 换成构建期版本串。只认 assets/ 与 data/ 路径——
+ *  index.html 的 projects.html?v=timeline 是业务参数，不是资源版本，绝不碰。 */
+const VQ = /((?:assets|data)\/[^"'?#\s)]+)\?v=[0-9A-Za-z._-]+/g;
+const VQ_LINE = /(var VER = '\?v=)[0-9A-Za-z._-]+(')/;
+function injectVersions(token) {
+  const touched = [];
+  let hits = 0;
+  for (const f of PAGES) {
+    const fp = path.join(SITE, f);
+    if (!fs.existsSync(fp)) { console.warn('[build-site] WARN 页面不存在，跳过版本注入：' + f); continue; }
+    const before = fs.readFileSync(fp, 'utf8');
+    hits += (before.match(VQ) || []).length + (VQ_LINE.test(before) ? 1 : 0);
+    const after = before.replace(VQ, '$1?v=' + token).replace(VQ_LINE, '$1' + token + '$2');
+    if (after === before) continue;
+    touched.push(f);
+    if (!DRY) fs.writeFileSync(fp, after);
+  }
+  return { touched, hits };
+}
+
 /** 构建一档；返回该档的回执（ok / 目录 / 两条子脚本 / 产物自证）。 */
 function buildOne(profile) {
   const outDir = profile === 'public' ? path.join(SITE, 'data') : path.join(SITE, 'full', 'data');
@@ -138,6 +181,9 @@ function buildOne(profile) {
 }
 
 const started = Date.now();
+/* 版本串先行：full 档的页面副本在 buildOne 里拷，必须拷「已注入」的那一版。 */
+const AV = assetVersion();
+const INJ = injectVersions(AV.token);
 const want = PROFILE === 'both' ? ['public', 'full'] : [PROFILE];
 const profiles = want.map(buildOne);
 
@@ -166,10 +212,17 @@ const ok = profiles.every((p) => p.ok) && (DRY || (missing.length === 0 && stale
 if (JSON_OUT) {
   console.log(JSON.stringify({
     ok, dry: DRY, profile: PROFILE, profiles, outputs,
+    version: { token: AV.token, assets: AV.files, pages: INJ.touched, replaced: INJ.hits },
     missing: missing.map((o) => o.profile + '/' + o.rel),
     stale: stale.map((o) => o.profile + '/' + o.rel)
   }, null, 2));
 } else {
+  console.log('[build-site] 版本串 ?v=' + AV.token + '（assets ' + AV.files + ' 件）· '
+    + (INJ.touched.length ? '改写 ' + INJ.touched.length + ' 页：' + INJ.touched.join(', ') : '页面已是最新')
+    + (DRY && INJ.touched.length ? '（DRY 未写盘）' : ''));
+  if (INJ.touched.length && !DRY) {
+    console.log('  ⚠ 页面版本串随 assets 变更更新——需与 assets 一并提交（发布 job 只提交 data/）');
+  }
   for (const p of profiles) {
     console.log('[build-site] ' + (DRY ? 'DRY · ' : '') + p.profile.toUpperCase()
       + ' · ' + (p.ok ? 'OK' : 'FAIL') + ' · 项目 ' + p.data.count

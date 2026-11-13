@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#12181f">
+<title>案例 · Rushiera</title>
+<meta name="description" content="三个已交付场景的做法与可核证据：多智能体调度台、自举宿主与知识网络、逆向与二次开发取证。">
+<!-- 新增页面三件必带：内联深色背景 / theme-color / 跨文档过渡——缺任一件跨页会闪白。 -->
+<style>html,body{background:#12181f;color-scheme:dark}
+  @view-transition{navigation:auto}
+  ::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}</style>
+<link rel="stylesheet" href="assets/site.css?v=f2a3f303">
+</head>
+<body class="home">
+
+<div id="particles-js"></div>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <div class="eyebrow">RUSHIERA · 案例</div>
+      <h1>三个场景，<br><em>三种「真的能用」的证明。</em></h1>
+      <p class="lede">
+        案例只写做法与可核证据：问题是什么、怎么解、交付物在哪、拿什么验。
+        不写客户数据，不放内部路径——能公开的部分，就公开到能被复核的程度。
+      </p>
+      <nav class="links">
+        <a class="primary" href="index.html">← 主页</a>
+        <a class="ghost" href="projects.html">项目星图 →</a>
+        <a href="github.html">GitHub ↗</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="wrap case">
+  <section class="block">
+    <h2>案例</h2>
+    <div class="cards one">
+
+      <article class="card">
+        <div class="hd"><span class="nm">01 · 多智能体调度台</span><span class="ver">并发协议</span></div>
+        <p class="k">问题</p>
+        <div class="tp">多个项目并行推进时，「派谁干、干到哪、算不算完」全靠人盯：成本高、过程不可审计，中途一断线索就丢。</div>
+        <p class="k">做法</p>
+        <ul>
+          <li>每次派活落一张<strong>委托单</strong>：授权（谁批的、写面在哪、自主度几档）、流水（每步只追加）、相位（可随时重算）三件分开。</li>
+          <li>调度器只做六个机械动作——补、投、换相、收、删、报；「该不该做这条」仍归人。</li>
+          <li>停线判据写进授权面（零增量 / 写面冲突 / 越界 / 预算 / 轮次），到点自动停，不靠自觉。</li>
+        </ul>
+        <p class="k">交付</p>
+        <ul>
+          <li>常驻调度台（面板 + 调度器 + 见证者）· 项目档案索引（把待办、变更、设计兑现读成可派任务）· 本站展示面。</li>
+        </ul>
+        <p class="k">怎么核</p>
+        <div class="tp">派活留可回放流水；核销按档案事实判定（待办消失 / 兑现格变化），不看「参与者说做完了」；本站数据由档案索引生成，不手写。</div>
+      </article>
+
+      <article class="card">
+        <div class="hd"><span class="nm">02 · 自举宿主与知识网络</span><span class="ver">CH4 · Mau</span></div>
+        <p class="k">问题</p>
+        <div class="tp">模型能写代码，但「改完有没有生效、坏了好不好回滚」没有人能保证——表达自由与工程纪律必须分开。</div>
+        <p class="k">做法</p>
+        <ul>
+          <li>业务语料化：<strong>模型负责表达，确定性代码负责验真</strong>——每一句模型输出都要落到可执行的判据上。</li>
+          <li>工具面 / 注入面 / 权限面分开管；改一行先问「落在哪一层、谁在什么时刻读它」。</li>
+          <li>改动按层走各自的生效链：语料 / 积木 / 程序集 / 基座 / 前端配置，各不相同；部署先编译到暂存区，再优雅停、备份、铺新、探活。</li>
+        </ul>
+        <p class="k">交付</p>
+        <ul>
+          <li>桌面宿主 + 工具链 + 知识网络（项目档案、判据、归档与蒸馏），以及一套能自我维护的文档层。</li>
+        </ul>
+        <p class="k">怎么核</p>
+        <div class="tp">每个改动都给生效判据（探活字段、真调一次）；失败即「运行区一字不动」或整目录回滚；版本推进逐条记在变更记录里。</div>
+      </article>
+
+      <article class="card">
+        <div class="hd"><span class="nm">03 · 逆向与二次开发取证</span><span class="ver">REA · ECC</span></div>
+        <p class="k">问题</p>
+        <div class="tp">面对第三方成品，先要回答「能不能改、改了会不会坏」，再谈怎么改——顺序反了，代价翻倍。</div>
+        <p class="k">做法</p>
+        <ul>
+          <li>先判类型（原生 / 托管 / Electron / JVM / 脚本），再按成本选路线：静态数据面 → 程序集面 → 运行时。</li>
+          <li>改造留补丁、反向表与原件备份；写面越界（改到别人包里、改到云端账户）先说清影响面。</li>
+          <li>补丁要求幂等与可逆：连跑两次同一结果，回滚按已知中间态逐条枚举。</li>
+        </ul>
+        <p class="k">交付</p>
+        <ul>
+          <li>取证报告（问题 / 方法 / 事实 / 推断 / 结论 / 未解）· 可回滚的补丁集 · 壳与二次开发成品（如渲染与同步类工具链）。</li>
+        </ul>
+        <p class="k">怎么核</p>
+        <div class="tp">每条结论标证据档（已实测 / 已读码 / 有依据推断 / 猜测 / 不知道）；对拍用真实载荷双跑，差异分类后逐条解释。</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>怎么合作</h2>
+    <div class="cards three">
+      <div class="card">
+        <div class="hd"><span class="nm">先定判据</span></div>
+        <div class="tp">开工前一起把「做到什么算完」写成可复跑的判据：一条命令、一个字段、一个计数。写不出判据的需求，先不接。</div>
+      </div>
+      <div class="card">
+        <div class="hd"><span class="nm">分期交付</span></div>
+        <div class="tp">先给能跑的最小闭环，再按判据往外扩。每期附回滚路径——做错了能退回去，才算真的做完了。</div>
+      </div>
+      <div class="card">
+        <div class="hd"><span class="nm">三条不做</span></div>
+        <div class="tp">不碰与本项目无关的私密数据；不做不可逆、无回滚的改造；不承诺验证不了的结论——不确定就标「未取证」。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>下一份证据</h2>
+    <p class="note">完整的技术面在 <a href="projects.html">项目星图</a>：每个工程的分层、角色、版本推进与提交时间线都能查到。</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Rushiera · 案例页 · 内容取自本机项目档案</span>
+    <span><a href="index.html">主页</a> · <a href="projects.html">项目星图</a> · <a href="github.html">GitHub</a></span>
+  </div>
+</footer>
+
+<script src="assets/particles.min.js?v=f2a3f303"></script>
+<script src="assets/particles-bg.js?v=f2a3f303"></script>
+<script src="assets/dev-banner.js?v=f2a3f303"></script>
+</body>
+</html>

@@ -115,3 +115,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
    数据里 status 已统一 done；这里再把卡底状态行与角标隐掉，只留角色 / 项目名 / 简述 / note。 */
 .node .st,
 .node .ribbon{display:none}
+
+/* ---------- 三列服务卡（主页「能做什么」）----------
+   与 .cards 同套卡面，只改列数；窄屏先降两列、再回单列（3×200px 会挤成一列字）。 */
+.cards.three{grid-template-columns:repeat(3,1fr)}
+.cards.one{grid-template-columns:1fr}
+@media (max-width:980px){.cards.three{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.cards.three{grid-template-columns:1fr}}
+
+/* ---------- 案例页：卡面内分层（问题 / 做法 / 交付 / 怎么核）----------
+   .k 是小节标签（等宽、小字），正文走 .tp；不用 h3 是为了不打断整页的标题层级。 */
+.case .card{padding:20px 22px;gap:10px}
+.case .card .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:#7f8d9b;
+  text-transform:uppercase;margin:6px 0 -6px}
+.case .card .tp{min-height:0}
+.case .card ul{margin:0;padding-left:18px;color:#a9b6c2;font-size:12.5px;line-height:1.6}
+.case .card li{margin:2px 0}

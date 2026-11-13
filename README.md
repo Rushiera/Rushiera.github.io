@@ -1,7 +1,7 @@
 # Rushiera.github.io — 个人履历站
 
 > 归属：**并发协议项目内件**（`WorkSpace:tools/并发协议/witness/gitpage/`，2026-11-07 收编、同日归拢进 `witness/`）——由并发协议维护；档案面在 `ccbp:Project/并发协议/`。
-> 纯静态，无构建、无依赖、无框架。三件：**主页（履历）/ 项目星图 / 起点时间线**，另加一页仿 GitHub 档案。
+> 纯静态，无构建依赖、无框架。四件：**主页（交付与案例入口）/ 案例 / 项目星图 / 起点时间线**，另加一页仿 GitHub 档案。
 
 旧站（Particle 模板 + 2020 占位内容 + gulp/sass/jQuery 构建链）已退役；内容在 git 历史与回收站里。
 
@@ -10,7 +10,8 @@
 ## 一、结构
 
 ```
-index.html               主页：定位 / 统计 / 能力面 / 精选工程 / 最近的起点
+index.html               主页（面客）：定位 / 三项能做什么 / 统计 / 技术栈 / 工程现场 / 案例入口 / 最近的起点
+client.html              案例页（面客）：三个场景的「问题 / 做法 / 交付 / 怎么核」+ 合作方式
 projects.html            一页三内容、同页切换不换页：项目星图 / 起点时间线（顶栏视图 tab）· 提交时间线（左下入口条；?pid=<项目> 可深链）
 assets/
   site.css  site.js      主页样式与渲染（读 data/projects.js）
@@ -64,6 +65,8 @@ tools/build-map.mjs          生成器：本机项目档案索引 → 上面三�
 
 ## 三、生成
 
+现行入口是 `tools/build-site.mjs --profile=public|full|both`（一份源两份构建；返回码与 `--json` 回执见脚本头注释）。下面两个子脚本仍可单跑——局部重跑或分片跑时用（全量跑会撞工具 120 s 上限）。
+
 ```powershell
 node tools/build-map.mjs            # 全量：全部项目（含私域线）—— 现行默认发布档
 node tools/build-map.mjs --public   # 公开档：只出白名单项目（临时收窄用）
@@ -90,7 +93,10 @@ git push origin master
 
 GitHub Pages 从 `master` 根目录发布（仓库 `Rushiera/Rushiera.github.io`）。本机直连 github 不通时走仓库级代理 `http://127.0.0.1:7897`（已写入 `.git/config`）。
 
-🔴 **改了 css / js / 数据后必须 bump 版本串**：两页的资源引用都带 `?v=YYYYMMDDx`，Pages 的 CDN 缓存 10 分钟、不带参数的 URL 改完会读到旧文件（HTML 新、CSS 旧 = 页面半新半旧）。改完把两个 html 里的 `?v=` 串一起替换成新值再推。
+🔴 **资源版本串由构建期注入**（2026-11-13 起）：`?v=` 不再手写——`tools/build-site.mjs` 每次构建按 `assets/` 全量内容算一个 8 位哈希，注入四页的资源引用（只认 `assets/` 与 `data/` 路径，`projects.html?v=timeline` 这类业务参数不碰）。同一份 assets 重跑得同一个串（幂等），内容一变串就变。原由：Pages 的 CDN 缓存 10 分钟，手写串漏改一次就是「HTML 新、CSS 旧」的半新半旧页。
+
+- 改了 assets 就跑一次构建（`--profile=public` / `both`），页面串自动跟上；构建回执会打印「改写 N 页」或「页面已是最新」。
+- ⚠ 页面版本串变化**要跟 assets 一并提交**：调度器的自动发布 job 只 `git add -- data`（`panel/SitePublisher.cs`），页面不在它的提交面内。
 
 ## 五、星图渲染器
 
