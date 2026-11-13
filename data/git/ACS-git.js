@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "140 次提交 · 2026-11 → 2026-11",
-    "ver": "29585d9",
+    "sub": "141 次提交 · 2026-11 → 2026-11",
+    "ver": "194ba6d",
     "updated": "2026-11-13",
     "contract": {
       "views": [
@@ -1892,6 +1892,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 29585d9"
+            },
+            {
+              "v": "194ba6d",
+              "date": "11-13",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.86.0 判形覆盖：发现面 428 条逐条落桶 + 面板五卡可点（不接 18 · 可接 5 · 排除面 11 类）",
+              "items": [
+                "Rushiera",
+                "194ba6deb8"
+              ],
+              "status": "done",
+              "evidence": "git 194ba6d"
             }
           ]
         }

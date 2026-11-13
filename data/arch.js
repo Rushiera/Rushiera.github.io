@@ -4,7 +4,7 @@ window.ARCH = {
   "title": "Rushiera",
   "sub": "21 个项目 · 5 层 · 按工程域划分",
   "ver": "v1",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "roleLabels": true,
   "fit": "width"
  },
@@ -174,7 +174,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "v0.85.0 · 待办 21",
+       "note": "v0.86.0 · 待办 23",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -630,8 +630,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
-        "v0.85.0",
-        "待办 21"
+        "v0.86.0",
+        "待办 23"
        ],
        "status": "partial",
        "evidence": "Project/ACS/project.md"
