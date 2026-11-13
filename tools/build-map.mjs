@@ -25,11 +25,15 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SITE = path.join(HERE, '..');
 const ROOT = path.join(SITE, '..', '..');
 const STATE = path.join(ROOT, 'state', 'projects');
-const OUT = path.join(SITE, 'data');
-/* 默认出全量（本地预览要看到完整星图）；--public 出公开档（白名单、可安全推送）
-   全量档在数据里带 public:false，两页都会顶一条红色告警条（assets/dev-banner.js）——误推前看得见。 */
+/* 参数：--public（白名单档）· --dry（只算不写）· --out=<dir>（落点，默认 <站点根>/data）。
+   一份源两份构建的落点差异只在这一个参数——页面模板 / 抽取口径 / 白名单三处完全相同（见 tools/build-site.mjs）。 */
 const PUBLIC = process.argv.includes('--public');
-const DRY = process.argv.includes('--dry');   // 只算不写：refresh.mjs 的 dry 同口径
+const DRY = process.argv.includes('--dry');   // 只算不写：refresh.mjs / build-site.mjs 的 dry 同口径
+const argOf = (k, d) => {
+  const hit = process.argv.find((a) => a.startsWith('--' + k + '='));
+  return hit ? hit.slice(k.length + 3) : d;
+};
+const OUT = path.resolve(argOf('out', path.join(SITE, 'data')));
 
 /* 五层：id 用于泳道与颜色，label 是图上带名，kind 只影响色点 */
 const LAYERS = [
