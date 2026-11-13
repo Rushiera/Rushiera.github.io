@@ -158,7 +158,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.288 · 待办 38",
+       "note": "v0.289 · 待办 39",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -174,7 +174,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "v0.87.0 · 待办 24",
+       "note": "v0.88.0 · 待办 24",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -630,7 +630,7 @@ window.ARCH = {
        "lane": "agent",
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
-        "v0.87.0",
+        "v0.88.0",
         "待办 24"
        ],
        "status": "partial",
@@ -695,8 +695,8 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.288",
-        "待办 38"
+        "v0.289",
+        "待办 39"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"

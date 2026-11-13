@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "142 次提交 · 2026-11 → 2026-11",
-    "ver": "77c5e12",
+    "sub": "143 次提交 · 2026-11 → 2026-11",
+    "ver": "6e02273",
     "updated": "2026-11-13",
     "contract": {
       "views": [
@@ -1918,6 +1918,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 77c5e12"
+            },
+            {
+              "v": "6e02273",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.88.0 判形总表可见性：本次扫描主表 + 新增置顶标红",
+              "items": [
+                "Rushiera",
+                "6e02273f7e"
+              ],
+              "status": "done",
+              "evidence": "git 6e02273"
             }
           ]
         }
