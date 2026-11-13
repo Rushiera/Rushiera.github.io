@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "139 次提交 · 2026-11 → 2026-11",
-    "ver": "ce90ffa",
+    "sub": "140 次提交 · 2026-11 → 2026-11",
+    "ver": "29585d9",
     "updated": "2026-11-13",
     "contract": {
       "views": [
@@ -1879,6 +1879,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git ce90ffa"
+            },
+            {
+              "v": "29585d9",
+              "date": "11-13",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.85.0 面板判形总表：verdicts.json（17 条不接）+ GET /panel/api/verdicts + 目标视图四卡 17 行（单测 683）",
+              "items": [
+                "Rushiera",
+                "29585d9327"
+              ],
+              "status": "done",
+              "evidence": "git 29585d9"
             }
           ]
         }
