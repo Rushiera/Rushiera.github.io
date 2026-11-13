@@ -1,12 +1,12 @@
 window.GIT_TIMELINES = {
- "generatedAt": "2026-11-11 19:13",
- "public": false,
- "count": 34,
+ "generatedAt": "2026-11-13 22:55",
+ "public": true,
+ "count": 18,
  "items": [
   {
    "pid": "并发协议",
-   "shown": 36,
-   "total": 36,
+   "shown": 61,
+   "total": 61,
    "from": "2026-11",
    "to": "2026-11",
    "file": "并发协议-git.js",
@@ -14,19 +14,9 @@ window.GIT_TIMELINES = {
    "source": "localgit"
   },
   {
-   "pid": "协商知识库",
-   "shown": 133,
-   "total": 133,
-   "from": "2026-10",
-   "to": "2026-11",
-   "file": "协商知识库-git.js",
-   "public": false,
-   "source": "repo"
-  },
-  {
    "pid": "ACS",
-   "shown": 69,
-   "total": 69,
+   "shown": 139,
+   "total": 139,
    "from": "2026-11",
    "to": "2026-11",
    "file": "ACS-git.js",
@@ -35,23 +25,13 @@ window.GIT_TIMELINES = {
   },
   {
    "pid": "ApiSiteAnalyzer",
-   "shown": 47,
-   "total": 47,
+   "shown": 48,
+   "total": 48,
    "from": "2026-10",
    "to": "2026-11",
    "file": "ApiSiteAnalyzer-git.js",
    "public": true,
    "source": "repo"
-  },
-  {
-   "pid": "BOSS直聘",
-   "shown": 4,
-   "total": 4,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "BOSS直聘-git.js",
-   "public": false,
-   "source": "localgit"
   },
   {
    "pid": "CGSE_CORE",
@@ -64,19 +44,9 @@ window.GIT_TIMELINES = {
    "source": "repo"
   },
   {
-   "pid": "CGSS-DMM",
-   "shown": 68,
-   "total": 68,
-   "from": "2026-10",
-   "to": "2026-11",
-   "file": "CGSS-DMM-git.js",
-   "public": false,
-   "source": "repo"
-  },
-  {
    "pid": "CH4",
-   "shown": 622,
-   "total": 622,
+   "shown": 626,
+   "total": 626,
    "from": "2026-08",
    "to": "2026-11",
    "file": "CH4-git.js",
@@ -85,8 +55,8 @@ window.GIT_TIMELINES = {
   },
   {
    "pid": "ClashVerge",
-   "shown": 3,
-   "total": 3,
+   "shown": 4,
+   "total": 4,
    "from": "2026-11",
    "to": "2026-11",
    "file": "ClashVerge-git.js",
@@ -115,72 +85,22 @@ window.GIT_TIMELINES = {
   },
   {
    "pid": "ECC",
-   "shown": 3,
-   "total": 3,
-   "from": "2026-11",
+   "shown": 1500,
+   "total": 4327,
+   "from": "2026-07",
    "to": "2026-11",
    "file": "ECC-git.js",
    "public": true,
-   "source": "localgit"
-  },
-  {
-   "pid": "EidolonCGSS",
-   "shown": 2,
-   "total": 2,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "EidolonCGSS-git.js",
-   "public": false,
    "source": "repo"
   },
   {
-   "pid": "FileClean",
-   "shown": 9,
-   "total": 9,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "FileClean-git.js",
-   "public": false,
-   "source": "localgit"
-  },
-  {
-   "pid": "Hime",
-   "shown": 1,
-   "total": 1,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "Hime-git.js",
-   "public": false,
-   "source": "localgit"
-  },
-  {
    "pid": "KkFetch",
-   "shown": 1,
-   "total": 1,
+   "shown": 11,
+   "total": 11,
    "from": "2026-11",
    "to": "2026-11",
    "file": "KkFetch-git.js",
    "public": true,
-   "source": "localgit"
-  },
-  {
-   "pid": "KKManager",
-   "shown": 84,
-   "total": 84,
-   "from": "2026-09",
-   "to": "2026-11",
-   "file": "KKManager-git.js",
-   "public": false,
-   "source": "repo"
-  },
-  {
-   "pid": "Livo",
-   "shown": 24,
-   "total": 24,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "Livo-git.js",
-   "public": false,
    "source": "localgit"
   },
   {
@@ -195,8 +115,8 @@ window.GIT_TIMELINES = {
   },
   {
    "pid": "Mau",
-   "shown": 622,
-   "total": 622,
+   "shown": 626,
+   "total": 626,
    "from": "2026-08",
    "to": "2026-11",
    "file": "Mau-git.js",
@@ -214,43 +134,13 @@ window.GIT_TIMELINES = {
    "source": "localgit"
   },
   {
-   "pid": "OfflineNovel",
-   "shown": 12,
-   "total": 12,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "OfflineNovel-git.js",
-   "public": false,
-   "source": "localgit"
-  },
-  {
-   "pid": "QQBotB",
-   "shown": 273,
-   "total": 273,
-   "from": "2026-09",
-   "to": "2026-11",
-   "file": "QQBotB-git.js",
-   "public": false,
-   "source": "repo"
-  },
-  {
    "pid": "REA",
-   "shown": 31,
-   "total": 31,
+   "shown": 37,
+   "total": 37,
    "from": "2026-10",
    "to": "2026-11",
    "file": "REA-git.js",
    "public": true,
-   "source": "repo"
-  },
-  {
-   "pid": "rs_jxl",
-   "shown": 1,
-   "total": 1,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "rs_jxl-git.js",
-   "public": false,
    "source": "repo"
   },
   {
@@ -274,46 +164,6 @@ window.GIT_TIMELINES = {
    "source": "localgit"
   },
   {
-   "pid": "StarlitSeason",
-   "shown": 1,
-   "total": 1,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "StarlitSeason-git.js",
-   "public": false,
-   "source": "localgit"
-  },
-  {
-   "pid": "ThrottleStop",
-   "shown": 4,
-   "total": 4,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "ThrottleStop-git.js",
-   "public": false,
-   "source": "localgit"
-  },
-  {
-   "pid": "TradingView",
-   "shown": 1,
-   "total": 1,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "TradingView-git.js",
-   "public": false,
-   "source": "localgit"
-  },
-  {
-   "pid": "Vault",
-   "shown": 1,
-   "total": 1,
-   "from": "2026-11",
-   "to": "2026-11",
-   "file": "Vault-git.js",
-   "public": false,
-   "source": "localgit"
-  },
-  {
    "pid": "Akasha",
    "shown": 23,
    "total": 23,
@@ -331,16 +181,6 @@ window.GIT_TIMELINES = {
    "to": "2026-10",
    "file": "Cosmoteer-git.js",
    "public": true,
-   "source": "repo"
-  },
-  {
-   "pid": "Gakumas",
-   "shown": 27,
-   "total": 27,
-   "from": "2026-10",
-   "to": "2026-10",
-   "file": "Gakumas-git.js",
-   "public": false,
    "source": "repo"
   }
  ]

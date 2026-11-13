@@ -4,7 +4,7 @@ window.ARCH = {
     "title": "CGSE_CORE 提交时间线",
     "sub": "317 次提交 · 2026-09 → 2026-11",
     "ver": "90934ed7",
-    "updated": "2026-11-11",
+    "updated": "2026-11-13",
     "contract": {
       "views": [
         "git"

@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-11-11 19:11",
-  "public": false,
-  "count": 42,
+  "generatedAt": "2026-11-13 22:54",
+  "public": true,
+  "count": 21,
   "stats": {
-    "focus": 10,
-    "todoZone": 18,
-    "active": 28,
-    "versions": 2275
+    "focus": 5,
+    "todoZone": 4,
+    "active": 9,
+    "versions": 1630
   },
   "items": [
     {
       "pid": "ACS",
       "layer": "agent",
       "type": "应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
-      "version": "v0.43.0",
+      "version": "v0.84.1",
       "worker": "Coder",
       "jobs": [
         "Node",
         "CSharp"
       ],
       "created": "2026-11-01",
-      "todo": 11,
-      "changelog": 53,
+      "todo": 21,
+      "changelog": 121,
       "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
       "archived": false
     },
@@ -75,19 +75,6 @@
       "archived": false
     },
     {
-      "pid": "CGSS-DMM",
-      "layer": "game",
-      "type": "第三方 CGSS（DMM / PC 版）离线服务端发行包 —— 接管 + 二次开发",
-      "version": "v0.19.0",
-      "worker": "Coder",
-      "jobs": [],
-      "created": "2026-10-03",
-      "todo": 5,
-      "changelog": 32,
-      "purpose": "既有目的（上游成品自带）：",
-      "archived": false
-    },
-    {
       "pid": "CH3",
       "layer": "host",
       "type": "多智能体操作系统",
@@ -108,7 +95,7 @@
       "pid": "CH4",
       "layer": "host",
       "type": "Mau 自举循环宿主（多智能体 OS 能力后置）",
-      "version": "1.8.262",
+      "version": "1.8.266",
       "worker": "Coder",
       "jobs": [
         "CSharp",
@@ -118,25 +105,8 @@
       ],
       "created": "2026-08-14",
       "todo": 2,
-      "changelog": 200,
+      "changelog": 204,
       "purpose": "CH4 = Mau 自举循环的宿主。",
-      "archived": false
-    },
-    {
-      "pid": "CatGame",
-      "layer": "game",
-      "type": "框架基建 + 游戏业务",
-      "version": "v0.69",
-      "worker": "Coder",
-      "jobs": [
-        "CSharp",
-        "Unity",
-        "Git"
-      ],
-      "created": "",
-      "todo": 28,
-      "changelog": 0,
-      "purpose": "v2.0 重构方向（Ardot Board + Dev Handoff）：",
       "archived": false
     },
     {
@@ -156,32 +126,15 @@
       "archived": false
     },
     {
-      "pid": "CatHome5",
-      "layer": "tool",
-      "type": "Mau 自举循环宿主 Go 重新实现（多智能体运行时容器）",
-      "version": "0.7.9",
-      "worker": "Coder",
-      "jobs": [
-        "Go",
-        "Mau",
-        "CSharp"
-      ],
-      "created": "2026-11-11",
-      "todo": 22,
-      "changelog": 32,
-      "purpose": "把 CatHome4 的功能在 Go 里重新实现，版本号递进为 CatHome5。",
-      "archived": false
-    },
-    {
       "pid": "ClashVerge",
       "layer": "game",
       "type": "本机 Clash Verge Rev 的接管与二次开发——把安装产物与用户数据全部收进…",
-      "version": "v1.60",
+      "version": "v1.72（v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min））",
       "worker": "Coder",
       "jobs": [],
       "created": "2026-10-30",
-      "todo": 34,
-      "changelog": 70,
+      "todo": 35,
+      "changelog": 82,
       "purpose": "Clash Verge Rev 2.5.8 装进 C:\\Program Files\\Clash Verge，用户数据按 Tauri 约定落在 %APPDATA% 与 %LOCALAPPDAT…",
       "archived": false
     },
@@ -235,7 +188,7 @@
       "pid": "ECC",
       "layer": "agent",
       "type": "可移植的 Agent 工作流层（reusable workflow layer）+ 二…",
-      "version": "v0.25",
+      "version": "v0.32",
       "worker": "Majordomo",
       "jobs": [
         "ECC；工具面 = `…",
@@ -244,40 +197,8 @@
       ],
       "created": "2026-11-01",
       "todo": 0,
-      "changelog": 25,
+      "changelog": 32,
       "purpose": "可读、可引用、可改造",
-      "archived": false
-    },
-    {
-      "pid": "EidolonCGSS",
-      "layer": "tool",
-      "type": "外部仓库二次开发——《偶像大师 灰姑娘女孩》99 位角色的 AI 文字陪聊应用（`ei…",
-      "version": "v0.5",
-      "worker": "Coder",
-      "jobs": [
-        "Node",
-        "Git",
-        "Python 后端无对…"
-      ],
-      "created": "2026-11-07",
-      "todo": 7,
-      "changelog": 5,
-      "purpose": "在 eidolon-sc 的 fork 上做二次开发：把角色从闪耀色彩换成灰姑娘女孩 99 位，只保留文字对话，并在其上叠加自己的玩法（好感度数值、成人模式开关、作弊面、外观设置）。",
-      "archived": false
-    },
-    {
-      "pid": "FileClean",
-      "layer": "tool",
-      "type": "文件清理工具（项目名 FileClean——2026-11-10 由「挂载盘清理器」更…",
-      "version": "v0.22",
-      "worker": "Coder",
-      "jobs": [
-        "CSharp；原脚本链…"
-      ],
-      "created": "2026-10-05",
-      "todo": 17,
-      "changelog": 20,
-      "purpose": "可直接运行的工具",
       "archived": false
     },
     {
@@ -294,81 +215,18 @@
       "archived": false
     },
     {
-      "pid": "Gakumas",
-      "layer": "game",
-      "type": "学園アイドルマスター（DMM / PC 版）本地解锁包 GakumasUnlock 的…",
-      "version": "v0.15",
-      "worker": "Coder",
-      "jobs": [],
-      "created": "2026-10-25",
-      "todo": 8,
-      "changelog": 16,
-      "purpose": "官服依赖",
-      "archived": false
-    },
-    {
-      "pid": "Hime",
-      "layer": "game",
-      "type": "Unity 商业游戏二次开发（Mono 后端 · 无壳无混淆无强名）",
-      "version": "v0.17",
-      "worker": "Coder",
-      "jobs": [
-        "CSharp",
-        "Node"
-      ],
-      "created": "2026-10-31",
-      "todo": 14,
-      "changelog": 17,
-      "purpose": "黑盒发行包",
-      "archived": false
-    },
-    {
-      "pid": "KKManager",
-      "layer": "tool",
-      "type": "Koikatsu 卡片 ↔ zipmod 关联管理器（C# / .NET 8）",
-      "version": "v0.21.7",
-      "worker": "Coder",
-      "jobs": [
-        "CSharp",
-        "Release",
-        "Html"
-      ],
-      "created": "2026-09-26",
-      "todo": 52,
-      "changelog": 116,
-      "purpose": "可查询的数据库",
-      "archived": false
-    },
-    {
       "pid": "KkFetch",
       "layer": "tool",
-      "type": "外部站点资源链接采集器（C# / .NET 8 工具链）",
-      "version": "v0.32",
+      "type": "外部站点资源链接采集器（C# / .NET 8 工具链 · 三层程序集 + 进程内热重…",
+      "version": "v0.40.0",
       "worker": "Coder",
       "jobs": [
         "CSharp"
       ],
       "created": "2026-09-25",
-      "todo": 8,
-      "changelog": 31,
+      "todo": 3,
+      "changelog": 44,
       "purpose": "人在浏览器内",
-      "archived": false
-    },
-    {
-      "pid": "Livo",
-      "layer": "tool",
-      "type": "自研产品工程（照规格重写，不 fork 不二开）",
-      "version": "v0.46",
-      "worker": "Coder",
-      "jobs": [
-        "Livo",
-        "CSharp",
-        "Go"
-      ],
-      "created": "2026-11-10",
-      "todo": 2,
-      "changelog": 47,
-      "purpose": "自己的实现，自己的许可。",
       "archived": false
     },
     {
@@ -417,72 +275,23 @@
       ],
       "created": "2026-08-03",
       "todo": 6,
-      "changelog": 106,
+      "changelog": 107,
       "purpose": "Mau = CH4 进行自举的工具箱。",
-      "archived": false
-    },
-    {
-      "pid": "Mau-Go",
-      "layer": "tool",
-      "type": "Mau 体系 Go 重新实现（语料解释器 + 运行时 + 积木库）",
-      "version": "0.1.14",
-      "worker": "Coder",
-      "jobs": [
-        "Go",
-        "Mau",
-        "CSharp"
-      ],
-      "created": "2026-11-11",
-      "todo": 3,
-      "changelog": 15,
-      "purpose": "把 Mau 体系的功能在 Go 里重新实现。",
-      "archived": false
-    },
-    {
-      "pid": "OfflineNovel",
-      "layer": "tool",
-      "type": "可离线的便携式剧情播放器（产品线）",
-      "version": "v0.14",
-      "worker": "Majordomo",
-      "jobs": [
-        "OfflineNovel",
-        "CSharp"
-      ],
-      "created": "2026-11-10",
-      "todo": 9,
-      "changelog": 14,
-      "purpose": "可复用的处置能力",
-      "archived": false
-    },
-    {
-      "pid": "QQBotB",
-      "layer": "private",
-      "type": "QQ 消息桥接（模式 B）——专用 QQ 号 + OneBot 11 协议端",
-      "version": "v1.69",
-      "worker": "Coder",
-      "jobs": [
-        "CSharp",
-        "Git"
-      ],
-      "created": "2026-09-26",
-      "todo": 74,
-      "changelog": 171,
-      "purpose": "不受被动回复限制",
       "archived": false
     },
     {
       "pid": "REA",
       "layer": "agent",
       "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-      "version": "v0.37 · 上游基线 `c3647ade1`",
+      "version": "v0.47 · 上游基线 `c3647ade1`",
       "worker": "Coder",
       "jobs": [
         "Node",
         "Git"
       ],
       "created": "2026-10-21",
-      "todo": 14,
-      "changelog": 41,
+      "todo": 8,
+      "changelog": 50,
       "purpose": "本支可改、可验、可自持的逆向工程底座",
       "archived": false
     },
@@ -504,90 +313,6 @@
       "archived": false
     },
     {
-      "pid": "StarlitSeason",
-      "layer": "game",
-      "type": "アイドルマスター スターリットシーズン（UE4 / PC）的二开试验场 + 跨游戏壳（…",
-      "version": "",
-      "worker": "Coder",
-      "jobs": [],
-      "created": "2026-10-28",
-      "todo": 26,
-      "changelog": 31,
-      "purpose": "按成本递增排序施工",
-      "archived": false
-    },
-    {
-      "pid": "ThrottleStop",
-      "layer": "tool",
-      "type": "本机（Hasee QNLXS / i7-12650H）稳定性遥测与取证台——外挂采集 …",
-      "version": "v0.16",
-      "worker": "Majordomo",
-      "jobs": [],
-      "created": "2026-10-21",
-      "todo": 9,
-      "changelog": 19,
-      "purpose": "把黑盒变成可读的现场",
-      "archived": false
-    },
-    {
-      "pid": "TradingView",
-      "layer": "game",
-      "type": "第三方发行包二次开发（TradingView Desktop · MSIX）",
-      "version": "1.8",
-      "worker": "Coder",
-      "jobs": [
-        "Node",
-        "CSharp"
-      ],
-      "created": "2026-11-04",
-      "todo": 7,
-      "changelog": 18,
-      "purpose": "工作区分工（结构判据）：",
-      "archived": false
-    },
-    {
-      "pid": "TsuruPeta",
-      "layer": "game",
-      "type": "Unity 同人游戏汉化（日 → 中）",
-      "version": "",
-      "worker": "Coder",
-      "jobs": [
-        "CSharp",
-        "Mau"
-      ],
-      "created": "2026-09-27",
-      "todo": 12,
-      "changelog": 4,
-      "purpose": "文本层全中文 + 字形完整 + 游戏本体不被破坏",
-      "archived": false
-    },
-    {
-      "pid": "Vault",
-      "layer": "tool",
-      "type": "工具类项目（本机自用，不对外分发）",
-      "version": "v0.3",
-      "worker": "Coder",
-      "jobs": [],
-      "created": "",
-      "todo": 14,
-      "changelog": 3,
-      "purpose": "凭据与账号中介",
-      "archived": false
-    },
-    {
-      "pid": "rs_jxl",
-      "layer": "tool",
-      "type": "外部开源项目协作开发（Rust edition 2024 · rust-version…",
-      "version": "",
-      "worker": "Coder",
-      "jobs": [],
-      "created": "2026-11-11",
-      "todo": 7,
-      "changelog": 28,
-      "purpose": "可参与的性能优化工程",
-      "archived": false
-    },
-    {
       "pid": "sc2api-listen",
       "layer": "game",
       "type": "星际争霸 II 进程内接口（Win64 DLL 注入 + C++ / Python 冒…",
@@ -604,67 +329,19 @@
       "archived": false
     },
     {
-      "pid": "sms-szfang",
-      "layer": "tool",
-      "type": "恶意样本静态取证（接码平台作业端）",
-      "version": "v0.16",
-      "worker": "Majordomo",
-      "jobs": [
-        "REA",
-        "sms-szfang",
-        "Node",
-        "CSharp"
-      ],
-      "created": "2026-11-10",
-      "todo": 9,
-      "changelog": 16,
-      "purpose": "结构 → 保护 → 端点 → 协议 → 能力面 → 定性",
-      "archived": false
-    },
-    {
       "pid": "并发协议",
       "layer": "host",
       "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-      "version": "v0.242",
+      "version": "v0.284",
       "worker": "Majordomo",
       "jobs": [
         "CSharp",
         "CatHome"
       ],
       "created": "",
-      "todo": 31,
-      "changelog": 264,
+      "todo": 39,
+      "changelog": 311,
       "purpose": "两件事，一条主线：让自主推进有据可依。",
-      "archived": false
-    },
-    {
-      "pid": "BOSS直聘",
-      "layer": "private",
-      "type": "求职平台工作线（套壳浏览器采集 + 岗位库分析 + 真人简历参考 + 站点内容与交互 …",
-      "version": "v0.20.2",
-      "worker": "Majordomo",
-      "jobs": [
-        "BOSS直聘"
-      ],
-      "created": "2026-10-16",
-      "todo": 10,
-      "changelog": 55,
-      "purpose": "采集线",
-      "archived": false
-    },
-    {
-      "pid": "协商知识库",
-      "layer": "private",
-      "type": "录音 → 带说话人标注的可检索文本 + 客户协商知识库（网页面板 + 本地后端 · 一…",
-      "version": "v1.45",
-      "worker": "Majordomo",
-      "jobs": [
-        "协商知识库"
-      ],
-      "created": "2026-10-01",
-      "todo": 41,
-      "changelog": 147,
-      "purpose": "带说话人标注的可检索文本",
       "archived": false
     }
   ]

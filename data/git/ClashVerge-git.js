@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "3 次提交 · 2026-11 → 2026-11",
-    "ver": "f52e185",
-    "updated": "2026-11-11",
+    "sub": "4 次提交 · 2026-11 → 2026-11",
+    "ver": "ef92df7",
+    "updated": "2026-11-13",
     "contract": {
       "views": [
         "git"
@@ -111,6 +111,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git f52e185"
+            },
+            {
+              "v": "ef92df7",
+              "date": "11-13",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.70 compat: short 升级门禁加两道护栏（探过才算 / 无 >4KB 下行）+ 新增 dbg-host --short 与解析对照两个观测位点 + 四处过期纠错",
+              "items": [
+                "Rushiera",
+                "ef92df7d35"
+              ],
+              "status": "done",
+              "evidence": "git ef92df7"
             }
           ]
         }

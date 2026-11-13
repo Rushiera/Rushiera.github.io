@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "31 次提交 · 2026-10 → 2026-11",
-    "ver": "806c29a",
-    "updated": "2026-11-11",
+    "sub": "37 次提交 · 2026-10 → 2026-11",
+    "ver": "f4013b7",
+    "updated": "2026-11-13",
     "contract": {
       "views": [
         "git"
@@ -475,6 +475,84 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 806c29a"
+            },
+            {
+              "v": "18f811c",
+              "date": "11-12",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.40: bridge/ev 取数脚本族入库 + 抓包样本移出仓库（D2 分流）",
+              "items": [
+                "Rushiera",
+                "18f811cdc9"
+              ],
+              "status": "done",
+              "evidence": "git 18f811c"
+            },
+            {
+              "v": "3000cb0",
+              "date": "11-12",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.40: bridge/ev/README 补「脚本与 envelope 形态绑定」判据（实测）",
+              "items": [
+                "Rushiera",
+                "3000cb0f4a"
+              ],
+              "status": "done",
+              "evidence": "git 3000cb0"
+            },
+            {
+              "v": "88565c3",
+              "date": "11-12",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.41: 本地化收口——投放 4 条顶层命令描述（scan-cli 163/163 · apply --check 180/180）",
+              "items": [
+                "Rushiera",
+                "88565c331c"
+              ],
+              "status": "done",
+              "evidence": "git 88565c3"
+            },
+            {
+              "v": "d139d93",
+              "date": "11-12",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.44: E4 收口 — unicorn 裸字节跑通 sms-szfang 壳 0x401650（6 断言 PASS）",
+              "items": [
+                "Rushiera",
+                "d139d9374b"
+              ],
+              "status": "done",
+              "evidence": "git d139d93"
+            },
+            {
+              "v": "ceaab1f",
+              "date": "11-12",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.45: TreeSize version.dll side-load 补判（报告 §十）",
+              "items": [
+                "Rushiera",
+                "ceaab1f05a"
+              ],
+              "status": "done",
+              "evidence": "git ceaab1f"
+            },
+            {
+              "v": "f4013b7",
+              "date": "11-12",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.46: E2 收口——il2cpp-dump 首个 ELF 目标完整 dump（BanG Dream CN libil2cpp.so）",
+              "items": [
+                "Rushiera",
+                "f4013b710d"
+              ],
+              "status": "done",
+              "evidence": "git f4013b7"
             }
           ]
         }

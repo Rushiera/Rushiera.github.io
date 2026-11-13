@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "ApiSiteAnalyzer",
     "title": "ApiSiteAnalyzer 提交时间线",
-    "sub": "47 次提交 · 2026-10 → 2026-11",
-    "ver": "d7f0ed6",
-    "updated": "2026-11-11",
+    "sub": "48 次提交 · 2026-10 → 2026-11",
+    "ver": "c3f22ff",
+    "updated": "2026-11-13",
     "contract": {
       "views": [
         "git"
@@ -683,6 +683,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git d7f0ed6"
+            },
+            {
+              "v": "c3f22ff",
+              "date": "11-12",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.26.4: 选号策略四处改动 + 缓存命中观测脚本（tools/cache_watch.py + 基线快照）",
+              "items": [
+                "Rushiera",
+                "c3f22ffc93"
+              ],
+              "status": "done",
+              "evidence": "git c3f22ff"
             }
           ]
         }

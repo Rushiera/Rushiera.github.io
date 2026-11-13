@@ -2,9 +2,9 @@ window.ARCH = {
   "meta": {
     "project": "CH4",
     "title": "CH4 提交时间线",
-    "sub": "622 次提交 · 2026-08 → 2026-11",
-    "ver": "2d2499c0",
-    "updated": "2026-11-11",
+    "sub": "626 次提交 · 2026-08 → 2026-11",
+    "ver": "dd0febe2",
+    "updated": "2026-11-13",
     "contract": {
       "views": [
         "git"
@@ -8158,6 +8158,58 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 2d2499c0"
+            },
+            {
+              "v": "82750cbc",
+              "date": "11-12",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "Mau.Runtime: RootPathResolver.Expand 支持根名+斜杠形态（WorkSpace/xxx 按根寻址）",
+              "items": [
+                "Rushiera",
+                "82750cbce5"
+              ],
+              "status": "done",
+              "evidence": "git 82750cbc"
+            },
+            {
+              "v": "e5d16d4e",
+              "date": "11-12",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "Mau: proc-run/py-run 输出双编码解码 + cs-patch 重载签名后缀（FileClean 线 A）",
+              "items": [
+                "Rushiera",
+                "e5d16d4e14"
+              ],
+              "status": "done",
+              "evidence": "git e5d16d4e"
+            },
+            {
+              "v": "daa72d8c",
+              "date": "11-13",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "1.8.265 模板广播路由修复（catcfg.tplbroadcast）+ 新猫模板改动即存/多猫跟随默认（1.8.263 同批）",
+              "items": [
+                "Rushiera",
+                "daa72d8cbe"
+              ],
+              "status": "done",
+              "evidence": "git daa72d8c"
+            },
+            {
+              "v": "dd0febe2",
+              "date": "11-13",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "1.8.266 全跟随单开关（工具+前文+受控根）+ cat.cfg.set 三分支 + 重启链双硬化（重复实例/自启前检）",
+              "items": [
+                "Rushiera",
+                "dd0febe222"
+              ],
+              "status": "done",
+              "evidence": "git dd0febe2"
             }
           ]
         }
