@@ -17,7 +17,7 @@ assets/
   site.css  site.js      主页样式与渲染（读 data/projects.js）
   particles.min.js       粒子背景库（旧站原件，原样复用）
   particles-bg.js        首屏背景参数（复刻旧站画法：白五边形 / 连线 250 / 点击补粒）
-  dev-banner.js          全量档红色告警条（public:false 时出现）
+  dev-banner.js          已下线（0.288：页面不再引用，全量档预览也不顶红条）
   arch/arch.css          archkit 渲染器样式（复制件，勿在此改）
   arch/arch-render.js    archkit 渲染器（复制件，勿在此改）
 data/
@@ -81,7 +81,7 @@ node ../tools/build-git-timelines.mjs --only=CH4,Mau # 局部重跑（清单里�
 
 🟠 **发布档位（2026-11-09 裁定）**——默认推**全量档**：私域项目的名称与描述可以放到公开站上，保密按**点名制**处理（Rushiera 后续单独对某项目提保密要求时，才把该项目移出 `PUBLIC_PIDS` 或加进隐藏名单）。`--public` 保留为临时收窄手段（白名单 21 项），不再作为发布前置。
 
-门禁：全量档数据带 `public:false`，本地预览（`file://` / `localhost`）时两页底部顶一条红色告警条（`assets/dev-banner.js`）——**推之前看得见，不靠记性**；线上按上面的裁定不顶。
+门禁：全量档数据带 `public:false`（`build-site.mjs` 每次构建自证），`full/` 在 `.gitignore` 里、发布 job 只提交 `data/`——**结构上就推不出去**。2026-11-14（0.288）起底栏红条（`assets/dev-banner.js`）已从页面下线：全量档预览不再顶红条，护栏由上面两条结构约束承担。
 
 ## 四、发布
 

@@ -169,7 +169,6 @@
     if (start && window.GIT_TIMELINES && window.GIT_TIMELINES.public === false) window.ARCH.public = false;
     if (!start) MAP = window.ARCH;
     load('assets/arch/arch-render.js' + VER, function () {
-      load('assets/dev-banner.js' + VER, null, null);
       done(startPid, false);
     }, function () {
       fail('渲染器加载失败：assets/arch/arch-render.js');
