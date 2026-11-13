@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "143 次提交 · 2026-11 → 2026-11",
-    "ver": "6e02273",
+    "sub": "144 次提交 · 2026-11 → 2026-11",
+    "ver": "c6868f3",
     "updated": "2026-11-13",
     "contract": {
       "views": [
@@ -1931,6 +1931,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 6e02273"
+            },
+            {
+              "v": "c6868f3",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.89.0 判形取证复核：33 条逐条实测（Watt Toolkit E→B 本体缺失 · shawl.exe 归 clouddrive · 22 条时效复核）+ last_probe 快照与未探明",
+              "items": [
+                "Rushiera",
+                "c6868f3e28"
+              ],
+              "status": "done",
+              "evidence": "git c6868f3"
             }
           ]
         }

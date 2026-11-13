@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-11-14 01:00",
+  "generatedAt": "2026-11-14 01:31",
   "public": true,
   "count": 21,
   "stats": {
     "focus": 5,
     "todoZone": 3,
     "active": 8,
-    "versions": 1640
+    "versions": 1649
   },
   "items": [
     {
       "pid": "ACS",
       "layer": "agent",
       "type": "应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
-      "version": "v0.88.0",
+      "version": "v0.89.1",
       "worker": "Coder",
       "jobs": [
         "Node",
         "CSharp"
       ],
       "created": "2026-11-01",
-      "todo": 24,
-      "changelog": 126,
+      "todo": 7,
+      "changelog": 128,
       "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
       "archived": false
     },
@@ -221,11 +221,12 @@
       "version": "v0.40.0",
       "worker": "Coder",
       "jobs": [
-        "CSharp"
+        "CSharp",
+        "KkFetch"
       ],
       "created": "2026-09-25",
-      "todo": 3,
-      "changelog": 44,
+      "todo": 4,
+      "changelog": 45,
       "purpose": "人在浏览器内",
       "archived": false
     },
@@ -266,7 +267,7 @@
       "pid": "Mau",
       "layer": "host",
       "type": "Mau 地基区块——CH4 自举工具箱（私人方言）",
-      "version": "1.8.262",
+      "version": "1.8.266",
       "worker": "Coder",
       "jobs": [
         "CSharp",
@@ -275,7 +276,7 @@
       ],
       "created": "2026-08-03",
       "todo": 6,
-      "changelog": 107,
+      "changelog": 110,
       "purpose": "Mau = CH4 进行自举的工具箱。",
       "archived": false
     },
@@ -283,15 +284,15 @@
       "pid": "REA",
       "layer": "agent",
       "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-      "version": "v0.47 · 上游基线 `c3647ade1`",
+      "version": "v0.48 · 上游基线 `c3647ade1`",
       "worker": "Coder",
       "jobs": [
         "Node",
         "Git"
       ],
       "created": "2026-10-21",
-      "todo": 8,
-      "changelog": 50,
+      "todo": 9,
+      "changelog": 51,
       "purpose": "本支可改、可验、可自持的逆向工程底座",
       "archived": false
     },
@@ -332,15 +333,15 @@
       "pid": "并发协议",
       "layer": "host",
       "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-      "version": "v0.289",
+      "version": "v0.290b",
       "worker": "Majordomo",
       "jobs": [
         "CSharp",
         "CatHome"
       ],
       "created": "",
-      "todo": 39,
-      "changelog": 316,
+      "todo": 28,
+      "changelog": 318,
       "purpose": "两件事，一条主线：让自主推进有据可依。",
       "archived": false
     }

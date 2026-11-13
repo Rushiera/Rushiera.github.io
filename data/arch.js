@@ -142,7 +142,7 @@ window.ARCH = {
         "Mau",
         "Git"
        ],
-       "note": "1.8.262 · 待办 6",
+       "note": "1.8.266 · 待办 6",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -158,7 +158,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.289 · 待办 39",
+       "note": "v0.290b · 待办 28",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -174,7 +174,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "v0.88.0 · 待办 24",
+       "note": "v0.89.1 · 待办 7",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -224,7 +224,7 @@ window.ARCH = {
         "Node",
         "Git"
        ],
-       "note": "v0.47 · 上游基线 `c3647ade1` · 待办 8",
+       "note": "v0.48 · 上游基线 `c3647ade1` · 待办 9",
        "evidence": "Project/REA/project.md"
       },
       {
@@ -348,9 +348,10 @@ window.ARCH = {
        "row": 3,
        "tags": [
         "Coder",
-        "CSharp"
+        "CSharp",
+        "KkFetch"
        ],
-       "note": "v0.40.0 · 待办 3",
+       "note": "v0.40.0 · 待办 4",
        "evidence": "Project/KkFetch/project.md"
       },
       {
@@ -448,7 +449,7 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · Mau 地基区块——CH4 自举工具箱（私人方言）",
        "items": [
-        "1.8.262",
+        "1.8.266",
         "待办 6"
        ],
        "status": "partial",
@@ -488,7 +489,7 @@ window.ARCH = {
        "title": "KkFetch · 外部站点资源链接采集器（C# / .NET 8 工具链 · 三层程序集 + 进程内热重…",
        "items": [
         "v0.40.0",
-        "待办 3"
+        "待办 4"
        ],
        "status": "partial",
        "evidence": "Project/KkFetch/project.md"
@@ -552,8 +553,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "REA · 逆向工程 MCP server + CLI（TypeScript / Node 24）",
        "items": [
-        "v0.47 · 上游基线 `c3647ade1`",
-        "待办 8"
+        "v0.48 · 上游基线 `c3647ade1`",
+        "待办 9"
        ],
        "status": "partial",
        "evidence": "Project/REA/project.md"
@@ -630,8 +631,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
-        "v0.88.0",
-        "待办 24"
+        "v0.89.1",
+        "待办 7"
        ],
        "status": "partial",
        "evidence": "Project/ACS/project.md"
@@ -695,8 +696,8 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.289",
-        "待办 39"
+        "v0.290b",
+        "待办 28"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"
