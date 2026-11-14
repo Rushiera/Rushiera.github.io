@@ -1,12 +1,12 @@
 window.GIT_TIMELINES = {
- "generatedAt": "2026-11-14 14:38",
+ "generatedAt": "2026-11-14 15:09",
  "public": true,
  "count": 17,
  "items": [
   {
    "pid": "并发协议",
-   "shown": 68,
-   "total": 68,
+   "shown": 69,
+   "total": 69,
    "from": "2026-11",
    "to": "2026-11",
    "file": "并发协议-git.js",
@@ -105,9 +105,9 @@ window.GIT_TIMELINES = {
   },
   {
    "pid": "Mau",
-   "shown": 627,
-   "total": 627,
-   "from": "2026-08",
+   "shown": 35,
+   "total": 35,
+   "from": "2026-11",
    "to": "2026-11",
    "file": "Mau-git.js",
    "public": true,

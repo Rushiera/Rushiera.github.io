@@ -80,18 +80,17 @@ window.ARCH = {
       {
        "id": "p-Mau",
        "label": "Mau",
-       "sub": "唯一正用仓库——CH4 自举工具箱（私人方言 / 自检仪 / 工具箱）",
+       "sub": "唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "kind": "core",
        "status": "done",
        "col": 2,
        "row": 0,
        "tags": [
         "Coder",
-        "CSharp",
         "Mau",
         "Git"
        ],
-       "note": "1.8.266 · 待办 8",
+       "note": "0.36.2 · 待办 11",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -107,7 +106,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.297 · 待办 30",
+       "note": "v0.298 · 待办 30",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -383,10 +382,10 @@ window.ARCH = {
        "date": "",
        "group": "2026-08",
        "lane": "host",
-       "title": "Mau · 唯一正用仓库——CH4 自举工具箱（私人方言 / 自检仪 / 工具箱）",
+       "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
-        "1.8.266",
-        "待办 8"
+        "0.36.2",
+        "待办 11"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"
@@ -606,7 +605,7 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.297",
+        "v0.298",
         "待办 30"
        ],
        "status": "partial",

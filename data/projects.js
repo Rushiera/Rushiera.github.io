@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-14 14:38",
+ "generatedAt": "2026-11-14 15:08",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 3,
   "todoZone": 5,
   "active": 8,
-  "versions": 1337
+  "versions": 1340
  },
  "items": [
   {
@@ -215,18 +215,17 @@ window.PROJECTS = {
   {
    "pid": "Mau",
    "layer": "host",
-   "type": "唯一正用仓库——CH4 自举工具箱（私人方言 / 自检仪 / 工具箱）",
-   "version": "1.8.266",
+   "type": "唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
+   "version": "0.36.2",
    "worker": "Coder",
    "jobs": [
-    "CSharp",
     "Mau",
     "Git"
    ],
    "created": "2026-08-03",
-   "todo": 8,
-   "changelog": 2,
-   "purpose": "Mau = CH4 进行自举的工具箱。",
+   "todo": 11,
+   "changelog": 4,
+   "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },
   {
@@ -282,7 +281,7 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.297",
+   "version": "v0.298",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
@@ -290,7 +289,7 @@ window.PROJECTS = {
    ],
    "created": "",
    "todo": 30,
-   "changelog": 325,
+   "changelog": 326,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   }

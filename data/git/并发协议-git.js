@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "68 次提交 · 2026-11 → 2026-11",
-    "ver": "3079402",
+    "sub": "69 次提交 · 2026-11 → 2026-11",
+    "ver": "41a4d10",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -956,6 +956,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 3079402"
+            },
+            {
+              "v": "41a4d10",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.298 archkit view.html 补挂 body.embed（iframe 高度锁生效）· README 星图 37",
+              "items": [
+                "Rushiera",
+                "41a4d108ab"
+              ],
+              "status": "done",
+              "evidence": "git 41a4d10"
             }
           ]
         }
