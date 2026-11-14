@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-14 13:08",
+  "generatedAt": "2026-11-14 13:38",
   "public": true,
   "count": 21,
   "stats": {
     "focus": 2,
-    "todoZone": 6,
-    "active": 8,
+    "todoZone": 5,
+    "active": 7,
     "versions": 1658
   },
   "items": [

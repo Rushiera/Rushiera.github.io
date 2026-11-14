@@ -1,7 +1,7 @@
 window.GIT_TIMELINES = {
- "generatedAt": "2026-11-14 13:08",
+ "generatedAt": "2026-11-14 13:38",
  "public": true,
- "count": 18,
+ "count": 16,
  "items": [
   {
    "pid": "并发协议",
@@ -40,16 +40,6 @@ window.GIT_TIMELINES = {
    "from": "2026-09",
    "to": "2026-11",
    "file": "CGSE_CORE-git.js",
-   "public": true,
-   "source": "repo"
-  },
-  {
-   "pid": "CH4",
-   "shown": 626,
-   "total": 626,
-   "from": "2026-08",
-   "to": "2026-11",
-   "file": "CH4-git.js",
    "public": true,
    "source": "repo"
   },
@@ -112,16 +102,6 @@ window.GIT_TIMELINES = {
    "file": "LosslessScaling-git.js",
    "public": true,
    "source": "localgit"
-  },
-  {
-   "pid": "Mau",
-   "shown": 626,
-   "total": 626,
-   "from": "2026-08",
-   "to": "2026-11",
-   "file": "Mau-git.js",
-   "public": true,
-   "source": "repo"
   },
   {
    "pid": "MOSSCatalog",
