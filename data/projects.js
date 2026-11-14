@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-14 17:41",
+ "generatedAt": "2026-11-14 18:11",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 3,
   "todoZone": 5,
   "active": 8,
-  "versions": 1349
+  "versions": 1352
  },
  "items": [
   {
@@ -223,8 +223,8 @@ window.PROJECTS = {
     "Git"
    ],
    "created": "2026-08-03",
-   "todo": 15,
-   "changelog": 9,
+   "todo": 13,
+   "changelog": 12,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },

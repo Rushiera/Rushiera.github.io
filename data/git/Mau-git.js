@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "37 次提交 · 2026-11 → 2026-11",
-    "ver": "79f46b0",
+    "sub": "38 次提交 · 2026-11 → 2026-11",
+    "ver": "971f58e",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -553,6 +553,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 79f46b0"
+            },
+            {
+              "v": "971f58e",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.4 部署链硬化 + intent 部署结论 + host-* 执行面分派",
+              "items": [
+                "Rushiera",
+                "971f58e0c6"
+              ],
+              "status": "done",
+              "evidence": "git 971f58e"
             }
           ]
         }
