@@ -1,19 +1,19 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-14 16:40",
+ "generatedAt": "2026-11-14 17:10",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 3,
   "todoZone": 5,
   "active": 8,
-  "versions": 1346
+  "versions": 1349
  },
  "items": [
   {
    "pid": "ACS",
    "layer": "agent",
    "type": "应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
-   "version": "v0.90.0",
+   "version": "v0.90.1",
    "worker": "Coder",
    "jobs": [
     "Node",
@@ -21,7 +21,7 @@ window.PROJECTS = {
    ],
    "created": "2026-11-01",
    "todo": 8,
-   "changelog": 130,
+   "changelog": 131,
    "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
    "archived": false
   },
@@ -224,7 +224,7 @@ window.PROJECTS = {
    ],
    "created": "2026-08-03",
    "todo": 15,
-   "changelog": 8,
+   "changelog": 9,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },
@@ -289,7 +289,7 @@ window.PROJECTS = {
    ],
    "created": "",
    "todo": 30,
-   "changelog": 328,
+   "changelog": 329,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   }

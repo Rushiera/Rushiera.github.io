@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "146 次提交 · 2026-11 → 2026-11",
-    "ver": "f1c7063",
+    "sub": "147 次提交 · 2026-11 → 2026-11",
+    "ver": "200acbb",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -1970,6 +1970,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git f1c7063"
+            },
+            {
+              "v": "200acbb",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.90.1: 根目录一键启动入口（启动.bat + ext/probe/scripts/launch.mjs）",
+              "items": [
+                "Rushiera",
+                "200acbb060"
+              ],
+              "status": "done",
+              "evidence": "git 200acbb"
             }
           ]
         }
