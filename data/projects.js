@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-14 12:37",
+ "generatedAt": "2026-11-14 13:08",
  "public": true,
  "count": 21,
  "stats": {
   "focus": 2,
   "todoZone": 6,
   "active": 8,
-  "versions": 1656
+  "versions": 1658
  },
  "items": [
   {
@@ -333,15 +333,15 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.295",
+   "version": "v0.297",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
     "CatHome"
    ],
    "created": "",
-   "todo": 31,
-   "changelog": 323,
+   "todo": 30,
+   "changelog": 325,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   }

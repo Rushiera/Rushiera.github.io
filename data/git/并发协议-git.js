@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "67 次提交 · 2026-11 → 2026-11",
-    "ver": "020a641",
+    "sub": "68 次提交 · 2026-11 → 2026-11",
+    "ver": "3079402",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -943,6 +943,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 020a641"
+            },
+            {
+              "v": "3079402",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.297: 原件归档按自然日去重（WatchSpecs 七组全采 + PruneGroupSameDay）",
+              "items": [
+                "Rushiera",
+                "3079402181"
+              ],
+              "status": "done",
+              "evidence": "git 3079402"
             }
           ]
         }
