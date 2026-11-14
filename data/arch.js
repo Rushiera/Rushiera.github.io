@@ -90,7 +90,7 @@ window.ARCH = {
         "Mau",
         "Git"
        ],
-       "note": "0.36.7 · 待办 16",
+       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-14 23:25:52）——视觉通道自动回避轮，验证见 todo G19） · 待办 17",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -384,8 +384,8 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
-        "0.36.7",
-        "待办 16"
+        "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-14 23:25:52）——视觉通道自动回避轮，验证见 todo G19）",
+        "待办 17"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"

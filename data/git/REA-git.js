@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "39 次提交 · 2026-10 → 2026-11",
-    "ver": "3c2f33c",
+    "sub": "43 次提交 · 2026-10 → 2026-11",
+    "ver": "85a1d63",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -579,6 +579,58 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 3c2f33c"
+            },
+            {
+              "v": "64fc218",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "reports/offlinenovel-servers: P1–P4 追加（kamihime 客户端工具面结果 / angelicar 28 条分支 / shangrila 49 条字符串 + :28086 动态探测）",
+              "items": [
+                "Rushiera",
+                "64fc218bf1"
+              ],
+              "status": "done",
+              "evidence": "git 64fc218"
+            },
+            {
+              "v": "09cafbe",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "offlinenovel-servers 报告：修正 shangrila 重定向目标为 http://localhost:<PORT>（P2 实测），补 5.2 指向 5.3",
+              "items": [
+                "Rushiera",
+                "09cafbee44"
+              ],
+              "status": "done",
+              "evidence": "git 09cafbe"
+            },
+            {
+              "v": "3ae4de0",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "offlinenovel-servers 报告：P1 拍板 A（手工提取 url 字面量，待执行）",
+              "items": [
+                "Rushiera",
+                "3ae4de0310"
+              ],
+              "status": "done",
+              "evidence": "git 3ae4de0"
+            },
+            {
+              "v": "85a1d63",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "koikatu: 深挖轮——类型级 3725 key 全同 / 对齐后 512KB 前 100% / compare 规模上限对照 / 修正 Studio 场景数据面（SceneInfo 49 字段）",
+              "items": [
+                "Rushiera",
+                "85a1d63a92"
+              ],
+              "status": "done",
+              "evidence": "git 85a1d63"
             }
           ]
         }

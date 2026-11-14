@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "41 次提交 · 2026-11 → 2026-11",
-    "ver": "17fb0da",
+    "sub": "42 次提交 · 2026-11 → 2026-11",
+    "ver": "14df672",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -605,6 +605,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 17fb0da"
+            },
+            {
+              "v": "14df672",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8 视觉通道自动回避：请求体预算 3MB 按张摘图 / 图片通道降级 60s / image-analyze 熔断 + 自动降分辨率 / 续跑封顶",
+              "items": [
+                "Rushiera",
+                "14df672b6e"
+              ],
+              "status": "done",
+              "evidence": "git 14df672"
             }
           ]
         }
