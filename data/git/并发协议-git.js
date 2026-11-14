@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "73 次提交 · 2026-11 → 2026-11",
-    "ver": "7906668",
+    "sub": "74 次提交 · 2026-11 → 2026-11",
+    "ver": "e0a2a1b",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -1021,6 +1021,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 7906668"
+            },
+            {
+              "v": "e0a2a1b",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.306-0.309 AppLife：GBK 包装 bat / ReadTextSmart 编码自适应 / process 探活 / elevate 提权",
+              "items": [
+                "Rushiera",
+                "e0a2a1b462"
+              ],
+              "status": "done",
+              "evidence": "git e0a2a1b"
             }
           ]
         }
