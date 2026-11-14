@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "61 次提交 · 2026-11 → 2026-11",
-    "ver": "cc4adce",
+    "sub": "64 次提交 · 2026-11 → 2026-11",
+    "ver": "f1cd712",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -865,6 +865,45 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git cc4adce"
+            },
+            {
+              "v": "31c4b1d",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "feat",
+              "title": "feat: 站点发布与见证者十一能力（panel/SitePublisher.cs 推送判据 + L3 对账 / 模块生命周期）",
+              "items": [
+                "Rushiera",
+                "31c4b1d23d"
+              ],
+              "status": "done",
+              "evidence": "git 31c4b1d"
+            },
+            {
+              "v": "2043f02",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "chore",
+              "title": "style: archkit 窄屏（≤760）与内嵌（?embed=1）——只收样式，不改渲染器契约",
+              "items": [
+                "Rushiera",
+                "2043f02f08"
+              ],
+              "status": "done",
+              "evidence": "git 2043f02"
+            },
+            {
+              "v": "f1cd712",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "chore",
+              "title": "chore: state 开关落盘（站点发布 auto=on · 30min · 预览 full / 归档名单）",
+              "items": [
+                "Rushiera",
+                "f1cd712901"
+              ],
+              "status": "done",
+              "evidence": "git f1cd712"
             }
           ]
         }

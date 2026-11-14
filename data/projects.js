@@ -1,27 +1,27 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-14 08:35",
+ "generatedAt": "2026-11-14 09:05",
  "public": true,
  "count": 21,
  "stats": {
   "focus": 5,
   "todoZone": 3,
   "active": 8,
-  "versions": 1651
+  "versions": 1652
  },
  "items": [
   {
    "pid": "ACS",
    "layer": "agent",
    "type": "应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
-   "version": "v0.89.2",
+   "version": "v0.90.0",
    "worker": "Coder",
    "jobs": [
     "Node",
     "CSharp"
    ],
    "created": "2026-11-01",
-   "todo": 7,
-   "changelog": 129,
+   "todo": 8,
+   "changelog": 130,
    "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
    "archived": false
   },

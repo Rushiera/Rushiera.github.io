@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "144 次提交 · 2026-11 → 2026-11",
-    "ver": "c6868f3",
+    "sub": "146 次提交 · 2026-11 → 2026-11",
+    "ver": "f1c7063",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -1944,6 +1944,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git c6868f3"
+            },
+            {
+              "v": "61baeac",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.89.2 判形正文轮：verdicts.json synced_by 同步（19+4 补判据链 + 11 类平铺，结论未变）",
+              "items": [
+                "Rushiera",
+                "61baeacbdc"
+              ],
+              "status": "done",
+              "evidence": "git 61baeac"
+            },
+            {
+              "v": "f1c7063",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.90.0 判形未探明补齐·不接侧（豆包卸载确认闭合 / Watt 前置未发生；未探明 6→5，结论未变）",
+              "items": [
+                "Rushiera",
+                "f1c7063b54"
+              ],
+              "status": "done",
+              "evidence": "git f1c7063"
             }
           ]
         }
