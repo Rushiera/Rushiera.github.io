@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "43 次提交 · 2026-11 → 2026-11",
-    "ver": "6c9cb37",
+    "sub": "44 次提交 · 2026-11 → 2026-11",
+    "ver": "89169ba",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -631,6 +631,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 6c9cb37"
+            },
+            {
+              "v": "89169ba",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8 全节点回滚 + 编辑：任意节点切点 / 编辑内容 / 编辑并回滚（editrewind）",
+              "items": [
+                "Rushiera",
+                "89169ba9d8"
+              ],
+              "status": "done",
+              "evidence": "git 89169ba"
             }
           ]
         }

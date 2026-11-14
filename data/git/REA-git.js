@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "47 次提交 · 2026-10 → 2026-11",
-    "ver": "00928a5",
+    "sub": "48 次提交 · 2026-10 → 2026-11",
+    "ver": "8d3bd16",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -683,6 +683,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 00928a5"
+            },
+            {
+              "v": "8d3bd16",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.55: koikatsu 报告入库（11-14 分析 + N1 6.9.0 新面实测）",
+              "items": [
+                "Rushiera",
+                "8d3bd16222"
+              ],
+              "status": "done",
+              "evidence": "git 8d3bd16"
             }
           ]
         }

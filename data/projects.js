@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-15 00:13",
+ "generatedAt": "2026-11-15 01:44",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 4,
   "todoZone": 4,
   "active": 8,
-  "versions": 1371
+  "versions": 1375
  },
  "items": [
   {
@@ -79,12 +79,12 @@ window.PROJECTS = {
    "pid": "ClashVerge",
    "layer": "game",
    "type": "本机 Clash Verge Rev 的接管与二次开发——把安装产物与用户数据全部收进…",
-   "version": "v1.72（v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min））",
+   "version": "v1.73（v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min）。v1.73：`unity.com` 走专用组 `unity-出网`——地域重定向（直连与香港均 302 `unity.cn` + `location=HK`；日本 307 `api.unity.com` + `location=JP`），旁路表 `bypass-geo-redirect`，接管面 31 → 32）",
    "worker": "Coder",
    "jobs": [],
    "created": "2026-10-30",
    "todo": 35,
-   "changelog": 82,
+   "changelog": 83,
    "purpose": "Clash Verge Rev 2.5.8 装进 C:\\Program Files\\Clash Verge，用户数据按 Tauri 约定落在 %APPDATA% 与 %LOCALAPPDAT…",
    "archived": false
   },
@@ -217,15 +217,15 @@ window.PROJECTS = {
    "pid": "Mau",
    "layer": "host",
    "type": "唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
-   "version": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-14 23:25:52）——视觉通道自动回避轮，验证见 todo G19）",
+   "version": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 00:39:45）——全节点回滚 + 编辑轮，验证见 todo G21）",
    "worker": "Coder",
    "jobs": [
     "Mau",
     "Git"
    ],
    "created": "2026-08-03",
-   "todo": 17,
-   "changelog": 18,
+   "todo": 18,
+   "changelog": 19,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },
@@ -233,7 +233,7 @@ window.PROJECTS = {
    "pid": "REA",
    "layer": "agent",
    "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-   "version": "v0.53 · 上游基线 `c8d5413d0`",
+   "version": "v0.55 · 上游基线 `c8d5413d0`",
    "worker": "Coder",
    "jobs": [
     "Node",
@@ -241,7 +241,7 @@ window.PROJECTS = {
    ],
    "created": "2026-10-21",
    "todo": 8,
-   "changelog": 55,
+   "changelog": 57,
    "purpose": "本支可改、可验、可自持的逆向工程底座",
    "archived": false
   },

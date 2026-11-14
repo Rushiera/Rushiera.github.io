@@ -90,7 +90,7 @@ window.ARCH = {
         "Mau",
         "Git"
        ],
-       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-14 23:25:52）——视觉通道自动回避轮，验证见 todo G19） · 待办 17",
+       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 00:39:45）——全节点回滚 + 编辑轮，验证见 todo G21） · 待办 18",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -173,7 +173,7 @@ window.ARCH = {
         "Node",
         "Git"
        ],
-       "note": "v0.53 · 上游基线 `c8d5413d0` · 待办 8",
+       "note": "v0.55 · 上游基线 `c8d5413d0` · 待办 8",
        "evidence": "Project/REA/project.md"
       },
       {
@@ -187,7 +187,7 @@ window.ARCH = {
        "tags": [
         "Coder"
        ],
-       "note": "v1.72（v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min）） · 待办 35",
+       "note": "v1.73（v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min）。v1.73：`unity.com` 走专用组 `unity-出网`——地域重定向（直连与香港均 302 `unity.cn` + `location=HK`；日本 307 `api.unity.com` + `location=JP`），旁路表 `bypass-geo-redirect`，接管面 31 → 32） · 待办 35",
        "evidence": "Project/ClashVerge/project.md"
       },
       {
@@ -385,8 +385,8 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
-        "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-14 23:25:52）——视觉通道自动回避轮，验证见 todo G19）",
-        "待办 17"
+        "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 00:39:45）——全节点回滚 + 编辑轮，验证见 todo G21）",
+        "待办 18"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"
@@ -476,7 +476,7 @@ window.ARCH = {
        "lane": "agent",
        "title": "REA · 逆向工程 MCP server + CLI（TypeScript / Node 24）",
        "items": [
-        "v0.53 · 上游基线 `c8d5413d0`",
+        "v0.55 · 上游基线 `c8d5413d0`",
         "待办 8"
        ],
        "status": "partial",
@@ -515,7 +515,7 @@ window.ARCH = {
        "lane": "game",
        "title": "ClashVerge · 本机 Clash Verge Rev 的接管与二次开发——把安装产物与用户数据全部收进…",
        "items": [
-        "v1.72（v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min））",
+        "v1.73（v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min）。v1.73：`unity.com` 走专用组 `unity-出网`——地域重定向（直连与香港均 302 `unity.cn` + `location=HK`；日本 307 `api.unity.com` + `location=JP`），旁路表 `bypass-geo-redirect`，接管面 31 → 32）",
         "待办 35"
        ],
        "status": "partial",
