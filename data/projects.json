@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14 17:10",
+  "generatedAt": "2026-11-14 17:41",
   "public": true,
   "count": 18,
   "stats": {
@@ -281,7 +281,7 @@
       "pid": "并发协议",
       "layer": "host",
       "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-      "version": "v0.300",
+      "version": "v0.301",
       "worker": "Majordomo",
       "jobs": [
         "CSharp",

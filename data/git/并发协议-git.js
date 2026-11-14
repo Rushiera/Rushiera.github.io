@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "69 次提交 · 2026-11 → 2026-11",
-    "ver": "41a4d10",
+    "sub": "70 次提交 · 2026-11 → 2026-11",
+    "ver": "68468ac",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -969,6 +969,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 41a4d10"
+            },
+            {
+              "v": "68468ac",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.301 运行页：应用生命周期（apps.json 声明驱动 + 胶囊启停三端点）",
+              "items": [
+                "Rushiera",
+                "68468ac936"
+              ],
+              "status": "done",
+              "evidence": "git 68468ac"
             }
           ]
         }
