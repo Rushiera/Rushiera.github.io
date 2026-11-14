@@ -716,12 +716,60 @@ const archCoverage = (() => {
   };
 })();
 
+/* ---------- 2.16 面板版星图静态包（两版星图并列展示的数据面）----------
+   见证者大页同时展示两版项目星图：
+     ① 站点版 = projects.html（深色站内副本，含起点 / 提交时间线切换）——既有 #atlas；
+     ② 面板版 = archkit 白底模板 + history/arch/projects.js 数据集——即面板「打开项目星图」的同一份画法。
+   面板里是运行时取 /api/archkit/*；静态页不能打端点，故构建期把模板三件与数据集拷进 full/archkit/，
+   归档 / 隐藏名单按面板 openArch 的口径注入（ARCH_ARCHIVED / ARCH_HIDDEN）。
+   失败只 WARN 不阻断：缺它只少一块参照图，主快照仍完整（页面按 ok=false 给缺件说明）。 */
+const archkit = await (async () => {
+  const src = path.join(ROOT, 'witness', 'archkit');
+  const dst = path.join(OUT, 'archkit');
+  const modelFile = path.join(HIST, 'arch', 'projects.js');
+  const need = ['view.html', 'assets/arch.css', 'assets/arch-render.js'];
+  const missing = need.filter((f) => !exists(path.join(src, f)));
+  if (missing.length) {
+    warns.push('面板版星图未打包：witness/archkit 缺 ' + missing.join(' / '));
+    return { ok: false, dir: 'archkit', missing };
+  }
+  if (!exists(modelFile)) {
+    warns.push('面板版星图未打包：数据集 history/arch/projects.js 不存在');
+    return { ok: false, dir: 'archkit', missing: ['data/projects.js'] };
+  }
+  const modelTxt = fs.readFileSync(modelFile, 'utf8');
+  const metaOf = (re) => { const m = modelTxt.match(re); return m ? m[1] : ''; };
+  const model = {
+    ver: metaOf(/ver:\s*'([^']*)'/), updated: metaOf(/updated:\s*'([^']*)'/), sub: metaOf(/sub:\s*'([^']*)'/)
+  };
+  let files = 0, bytes = 0;
+  if (!DRY) {
+    fs.mkdirSync(path.join(dst, 'assets'), { recursive: true });
+    fs.mkdirSync(path.join(dst, 'data'), { recursive: true });
+    for (const f of need) {
+      const s = path.join(src, f);
+      const d = path.join(dst, f);
+      fs.copyFileSync(s, d);
+      files += 1; bytes += fs.statSync(d).size;
+    }
+    const ar = await getJson('/api/projects/archive');
+    const archived = (ar && ar.projects) || [];
+    const hidden = (ar && ar.hidden) || [];
+    if (!ar) warns.push('面板版星图的归档 / 隐藏名单未取到——按空集注入（不伪造状态）');
+    const outTxt = modelTxt + '\n/* 构建期注入：与面板 openArch 同口径（/api/projects/archive） */\n'
+      + 'window.ARCH_ARCHIVED = ' + JSON.stringify(archived) + ';\n'
+      + 'window.ARCH_HIDDEN = ' + JSON.stringify(hidden) + ';\n';
+    fs.writeFileSync(path.join(dst, 'data', 'projects.js'), outTxt, 'utf8');
+    files += 1; bytes += fs.statSync(path.join(dst, 'data', 'projects.js')).size;
+  }
+  return { ok: true, dir: 'archkit', files, bytes, model };
+})();
+
 /* ---------- 三、投影与瘦身（页面只画展示需要的字段；原始面保真，不发散） ---------- */
 const life = trends.life || {};
 const lifeProjects = (life.projects || []).map((p) => {
-  const q = Object.assign({}, p);
-  delete q.ticks;                       // 106 条 × 58 项 = 占数据 60%+，页面不画逐次 tick
-  return q;
+  /* ticks 保留：见证者页「项目生命周期」进度条要画版本事件竖线（2026-11-14 实测 1,034 条 / 紧凑 JSON ≈ 23 KB） */
+  return Object.assign({}, p);
 });
 
 /* 2.11b 回滚候选（与 Witness.cs 同口径）——state/entrust/<pid>/round-*.patch 最新一份 +
@@ -933,6 +981,7 @@ const data = {
   checks: checksFull,
   projects: projectCards,
   home: homeOut,
+  archkit,
   overview,
   trends: {
     generatedAt: trends.generatedAt || '',
@@ -993,6 +1042,7 @@ if (DRY) {
     + ' · 模块明细 ' + moduleDetails.length
     + ' · 发布史 ' + siteHistory.total + '（列 ' + siteHistory.items.length + '）'
     + ' · 交接待收 ' + (handoverCollect ? handoverCollect.movable : '—') + ' / 扫描 ' + (handoverCollect ? handoverCollect.scanned : '—')
+    + ' · 面板星图 ' + (archkit.ok ? (archkit.files + ' 件 / ' + (archkit.bytes / 1024).toFixed(1) + ' KB') : '未打包')
     + ' · 对账 ' + (checksFull.map && checksFull.map.ok ? 'PASS' : 'FAIL') + ' / ' + (checksFull.l3 && checksFull.l3.ok ? 'PASS' : 'FAIL')
     + (warns.length ? ' · WARN ' + warns.length : ''));
 } else {
@@ -1007,6 +1057,7 @@ if (DRY) {
     + ' · 模块明细 ' + moduleDetails.length
     + ' · 发布史 ' + siteHistory.total + '（列 ' + siteHistory.items.length + '）'
     + ' · 交接待收 ' + (handoverCollect ? handoverCollect.movable : '—') + ' / 扫描 ' + (handoverCollect ? handoverCollect.scanned : '—')
+    + ' · 面板星图 ' + (archkit.ok ? (archkit.files + ' 件 / ' + (archkit.bytes / 1024).toFixed(1) + ' KB') : '未打包')
     + ' · 对账 ' + (checksFull.map && checksFull.map.ok ? 'PASS' : 'FAIL') + ' / ' + (checksFull.l3 && checksFull.l3.ok ? 'PASS' : 'FAIL')
     + ' · → ' + path.relative(SITE, OUT).replace(/\\/g, '/'));
   if (warns.length) warns.forEach((w) => console.log('  WARN ' + w));
