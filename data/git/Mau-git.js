@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "38 次提交 · 2026-11 → 2026-11",
-    "ver": "971f58e",
+    "sub": "41 次提交 · 2026-11 → 2026-11",
+    "ver": "17fb0da",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -566,6 +566,45 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 971f58e"
+            },
+            {
+              "v": "e57630c",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.6 会话回滚落地：session.rollback（前文截断 / 视图截断 / Note 清空 / 会话重置同批；默认猫与每猫端口同实现）+ 前端节点按钮按回执提示；补 0.36.5 漏定义 contextPatrolInterval（工作区编译缺口）",
+              "items": [
+                "Rushiera",
+                "e57630c27e"
+              ],
+              "status": "done",
+              "evidence": "git e57630c"
+            },
+            {
+              "v": "61f03ae",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.7 技术债清偿：部署链坐标 / 前文巡检接线 / 注入清单口径",
+              "items": [
+                "Rushiera",
+                "61f03ae748"
+              ],
+              "status": "done",
+              "evidence": "git 61f03ae"
+            },
+            {
+              "v": "17fb0da",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.7 csbridge 源回落：flag > repo 产物 > 运行区现有",
+              "items": [
+                "Rushiera",
+                "17fb0daa69"
+              ],
+              "status": "done",
+              "evidence": "git 17fb0da"
             }
           ]
         }
