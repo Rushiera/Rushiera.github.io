@@ -307,3 +307,22 @@ body.dark .empty{color:#7f8d9b}
 /* 站内共享件（site.css 里的 .site-home 是浅色底，深色页上要跟着换） */
 body.dark .site-home{background:#182029;border-color:#2a3441;color:#a9b6c2}
 body.dark .site-home:hover{background:#1e2731;color:#e6edf3}
+
+/* ---------- 窄屏（≤760）与内嵌（?embed=1）——站内阅读 / witness 页 iframe（2026-11-14） ----------
+   两个背景：① archkit 原是整页渲染器，.top-in 的 min-width:max-content 在窄屏把文档撑出横滑；
+   ② witness.html 以 iframe 内嵌本页（?embed=1）时，.viewport 的 100vh 公式恒比 iframe 高约 230px，
+   产生纵向双滚动条。这里只收样式（宽度与高度预算），不改渲染器契约、不动 DOM。
+   🔴 源（archkit/assets/arch.css）与站内副本（gitpage/assets/arch/arch.css）同一段同改。 */
+@media (max-width:760px){
+  .top-in{min-width:0;overflow-x:auto;gap:16px;padding:0 16px}
+  .tabs{gap:14px}
+  .vhead{padding:22px 16px 0}
+  .vhead h2{font-size:22px}
+  .pages{padding:16px 16px 0}
+  .stage{padding:0 12px 24px}
+}
+/* 内嵌模式：整页锁定视口高，画布区（.stage / .viewport）吸收剩余高度——iframe 内不再有第二条纵向滚动条 */
+body.embed{height:100vh;overflow:hidden;display:flex;flex-direction:column}
+body.embed .top,body.embed .vhead,body.embed .pages{flex:none}
+body.embed .stage{flex:1;min-height:0;padding-bottom:14px;display:flex;flex-direction:column}
+body.embed .viewport{flex:1 1 auto;height:auto;min-height:240px}
