@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-14 20:12",
+  "generatedAt": "2026-11-14 21:12",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 3,
     "todoZone": 5,
     "active": 8,
-    "versions": 1358
+    "versions": 1360
   },
   "items": [
     {
@@ -281,15 +281,15 @@
       "pid": "并发协议",
       "layer": "host",
       "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-      "version": "v0.303",
+      "version": "v0.305",
       "worker": "Majordomo",
       "jobs": [
         "CSharp",
         "CatHome"
       ],
       "created": "",
-      "todo": 32,
-      "changelog": 331,
+      "todo": 33,
+      "changelog": 333,
       "purpose": "两件事，一条主线：让自主推进有据可依。",
       "archived": false
     }

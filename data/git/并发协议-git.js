@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "70 次提交 · 2026-11 → 2026-11",
-    "ver": "68468ac",
+    "sub": "73 次提交 · 2026-11 → 2026-11",
+    "ver": "7906668",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -982,6 +982,45 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 68468ac"
+            },
+            {
+              "v": "3077844",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.304 运行页分组展示 + 目录入口 + 端口补齐（含 0.303 未提交代码）",
+              "items": [
+                "Rushiera",
+                "30778447e6"
+              ],
+              "status": "done",
+              "evidence": "git 3077844"
+            },
+            {
+              "v": "07d8832",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.305 运行页：在线点击开页 + apps 声明调整（分类补端口 / 移除 panel 条目 / 工具链归位）",
+              "items": [
+                "Rushiera",
+                "07d883271e"
+              ],
+              "status": "done",
+              "evidence": "git 07d8832"
+            },
+            {
+              "v": "7906668",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.305 apps.json 同步（clashverge 自动启动 · kkfetch/kkmanager 改名）",
+              "items": [
+                "Rushiera",
+                "790666845a"
+              ],
+              "status": "done",
+              "evidence": "git 7906668"
             }
           ]
         }
