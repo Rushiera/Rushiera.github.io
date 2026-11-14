@@ -49,6 +49,16 @@ const pad2 = (n) => String(n).padStart(2, '0');
 const stamp = (d) => d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate())
   + ' ' + pad2(d.getHours()) + ':' + pad2(d.getMinutes()) + ':' + pad2(d.getSeconds());
 const clip = (s, n) => { const t = String(s == null ? '' : s).replace(/\s+/g, ' ').trim(); return t.length > n ? t.slice(0, n - 1) + '…' : t; };
+/** 只按长度截断、保留换行——页面 <pre> 用；clip 会折叠空白，不适合正文预览。 */
+const cut = (s, n) => { const t = String(s == null ? '' : s); return t.length > n ? t.slice(0, n - 1) + '…' : t; };
+/** 取文件头：总行数 + 前 maxLines 行（再按 maxChars 兜底）。读不到给 0 / 空串，不编内容。 */
+function headOf(p, maxLines, maxChars) {
+  try {
+    const txt = fs.readFileSync(p, 'utf8').replace(/^\uFEFF/, '').replace(/\r\n/g, '\n');
+    const ls = txt.split('\n');
+    return { lines: ls.length, text: cut(ls.slice(0, maxLines).join('\n'), maxChars) };
+  } catch (e) { return { lines: 0, text: '' }; }
+}
 const readJson = (p, fb) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch (e) { return fb; } };
 const exists = (p) => { try { return fs.existsSync(p); } catch (e) { return false; } };
 
@@ -172,20 +182,49 @@ if (exists(watchDir)) {
   watch.sort((a, b) => b.files - a.files);
 } else warns.push('原件归档目录不存在：' + watchDir);
 
-/* 2.2 验证卡（verify）：最近 18 份 + 总数；卡类按首行判（与面板同口径：三态 question / work / report） */
+/* 2.2 验证卡（verify）：最近 18 份带正文预览（前 100 行 / 6000 字符）+ 全量元信息（verifyAll）。
+   为什么带预览：见证者页要能点开看卡片内容——站点是离线快照（file:// 双击也算），正文必须内嵌；
+   又不整库搬（136 份 ≈ 961 KB）：只对最近 18 份内嵌正文，其余只给元信息 + 路径（弹层会出声说明）。
+   卡类按首行判（与面板同口径：三态 question / work / report）。 */
 const verifyDir = path.join(HIST, 'verify');
+/** 卡片文件名 → 项目名：`<pid>-verify.md` / `<pid>-verify-YYYYMMDD-HHmmss.md`。 */
+function verifyPid(name) {
+  const m = /^(.+?)-verify(?:-\d{8}-\d{6})?\.md$/i.exec(name);
+  return m ? m[1] : '';
+}
+function verifyKindOf(firstLine) {
+  const t = String(firstLine || '');
+  return t.indexOf('遗留项有疑问') >= 0 ? 'question' : (t.indexOf('可直接开工') >= 0 ? 'work' : 'report');
+}
 const vFiles = recentFiles(verifyDir, 18, (f) => f.endsWith('.md'));
 const verify = vFiles.map((f) => {
-  let head = '';
-  try {
-    const txt = fs.readFileSync(f.p, 'utf8');
-    head = (txt.split(/\r?\n/)[0] || '').trim();
-  } catch (e) { head = ''; }
-  const kind = head.indexOf('遗留项有疑问') >= 0 ? 'question'
-    : (head.indexOf('可直接开工') >= 0 ? 'work' : 'report');
-  return { file: f.name, at: stamp(new Date(f.st.mtimeMs)), bytes: f.st.size, kind, head: clip(head, 60) };
+  const hd = headOf(f.p, 100, 6000);
+  const firstLine = (hd.text.split('\n')[0] || '').trim();
+  return {
+    file: f.name, at: stamp(new Date(f.st.mtimeMs)), bytes: f.st.size,
+    kind: verifyKindOf(firstLine), head: clip(firstLine, 60),
+    pid: verifyPid(f.name), path: f.p, lines: hd.lines, preview: hd.text
+  };
 });
-const verifyTotal = exists(verifyDir) ? fs.readdirSync(verifyDir).filter((f) => f.endsWith('.md')).length : 0;
+/* 全量 136 份的元信息（不带正文）——弹层列得全，正文只给最近 18 份 */
+const verifyAll = (() => {
+  if (!exists(verifyDir)) return [];
+  const rows = [];
+  for (const e of fs.readdirSync(verifyDir, { withFileTypes: true })) {
+    if (!e.isFile() || !e.name.endsWith('.md')) continue;
+    const p = path.join(verifyDir, e.name);
+    let st; try { st = fs.statSync(p); } catch (e2) { continue; }
+    let firstLine = '';
+    try { firstLine = (fs.readFileSync(p, 'utf8').replace(/^\uFEFF/, '').split(/\r?\n/)[0] || '').trim(); } catch (e3) { firstLine = ''; }
+    rows.push({
+      file: e.name, at: stamp(new Date(st.mtimeMs)), bytes: st.size,
+      kind: verifyKindOf(firstLine), pid: verifyPid(e.name), path: p
+    });
+  }
+  rows.sort((a, b) => String(b.at).localeCompare(String(a.at)));
+  return rows;
+})();
+const verifyTotal = verifyAll.length;
 
 /* 2.3 档案快照 / 交接报告 / 委托卡 */
 const snap = (() => {
@@ -222,9 +261,18 @@ const handover = (() => {
     const ws = walkStat(p);
     const files = fs.readdirSync(p, { withFileTypes: true }).filter((x) => x.isFile() && /\.md$/i.test(x.name)).length;
     const recent = recentFiles(p, 1, (f) => f.endsWith('.md'));
+    /* 最新一份带路径与正文预览（前 24 行 / 900 字符）——交接件表点开即读，不跳目录 */
+    let latest = null;
+    if (recent[0]) {
+      const hd = headOf(recent[0].p, 24, 900);
+      latest = {
+        name: recent[0].name, at: stamp(new Date(recent[0].st.mtimeMs)), bytes: recent[0].st.size,
+        path: recent[0].p, lines: hd.lines, preview: hd.text
+      };
+    }
     items.push({
       pid: e.name, files, bytes: ws ? ws.bytes : 0, lastAt: ws ? ws.lastAt : '',
-      latest: recent[0] ? { name: recent[0].name, at: stamp(new Date(recent[0].st.mtimeMs)), bytes: recent[0].st.size } : null
+      latest
     });
   }
   items.sort((a, b) => String(b.lastAt).localeCompare(String(a.lastAt)));
@@ -653,12 +701,19 @@ const handoverCollect = (() => {
     warns.push('交接收集扫描输出不可解析：' + e.message);
     return null;
   }
-  const pending = (j.items || []).filter((x) => x.action === 'copy' || x.action === 'move').map((x) => ({
-    file: x.file, pid: x.pid || '_unsorted', size: x.size,
-    mtime: x.mtime ? stamp(new Date(x.mtime)) : '',
-    basis: (x.basis || []).join('+'), pidBasis: x.pidBasis || '',
-    reason: x.reason || ''
-  }));
+  /* 待收逐条带源路径 / 目标路径 / 正文预览——弹层点开就能判断「这份该不该现在收」 */
+  const pending = (j.items || []).filter((x) => x.action === 'copy' || x.action === 'move').map((x) => {
+    const pid = x.pid || '_unsorted';
+    const src = j.src ? path.join(j.src, x.file) : '';
+    const target = j.dest ? path.join(j.dest, pid, x.file) : '';
+    const hd = src ? headOf(src, 40, 2500) : { lines: 0, text: '' };
+    return {
+      file: x.file, pid, size: x.size,
+      mtime: x.mtime ? stamp(new Date(x.mtime)) : '',
+      basis: (x.basis || []).join('+'), pidBasis: x.pidBasis || '',
+      reason: x.reason || '', src, target, lines: hd.lines, preview: hd.text
+    };
+  });
   const unsorted = pending.filter((x) => x.pid === '_unsorted').length;
   const skippedReasons = {};
   for (const x of j.items || []) {
@@ -670,6 +725,8 @@ const handoverCollect = (() => {
     ok: j.ok !== false, mode: j.mode || 'dry', src: j.src || '', dest: j.dest || '',
     scanned: j.scanned || 0, handover: j.handover || 0, excluded: j.excluded || 0,
     movable: j.movable || 0, skipped: j.skipped || 0, unsorted,
+    minAgeHours: j.minAgeHours == null ? null : j.minAgeHours,
+    keepLatest: j.keepLatest == null ? null : j.keepLatest,
     skippedReasons, pending
   };
 })();
@@ -1016,7 +1073,7 @@ const data = {
     tasks: taskStat
   },
   artifacts: {
-    watch, verify, verifyTotal,
+    watch, verify, verifyAll, verifyTotal,
     snapshots: snap, handover, handoverCollect, entrustCards,
     arch: { items: archItems, coverage: archCoverage },
     dispatch: { total: dispatchTotal, items: dispatchItems, agg: dispatchAgg },
