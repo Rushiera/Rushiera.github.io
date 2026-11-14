@@ -7,3 +7,7 @@ node_modules
 # 由 tools/build-site.mjs --profile=full 生成（页面与 assets 是副本，data/ 是全量）。
 # 公开档（仓根 data/）永远只含 tools/public-pids.mjs 白名单内的项目。
 full/
+
+# 见证者仪表盘（全量档独占页面）：源留在本地、不进公开仓——线上不该有这一页（它读 full/data/witness.js）。
+# 构建时由 build-site.mjs 拷进 full/（同样不进仓）；public 档既不产页面也不产数据。
+witness.html
