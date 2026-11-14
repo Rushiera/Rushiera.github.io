@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "74 次提交 · 2026-11 → 2026-11",
-    "ver": "e0a2a1b",
+    "sub": "75 次提交 · 2026-11 → 2026-11",
+    "ver": "23a3f96",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -1034,6 +1034,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git e0a2a1b"
+            },
+            {
+              "v": "23a3f96",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.311 运行页：A.C.S. 声明修正（name→A.C.S. / url→/panel / auto 开）",
+              "items": [
+                "Rushiera",
+                "23a3f9693e"
+              ],
+              "status": "done",
+              "evidence": "git 23a3f96"
             }
           ]
         }
