@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-14 18:11",
+  "generatedAt": "2026-11-14 18:41",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 3,
     "todoZone": 5,
     "active": 8,
-    "versions": 1352
+    "versions": 1353
   },
   "items": [
     {
@@ -216,15 +216,15 @@
       "pid": "Mau",
       "layer": "host",
       "type": "唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
-      "version": "0.36.3",
+      "version": "0.36.5",
       "worker": "Coder",
       "jobs": [
         "Mau",
         "Git"
       ],
       "created": "2026-08-03",
-      "todo": 13,
-      "changelog": 12,
+      "todo": 16,
+      "changelog": 13,
       "purpose": "Mau 仓 = CatHome5 的施工仓。",
       "archived": false
     },

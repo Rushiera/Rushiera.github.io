@@ -90,7 +90,7 @@ window.ARCH = {
         "Mau",
         "Git"
        ],
-       "note": "0.36.3 · 待办 13",
+       "note": "0.36.5 · 待办 16",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -384,8 +384,8 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
-        "0.36.3",
-        "待办 13"
+        "0.36.5",
+        "待办 16"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"
