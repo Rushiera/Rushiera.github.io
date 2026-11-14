@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-14 16:09",
+ "generatedAt": "2026-11-14 16:40",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 3,
   "todoZone": 5,
   "active": 8,
-  "versions": 1344
+  "versions": 1346
  },
  "items": [
   {
@@ -223,8 +223,8 @@ window.PROJECTS = {
     "Git"
    ],
    "created": "2026-08-03",
-   "todo": 12,
-   "changelog": 7,
+   "todo": 15,
+   "changelog": 8,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },
@@ -281,7 +281,7 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.299",
+   "version": "v0.300",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
@@ -289,7 +289,7 @@ window.PROJECTS = {
    ],
    "created": "",
    "todo": 30,
-   "changelog": 327,
+   "changelog": 328,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   }
