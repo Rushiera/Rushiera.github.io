@@ -10,8 +10,8 @@
 <style>html,body{background:#12181f;color-scheme:dark}
   @view-transition{navigation:auto}
   ::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}</style>
-<link rel="stylesheet" href="assets/arch/arch.css?v=f2a3f303">
-<link rel="stylesheet" href="assets/site.css?v=f2a3f303">
+<link rel="stylesheet" href="assets/arch/arch.css?v=4981878e">
+<link rel="stylesheet" href="assets/site.css?v=4981878e">
 <style>
 /* 提交时间线入口条——只这一页用，内联不进共用样式。
    放左下角：渲染器自己在顶部画标题栏、底部画图注，压上去会挡内容。 */
@@ -33,6 +33,14 @@
 /* 首屏占位：数据集（arch.js 数百 KB）到位前先给一行字，避免「深色空白」被读成卡住 */
 #boot-hint { position: fixed; left: 50%; top: 46%; transform: translate(-50%,-50%);
       color: #5c6a78; font: 13px/1.6 -apple-system, "Segoe UI", sans-serif; letter-spacing: .04em; }
+/* 见证者入口（全量档独有）：数据探测成功才显示——public 档不产 data/witness.js，链接不出现。
+   位置在「← 主页」按钮下方，同一列右对齐。 */
+.site-witness { position: fixed; right: 16px; top: 44px; z-index: 60; font-size: 12.5px; color: var(--fg2);
+      background: #182029; border: 1px solid #2a3441; border-radius: 6px; padding: 5px 11px; line-height: 1.4; }
+.site-witness:hover { color: #e6edf3; text-decoration: none; background: #1f2b38; }
+/* 内嵌模式（?embed=1）：给 witness.html 的 iframe 用——隐藏站外导航（← 主页 / 见证者 →），
+   保留渲染器与左下「提交时间线」入口条（那是页内三视图切换）。无参数时一字不变。 */
+body.embed .site-home, body.embed .site-witness { display: none; }
 </style>
 </head>
 <body class="dark">
@@ -47,19 +55,24 @@
        提交时间线 ┘─ 由左下入口条切，走 window.ARCHKIT.remount()，URL 用 pushState 跟上
      后退 / 刷新照常成立：popstate 与首屏 ?pid= 走同一条 showGit / showMap 链路。 -->
 <a class="site-home" href="index.html">← 主页</a>
+<a class="site-witness" id="wit-link" href="witness.html" hidden>见证者 →</a>
 <div id="boot-hint">正在绘制…</div>
 <div id="gt"></div>
 <!-- 背景粒子层：与首页同一套（assets/particles-bg.js），压在 body 之下 -->
-<script src="assets/particles.min.js?v=f2a3f303"></script>
-<script src="assets/particles-bg.js?v=f2a3f303"></script>
-<script src="data/git/index.js?v=f2a3f303"></script>
+<script src="assets/particles.min.js?v=4981878e"></script>
+<script src="assets/particles-bg.js?v=4981878e"></script>
+<script src="data/git/index.js?v=4981878e"></script>
 <script>
 (function () {
   var q = {}; try { q = new URLSearchParams(location.search); } catch (e) {}
+  /* 内嵌模式（?embed=1）：被 witness.html 的 iframe 加载时置上——隐藏「← 主页 / 见证者 →」，
+     其余（渲染器 / 三视图切换 / 提交时间线入口条）照常。无参数时不加类，行为不变。 */
+  var EMBED = q.get('embed') === '1';
+  if (EMBED) document.body.classList.add('embed');
   var list = (window.GIT_TIMELINES && window.GIT_TIMELINES.items) || [];
   var MAP = null;        /* 星图数据集缓存——首次从时间线切回时加载一次 */
   var curPid = '';       /* 当前展示的提交时间线项目（空 = 星图 / 起点时间线） */
-  var VER = '?v=f2a3f303';
+  var VER = '?v=4981878e';
 
   function findPid(pid) {
     for (var i = 0; i < list.length; i++) if (list[i].pid === pid) return list[i];
@@ -147,7 +160,11 @@
     if (!a) return;
     if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
     e.preventDefault();
-    var pid = a.getAttribute('data-pid') || '';
+    /* data-pid 写入时做了 encodeURIComponent（href 用同一形态）——读回必须解码：
+       不解码时中文 pid（并发协议 / 协商知识库 / BOSS直聘）findPid 不中，会静默回落星图。 */
+    var raw = a.getAttribute('data-pid') || '';
+    var pid = raw;
+    try { pid = decodeURIComponent(raw); } catch (e2) { pid = raw; }
     if (pid === curPid) return;
     if (pid) showGit(pid, true); else showMap(true);
   });
@@ -177,6 +194,19 @@
     fail('数据集不存在：' + data +
       ' —— 时间线跑 <code>node tools/build-git-timelines.mjs</code>，星图跑 <code>node tools/build-map.mjs</code>，再重开本页。');
   });
+
+  /* 见证者入口探测（全量档独有）：只在 /full/ 路径下试加载 data/witness.js——
+     public 档既没有这份数据、也不发这个请求；加载成功才显示入口。
+     探到的 window.WITNESS 不在本页使用（点进去是 witness.html 自己加载带版本串的那份）。 */
+  if (!EMBED && location.pathname.indexOf('/full/') >= 0) {
+    var ws = document.createElement('script');
+    ws.src = 'data/witness.js';
+    ws.onload = function () {
+      var a = document.getElementById('wit-link');
+      if (a) a.hidden = false;
+    };
+    document.body.appendChild(ws);
+  }
 })();
 </script>
 </body>

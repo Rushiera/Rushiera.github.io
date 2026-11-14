@@ -12,6 +12,7 @@
 ```
 index.html               主页（面客）：定位 / 三项能做什么 / 统计 / 技术栈 / 工程现场 / 案例入口 / 最近的起点
 client.html              案例页（面客）：三个场景的「问题 / 做法 / 交付 / 怎么核」+ 合作方式
+witness.html             见证者仪表盘（**全量档独有**）：11 能力 / 版本更新 / 委托流转 / 债务曲线 / 项目与模块生命周期 / 提交时间线 / 产物面 / 档案完备度 / 流水审计 / 运行面 / 对账
 projects.html            一页三内容、同页切换不换页：项目星图 / 起点时间线（顶栏视图 tab）· 提交时间线（左下入口条；?pid=<项目> 可深链）
 assets/
   site.css  site.js      主页样式与渲染（读 data/projects.js）
@@ -27,6 +28,7 @@ data/
   git/<pid>-git.js       单项目提交时间线（window.ARCH；公开档只出白名单 pid）
   git/index.js           window.GIT_TIMELINES（「提交时间线」入口条消费：pid / 次数 / 起止月）
 tools/build-map.mjs          生成器：本机项目档案索引 → 上面三个数据文件
+tools/build-witness.mjs      生成器（全量档）：面板端点 + 产物目录 → full/data/witness.js
 （时间线生成器在上一级 `witness/tools/`：build-git-timeline.mjs 单仓一份 · build-git-timelines.mjs 批量）
 .nojekyll                跳过 GitHub Pages 的 Jekyll 处理
 ```
@@ -43,7 +45,39 @@ tools/build-map.mjs          生成器：本机项目档案索引 → 上面三�
 
 分层是**人工建档**（`build-map.mjs` 的 `LAYERS`）——星图本质是判断，不是自动聚类。改层 = 改 `LAYERS` 后重跑。
 
-## 二-B、后续维护归并发协议
+## 二-B、见证者页（全量档独有）
+
+`witness.html` 是**见证者仪表盘**：把面板「见证者」的十一能力（六项产物陈旧度 + 版本更新 + 星图对账 + L3 对账 + 委托流转 + 模块生命周期）与四块趋势面（债务曲线 / 项目生命周期 / 模块生命周期 / CCBP 提交时间线）落成一页**构建期快照**。页面只画快照、不实时；要新数据重跑生成器。
+
+页面 16 段：概览 / **项目星图 · 起点时间线** / **最近的起点** / 能力 11 / 版本更新 / 委托流转 / 债务曲线 / 项目生命周期 / 模块生命周期 / 提交时间线 / 产物面 / 档案完备度 / 流水与审计 / 运行面 / 对账 / 数据说明。
+
+两块内容直接复用站点现成的（不写第二套渲染、不搬第二份数据）：
+
+| 段 | 做法 | 判据 |
+|:--|:--|:--|
+| 项目星图 · 起点时间线 | **iframe `projects.html?v=map&embed=1`**——archkit 渲染器是整页式（`boot()` 直挂 `document.body`、`clearShell()` 用全局选择器清整份文档），**没有容器参数**；所以内嵌走 iframe、不改渲染器契约。`embed=1` 只让 projects.html 加 `body.embed` 隐藏「← 主页 / 见证者 →」，三视图切换（含左下提交时间线入口条）照常 | iframe 内 `.node` = 项目数；顶栏两 tab 可切；站外导航不可见 |
+| 最近的起点 | `WITNESS.home.feed`——build-witness 从 `full/data/projects.json` 投影（按立项日倒序前 12 条），与主页「最近的起点」同口径；日期空的项目不参与排序，只在 `total` / `dated` 两数体现 | `#origins` 条数 = `W.home.feed.length`；`total` / `dated` 可回指 projects.json |
+
+数据面（`tools/build-witness.mjs` 构建期抓一次 → `full/data/witness.js`）：
+
+| 输入 | 用途 |
+|:--|:--|
+| `GET /api/witness` | 11 能力：状态 / 产物（spec · 件数 · 年龄）/ 对账结论 / 事实行 |
+| `GET /api/trends` · `/api/trends/modules` | 债务曲线 / 项目生命周期 / 模块生命周期 / 提交时间线 |
+| `GET /api/entrust` | 委托单（相位 / 预算 / base / 近轮）、相位分布、AC 与回滚事实行 |
+| `GET /api/projects`（索引卡）· `/order` · `/tasks` · `/site/status` · `/sched` · `/health` | 档案完备度 / 四区推荐序 / 任务面（三源）/ 发布状态 / 调度器 / 面板版本 |
+| `history/{watch,verify,snapshots,handover,entrust,arch}` · `state/flow/*` | 产物面 + 流水尾部（events / ops / usage / history / tool-feedback） |
+| `full/data/projects.json`（build-map 产出，**只读本档落点**） | 「最近的起点」立项时间流（`home.feed`：pid / created / type / worker / version / archived） |
+
+边界：
+
+- **只服务全量档**：`build-site.mjs --profile=full` 才跑 `build-witness.mjs`、才拷 `witness.html`；public 档既不产页面也不产数据（结构上推不出去）。**源页面 `witness.html` 本身也在 `.gitignore` 里**——它读的是 `full/data/witness.js`，不该出现在线上仓（构建时拷进 `full/`，同样不进仓）。
+- 面板必须在跑（与提交时间线同一前置）；核心端点缺一即退出 1，不产半份（`full/data/witness.js` 缺席时页面显示「本档不含见证者数据」）。
+- 页面数据带**独立版本串**（`witness.js` 内容 sha256 前 8 位，构建时注入 `?v=`）——数据每次构建都换，时间戳不够。
+- 入口：`projects.html` 的「见证者 →」只在 `/full/` 路径下探测到 `data/witness.js` 才显示（public 档不发这个请求）。
+- **`?embed=1` 是内嵌模式**（`witness.html` 的 iframe 专用）：只让 projects.html 加 `body.embed` 类隐藏站外导航、并跳过 `/full/` 探测；渲染器与三视图一字不变。**无参数时行为一字不变**——public / full 同源同一份页面。
+
+## 二-C、后续维护归并发协议
 
 这个站是**并发协议项目的展示面**，不是独立演进的东西——数据是派生件，档案才是真相：
 
@@ -70,6 +104,7 @@ tools/build-map.mjs          生成器：本机项目档案索引 → 上面三�
 ```powershell
 node tools/build-map.mjs            # 全量：全部项目（含私域线）—— 现行默认发布档
 node tools/build-map.mjs --public   # 公开档：只出白名单项目（临时收窄用）
+node tools/build-witness.mjs        # 见证者快照（面板须在跑；只全量档用，写 full/data/witness.js）
 
 node ../tools/build-git-timelines.mjs --dry          # 先看：哪些项目有 git 仓、各几次提交
 node ../tools/build-git-timelines.mjs                # 全量：全部可解析仓库的项目各出一份

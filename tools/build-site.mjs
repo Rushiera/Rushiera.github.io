@@ -33,6 +33,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SITE = path.join(HERE, '..');
 const ROOT = path.join(SITE, '..', '..');
 const BUILD_MAP = path.join(HERE, 'build-map.mjs');
+const BUILD_WITNESS = path.join(HERE, 'build-witness.mjs');
 const GIT_TL = path.join(ROOT, 'witness', 'tools', 'build-git-timelines.mjs');
 
 const argv = process.argv.slice(2);
@@ -45,6 +46,9 @@ const DRY = has('dry');
 const JSON_OUT = has('json');
 const PROFILE = opt('profile', 'public');
 const PAGES = ['index.html', 'projects.html', 'github.html', 'client.html'];
+/* 全量档独有的页面：public 档既不放页面、也不产数据——「只改全量版」是结构约束，不靠人记得。
+   见证者页读 data/witness.js（window.WITNESS），那份数据只在 full 构建时由 build-witness.mjs 生成。 */
+const FULL_PAGES = ['witness.html'];
 const ASSETS = 'assets';
 
 if (!['public', 'full', 'both'].includes(PROFILE)) {
@@ -91,6 +95,22 @@ function copyDir(src, dest) {
   }
   fs.cpSync(src, dest, { recursive: true, force: true });
   return true;
+}
+
+/** witness.html 的数据版本串：witness.js 内容一变串就变——否则页面会拿旧快照
+ *  （面板静态服务 / Pages CDN 都会缓存；这份数据每次构建都换，不能靠时间戳）。
+ *  与 assets 版本串分开算：数据是快照、assets 是代码，两者刷新节奏不同。 */
+function injectWitnessVersion(fullDir) {
+  const page = path.join(fullDir, 'witness.html');
+  const dataFile = path.join(fullDir, 'data', 'witness.js');
+  if (!fs.existsSync(page)) { console.warn('[build-site] WARN witness.html 不在盘，跳过数据版本串'); return ''; }
+  if (!fs.existsSync(dataFile)) { console.warn('[build-site] WARN witness.js 不在盘，跳过数据版本串'); return ''; }
+  const h = crypto.createHash('sha256').update(fs.readFileSync(dataFile)).digest('hex').slice(0, 8);
+  if (DRY) return h;
+  const before = fs.readFileSync(page, 'utf8');
+  const after = before.replace(/src="data\/witness\.js(?:\?v=[0-9a-f]+)?"/, 'src="data/witness.js?v=' + h + '"');
+  if (after !== before) fs.writeFileSync(page, after);
+  return h;
 }
 
 /** assets 版本串（构建期注入）：按 assets/ 全部文件的内容算——改一个字节就换串。
@@ -143,7 +163,7 @@ function buildOne(profile) {
   if (profile === 'full' && !DRY) {
     const fullDir = path.join(SITE, 'full');
     fs.mkdirSync(fullDir, { recursive: true });
-    for (const f of PAGES) {
+    for (const f of PAGES.concat(FULL_PAGES)) {
       const src = path.join(SITE, f);
       if (!fs.existsSync(src)) { console.warn('[build-site] WARN 页面不存在：' + f); continue; }
       fs.copyFileSync(src, path.join(fullDir, f));
@@ -153,6 +173,9 @@ function buildOne(profile) {
 
   const map = run(BUILD_MAP, [].concat(profile === 'public' ? ['--public'] : [], common), SITE);
   const tl = run(GIT_TL, [].concat(profile === 'public' ? ['--public'] : [], common), ROOT);
+  /* 见证者快照（full 档独有）：读面板端点 + 产物目录 → full/data/witness.js。
+     面板不在跑就失败——与提交时间线同一前置，失败进 problems（不产半份）。 */
+  const wit = profile === 'full' ? run(BUILD_WITNESS, common, SITE) : { ok: true, code: 0, out: '(public 档不生成)' };
   const data = inspect(outDir);
 
   /* 自证：public 必须「全在白名单内 + public:true」；full 必须 public:false。
@@ -160,7 +183,12 @@ function buildOne(profile) {
      🔴 dry 不写盘：盘上的产物是上一次的结果，不是本次构建的输出——按「不可判」处理，
         不拿旧数据冒充新结论（dry 只看两个子脚本的退出码与摘要行）。 */
   const problems = [];
+  if (!wit.ok) problems.push('见证者数据生成失败：' + one(wit.out));
   if (!DRY) {
+    if (profile === 'full') {
+      const token = injectWitnessVersion(path.join(SITE, 'full'));
+      if (!token) problems.push('witness.html 的数据版本串未注入（页面或数据缺失）');
+    }
     if (profile === 'public') {
       if (data.exists && data.public !== true) problems.push('public 产物缺 public:true 标记');
       if (data.leak.length) problems.push('public 产物含白名单外项目 ' + data.leak.length + ' 个：' + data.leak.slice(0, 6).join(' / '));
@@ -168,13 +196,14 @@ function buildOne(profile) {
       problems.push('full 产物缺 public:false 标记（本地预览会误显示成公开档）');
     }
   }
-  const ok = map.ok && tl.ok && (DRY || (data.exists && problems.length === 0));
+  const ok = map.ok && tl.ok && wit.ok && (DRY || (data.exists && problems.length === 0));
   return {
     profile,
     ok,
     dir: path.relative(SITE, outDir).replace(/\\/g, '/'),
     map: { ok: map.ok, code: map.code, line: one(map.out) },
     timeline: { ok: tl.ok, code: tl.code, line: one(tl.out) },
+    witness: { ok: wit.ok, code: wit.code, line: one(wit.out) },
     data: Object.assign({}, data, DRY ? { stale: true } : {}),
     problems
   };
@@ -190,7 +219,10 @@ const profiles = want.map(buildOne);
 /* 产物新鲜度：mtime ≥ 启动时刻 − 3s（dry 不判——本来就不写盘）。 */
 const outputs = [];
 for (const p of profiles) {
-  for (const rel of ['projects.json', 'projects.js', 'arch.js', 'git/index.js']) {
+  const rels = ['projects.json', 'projects.js', 'arch.js', 'git/index.js'];
+  /* 见证者快照只在 full 档有；不判它新鲜就等于「数据生成失败也报 OK」 */
+  if (p.profile === 'full') rels.push('witness.js');
+  for (const rel of rels) {
     const fp = path.join(SITE, p.dir, rel);
     if (!fs.existsSync(fp)) { outputs.push({ profile: p.profile, rel, exists: false }); continue; }
     const st = fs.statSync(fp);
@@ -230,6 +262,8 @@ if (JSON_OUT) {
       + ' · → ' + p.dir);
     if (!p.map.ok) console.log('  星图 FAIL：' + p.map.line);
     if (!p.timeline.ok) console.log('  时间线 FAIL：' + p.timeline.line);
+    if (!p.witness.ok) console.log('  见证者 FAIL：' + p.witness.line);
+    else if (p.profile === 'full' && p.witness.line) console.log('  见证者：' + p.witness.line);
     for (const x of p.problems) console.log('  ✗ ' + x);
   }
   for (const o of missing) console.log('  缺产物 ' + o.profile + '/' + o.rel);
