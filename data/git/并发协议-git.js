@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "64 次提交 · 2026-11 → 2026-11",
-    "ver": "f1cd712",
+    "sub": "66 次提交 · 2026-11 → 2026-11",
+    "ver": "923b876",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -904,6 +904,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git f1cd712"
+            },
+            {
+              "v": "7a080df",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "feat",
+              "title": "feat: 见证者页入口进面板（站点段「完整版」右侧 + /api/site/status 增 witness 段）",
+              "items": [
+                "Rushiera",
+                "7a080dfc5b"
+              ],
+              "status": "done",
+              "evidence": "git 7a080df"
+            },
+            {
+              "v": "923b876",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "chore",
+              "title": "chore: state 开关落盘（站点发布 at 09:04:34 · 面板写入）",
+              "items": [
+                "Rushiera",
+                "923b876637"
+              ],
+              "status": "done",
+              "evidence": "git 923b876"
             }
           ]
         }
