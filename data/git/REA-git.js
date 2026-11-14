@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "37 次提交 · 2026-10 → 2026-11",
-    "ver": "f4013b7",
+    "sub": "39 次提交 · 2026-10 → 2026-11",
+    "ver": "3c2f33c",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -553,6 +553,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git f4013b7"
+            },
+            {
+              "v": "4e8495e",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.49 取证：Koikatsu / CharaStudio 静态分析（reports/koikatu · 免引擎托管面 · 编号第 12 个报告目录）",
+              "items": [
+                "Rushiera",
+                "4e8495e6a8"
+              ],
+              "status": "done",
+              "evidence": "git 4e8495e"
+            },
+            {
+              "v": "3c2f33c",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "koikatu: 补测轮——CharaStudio 导入表实测 / Attribute 18 键名 / Managed 逐字节 31同2异 / 元数据表 30of32 全同",
+              "items": [
+                "Rushiera",
+                "3c2f33c14d"
+              ],
+              "status": "done",
+              "evidence": "git 3c2f33c"
             }
           ]
         }
