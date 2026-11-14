@@ -4,7 +4,7 @@ window.ARCH = {
     "title": "ECC 提交时间线",
     "sub": "最近 1500 / 共 4327 次提交 · 2026-07 → 2026-11",
     "ver": "d2ef2680",
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "contract": {
       "views": [
         "git"
