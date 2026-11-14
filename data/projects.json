@@ -1,27 +1,28 @@
 {
-  "generatedAt": "2026-11-14 23:43",
+  "generatedAt": "2026-11-15 00:13",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 4,
     "todoZone": 4,
     "active": 8,
-    "versions": 1368
+    "versions": 1371
   },
   "items": [
     {
       "pid": "ACS",
       "layer": "agent",
       "type": "应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
-      "version": "v0.90.1",
+      "version": "v0.90.2",
       "worker": "Coder",
       "jobs": [
+        "ACS",
         "Node",
         "CSharp"
       ],
       "created": "2026-11-01",
       "todo": 8,
-      "changelog": 131,
+      "changelog": 132,
       "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
       "archived": false
     },
@@ -224,7 +225,7 @@
       ],
       "created": "2026-08-03",
       "todo": 17,
-      "changelog": 17,
+      "changelog": 18,
       "purpose": "Mau 仓 = CatHome5 的施工仓。",
       "archived": false
     },
@@ -232,15 +233,15 @@
       "pid": "REA",
       "layer": "agent",
       "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-      "version": "v0.48 · 上游基线 `c3647ade1`",
+      "version": "v0.53 · 上游基线 `c8d5413d0`",
       "worker": "Coder",
       "jobs": [
         "Node",
         "Git"
       ],
       "created": "2026-10-21",
-      "todo": 9,
-      "changelog": 54,
+      "todo": 8,
+      "changelog": 55,
       "purpose": "本支可改、可验、可自持的逆向工程底座",
       "archived": false
     },

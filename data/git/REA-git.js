@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "43 次提交 · 2026-10 → 2026-11",
-    "ver": "85a1d63",
+    "sub": "47 次提交 · 2026-10 → 2026-11",
+    "ver": "00928a5",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -631,6 +631,58 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 85a1d63"
+            },
+            {
+              "v": "66e10ed",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.48 offlinenovel-servers: P1-A 全量端点提取（334 点/182 去重）+ #2 绝对串 + #3 kamihime 探活 + #4 path==112 + #5 写端点 36 + #6 shangrila 17 路由",
+              "items": [
+                "Rushiera",
+                "66e10eda70"
+              ],
+              "status": "done",
+              "evidence": "git 66e10ed"
+            },
+            {
+              "v": "7c9950c",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.48 offlinenovel-servers: 入库本轮 5 个复跑脚本（P1-A / P1-A2 / path== / 写端点 / shangrila strings）+ §七 命令块",
+              "items": [
+                "Rushiera",
+                "7c9950ce13"
+              ],
+              "status": "done",
+              "evidence": "git 7c9950c"
+            },
+            {
+              "v": "be58807",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.53 koikatu 报告 §十一：B1 消费回执（Denial 5 键核对 · Awnser 9 / Attribute 18 键名 · WeakPoint 判否）",
+              "items": [
+                "Rushiera",
+                "be58807697"
+              ],
+              "status": "done",
+              "evidence": "git be58807"
+            },
+            {
+              "v": "00928a5",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.52 上游同步 6.9.0：词表 13 修 + 18 增；config.json TMP 迁出他项目目录",
+              "items": [
+                "Rushiera",
+                "00928a542e"
+              ],
+              "status": "done",
+              "evidence": "git 00928a5"
             }
           ]
         }

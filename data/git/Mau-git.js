@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "42 次提交 · 2026-11 → 2026-11",
-    "ver": "14df672",
+    "sub": "43 次提交 · 2026-11 → 2026-11",
+    "ver": "6c9cb37",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -618,6 +618,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 14df672"
+            },
+            {
+              "v": "6c9cb37",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8 单行 JSON 限幅：text-read_lines / between 补 20000 字符上限",
+              "items": [
+                "Rushiera",
+                "6c9cb37f37"
+              ],
+              "status": "done",
+              "evidence": "git 6c9cb37"
             }
           ]
         }

@@ -4,7 +4,7 @@ window.ARCH = {
   "title": "Rushiera",
   "sub": "18 个项目 · 5 层 · 按工程域划分",
   "ver": "v1",
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "roleLabels": true,
   "fit": "width"
  },
@@ -119,10 +119,11 @@ window.ARCH = {
        "row": 1,
        "tags": [
         "Coder",
+        "ACS",
         "Node",
         "CSharp"
        ],
-       "note": "v0.90.1 · 待办 8",
+       "note": "v0.90.2 · 待办 8",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -172,7 +173,7 @@ window.ARCH = {
         "Node",
         "Git"
        ],
-       "note": "v0.48 · 上游基线 `c3647ade1` · 待办 9",
+       "note": "v0.53 · 上游基线 `c8d5413d0` · 待办 8",
        "evidence": "Project/REA/project.md"
       },
       {
@@ -475,8 +476,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "REA · 逆向工程 MCP server + CLI（TypeScript / Node 24）",
        "items": [
-        "v0.48 · 上游基线 `c3647ade1`",
-        "待办 9"
+        "v0.53 · 上游基线 `c8d5413d0`",
+        "待办 8"
        ],
        "status": "partial",
        "evidence": "Project/REA/project.md"
@@ -553,7 +554,7 @@ window.ARCH = {
        "lane": "agent",
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
-        "v0.90.1",
+        "v0.90.2",
         "待办 8"
        ],
        "status": "partial",
