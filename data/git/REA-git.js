@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "48 次提交 · 2026-10 → 2026-11",
-    "ver": "8d3bd16",
+    "sub": "49 次提交 · 2026-10 → 2026-11",
+    "ver": "37e490b",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -696,6 +696,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 8d3bd16"
+            },
+            {
+              "v": "37e490b",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.55: 报告目录名修正 koikatsu→koikatu（并入既有目录）",
+              "items": [
+                "Rushiera",
+                "37e490b576"
+              ],
+              "status": "done",
+              "evidence": "git 37e490b"
             }
           ]
         }
