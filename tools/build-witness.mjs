@@ -21,6 +21,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -51,10 +52,11 @@ const clip = (s, n) => { const t = String(s == null ? '' : s).replace(/\s+/g, ' 
 const readJson = (p, fb) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch (e) { return fb; } };
 const exists = (p) => { try { return fs.existsSync(p); } catch (e) { return false; } };
 
-/** 递归统计：文件数 / 字节 / 最近 mtime（不存在给 null，不编 0）。 */
+/** 递归统计：文件数 / 字节 / 最近与最旧 mtime（不存在给 null，不编 0）。
+ *  最旧 + 跨度是 watch 保留面「有没有淘汰策略」的决策数据：只有份数看不出压缩空间。 */
 function walkStat(dir) {
   if (!exists(dir)) return null;
-  let files = 0, bytes = 0, lastMs = 0;
+  let files = 0, bytes = 0, lastMs = 0, firstMs = 0;
   const stack = [dir];
   while (stack.length) {
     const d = stack.pop();
@@ -65,11 +67,18 @@ function walkStat(dir) {
       if (e.isDirectory()) { stack.push(p); continue; }
       try {
         const st = fs.statSync(p);
-        files += 1; bytes += st.size; if (st.mtimeMs > lastMs) lastMs = st.mtimeMs;
+        files += 1; bytes += st.size;
+        if (st.mtimeMs > lastMs) lastMs = st.mtimeMs;
+        if (!firstMs || st.mtimeMs < firstMs) firstMs = st.mtimeMs;
       } catch (e2) { /* 单文件读不到就跳过——下面的 files 与 bytes 只在读到时计数 */ }
     }
   }
-  return { files, bytes, lastAt: lastMs ? stamp(new Date(lastMs)) : '', lastMs };
+  const spanDays = lastMs && firstMs ? Math.round((lastMs - firstMs) / 8640000) / 10 : 0;
+  return {
+    files, bytes,
+    lastAt: lastMs ? stamp(new Date(lastMs)) : '', lastMs,
+    firstAt: firstMs ? stamp(new Date(firstMs)) : '', firstMs, spanDays
+  };
 }
 
 /** 目录下按 mtime 倒序取前 N 个文件（一层，不递归）。 */
@@ -157,7 +166,7 @@ if (exists(watchDir)) {
       /* 每组带最近 8 件文件名——「想查源文本」时从这里直接找得到具体版本文件 */
       const recent = recentFiles(dir, 8, (f) => /\.(md|jsonl|txt)$/i.test(f))
         .map((f) => ({ name: f.name, at: stamp(new Date(f.st.mtimeMs)), bytes: f.st.size }));
-      watch.push({ group: e.name, files: s.files, bytes: s.bytes, lastAt: s.lastAt, recent });
+      watch.push({ group: e.name, files: s.files, bytes: s.bytes, lastAt: s.lastAt, firstAt: s.firstAt, spanDays: s.spanDays, recent });
     }
   }
   watch.sort((a, b) => b.files - a.files);
@@ -188,10 +197,15 @@ const snap = (() => {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     if (!e.isDirectory()) continue;
     const p = path.join(dir, e.name);
-    const sub = fs.readdirSync(p, { withFileTypes: true }).filter((x) => x.isDirectory).length;
+    const subNames = fs.readdirSync(p, { withFileTypes: true })
+      .filter((x) => x.isDirectory).map((x) => x.name).sort();
+    const sub = subNames.length;
     const ws = walkStat(p);
     sets += sub;
-    items.push({ pid: e.name, sets: sub, files: ws ? ws.files : 0, bytes: ws ? ws.bytes : 0, lastAt: ws ? ws.lastAt : '' });
+    items.push({
+      pid: e.name, sets: sub, files: ws ? ws.files : 0, bytes: ws ? ws.bytes : 0, lastAt: ws ? ws.lastAt : '',
+      latestDir: subNames.length ? subNames[subNames.length - 1] : ''
+    });
   }
   items.sort((a, b) => String(b.lastAt).localeCompare(String(a.lastAt)));
   return { projects: items.length, sets, files: s.files, bytes: s.bytes, lastAt: s.lastAt, items };
@@ -254,15 +268,38 @@ if (exists(archDir)) {
   archItems.sort((a, b) => (b.bytes - a.bytes));
 } else warns.push('架构图数据集目录不存在：' + archDir);
 
-/* 2.5 投递台账：只取最近 15 条投递（文件 1.3 MB，prompt 正文一律不进站点） */
+/* 2.5 投递台账：最近 15 条 + 按项目聚合（全史 1.3 MB，prompt 正文一律不进站点）。
+   聚合回答「哪些项目在被反复投递、最后投的是什么、猫态分布」——只看最近 15 条会漏掉低频项目。 */
 const dispatchFile = path.join(STATE, 'flow', 'dispatches.json');
 const dAll = readJson(dispatchFile, { items: [] });
-const dispatchItems = (dAll.items || []).slice(-15).reverse().map((x) => ({
+const dItems = Array.isArray(dAll.items) ? dAll.items : [];
+const dispatchItems = dItems.slice(-15).reverse().map((x) => ({
   pid: x.pid, kind: x.kind, title: x.title || '', at: x.at || '',
   runState: (x.live && x.live.runState) || '', removed: !!x.removed,
   effort: x.effort || '', catId: x.catId ? String(x.catId).slice(-6) : ''
 }));
-const dispatchTotal = (dAll.items || []).length;
+const dispatchTotal = dItems.length;
+const dispatchAgg = (() => {
+  const byPid = new Map();
+  const states = {};
+  for (const x of dItems) {
+    const pid = x.pid || '（无项目）';
+    const st = (x.live && x.live.runState) || 'gone';
+    states[st] = (states[st] || 0) + 1;
+    const cur = byPid.get(pid) || { pid, count: 0, lastAt: '', lastKind: '', lastTitle: '', states: {}, removed: 0 };
+    cur.count += 1;
+    cur.states[st] = (cur.states[st] || 0) + 1;
+    if (x.removed) cur.removed += 1;
+    if (!cur.lastAt || String(x.at || '') >= cur.lastAt) {
+      cur.lastAt = x.at || '';
+      cur.lastKind = x.kind || '';
+      cur.lastTitle = clip(x.title || '', 60);
+    }
+    byPid.set(pid, cur);
+  }
+  const items = [...byPid.values()].sort((a, b) => (b.count - a.count) || String(b.lastAt).localeCompare(String(a.lastAt)));
+  return { projects: items.length, states, items };
+})();
 
 /* 2.6 整理任务表（verify.json）：只统计状态分布，不搬正文
    🔴 表结构是 { _note, generatedAt, items: { <pid>: {...} } }——键在 items 下，不在顶层。 */
@@ -323,6 +360,25 @@ const opsTail = tailLines(path.join(STATE, 'flow', 'ops.jsonl'), 14, 49152)
   .map((o) => ({ at: o.at || '', op: o.op || '', value: typeof o.value === 'string' ? clip(o.value, 60) : clip(JSON.stringify(o.value || ''), 60), by: o.by || '' }));
 const usageTail = tailLines(path.join(STATE, 'flow', 'usage.jsonl'), 10, 32768)
   .map((u) => ({ t: u.t || '', kind: u.kind || '', pid: u.pid || '', src: u.src || '' }));
+/* 用量全量聚合（46 KB 量级，整读比尾读更诚实）：按 kind / pid / src 计数——
+   尾 10 条只能看「刚发生了什么」，看不出「这台面板平时被怎么用」。坏行如实计数。 */
+const usageAgg = (() => {
+  const p = path.join(STATE, 'flow', 'usage.jsonl');
+  if (!exists(p)) return null;
+  const lines = fs.readFileSync(p, 'utf8').split(/\r?\n/).filter(Boolean);
+  const byKind = {}, byPid = {}, bySrc = {};
+  const bump = (m, k) => { const key = k || '（空）'; m[key] = (m[key] || 0) + 1; };
+  let bad = 0;
+  for (const l of lines) {
+    let u;
+    try { u = JSON.parse(l); } catch (e) { bad += 1; continue; }
+    bump(byKind, u.kind);
+    bump(byPid, u.pid);
+    bump(bySrc, u.src);
+  }
+  const top = (m) => Object.keys(m).map((k) => ({ k, n: m[k] })).sort((a, b) => b.n - a.n);
+  return { total: lines.length - bad, bad, byKind: top(byKind), byPid: top(byPid).slice(0, 12), bySrc: top(bySrc), pids: Object.keys(byPid).length };
+})();
 const historyTail = tailLines(path.join(STATE, 'projects', 'history.jsonl'), 12, 49152)
   .map((h) => ({ t: h.t || '', pid: h.pid || '', doc: h.doc || '', kind: h.kind || '', from: String(h.from == null ? '' : h.from).slice(0, 40), to: String(h.to == null ? '' : h.to).slice(0, 40) }));
 const fbTail = (() => {
@@ -425,7 +481,11 @@ if (vlist && Array.isArray(vlist.items)) {
     verifyCards.push({
       pid: v.pid, code: v.code || '', label: clip(v.label || '', 40), state: v.state || '',
       cat: v.cat || '', tokens: v.tokens || 0, elapsed: v.elapsed || 0,
-      baselineAt: v.baselineAt || '', doneAt: v.doneAt || '',
+      /* 轮次运行字段（P0-②）：stage 只在 running / queued 时有值；startedAt → doneAt 是
+         「这轮跑没跑完」的起止；written = 机械回写进 todo.md 的方向条数（0 = 没写，不是没跑）。 */
+      stage: v.stage || '', startedAt: v.startedAt || '', doneAt: v.doneAt || '',
+      written: v.written || 0, at: v.at || '', runState: v.runState || '',
+      baselineAt: v.baselineAt || '',
       kind, items: itemsN, shared: sharedN, gap, signals: sig, profiles: prof,
       note: clip(v.note || '', 80),
       card: v.verifyPath ? path.relative(CCBP, v.verifyPath).replace(/\\/g, '/') : ''
@@ -473,6 +533,189 @@ for (const m of (mods.projects || [])) {
 }
 moduleDetails.sort((a, b) => (b.modules.length - a.modules.length) || a.pid.localeCompare(b.pid));
 
+/* ---------- 2.11 对账全量（P0-③）：面板端点只带前 8 条，全量在脚本 stdout 的 ERR 段。
+   构建期直接跑两个只读脚本（与面板同源同参），把 issueCount 与 issues 一起自证；
+   脚本跑不起来才回落端点值，并显式标 truncated。 */
+function runNodeScript(rel, args, timeoutMs) {
+  const script = path.join(ROOT, rel);
+  if (!exists(script)) return { ok: false, code: -1, out: '', err: '脚本不存在：' + script };
+  try {
+    const out = execFileSync(process.execPath, [script, ...args], {
+      cwd: ROOT, encoding: 'utf8', timeout: timeoutMs, maxBuffer: 32 * 1024 * 1024
+    });
+    return { ok: true, code: 0, out, err: '' };
+  } catch (e) {
+    return { ok: false, code: e.status == null ? -1 : e.status, out: String(e.stdout || ''), err: String(e.stderr || e.message || '') };
+  }
+}
+
+function endpointCheck(id) {
+  const c = (wit.capabilities || []).find((x) => x.id === id);
+  if (!c || !c.check) return null;
+  const ck = c.check;
+  return {
+    ok: !!ck.ok, summary: ck.summary || '', issueCount: ck.issueCount || 0,
+    issues: (ck.issues || []).map(String), source: 'endpoint',
+    truncated: (ck.issueCount || 0) > (ck.issues || []).length
+  };
+}
+
+const checksFull = (() => {
+  const out = { map: null, l3: null };
+  const mapRun = runNodeScript('witness/tools/check-map.mjs', [], 120000);
+  if (mapRun.ok || mapRun.out) {
+    const lines = mapRun.out.split('\n').map((l) => l.replace(/\r$/, ''));
+    const issues = [];
+    let inErr = false;
+    for (const l of lines) {
+      if (l.trim() === 'ERR：') { inErr = true; continue; }
+      if (inErr && l.startsWith('  - ')) issues.push(l.slice(4).trim());
+    }
+    const resLine = lines.find((l) => l.startsWith('RESULT:')) || '';
+    const summary = resLine.length > 7 ? resLine.slice(7).trim() : (mapRun.code === 0 ? 'PASS' : 'FAIL');
+    out.map = {
+      ok: mapRun.code === 0 && summary.startsWith('PASS'),
+      summary, issueCount: issues.length, issues, source: 'script', truncated: false
+    };
+  } else {
+    out.map = endpointCheck('mapcheck');
+    if (!out.map) warns.push('星图对账脚本与端点都未取到——对账段按空集渲染');
+    else warns.push('星图对账脚本未跑通，回落面板端点（issues 可能截断）：' + mapRun.err.split('\n')[0]);
+  }
+
+  const l3Run = runNodeScript('witness/tools/check-l3.mjs', ['--all'], 120000);
+  if (l3Run.ok || l3Run.out) {
+    const lines = l3Run.out.split('\n').map((l) => l.replace(/\r$/, ''));
+    const issues = [];
+    let pid = '';
+    for (const l of lines) {
+      const t = l.trim();
+      if (t.startsWith('— ') && t.endsWith(' —')) { pid = t.slice(2, -2).trim(); continue; }
+      if (!l.startsWith('  FAIL ')) continue;
+      const rest = t.slice(5).split(/[ \t]+/).filter(Boolean).join(' ');
+      issues.push(pid ? pid + ' · ' + rest : rest);
+    }
+    const resLine = lines.find((l) => l.startsWith('RESULT')) || '';
+    const summary = resLine.length > 6 ? resLine.slice(6).trim() : (l3Run.code === 0 ? 'PASS' : 'FAIL');
+    out.l3 = {
+      ok: l3Run.code === 0 && summary.startsWith('PASS'),
+      summary, issueCount: issues.length, issues, source: 'script', truncated: false
+    };
+  } else {
+    out.l3 = endpointCheck('l3check');
+    if (!out.l3) warns.push('L3 对账脚本与端点都未取到——对账段按空集渲染');
+    else warns.push('L3 对账脚本未跑通，回落面板端点（issues 可能截断）：' + l3Run.err.split('\n')[0]);
+  }
+  return out;
+})();
+
+/* ---------- 2.12 站点发布历史（P1-⑤）：events.jsonl 里 row=站点发布 的行（成功 / 失败 / 停手）。
+   事件行由 System.Text.Json 写盘，中文是 \uXXXX 转义——先按转义串粗筛再 JSON.parse，避免整文件 2 万行全解析。 */
+const siteHistory = (() => {
+  const p = path.join(STATE, 'flow', 'events.jsonl');
+  if (!exists(p)) { warns.push('站点发布历史：events.jsonl 不存在'); return { total: 0, items: [] }; }
+  let lines = [];
+  try { lines = fs.readFileSync(p, 'utf8').split(/\r?\n/); } catch (e) {
+    warns.push('站点发布历史读取失败：' + e.message);
+    return { total: 0, items: [] };
+  }
+  const hit = [];
+  for (const l of lines) {
+    if (!l) continue;
+    const lower = l.toLowerCase();
+    if (!lower.includes('\\u7ad9\\u70b9\\u53d1\\u5e03') && !l.includes('站点发布')) continue;
+    try {
+      const e = JSON.parse(l);
+      if (e.row !== '站点发布') continue;
+      hit.push({
+        t: e.t || '', act: e.act || '', reason: e.reason || '',
+        ok: e.act === '站点发布', changed: e.changed == null ? null : !!e.changed,
+        stampOnly: !!e.stampOnly, commit: e.commit || '', projects: e.projects,
+        elapsedMs: e.elapsedMs, stage: e.stage || '', message: clip(e.message || '', 160),
+        behind: e.behind
+      });
+    } catch (e2) { /* 坏行跳过——历史只报能解析的条数 */ }
+  }
+  return { total: hit.length, items: hit.slice(-10).reverse() };
+})();
+
+/* ---------- 2.13 交接报告收集情况（新需求）：跑一次 archive-handovers --json 干跑。
+   回答「CatTemp 里还有几份该收没收、都归属谁」——归档区份数在 handover 表，这里给「待收」面。
+   脚本本身只读（干跑不写）；失败出声，不把「没扫到」画成「没有」。 */
+const handoverCollect = (() => {
+  const run = runNodeScript('witness/tools/archive-handovers.mjs', ['--json'], 90000);
+  if (!run.ok || !run.out) {
+    warns.push('交接收集扫描失败（archive-handovers --json）：' + (run.err.split('\n')[0] || '无输出'));
+    return null;
+  }
+  let j = null;
+  try { j = JSON.parse(run.out); } catch (e) {
+    warns.push('交接收集扫描输出不可解析：' + e.message);
+    return null;
+  }
+  const pending = (j.items || []).filter((x) => x.action === 'copy' || x.action === 'move').map((x) => ({
+    file: x.file, pid: x.pid || '_unsorted', size: x.size,
+    mtime: x.mtime ? stamp(new Date(x.mtime)) : '',
+    basis: (x.basis || []).join('+'), pidBasis: x.pidBasis || '',
+    reason: x.reason || ''
+  }));
+  const unsorted = pending.filter((x) => x.pid === '_unsorted').length;
+  const skippedReasons = {};
+  for (const x of j.items || []) {
+    if (x.action !== 'skip') continue;
+    const r = x.reason || 'skip';
+    skippedReasons[r] = (skippedReasons[r] || 0) + 1;
+  }
+  return {
+    ok: j.ok !== false, mode: j.mode || 'dry', src: j.src || '', dest: j.dest || '',
+    scanned: j.scanned || 0, handover: j.handover || 0, excluded: j.excluded || 0,
+    movable: j.movable || 0, skipped: j.skipped || 0, unsorted,
+    skippedReasons, pending
+  };
+})();
+
+/* ---------- 2.14 lifecycle-audit 摘要（P2-⑫）：只读脚本 --json → 只留 summary 与自证字段。
+   全量报告（逐项目 / 逐模块）不进站点——页面是「哪块停了」的读数，不是审计报告的副本。 */
+const lifecycleAudit = (() => {
+  const run = runNodeScript('witness/tools/lifecycle-audit.mjs', ['--json'], 120000);
+  if (!run.ok || !run.out) {
+    warns.push('lifecycle-audit 未跑通：' + (run.err.split('\n')[0] || '无输出'));
+    return null;
+  }
+  let j = null;
+  try { j = JSON.parse(run.out); } catch (e) {
+    warns.push('lifecycle-audit 输出不可解析：' + e.message);
+    return null;
+  }
+  return {
+    generatedAt: j.generatedAt || '', contentHash: j.contentHash || '',
+    history: {
+      lines: (j.history && j.history.totalLines) || 0,
+      parsed: (j.history && j.history.parsed) || 0,
+      badJson: (j.history && j.history.badJson) || 0,
+      missingKind: (j.history && j.history.missing && j.history.missing.kind) || 0,
+      missingPid: (j.history && j.history.missing && j.history.missing.pid) || 0
+    },
+    projects: (j.summary && j.summary.projects) || {},
+    modules: (j.summary && j.summary.modules) || {},
+    warnings: (j.warnings || []).length
+  };
+})();
+
+/* ---------- 2.15 架构图覆盖率（P2-⑪）：索引在档 vs history/arch 数据集。
+   缺哪份、哪份只是骨架——让「42 项目 / 43 份」这类口径在页面上可核。 */
+const archCoverage = (() => {
+  const idxPids = (idx.items || []).map((x) => x.pid).filter(Boolean);
+  const have = new Set(archItems.map((x) => x.pid));
+  const missing = idxPids.filter((p) => !have.has(p));
+  const extra = archItems.map((x) => x.pid).filter((p) => idxPids.indexOf(p) < 0);
+  return {
+    total: idxPids.length, datasets: archItems.length,
+    covered: idxPids.length - missing.length, missing, extra,
+    skeleton: archSkeleton, skeletons: archItems.filter((x) => x.skeleton).map((x) => x.pid)
+  };
+})();
+
 /* ---------- 三、投影与瘦身（页面只画展示需要的字段；原始面保真，不发散） ---------- */
 const life = trends.life || {};
 const lifeProjects = (life.projects || []).map((p) => {
@@ -480,6 +723,41 @@ const lifeProjects = (life.projects || []).map((p) => {
   delete q.ticks;                       // 106 条 × 58 项 = 占数据 60%+，页面不画逐次 tick
   return q;
 });
+
+/* 2.11b 回滚候选（与 Witness.cs 同口径）——state/entrust/<pid>/round-*.patch 最新一份 +
+   最近一条 round-open 的 base → 可复制命令。只呈现，不执行（回滚执行权归人）。 */
+function rollbackOf(pid) {
+  const dir = path.join(STATE, 'entrust', pid);
+  if (!exists(dir)) return null;
+  let names = [];
+  try { names = fs.readdirSync(dir).filter((f) => /^round-.*\.patch$/i.test(f)); } catch (e) { return null; }
+  if (!names.length) return null;
+  let newest = '', newestMs = 0;
+  for (const f of names) {
+    try {
+      const st = fs.statSync(path.join(dir, f));
+      if (st.mtimeMs > newestMs) { newestMs = st.mtimeMs; newest = f; }
+    } catch (e2) { /* 单文件 stat 失败不影响其余 */ }
+  }
+  if (!newest) return null;
+  let base = '';
+  try {
+    const lines = fs.readFileSync(path.join(dir, 'rounds.jsonl'), 'utf8').split(/\r?\n/).filter(Boolean);
+    for (const l of lines) {
+      try { const e = JSON.parse(l); if (e.kind === 'round-open' && e.base) base = e.base; } catch (e3) { /* 坏行跳过 */ }
+    }
+  } catch (e4) { /* 没有 rounds.jsonl 就只给 patch 文件名 */ }
+  const body = newest.replace(/^round-/, '').replace(/\.patch$/i, '');
+  const dash = body.indexOf('-');
+  const roundNo = dash > 0 ? body.slice(0, dash) : '?';
+  const lineNo = dash > 0 ? body.slice(dash + 1) : 'L1';
+  return {
+    file: newest, at: stamp(new Date(newestMs)), patches: names.length,
+    base: base.length >= 7 ? base.slice(0, 7) : '',
+    command: 'POST /api/entrust/' + pid + '/rollback {"mode":"patch","round":' + roundNo
+      + ',"line":"' + lineNo + '","confirm":"' + pid + '"}'
+  };
+}
 
 const entrustOrders = (entrust.orders || []).map((o) => ({
   pid: o.pid, state: o.state, goal: clip(o.goal || '', 220),
@@ -489,11 +767,15 @@ const entrustOrders = (entrust.orders || []).map((o) => ({
   zeroRounds: o.zeroRounds || 0,
   createdAt: o.createdAt || '', updatedAt: o.updatedAt || '',
   blocked: o.blocked || [],
-  gates: (o.gates || []).slice(0, 6),
+  gates: (o.gates || []),                    // 全量（P1-④）：门是授权边界，不截断
+  rollback: rollbackOf(o.pid),               // 最新 patch 的候选命令（没有 patch 即 null）
   base: o.base ? { commit: String(o.base.commit || '').slice(0, 8), branch: o.base.branch || '', dirty: !!o.base.dirty } : null,
-  history: (o.history || []).slice(-4).map((h) => ({
+  historyTotal: (o.history || []).length,
+  history: (o.history || []).slice(-20).map((h) => ({
     round: h.round, verdict: h.verdict || '', tokens: h.tokens || 0,
-    todoOpen: h.todoOpen, designOpen: h.designOpen, items: (h.items || []).slice(0, 3), at: h.at || ''
+    todoOpen: h.todoOpen, designOpen: h.designOpen,
+    closed: Array.isArray(h.closed) ? h.closed.length : 0,
+    items: (h.items || []).slice(0, 3), at: h.at || ''
   }))
 }));
 
@@ -553,7 +835,20 @@ const overview = {
   entrust: entrust.phaseSummary || {},
   releases: {
     recent: ((witCaps.find((c) => c.id === 'releases') || {}).releases || []).length,
-    unread: (witCaps.find((c) => c.id === 'releases') || {}).unread
+    unread: (witCaps.find((c) => c.id === 'releases') || {}).unread,
+    /* 每项目未读（P2-⑩）：releases 能力给的是「最近 40 条 ∪ 每项目最近一条 + 未读标记」，
+       按 pid 折叠即可得逐项目未读；口径与页面 #releases 同源，不另算。 */
+    byPid: (() => {
+      const list = (witCaps.find((c) => c.id === 'releases') || {}).releases || [];
+      const m = {};
+      for (const r of list) {
+        const o = m[r.pid] || (m[r.pid] = { pid: r.pid, rows: 0, unread: 0, latestAt: '' });
+        o.rows += 1;
+        if (r.unread) o.unread += 1;
+        if (!o.latestAt || String(r.at || '') >= o.latestAt) o.latestAt = String(r.at || '');
+      }
+      return Object.keys(m).map((k) => m[k]).sort((a, b) => (b.unread - a.unread) || a.pid.localeCompare(b.pid));
+    })()
   },
   dispatchTotal,
   verifyTotal,
@@ -561,19 +856,32 @@ const overview = {
   verify: { cards: verifyOut.withCard, items: verifyOut.items, shared: verifyOut.shared, gap: verifyOut.gap, signals: verifyOut.signals },
   watchFiles: watch.reduce((n, x) => n + x.files, 0),
   watchBytes: watch.reduce((n, x) => n + x.bytes, 0),
+  handover: {
+    archivedProjects: handover ? handover.projects : 0,
+    archivedFiles: handover ? handover.files : 0,
+    scanned: handoverCollect ? handoverCollect.scanned : null,
+    pending: handoverCollect ? handoverCollect.movable : null
+  },
   arch: { total: archItems.length, skeleton: archSkeleton }
 };
 
-/* 索引卡明细（页面「档案完备度」表）：只搬派生值与指针，不抄档案正文。 */
-const projectCards = (idx.items || []).map((it) => ({
-  pid: it.pid, type: clip(it.type || '', 46), version: clip(it.version || '', 24),
-  worker: it.worker || '', jobs: (it.jobs || []).slice(0, 3),
-  verdict: it.verdict || '', missing: (it.missing || []).length,
-  todo: it.todoCount || 0, changelog: it.changelogCount || 0,
-  designOk: it.designOk || 0, designPart: it.designPart || 0, designNone: it.designNone || 0,
-  anomalies: (it.anomalies || []).length,
-  scope: it.scope || '', created: String(it.created || '').slice(0, 10)
-}));
+/* 索引卡明细（页面「档案完备度」表）：只搬派生值与指针，不抄档案正文。
+   missing / anomalies 原样是字符串数组（索引器给的就是明细）——这里带上前 8 条；
+   其余只给计数（more），页面按「+N」显示。 */
+const projectCards = (idx.items || []).map((it) => {
+  const miss = Array.isArray(it.missing) ? it.missing : [];
+  const anom = Array.isArray(it.anomalies) ? it.anomalies : [];
+  return {
+    pid: it.pid, type: clip(it.type || '', 46), version: clip(it.version || '', 24),
+    worker: it.worker || '', jobs: (it.jobs || []).slice(0, 3),
+    verdict: it.verdict || '',
+    todo: it.todoCount || 0, changelog: it.changelogCount || 0,
+    designOk: it.designOk || 0, designPart: it.designPart || 0, designNone: it.designNone || 0,
+    missing: miss.length, missingItems: miss.slice(0, 8), missingMore: Math.max(0, miss.length - 8),
+    anomalies: anom.length, anomalyItems: anom.slice(0, 8), anomalyMore: Math.max(0, anom.length - 8),
+    scope: it.scope || '', created: String(it.created || '').slice(0, 10)
+  };
+});
 
 /* ---------- 3.9 立项时间流（「最近的起点」）----------
    来源 = 本档自己的 projects.json（build-map 的产出，形状 {generatedAt,public,count,stats,items[]}）。
@@ -627,7 +935,7 @@ const data = {
   now: wit.now || '',
   poke: wit.poke || null,
   capabilities: witCaps,
-  checks: { map: checkOf('mapcheck'), l3: checkOf('l3check') },
+  checks: checksFull,
   projects: projectCards,
   home: homeOut,
   overview,
@@ -655,6 +963,7 @@ const data = {
   board: {
     knobs, order: orderOut,
     site: site || null,
+    siteHistory,
     tools: knobs.tools,
     tidy: tidyStat,
     aliases: aliasStat,
@@ -664,8 +973,11 @@ const data = {
   },
   artifacts: {
     watch, verify, verifyTotal,
-    snapshots: snap, handover, entrustCards, arch: { items: archItems },
-    dispatch: { total: dispatchTotal, items: dispatchItems },
+    snapshots: snap, handover, handoverCollect, entrustCards,
+    arch: { items: archItems, coverage: archCoverage },
+    dispatch: { total: dispatchTotal, items: dispatchItems, agg: dispatchAgg },
+    usageAgg,
+    lifecycle: lifecycleAudit,
     flow: flowStats,
     events: eventsTail,
     ops: opsTail,
@@ -684,6 +996,9 @@ if (DRY) {
     + ' · 起点 ' + homeFeed.length
     + ' · 整理卡 ' + verifyOut.withCard + '（gap ' + verifyOut.gap + ' · 信号 ' + verifyOut.signals + '）'
     + ' · 模块明细 ' + moduleDetails.length
+    + ' · 发布史 ' + siteHistory.total + '（列 ' + siteHistory.items.length + '）'
+    + ' · 交接待收 ' + (handoverCollect ? handoverCollect.movable : '—') + ' / 扫描 ' + (handoverCollect ? handoverCollect.scanned : '—')
+    + ' · 对账 ' + (checksFull.map && checksFull.map.ok ? 'PASS' : 'FAIL') + ' / ' + (checksFull.l3 && checksFull.l3.ok ? 'PASS' : 'FAIL')
     + (warns.length ? ' · WARN ' + warns.length : ''));
 } else {
   fs.mkdirSync(OUT, { recursive: true });
@@ -695,6 +1010,9 @@ if (DRY) {
     + ' · 起点 ' + homeFeed.length
     + ' · 整理卡 ' + verifyOut.withCard + '（gap ' + verifyOut.gap + ' · 信号 ' + verifyOut.signals + '）'
     + ' · 模块明细 ' + moduleDetails.length
+    + ' · 发布史 ' + siteHistory.total + '（列 ' + siteHistory.items.length + '）'
+    + ' · 交接待收 ' + (handoverCollect ? handoverCollect.movable : '—') + ' / 扫描 ' + (handoverCollect ? handoverCollect.scanned : '—')
+    + ' · 对账 ' + (checksFull.map && checksFull.map.ok ? 'PASS' : 'FAIL') + ' / ' + (checksFull.l3 && checksFull.l3.ok ? 'PASS' : 'FAIL')
     + ' · → ' + path.relative(SITE, OUT).replace(/\\/g, '/'));
   if (warns.length) warns.forEach((w) => console.log('  WARN ' + w));
   if (errors.length) errors.forEach((w) => console.log('  ERR ' + w));
