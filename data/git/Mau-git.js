@@ -2,19 +2,19 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "626 次提交 · 2026-08 → 2026-11",
-    "ver": "dd0febe2",
+    "sub": "627 次提交 · 2026-08 → 2026-11",
+    "ver": "68e79a4",
     "updated": "2026-11-14",
     "contract": {
       "views": [
         "git"
       ]
     },
-    "repo": "D:\\Mau\\mau",
+    "repo": "D:\\Mau\\WorkSpace\\Mau",
     "sources": [
       {
         "label": "数据源：git log（--reverse，含提交人）",
-        "path": "D:\\Mau\\mau (branch RushieraChange)"
+        "path": "D:\\Mau\\WorkSpace\\Mau (branch RushieraChange)"
       }
     ]
   },
@@ -74,7 +74,7 @@ window.ARCH = {
           ],
           "entries": [
             {
-              "v": "30252a39",
+              "v": "30252a3",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -84,10 +84,10 @@ window.ARCH = {
                 "30252a39d2"
               ],
               "status": "done",
-              "evidence": "git 30252a39"
+              "evidence": "git 30252a3"
             },
             {
-              "v": "ed03082b",
+              "v": "ed03082",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -97,10 +97,10 @@ window.ARCH = {
                 "ed03082b51"
               ],
               "status": "done",
-              "evidence": "git ed03082b"
+              "evidence": "git ed03082"
             },
             {
-              "v": "cd7c58c8",
+              "v": "cd7c58c",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -110,10 +110,10 @@ window.ARCH = {
                 "cd7c58c838"
               ],
               "status": "done",
-              "evidence": "git cd7c58c8"
+              "evidence": "git cd7c58c"
             },
             {
-              "v": "9cf9878d",
+              "v": "9cf9878",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -123,10 +123,10 @@ window.ARCH = {
                 "9cf9878d6c"
               ],
               "status": "done",
-              "evidence": "git 9cf9878d"
+              "evidence": "git 9cf9878"
             },
             {
-              "v": "c9db4e77",
+              "v": "c9db4e7",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -136,10 +136,10 @@ window.ARCH = {
                 "c9db4e77cf"
               ],
               "status": "done",
-              "evidence": "git c9db4e77"
+              "evidence": "git c9db4e7"
             },
             {
-              "v": "c7cf884c",
+              "v": "c7cf884",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -149,10 +149,10 @@ window.ARCH = {
                 "c7cf884c1e"
               ],
               "status": "done",
-              "evidence": "git c7cf884c"
+              "evidence": "git c7cf884"
             },
             {
-              "v": "ebe27ee9",
+              "v": "ebe27ee",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -162,10 +162,10 @@ window.ARCH = {
                 "ebe27ee916"
               ],
               "status": "done",
-              "evidence": "git ebe27ee9"
+              "evidence": "git ebe27ee"
             },
             {
-              "v": "3356de57",
+              "v": "3356de5",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -175,10 +175,10 @@ window.ARCH = {
                 "3356de57ad"
               ],
               "status": "done",
-              "evidence": "git 3356de57"
+              "evidence": "git 3356de5"
             },
             {
-              "v": "67e154de",
+              "v": "67e154d",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -188,10 +188,10 @@ window.ARCH = {
                 "67e154de60"
               ],
               "status": "done",
-              "evidence": "git 67e154de"
+              "evidence": "git 67e154d"
             },
             {
-              "v": "c3c3dc64",
+              "v": "c3c3dc6",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -201,10 +201,10 @@ window.ARCH = {
                 "c3c3dc64c4"
               ],
               "status": "done",
-              "evidence": "git c3c3dc64"
+              "evidence": "git c3c3dc6"
             },
             {
-              "v": "414be144",
+              "v": "414be14",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -214,10 +214,10 @@ window.ARCH = {
                 "414be14425"
               ],
               "status": "done",
-              "evidence": "git 414be144"
+              "evidence": "git 414be14"
             },
             {
-              "v": "993eb8a0",
+              "v": "993eb8a",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -227,10 +227,10 @@ window.ARCH = {
                 "993eb8a041"
               ],
               "status": "done",
-              "evidence": "git 993eb8a0"
+              "evidence": "git 993eb8a"
             },
             {
-              "v": "bd41ad21",
+              "v": "bd41ad2",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -240,10 +240,10 @@ window.ARCH = {
                 "bd41ad21ff"
               ],
               "status": "done",
-              "evidence": "git bd41ad21"
+              "evidence": "git bd41ad2"
             },
             {
-              "v": "e5981ca6",
+              "v": "e5981ca",
               "date": "08-04",
               "group": "2026-08",
               "lane": "other",
@@ -253,10 +253,10 @@ window.ARCH = {
                 "e5981ca66b"
               ],
               "status": "done",
-              "evidence": "git e5981ca6"
+              "evidence": "git e5981ca"
             },
             {
-              "v": "f1ed9336",
+              "v": "f1ed933",
               "date": "08-05",
               "group": "2026-08",
               "lane": "other",
@@ -266,10 +266,10 @@ window.ARCH = {
                 "f1ed933676"
               ],
               "status": "done",
-              "evidence": "git f1ed9336"
+              "evidence": "git f1ed933"
             },
             {
-              "v": "7ee7ffb5",
+              "v": "7ee7ffb",
               "date": "08-05",
               "group": "2026-08",
               "lane": "other",
@@ -279,10 +279,10 @@ window.ARCH = {
                 "7ee7ffb513"
               ],
               "status": "done",
-              "evidence": "git 7ee7ffb5"
+              "evidence": "git 7ee7ffb"
             },
             {
-              "v": "0cd99ec9",
+              "v": "0cd99ec",
               "date": "08-05",
               "group": "2026-08",
               "lane": "other",
@@ -292,10 +292,10 @@ window.ARCH = {
                 "0cd99ec953"
               ],
               "status": "done",
-              "evidence": "git 0cd99ec9"
+              "evidence": "git 0cd99ec"
             },
             {
-              "v": "5afb645a",
+              "v": "5afb645",
               "date": "08-05",
               "group": "2026-08",
               "lane": "other",
@@ -305,10 +305,10 @@ window.ARCH = {
                 "5afb645a54"
               ],
               "status": "done",
-              "evidence": "git 5afb645a"
+              "evidence": "git 5afb645"
             },
             {
-              "v": "7b6797fe",
+              "v": "7b6797f",
               "date": "08-05",
               "group": "2026-08",
               "lane": "other",
@@ -318,10 +318,10 @@ window.ARCH = {
                 "7b6797fedd"
               ],
               "status": "done",
-              "evidence": "git 7b6797fe"
+              "evidence": "git 7b6797f"
             },
             {
-              "v": "f0640ef2",
+              "v": "f0640ef",
               "date": "08-05",
               "group": "2026-08",
               "lane": "other",
@@ -331,10 +331,10 @@ window.ARCH = {
                 "f0640ef291"
               ],
               "status": "done",
-              "evidence": "git f0640ef2"
+              "evidence": "git f0640ef"
             },
             {
-              "v": "970c5c3e",
+              "v": "970c5c3",
               "date": "08-05",
               "group": "2026-08",
               "lane": "other",
@@ -344,10 +344,10 @@ window.ARCH = {
                 "970c5c3ee6"
               ],
               "status": "done",
-              "evidence": "git 970c5c3e"
+              "evidence": "git 970c5c3"
             },
             {
-              "v": "d7252fe1",
+              "v": "d7252fe",
               "date": "08-05",
               "group": "2026-08",
               "lane": "other",
@@ -357,10 +357,10 @@ window.ARCH = {
                 "d7252fe1cd"
               ],
               "status": "done",
-              "evidence": "git d7252fe1"
+              "evidence": "git d7252fe"
             },
             {
-              "v": "acda73ea",
+              "v": "acda73e",
               "date": "08-06",
               "group": "2026-08",
               "lane": "other",
@@ -370,10 +370,10 @@ window.ARCH = {
                 "acda73eac5"
               ],
               "status": "done",
-              "evidence": "git acda73ea"
+              "evidence": "git acda73e"
             },
             {
-              "v": "62476980",
+              "v": "6247698",
               "date": "08-06",
               "group": "2026-08",
               "lane": "other",
@@ -383,10 +383,10 @@ window.ARCH = {
                 "6247698040"
               ],
               "status": "done",
-              "evidence": "git 62476980"
+              "evidence": "git 6247698"
             },
             {
-              "v": "10a37339",
+              "v": "10a3733",
               "date": "08-06",
               "group": "2026-08",
               "lane": "other",
@@ -396,10 +396,10 @@ window.ARCH = {
                 "10a37339ae"
               ],
               "status": "done",
-              "evidence": "git 10a37339"
+              "evidence": "git 10a3733"
             },
             {
-              "v": "05a53e3a",
+              "v": "05a53e3",
               "date": "08-06",
               "group": "2026-08",
               "lane": "other",
@@ -409,10 +409,10 @@ window.ARCH = {
                 "05a53e3aa1"
               ],
               "status": "done",
-              "evidence": "git 05a53e3a"
+              "evidence": "git 05a53e3"
             },
             {
-              "v": "3a3b17ee",
+              "v": "3a3b17e",
               "date": "08-06",
               "group": "2026-08",
               "lane": "other",
@@ -422,10 +422,10 @@ window.ARCH = {
                 "3a3b17ee4a"
               ],
               "status": "done",
-              "evidence": "git 3a3b17ee"
+              "evidence": "git 3a3b17e"
             },
             {
-              "v": "704c3d3b",
+              "v": "704c3d3",
               "date": "08-06",
               "group": "2026-08",
               "lane": "other",
@@ -435,10 +435,10 @@ window.ARCH = {
                 "704c3d3b59"
               ],
               "status": "done",
-              "evidence": "git 704c3d3b"
+              "evidence": "git 704c3d3"
             },
             {
-              "v": "3b4d7b40",
+              "v": "3b4d7b4",
               "date": "08-06",
               "group": "2026-08",
               "lane": "other",
@@ -448,10 +448,10 @@ window.ARCH = {
                 "3b4d7b40bf"
               ],
               "status": "done",
-              "evidence": "git 3b4d7b40"
+              "evidence": "git 3b4d7b4"
             },
             {
-              "v": "eff2d8f1",
+              "v": "eff2d8f",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -461,10 +461,10 @@ window.ARCH = {
                 "eff2d8f173"
               ],
               "status": "done",
-              "evidence": "git eff2d8f1"
+              "evidence": "git eff2d8f"
             },
             {
-              "v": "f5df4d5b",
+              "v": "f5df4d5",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -474,10 +474,10 @@ window.ARCH = {
                 "f5df4d5b05"
               ],
               "status": "done",
-              "evidence": "git f5df4d5b"
+              "evidence": "git f5df4d5"
             },
             {
-              "v": "591d677d",
+              "v": "591d677",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -487,10 +487,10 @@ window.ARCH = {
                 "591d677d79"
               ],
               "status": "done",
-              "evidence": "git 591d677d"
+              "evidence": "git 591d677"
             },
             {
-              "v": "54eb59a4",
+              "v": "54eb59a",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -500,10 +500,10 @@ window.ARCH = {
                 "54eb59a421"
               ],
               "status": "done",
-              "evidence": "git 54eb59a4"
+              "evidence": "git 54eb59a"
             },
             {
-              "v": "797bc5ca",
+              "v": "797bc5c",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -513,10 +513,10 @@ window.ARCH = {
                 "797bc5caab"
               ],
               "status": "done",
-              "evidence": "git 797bc5ca"
+              "evidence": "git 797bc5c"
             },
             {
-              "v": "91ea7eb6",
+              "v": "91ea7eb",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -526,10 +526,10 @@ window.ARCH = {
                 "91ea7eb650"
               ],
               "status": "done",
-              "evidence": "git 91ea7eb6"
+              "evidence": "git 91ea7eb"
             },
             {
-              "v": "aac1e1f6",
+              "v": "aac1e1f",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -539,10 +539,10 @@ window.ARCH = {
                 "aac1e1f654"
               ],
               "status": "done",
-              "evidence": "git aac1e1f6"
+              "evidence": "git aac1e1f"
             },
             {
-              "v": "e00b36bf",
+              "v": "e00b36b",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -552,10 +552,10 @@ window.ARCH = {
                 "e00b36bf81"
               ],
               "status": "done",
-              "evidence": "git e00b36bf"
+              "evidence": "git e00b36b"
             },
             {
-              "v": "5fd2703f",
+              "v": "5fd2703",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -565,10 +565,10 @@ window.ARCH = {
                 "5fd2703f04"
               ],
               "status": "done",
-              "evidence": "git 5fd2703f"
+              "evidence": "git 5fd2703"
             },
             {
-              "v": "aee5e764",
+              "v": "aee5e76",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -578,10 +578,10 @@ window.ARCH = {
                 "aee5e76412"
               ],
               "status": "done",
-              "evidence": "git aee5e764"
+              "evidence": "git aee5e76"
             },
             {
-              "v": "c8ffbfd7",
+              "v": "c8ffbfd",
               "date": "08-07",
               "group": "2026-08",
               "lane": "other",
@@ -591,10 +591,10 @@ window.ARCH = {
                 "c8ffbfd70e"
               ],
               "status": "done",
-              "evidence": "git c8ffbfd7"
+              "evidence": "git c8ffbfd"
             },
             {
-              "v": "25c06140",
+              "v": "25c0614",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -604,10 +604,10 @@ window.ARCH = {
                 "25c061404f"
               ],
               "status": "done",
-              "evidence": "git 25c06140"
+              "evidence": "git 25c0614"
             },
             {
-              "v": "060bdefe",
+              "v": "060bdef",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -617,10 +617,10 @@ window.ARCH = {
                 "060bdefec4"
               ],
               "status": "done",
-              "evidence": "git 060bdefe"
+              "evidence": "git 060bdef"
             },
             {
-              "v": "5c3cc436",
+              "v": "5c3cc43",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -630,10 +630,10 @@ window.ARCH = {
                 "5c3cc43676"
               ],
               "status": "done",
-              "evidence": "git 5c3cc436"
+              "evidence": "git 5c3cc43"
             },
             {
-              "v": "acb97c46",
+              "v": "acb97c4",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -643,10 +643,10 @@ window.ARCH = {
                 "acb97c46fb"
               ],
               "status": "done",
-              "evidence": "git acb97c46"
+              "evidence": "git acb97c4"
             },
             {
-              "v": "dc9f1191",
+              "v": "dc9f119",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -656,10 +656,10 @@ window.ARCH = {
                 "dc9f1191c1"
               ],
               "status": "done",
-              "evidence": "git dc9f1191"
+              "evidence": "git dc9f119"
             },
             {
-              "v": "df5455c1",
+              "v": "df5455c",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -669,10 +669,10 @@ window.ARCH = {
                 "df5455c15f"
               ],
               "status": "done",
-              "evidence": "git df5455c1"
+              "evidence": "git df5455c"
             },
             {
-              "v": "1e36aaa8",
+              "v": "1e36aaa",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -682,10 +682,10 @@ window.ARCH = {
                 "1e36aaa818"
               ],
               "status": "done",
-              "evidence": "git 1e36aaa8"
+              "evidence": "git 1e36aaa"
             },
             {
-              "v": "5cc7b14f",
+              "v": "5cc7b14",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -695,10 +695,10 @@ window.ARCH = {
                 "5cc7b14f4c"
               ],
               "status": "done",
-              "evidence": "git 5cc7b14f"
+              "evidence": "git 5cc7b14"
             },
             {
-              "v": "a7433ec6",
+              "v": "a7433ec",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -708,10 +708,10 @@ window.ARCH = {
                 "a7433ec687"
               ],
               "status": "done",
-              "evidence": "git a7433ec6"
+              "evidence": "git a7433ec"
             },
             {
-              "v": "73fee3da",
+              "v": "73fee3d",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -721,10 +721,10 @@ window.ARCH = {
                 "73fee3daf3"
               ],
               "status": "done",
-              "evidence": "git 73fee3da"
+              "evidence": "git 73fee3d"
             },
             {
-              "v": "2c29f072",
+              "v": "2c29f07",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -734,10 +734,10 @@ window.ARCH = {
                 "2c29f0724b"
               ],
               "status": "done",
-              "evidence": "git 2c29f072"
+              "evidence": "git 2c29f07"
             },
             {
-              "v": "c7a7cde0",
+              "v": "c7a7cde",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -747,10 +747,10 @@ window.ARCH = {
                 "c7a7cde0f0"
               ],
               "status": "done",
-              "evidence": "git c7a7cde0"
+              "evidence": "git c7a7cde"
             },
             {
-              "v": "62f80f30",
+              "v": "62f80f3",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -760,10 +760,10 @@ window.ARCH = {
                 "62f80f308b"
               ],
               "status": "done",
-              "evidence": "git 62f80f30"
+              "evidence": "git 62f80f3"
             },
             {
-              "v": "720d4ce6",
+              "v": "720d4ce",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -773,10 +773,10 @@ window.ARCH = {
                 "720d4ce6f2"
               ],
               "status": "done",
-              "evidence": "git 720d4ce6"
+              "evidence": "git 720d4ce"
             },
             {
-              "v": "a38cd45b",
+              "v": "a38cd45",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -786,10 +786,10 @@ window.ARCH = {
                 "a38cd45b33"
               ],
               "status": "done",
-              "evidence": "git a38cd45b"
+              "evidence": "git a38cd45"
             },
             {
-              "v": "a336aabe",
+              "v": "a336aab",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -799,10 +799,10 @@ window.ARCH = {
                 "a336aabe14"
               ],
               "status": "done",
-              "evidence": "git a336aabe"
+              "evidence": "git a336aab"
             },
             {
-              "v": "c186c4a5",
+              "v": "c186c4a",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -812,10 +812,10 @@ window.ARCH = {
                 "c186c4a594"
               ],
               "status": "done",
-              "evidence": "git c186c4a5"
+              "evidence": "git c186c4a"
             },
             {
-              "v": "ac9f9bfd",
+              "v": "ac9f9bf",
               "date": "08-08",
               "group": "2026-08",
               "lane": "other",
@@ -825,10 +825,10 @@ window.ARCH = {
                 "ac9f9bfd3e"
               ],
               "status": "done",
-              "evidence": "git ac9f9bfd"
+              "evidence": "git ac9f9bf"
             },
             {
-              "v": "d7ba2ada",
+              "v": "d7ba2ad",
               "date": "08-09",
               "group": "2026-08",
               "lane": "other",
@@ -838,10 +838,10 @@ window.ARCH = {
                 "d7ba2ada18"
               ],
               "status": "done",
-              "evidence": "git d7ba2ada"
+              "evidence": "git d7ba2ad"
             },
             {
-              "v": "9f1f2b6c",
+              "v": "9f1f2b6",
               "date": "08-09",
               "group": "2026-08",
               "lane": "other",
@@ -851,10 +851,10 @@ window.ARCH = {
                 "9f1f2b6ce1"
               ],
               "status": "done",
-              "evidence": "git 9f1f2b6c"
+              "evidence": "git 9f1f2b6"
             },
             {
-              "v": "659c4ae1",
+              "v": "659c4ae",
               "date": "08-09",
               "group": "2026-08",
               "lane": "other",
@@ -864,10 +864,10 @@ window.ARCH = {
                 "659c4ae170"
               ],
               "status": "done",
-              "evidence": "git 659c4ae1"
+              "evidence": "git 659c4ae"
             },
             {
-              "v": "e3804b1c",
+              "v": "e3804b1",
               "date": "08-09",
               "group": "2026-08",
               "lane": "other",
@@ -877,10 +877,10 @@ window.ARCH = {
                 "e3804b1cfd"
               ],
               "status": "done",
-              "evidence": "git e3804b1c"
+              "evidence": "git e3804b1"
             },
             {
-              "v": "13f1fbf1",
+              "v": "13f1fbf",
               "date": "08-09",
               "group": "2026-08",
               "lane": "other",
@@ -890,10 +890,10 @@ window.ARCH = {
                 "13f1fbf1a2"
               ],
               "status": "done",
-              "evidence": "git 13f1fbf1"
+              "evidence": "git 13f1fbf"
             },
             {
-              "v": "b1636465",
+              "v": "b163646",
               "date": "08-09",
               "group": "2026-08",
               "lane": "other",
@@ -903,10 +903,10 @@ window.ARCH = {
                 "b1636465f9"
               ],
               "status": "done",
-              "evidence": "git b1636465"
+              "evidence": "git b163646"
             },
             {
-              "v": "3c226bed",
+              "v": "3c226be",
               "date": "08-09",
               "group": "2026-08",
               "lane": "docs",
@@ -916,10 +916,10 @@ window.ARCH = {
                 "3c226bed2f"
               ],
               "status": "done",
-              "evidence": "git 3c226bed"
+              "evidence": "git 3c226be"
             },
             {
-              "v": "348b072a",
+              "v": "348b072",
               "date": "08-09",
               "group": "2026-08",
               "lane": "other",
@@ -929,10 +929,10 @@ window.ARCH = {
                 "348b072a21"
               ],
               "status": "done",
-              "evidence": "git 348b072a"
+              "evidence": "git 348b072"
             },
             {
-              "v": "3bcdf6a9",
+              "v": "3bcdf6a",
               "date": "08-09",
               "group": "2026-08",
               "lane": "other",
@@ -942,10 +942,10 @@ window.ARCH = {
                 "3bcdf6a997"
               ],
               "status": "done",
-              "evidence": "git 3bcdf6a9"
+              "evidence": "git 3bcdf6a"
             },
             {
-              "v": "8633e4a8",
+              "v": "8633e4a",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -955,10 +955,10 @@ window.ARCH = {
                 "8633e4a813"
               ],
               "status": "done",
-              "evidence": "git 8633e4a8"
+              "evidence": "git 8633e4a"
             },
             {
-              "v": "40bdcf8c",
+              "v": "40bdcf8",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -968,10 +968,10 @@ window.ARCH = {
                 "40bdcf8c0a"
               ],
               "status": "done",
-              "evidence": "git 40bdcf8c"
+              "evidence": "git 40bdcf8"
             },
             {
-              "v": "36a86aa7",
+              "v": "36a86aa",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -981,10 +981,10 @@ window.ARCH = {
                 "36a86aa775"
               ],
               "status": "done",
-              "evidence": "git 36a86aa7"
+              "evidence": "git 36a86aa"
             },
             {
-              "v": "c3e23d3c",
+              "v": "c3e23d3",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -994,10 +994,10 @@ window.ARCH = {
                 "c3e23d3cbc"
               ],
               "status": "done",
-              "evidence": "git c3e23d3c"
+              "evidence": "git c3e23d3"
             },
             {
-              "v": "10fccfbb",
+              "v": "10fccfb",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -1007,10 +1007,10 @@ window.ARCH = {
                 "10fccfbb4a"
               ],
               "status": "done",
-              "evidence": "git 10fccfbb"
+              "evidence": "git 10fccfb"
             },
             {
-              "v": "b9a49ae1",
+              "v": "b9a49ae",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -1020,10 +1020,10 @@ window.ARCH = {
                 "b9a49ae1aa"
               ],
               "status": "done",
-              "evidence": "git b9a49ae1"
+              "evidence": "git b9a49ae"
             },
             {
-              "v": "55a46dad",
+              "v": "55a46da",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -1033,10 +1033,10 @@ window.ARCH = {
                 "55a46dad78"
               ],
               "status": "done",
-              "evidence": "git 55a46dad"
+              "evidence": "git 55a46da"
             },
             {
-              "v": "5fb7f5d6",
+              "v": "5fb7f5d",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -1046,10 +1046,10 @@ window.ARCH = {
                 "5fb7f5d647"
               ],
               "status": "done",
-              "evidence": "git 5fb7f5d6"
+              "evidence": "git 5fb7f5d"
             },
             {
-              "v": "c6d2460d",
+              "v": "c6d2460",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -1059,10 +1059,10 @@ window.ARCH = {
                 "c6d2460db4"
               ],
               "status": "done",
-              "evidence": "git c6d2460d"
+              "evidence": "git c6d2460"
             },
             {
-              "v": "2feca420",
+              "v": "2feca42",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -1072,10 +1072,10 @@ window.ARCH = {
                 "2feca420ec"
               ],
               "status": "done",
-              "evidence": "git 2feca420"
+              "evidence": "git 2feca42"
             },
             {
-              "v": "ac218ccf",
+              "v": "ac218cc",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -1085,10 +1085,10 @@ window.ARCH = {
                 "ac218ccf63"
               ],
               "status": "done",
-              "evidence": "git ac218ccf"
+              "evidence": "git ac218cc"
             },
             {
-              "v": "c85e75a9",
+              "v": "c85e75a",
               "date": "08-10",
               "group": "2026-08",
               "lane": "other",
@@ -1098,10 +1098,10 @@ window.ARCH = {
                 "c85e75a9f4"
               ],
               "status": "done",
-              "evidence": "git c85e75a9"
+              "evidence": "git c85e75a"
             },
             {
-              "v": "59de1040",
+              "v": "59de104",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1111,10 +1111,10 @@ window.ARCH = {
                 "59de10401d"
               ],
               "status": "done",
-              "evidence": "git 59de1040"
+              "evidence": "git 59de104"
             },
             {
-              "v": "a9b414bd",
+              "v": "a9b414b",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1124,10 +1124,10 @@ window.ARCH = {
                 "a9b414bd41"
               ],
               "status": "done",
-              "evidence": "git a9b414bd"
+              "evidence": "git a9b414b"
             },
             {
-              "v": "a6a19868",
+              "v": "a6a1986",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1137,10 +1137,10 @@ window.ARCH = {
                 "a6a19868d9"
               ],
               "status": "done",
-              "evidence": "git a6a19868"
+              "evidence": "git a6a1986"
             },
             {
-              "v": "9665178a",
+              "v": "9665178",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1150,10 +1150,10 @@ window.ARCH = {
                 "9665178aa9"
               ],
               "status": "done",
-              "evidence": "git 9665178a"
+              "evidence": "git 9665178"
             },
             {
-              "v": "6841d710",
+              "v": "6841d71",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1163,10 +1163,10 @@ window.ARCH = {
                 "6841d71011"
               ],
               "status": "done",
-              "evidence": "git 6841d710"
+              "evidence": "git 6841d71"
             },
             {
-              "v": "41b34b82",
+              "v": "41b34b8",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1176,10 +1176,10 @@ window.ARCH = {
                 "41b34b82ca"
               ],
               "status": "done",
-              "evidence": "git 41b34b82"
+              "evidence": "git 41b34b8"
             },
             {
-              "v": "187883fc",
+              "v": "187883f",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1189,10 +1189,10 @@ window.ARCH = {
                 "187883fcf1"
               ],
               "status": "done",
-              "evidence": "git 187883fc"
+              "evidence": "git 187883f"
             },
             {
-              "v": "7681e92b",
+              "v": "7681e92",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1202,10 +1202,10 @@ window.ARCH = {
                 "7681e92b65"
               ],
               "status": "done",
-              "evidence": "git 7681e92b"
+              "evidence": "git 7681e92"
             },
             {
-              "v": "c1334584",
+              "v": "c133458",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1215,10 +1215,10 @@ window.ARCH = {
                 "c1334584ab"
               ],
               "status": "done",
-              "evidence": "git c1334584"
+              "evidence": "git c133458"
             },
             {
-              "v": "e9a64e00",
+              "v": "e9a64e0",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1228,10 +1228,10 @@ window.ARCH = {
                 "e9a64e00ca"
               ],
               "status": "done",
-              "evidence": "git e9a64e00"
+              "evidence": "git e9a64e0"
             },
             {
-              "v": "bfce7b16",
+              "v": "bfce7b1",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1241,10 +1241,10 @@ window.ARCH = {
                 "bfce7b16e5"
               ],
               "status": "done",
-              "evidence": "git bfce7b16"
+              "evidence": "git bfce7b1"
             },
             {
-              "v": "eff957f2",
+              "v": "eff957f",
               "date": "08-11",
               "group": "2026-08",
               "lane": "other",
@@ -1254,10 +1254,10 @@ window.ARCH = {
                 "eff957f2a8"
               ],
               "status": "done",
-              "evidence": "git eff957f2"
+              "evidence": "git eff957f"
             },
             {
-              "v": "83c71572",
+              "v": "83c7157",
               "date": "08-12",
               "group": "2026-08",
               "lane": "other",
@@ -1267,10 +1267,10 @@ window.ARCH = {
                 "83c7157263"
               ],
               "status": "done",
-              "evidence": "git 83c71572"
+              "evidence": "git 83c7157"
             },
             {
-              "v": "e3e7ffae",
+              "v": "e3e7ffa",
               "date": "08-12",
               "group": "2026-08",
               "lane": "other",
@@ -1280,10 +1280,10 @@ window.ARCH = {
                 "e3e7ffaeed"
               ],
               "status": "done",
-              "evidence": "git e3e7ffae"
+              "evidence": "git e3e7ffa"
             },
             {
-              "v": "396cec76",
+              "v": "396cec7",
               "date": "08-12",
               "group": "2026-08",
               "lane": "other",
@@ -1293,10 +1293,10 @@ window.ARCH = {
                 "396cec762a"
               ],
               "status": "done",
-              "evidence": "git 396cec76"
+              "evidence": "git 396cec7"
             },
             {
-              "v": "ebecab8f",
+              "v": "ebecab8",
               "date": "08-12",
               "group": "2026-08",
               "lane": "other",
@@ -1306,10 +1306,10 @@ window.ARCH = {
                 "ebecab8f8c"
               ],
               "status": "done",
-              "evidence": "git ebecab8f"
+              "evidence": "git ebecab8"
             },
             {
-              "v": "49c8f6b2",
+              "v": "49c8f6b",
               "date": "08-12",
               "group": "2026-08",
               "lane": "other",
@@ -1319,10 +1319,10 @@ window.ARCH = {
                 "49c8f6b24f"
               ],
               "status": "done",
-              "evidence": "git 49c8f6b2"
+              "evidence": "git 49c8f6b"
             },
             {
-              "v": "6e336d14",
+              "v": "6e336d1",
               "date": "08-12",
               "group": "2026-08",
               "lane": "other",
@@ -1332,10 +1332,10 @@ window.ARCH = {
                 "6e336d14ce"
               ],
               "status": "done",
-              "evidence": "git 6e336d14"
+              "evidence": "git 6e336d1"
             },
             {
-              "v": "a09623db",
+              "v": "a09623d",
               "date": "08-12",
               "group": "2026-08",
               "lane": "other",
@@ -1345,10 +1345,10 @@ window.ARCH = {
                 "a09623db6c"
               ],
               "status": "done",
-              "evidence": "git a09623db"
+              "evidence": "git a09623d"
             },
             {
-              "v": "75244a9a",
+              "v": "75244a9",
               "date": "08-12",
               "group": "2026-08",
               "lane": "other",
@@ -1358,10 +1358,10 @@ window.ARCH = {
                 "75244a9a4f"
               ],
               "status": "done",
-              "evidence": "git 75244a9a"
+              "evidence": "git 75244a9"
             },
             {
-              "v": "5e68f406",
+              "v": "5e68f40",
               "date": "08-12",
               "group": "2026-08",
               "lane": "other",
@@ -1371,10 +1371,10 @@ window.ARCH = {
                 "5e68f40639"
               ],
               "status": "done",
-              "evidence": "git 5e68f406"
+              "evidence": "git 5e68f40"
             },
             {
-              "v": "2d88e4f6",
+              "v": "2d88e4f",
               "date": "08-13",
               "group": "2026-08",
               "lane": "other",
@@ -1384,10 +1384,10 @@ window.ARCH = {
                 "2d88e4f6ad"
               ],
               "status": "done",
-              "evidence": "git 2d88e4f6"
+              "evidence": "git 2d88e4f"
             },
             {
-              "v": "4c09ff2a",
+              "v": "4c09ff2",
               "date": "08-13",
               "group": "2026-08",
               "lane": "other",
@@ -1397,10 +1397,10 @@ window.ARCH = {
                 "4c09ff2ac1"
               ],
               "status": "done",
-              "evidence": "git 4c09ff2a"
+              "evidence": "git 4c09ff2"
             },
             {
-              "v": "c6dbb4e1",
+              "v": "c6dbb4e",
               "date": "08-13",
               "group": "2026-08",
               "lane": "other",
@@ -1410,10 +1410,10 @@ window.ARCH = {
                 "c6dbb4e1a1"
               ],
               "status": "done",
-              "evidence": "git c6dbb4e1"
+              "evidence": "git c6dbb4e"
             },
             {
-              "v": "bcdccef2",
+              "v": "bcdccef",
               "date": "08-13",
               "group": "2026-08",
               "lane": "other",
@@ -1423,10 +1423,10 @@ window.ARCH = {
                 "bcdccef2f9"
               ],
               "status": "done",
-              "evidence": "git bcdccef2"
+              "evidence": "git bcdccef"
             },
             {
-              "v": "3cd7c02a",
+              "v": "3cd7c02",
               "date": "08-13",
               "group": "2026-08",
               "lane": "other",
@@ -1436,10 +1436,10 @@ window.ARCH = {
                 "3cd7c02add"
               ],
               "status": "done",
-              "evidence": "git 3cd7c02a"
+              "evidence": "git 3cd7c02"
             },
             {
-              "v": "e8f337ca",
+              "v": "e8f337c",
               "date": "08-13",
               "group": "2026-08",
               "lane": "other",
@@ -1449,10 +1449,10 @@ window.ARCH = {
                 "e8f337ca74"
               ],
               "status": "done",
-              "evidence": "git e8f337ca"
+              "evidence": "git e8f337c"
             },
             {
-              "v": "f7c0313a",
+              "v": "f7c0313",
               "date": "08-14",
               "group": "2026-08",
               "lane": "other",
@@ -1462,10 +1462,10 @@ window.ARCH = {
                 "f7c0313a92"
               ],
               "status": "done",
-              "evidence": "git f7c0313a"
+              "evidence": "git f7c0313"
             },
             {
-              "v": "148bdebb",
+              "v": "148bdeb",
               "date": "08-14",
               "group": "2026-08",
               "lane": "other",
@@ -1475,10 +1475,10 @@ window.ARCH = {
                 "148bdebbb8"
               ],
               "status": "done",
-              "evidence": "git 148bdebb"
+              "evidence": "git 148bdeb"
             },
             {
-              "v": "511451f9",
+              "v": "511451f",
               "date": "08-14",
               "group": "2026-08",
               "lane": "other",
@@ -1488,10 +1488,10 @@ window.ARCH = {
                 "511451f973"
               ],
               "status": "done",
-              "evidence": "git 511451f9"
+              "evidence": "git 511451f"
             },
             {
-              "v": "9040703d",
+              "v": "9040703",
               "date": "08-14",
               "group": "2026-08",
               "lane": "other",
@@ -1501,10 +1501,10 @@ window.ARCH = {
                 "9040703d1e"
               ],
               "status": "done",
-              "evidence": "git 9040703d"
+              "evidence": "git 9040703"
             },
             {
-              "v": "7f01c69c",
+              "v": "7f01c69",
               "date": "08-14",
               "group": "2026-08",
               "lane": "other",
@@ -1514,10 +1514,10 @@ window.ARCH = {
                 "7f01c69ca9"
               ],
               "status": "done",
-              "evidence": "git 7f01c69c"
+              "evidence": "git 7f01c69"
             },
             {
-              "v": "cf0dee8a",
+              "v": "cf0dee8",
               "date": "08-14",
               "group": "2026-08",
               "lane": "other",
@@ -1527,10 +1527,10 @@ window.ARCH = {
                 "cf0dee8a83"
               ],
               "status": "done",
-              "evidence": "git cf0dee8a"
+              "evidence": "git cf0dee8"
             },
             {
-              "v": "e3145598",
+              "v": "e314559",
               "date": "08-15",
               "group": "2026-08",
               "lane": "other",
@@ -1540,10 +1540,10 @@ window.ARCH = {
                 "e3145598c7"
               ],
               "status": "done",
-              "evidence": "git e3145598"
+              "evidence": "git e314559"
             },
             {
-              "v": "ed65aac4",
+              "v": "ed65aac",
               "date": "08-15",
               "group": "2026-08",
               "lane": "other",
@@ -1553,10 +1553,10 @@ window.ARCH = {
                 "ed65aac49e"
               ],
               "status": "done",
-              "evidence": "git ed65aac4"
+              "evidence": "git ed65aac"
             },
             {
-              "v": "fefd36c5",
+              "v": "fefd36c",
               "date": "08-15",
               "group": "2026-08",
               "lane": "other",
@@ -1566,10 +1566,10 @@ window.ARCH = {
                 "fefd36c5b3"
               ],
               "status": "done",
-              "evidence": "git fefd36c5"
+              "evidence": "git fefd36c"
             },
             {
-              "v": "cfc09dd7",
+              "v": "cfc09dd",
               "date": "08-15",
               "group": "2026-08",
               "lane": "other",
@@ -1579,10 +1579,10 @@ window.ARCH = {
                 "cfc09dd789"
               ],
               "status": "done",
-              "evidence": "git cfc09dd7"
+              "evidence": "git cfc09dd"
             },
             {
-              "v": "2ff25415",
+              "v": "2ff2541",
               "date": "08-16",
               "group": "2026-08",
               "lane": "other",
@@ -1592,10 +1592,10 @@ window.ARCH = {
                 "2ff25415d7"
               ],
               "status": "done",
-              "evidence": "git 2ff25415"
+              "evidence": "git 2ff2541"
             },
             {
-              "v": "063f1c6a",
+              "v": "063f1c6",
               "date": "08-16",
               "group": "2026-08",
               "lane": "other",
@@ -1605,10 +1605,10 @@ window.ARCH = {
                 "063f1c6a3e"
               ],
               "status": "done",
-              "evidence": "git 063f1c6a"
+              "evidence": "git 063f1c6"
             },
             {
-              "v": "5a92fb9a",
+              "v": "5a92fb9",
               "date": "08-16",
               "group": "2026-08",
               "lane": "other",
@@ -1618,10 +1618,10 @@ window.ARCH = {
                 "5a92fb9ad1"
               ],
               "status": "done",
-              "evidence": "git 5a92fb9a"
+              "evidence": "git 5a92fb9"
             },
             {
-              "v": "d45afb8a",
+              "v": "d45afb8",
               "date": "08-16",
               "group": "2026-08",
               "lane": "other",
@@ -1631,10 +1631,10 @@ window.ARCH = {
                 "d45afb8ac8"
               ],
               "status": "done",
-              "evidence": "git d45afb8a"
+              "evidence": "git d45afb8"
             },
             {
-              "v": "e9db9a96",
+              "v": "e9db9a9",
               "date": "08-17",
               "group": "2026-08",
               "lane": "other",
@@ -1644,10 +1644,10 @@ window.ARCH = {
                 "e9db9a96ee"
               ],
               "status": "done",
-              "evidence": "git e9db9a96"
+              "evidence": "git e9db9a9"
             },
             {
-              "v": "49682c86",
+              "v": "49682c8",
               "date": "08-17",
               "group": "2026-08",
               "lane": "other",
@@ -1657,10 +1657,10 @@ window.ARCH = {
                 "49682c86a6"
               ],
               "status": "done",
-              "evidence": "git 49682c86"
+              "evidence": "git 49682c8"
             },
             {
-              "v": "e75255b8",
+              "v": "e75255b",
               "date": "08-17",
               "group": "2026-08",
               "lane": "other",
@@ -1670,10 +1670,10 @@ window.ARCH = {
                 "e75255b857"
               ],
               "status": "done",
-              "evidence": "git e75255b8"
+              "evidence": "git e75255b"
             },
             {
-              "v": "a8cc45c2",
+              "v": "a8cc45c",
               "date": "08-17",
               "group": "2026-08",
               "lane": "other",
@@ -1683,10 +1683,10 @@ window.ARCH = {
                 "a8cc45c233"
               ],
               "status": "done",
-              "evidence": "git a8cc45c2"
+              "evidence": "git a8cc45c"
             },
             {
-              "v": "250fba92",
+              "v": "250fba9",
               "date": "08-17",
               "group": "2026-08",
               "lane": "other",
@@ -1696,10 +1696,10 @@ window.ARCH = {
                 "250fba92d6"
               ],
               "status": "done",
-              "evidence": "git 250fba92"
+              "evidence": "git 250fba9"
             },
             {
-              "v": "27017d25",
+              "v": "27017d2",
               "date": "08-18",
               "group": "2026-08",
               "lane": "other",
@@ -1709,10 +1709,10 @@ window.ARCH = {
                 "27017d25ed"
               ],
               "status": "done",
-              "evidence": "git 27017d25"
+              "evidence": "git 27017d2"
             },
             {
-              "v": "67af51b5",
+              "v": "67af51b",
               "date": "08-18",
               "group": "2026-08",
               "lane": "docs",
@@ -1722,10 +1722,10 @@ window.ARCH = {
                 "67af51b536"
               ],
               "status": "done",
-              "evidence": "git 67af51b5"
+              "evidence": "git 67af51b"
             },
             {
-              "v": "332cd05b",
+              "v": "332cd05",
               "date": "08-18",
               "group": "2026-08",
               "lane": "other",
@@ -1735,10 +1735,10 @@ window.ARCH = {
                 "332cd05bb2"
               ],
               "status": "done",
-              "evidence": "git 332cd05b"
+              "evidence": "git 332cd05"
             },
             {
-              "v": "f2dd0769",
+              "v": "f2dd076",
               "date": "08-19",
               "group": "2026-08",
               "lane": "other",
@@ -1748,10 +1748,10 @@ window.ARCH = {
                 "f2dd07699d"
               ],
               "status": "done",
-              "evidence": "git f2dd0769"
+              "evidence": "git f2dd076"
             },
             {
-              "v": "272799d7",
+              "v": "272799d",
               "date": "08-19",
               "group": "2026-08",
               "lane": "other",
@@ -1761,10 +1761,10 @@ window.ARCH = {
                 "272799d73a"
               ],
               "status": "done",
-              "evidence": "git 272799d7"
+              "evidence": "git 272799d"
             },
             {
-              "v": "0562d921",
+              "v": "0562d92",
               "date": "08-19",
               "group": "2026-08",
               "lane": "other",
@@ -1774,10 +1774,10 @@ window.ARCH = {
                 "0562d9217f"
               ],
               "status": "done",
-              "evidence": "git 0562d921"
+              "evidence": "git 0562d92"
             },
             {
-              "v": "2150592c",
+              "v": "2150592",
               "date": "08-20",
               "group": "2026-08",
               "lane": "other",
@@ -1787,10 +1787,10 @@ window.ARCH = {
                 "2150592c40"
               ],
               "status": "done",
-              "evidence": "git 2150592c"
+              "evidence": "git 2150592"
             },
             {
-              "v": "f588c765",
+              "v": "f588c76",
               "date": "08-20",
               "group": "2026-08",
               "lane": "docs",
@@ -1800,10 +1800,10 @@ window.ARCH = {
                 "f588c765f4"
               ],
               "status": "done",
-              "evidence": "git f588c765"
+              "evidence": "git f588c76"
             },
             {
-              "v": "c646a752",
+              "v": "c646a75",
               "date": "08-20",
               "group": "2026-08",
               "lane": "other",
@@ -1813,10 +1813,10 @@ window.ARCH = {
                 "c646a75297"
               ],
               "status": "done",
-              "evidence": "git c646a752"
+              "evidence": "git c646a75"
             },
             {
-              "v": "ed63c621",
+              "v": "ed63c62",
               "date": "08-20",
               "group": "2026-08",
               "lane": "other",
@@ -1826,10 +1826,10 @@ window.ARCH = {
                 "ed63c62106"
               ],
               "status": "done",
-              "evidence": "git ed63c621"
+              "evidence": "git ed63c62"
             },
             {
-              "v": "02326d99",
+              "v": "02326d9",
               "date": "08-20",
               "group": "2026-08",
               "lane": "other",
@@ -1839,10 +1839,10 @@ window.ARCH = {
                 "02326d99e0"
               ],
               "status": "done",
-              "evidence": "git 02326d99"
+              "evidence": "git 02326d9"
             },
             {
-              "v": "a88f912a",
+              "v": "a88f912",
               "date": "08-20",
               "group": "2026-08",
               "lane": "other",
@@ -1852,10 +1852,10 @@ window.ARCH = {
                 "a88f912a76"
               ],
               "status": "done",
-              "evidence": "git a88f912a"
+              "evidence": "git a88f912"
             },
             {
-              "v": "80b7f882",
+              "v": "80b7f88",
               "date": "08-21",
               "group": "2026-08",
               "lane": "other",
@@ -1865,10 +1865,10 @@ window.ARCH = {
                 "80b7f88292"
               ],
               "status": "done",
-              "evidence": "git 80b7f882"
+              "evidence": "git 80b7f88"
             },
             {
-              "v": "8477d406",
+              "v": "8477d40",
               "date": "08-21",
               "group": "2026-08",
               "lane": "other",
@@ -1878,10 +1878,10 @@ window.ARCH = {
                 "8477d406d7"
               ],
               "status": "done",
-              "evidence": "git 8477d406"
+              "evidence": "git 8477d40"
             },
             {
-              "v": "3c6656e3",
+              "v": "3c6656e",
               "date": "08-21",
               "group": "2026-08",
               "lane": "other",
@@ -1891,10 +1891,10 @@ window.ARCH = {
                 "3c6656e30d"
               ],
               "status": "done",
-              "evidence": "git 3c6656e3"
+              "evidence": "git 3c6656e"
             },
             {
-              "v": "b3d5ed8b",
+              "v": "b3d5ed8",
               "date": "08-21",
               "group": "2026-08",
               "lane": "docs",
@@ -1904,10 +1904,10 @@ window.ARCH = {
                 "b3d5ed8b56"
               ],
               "status": "done",
-              "evidence": "git b3d5ed8b"
+              "evidence": "git b3d5ed8"
             },
             {
-              "v": "2a0d7ac0",
+              "v": "2a0d7ac",
               "date": "08-21",
               "group": "2026-08",
               "lane": "other",
@@ -1917,10 +1917,10 @@ window.ARCH = {
                 "2a0d7ac073"
               ],
               "status": "done",
-              "evidence": "git 2a0d7ac0"
+              "evidence": "git 2a0d7ac"
             },
             {
-              "v": "43a61d1b",
+              "v": "43a61d1",
               "date": "08-24",
               "group": "2026-08",
               "lane": "other",
@@ -1930,10 +1930,10 @@ window.ARCH = {
                 "43a61d1bb5"
               ],
               "status": "done",
-              "evidence": "git 43a61d1b"
+              "evidence": "git 43a61d1"
             },
             {
-              "v": "9baf2de2",
+              "v": "9baf2de",
               "date": "08-24",
               "group": "2026-08",
               "lane": "other",
@@ -1943,10 +1943,10 @@ window.ARCH = {
                 "9baf2de278"
               ],
               "status": "done",
-              "evidence": "git 9baf2de2"
+              "evidence": "git 9baf2de"
             },
             {
-              "v": "49506b2b",
+              "v": "49506b2",
               "date": "08-24",
               "group": "2026-08",
               "lane": "other",
@@ -1956,10 +1956,10 @@ window.ARCH = {
                 "49506b2b3d"
               ],
               "status": "done",
-              "evidence": "git 49506b2b"
+              "evidence": "git 49506b2"
             },
             {
-              "v": "df59d375",
+              "v": "df59d37",
               "date": "08-24",
               "group": "2026-08",
               "lane": "other",
@@ -1969,10 +1969,10 @@ window.ARCH = {
                 "df59d375d0"
               ],
               "status": "done",
-              "evidence": "git df59d375"
+              "evidence": "git df59d37"
             },
             {
-              "v": "17301118",
+              "v": "1730111",
               "date": "08-25",
               "group": "2026-08",
               "lane": "other",
@@ -1982,10 +1982,10 @@ window.ARCH = {
                 "173011181c"
               ],
               "status": "done",
-              "evidence": "git 17301118"
+              "evidence": "git 1730111"
             },
             {
-              "v": "6b6e9e91",
+              "v": "6b6e9e9",
               "date": "08-25",
               "group": "2026-08",
               "lane": "other",
@@ -1995,10 +1995,10 @@ window.ARCH = {
                 "6b6e9e9151"
               ],
               "status": "done",
-              "evidence": "git 6b6e9e91"
+              "evidence": "git 6b6e9e9"
             },
             {
-              "v": "10b88043",
+              "v": "10b8804",
               "date": "08-25",
               "group": "2026-08",
               "lane": "other",
@@ -2008,10 +2008,10 @@ window.ARCH = {
                 "10b8804303"
               ],
               "status": "done",
-              "evidence": "git 10b88043"
+              "evidence": "git 10b8804"
             },
             {
-              "v": "403e51e4",
+              "v": "403e51e",
               "date": "08-25",
               "group": "2026-08",
               "lane": "other",
@@ -2021,10 +2021,10 @@ window.ARCH = {
                 "403e51e4b5"
               ],
               "status": "done",
-              "evidence": "git 403e51e4"
+              "evidence": "git 403e51e"
             },
             {
-              "v": "fc1e3573",
+              "v": "fc1e357",
               "date": "08-26",
               "group": "2026-08",
               "lane": "other",
@@ -2034,10 +2034,10 @@ window.ARCH = {
                 "fc1e3573d3"
               ],
               "status": "done",
-              "evidence": "git fc1e3573"
+              "evidence": "git fc1e357"
             },
             {
-              "v": "d2c022df",
+              "v": "d2c022d",
               "date": "08-26",
               "group": "2026-08",
               "lane": "other",
@@ -2047,10 +2047,10 @@ window.ARCH = {
                 "d2c022df8d"
               ],
               "status": "done",
-              "evidence": "git d2c022df"
+              "evidence": "git d2c022d"
             },
             {
-              "v": "e258aca8",
+              "v": "e258aca",
               "date": "08-26",
               "group": "2026-08",
               "lane": "other",
@@ -2060,10 +2060,10 @@ window.ARCH = {
                 "e258aca80b"
               ],
               "status": "done",
-              "evidence": "git e258aca8"
+              "evidence": "git e258aca"
             },
             {
-              "v": "384a47ff",
+              "v": "384a47f",
               "date": "08-26",
               "group": "2026-08",
               "lane": "other",
@@ -2073,10 +2073,10 @@ window.ARCH = {
                 "384a47ff00"
               ],
               "status": "done",
-              "evidence": "git 384a47ff"
+              "evidence": "git 384a47f"
             },
             {
-              "v": "4c0d3382",
+              "v": "4c0d338",
               "date": "08-27",
               "group": "2026-08",
               "lane": "other",
@@ -2086,10 +2086,10 @@ window.ARCH = {
                 "4c0d3382ed"
               ],
               "status": "done",
-              "evidence": "git 4c0d3382"
+              "evidence": "git 4c0d338"
             },
             {
-              "v": "de165b2b",
+              "v": "de165b2",
               "date": "08-27",
               "group": "2026-08",
               "lane": "other",
@@ -2099,10 +2099,10 @@ window.ARCH = {
                 "de165b2b4d"
               ],
               "status": "done",
-              "evidence": "git de165b2b"
+              "evidence": "git de165b2"
             },
             {
-              "v": "6a154a08",
+              "v": "6a154a0",
               "date": "08-27",
               "group": "2026-08",
               "lane": "other",
@@ -2112,10 +2112,10 @@ window.ARCH = {
                 "6a154a0828"
               ],
               "status": "done",
-              "evidence": "git 6a154a08"
+              "evidence": "git 6a154a0"
             },
             {
-              "v": "c59059b8",
+              "v": "c59059b",
               "date": "08-27",
               "group": "2026-08",
               "lane": "other",
@@ -2125,10 +2125,10 @@ window.ARCH = {
                 "c59059b8ed"
               ],
               "status": "done",
-              "evidence": "git c59059b8"
+              "evidence": "git c59059b"
             },
             {
-              "v": "3e51646a",
+              "v": "3e51646",
               "date": "08-28",
               "group": "2026-08",
               "lane": "other",
@@ -2138,10 +2138,10 @@ window.ARCH = {
                 "3e51646a02"
               ],
               "status": "done",
-              "evidence": "git 3e51646a"
+              "evidence": "git 3e51646"
             },
             {
-              "v": "b9137126",
+              "v": "b913712",
               "date": "08-28",
               "group": "2026-08",
               "lane": "other",
@@ -2151,10 +2151,10 @@ window.ARCH = {
                 "b91371261a"
               ],
               "status": "done",
-              "evidence": "git b9137126"
+              "evidence": "git b913712"
             },
             {
-              "v": "d1c9fe8f",
+              "v": "d1c9fe8",
               "date": "08-28",
               "group": "2026-08",
               "lane": "other",
@@ -2164,10 +2164,10 @@ window.ARCH = {
                 "d1c9fe8f3d"
               ],
               "status": "done",
-              "evidence": "git d1c9fe8f"
+              "evidence": "git d1c9fe8"
             },
             {
-              "v": "d88358ad",
+              "v": "d88358a",
               "date": "08-28",
               "group": "2026-08",
               "lane": "other",
@@ -2177,10 +2177,10 @@ window.ARCH = {
                 "d88358adad"
               ],
               "status": "done",
-              "evidence": "git d88358ad"
+              "evidence": "git d88358a"
             },
             {
-              "v": "1aac2446",
+              "v": "1aac244",
               "date": "08-28",
               "group": "2026-08",
               "lane": "other",
@@ -2190,10 +2190,10 @@ window.ARCH = {
                 "1aac24466e"
               ],
               "status": "done",
-              "evidence": "git 1aac2446"
+              "evidence": "git 1aac244"
             },
             {
-              "v": "ab59b9aa",
+              "v": "ab59b9a",
               "date": "08-29",
               "group": "2026-08",
               "lane": "other",
@@ -2203,10 +2203,10 @@ window.ARCH = {
                 "ab59b9aaba"
               ],
               "status": "done",
-              "evidence": "git ab59b9aa"
+              "evidence": "git ab59b9a"
             },
             {
-              "v": "366e4ab4",
+              "v": "366e4ab",
               "date": "08-29",
               "group": "2026-08",
               "lane": "other",
@@ -2216,10 +2216,10 @@ window.ARCH = {
                 "366e4ab4d2"
               ],
               "status": "done",
-              "evidence": "git 366e4ab4"
+              "evidence": "git 366e4ab"
             },
             {
-              "v": "54359107",
+              "v": "5435910",
               "date": "08-29",
               "group": "2026-08",
               "lane": "other",
@@ -2229,10 +2229,10 @@ window.ARCH = {
                 "5435910705"
               ],
               "status": "done",
-              "evidence": "git 54359107"
+              "evidence": "git 5435910"
             },
             {
-              "v": "5ff9a52a",
+              "v": "5ff9a52",
               "date": "08-29",
               "group": "2026-08",
               "lane": "other",
@@ -2242,10 +2242,10 @@ window.ARCH = {
                 "5ff9a52a0c"
               ],
               "status": "done",
-              "evidence": "git 5ff9a52a"
+              "evidence": "git 5ff9a52"
             },
             {
-              "v": "4c085240",
+              "v": "4c08524",
               "date": "08-30",
               "group": "2026-08",
               "lane": "other",
@@ -2255,10 +2255,10 @@ window.ARCH = {
                 "4c085240ef"
               ],
               "status": "done",
-              "evidence": "git 4c085240"
+              "evidence": "git 4c08524"
             },
             {
-              "v": "0f3c281d",
+              "v": "0f3c281",
               "date": "08-30",
               "group": "2026-08",
               "lane": "other",
@@ -2268,10 +2268,10 @@ window.ARCH = {
                 "0f3c281deb"
               ],
               "status": "done",
-              "evidence": "git 0f3c281d"
+              "evidence": "git 0f3c281"
             },
             {
-              "v": "e8bc9776",
+              "v": "e8bc977",
               "date": "08-30",
               "group": "2026-08",
               "lane": "other",
@@ -2281,10 +2281,10 @@ window.ARCH = {
                 "e8bc9776c5"
               ],
               "status": "done",
-              "evidence": "git e8bc9776"
+              "evidence": "git e8bc977"
             },
             {
-              "v": "0b0624b7",
+              "v": "0b0624b",
               "date": "08-31",
               "group": "2026-08",
               "lane": "other",
@@ -2294,10 +2294,10 @@ window.ARCH = {
                 "0b0624b79a"
               ],
               "status": "done",
-              "evidence": "git 0b0624b7"
+              "evidence": "git 0b0624b"
             },
             {
-              "v": "f833d05b",
+              "v": "f833d05",
               "date": "09-01",
               "group": "2026-09",
               "lane": "other",
@@ -2307,10 +2307,10 @@ window.ARCH = {
                 "f833d05ba5"
               ],
               "status": "done",
-              "evidence": "git f833d05b"
+              "evidence": "git f833d05"
             },
             {
-              "v": "af974a76",
+              "v": "af974a7",
               "date": "09-01",
               "group": "2026-09",
               "lane": "other",
@@ -2320,10 +2320,10 @@ window.ARCH = {
                 "af974a7652"
               ],
               "status": "done",
-              "evidence": "git af974a76"
+              "evidence": "git af974a7"
             },
             {
-              "v": "20ed4ede",
+              "v": "20ed4ed",
               "date": "09-01",
               "group": "2026-09",
               "lane": "other",
@@ -2333,10 +2333,10 @@ window.ARCH = {
                 "20ed4ede33"
               ],
               "status": "done",
-              "evidence": "git 20ed4ede"
+              "evidence": "git 20ed4ed"
             },
             {
-              "v": "748513ef",
+              "v": "748513e",
               "date": "09-01",
               "group": "2026-09",
               "lane": "other",
@@ -2346,10 +2346,10 @@ window.ARCH = {
                 "748513ef3a"
               ],
               "status": "done",
-              "evidence": "git 748513ef"
+              "evidence": "git 748513e"
             },
             {
-              "v": "90bcee6a",
+              "v": "90bcee6",
               "date": "09-01",
               "group": "2026-09",
               "lane": "other",
@@ -2359,10 +2359,10 @@ window.ARCH = {
                 "90bcee6ab6"
               ],
               "status": "done",
-              "evidence": "git 90bcee6a"
+              "evidence": "git 90bcee6"
             },
             {
-              "v": "4c501128",
+              "v": "4c50112",
               "date": "09-02",
               "group": "2026-09",
               "lane": "other",
@@ -2372,10 +2372,10 @@ window.ARCH = {
                 "4c5011285b"
               ],
               "status": "done",
-              "evidence": "git 4c501128"
+              "evidence": "git 4c50112"
             },
             {
-              "v": "50b15191",
+              "v": "50b1519",
               "date": "09-02",
               "group": "2026-09",
               "lane": "other",
@@ -2385,10 +2385,10 @@ window.ARCH = {
                 "50b15191d5"
               ],
               "status": "done",
-              "evidence": "git 50b15191"
+              "evidence": "git 50b1519"
             },
             {
-              "v": "da1047f7",
+              "v": "da1047f",
               "date": "09-02",
               "group": "2026-09",
               "lane": "other",
@@ -2398,10 +2398,10 @@ window.ARCH = {
                 "da1047f72b"
               ],
               "status": "done",
-              "evidence": "git da1047f7"
+              "evidence": "git da1047f"
             },
             {
-              "v": "682dd096",
+              "v": "682dd09",
               "date": "09-02",
               "group": "2026-09",
               "lane": "other",
@@ -2411,10 +2411,10 @@ window.ARCH = {
                 "682dd0964e"
               ],
               "status": "done",
-              "evidence": "git 682dd096"
+              "evidence": "git 682dd09"
             },
             {
-              "v": "27ee6549",
+              "v": "27ee654",
               "date": "09-02",
               "group": "2026-09",
               "lane": "other",
@@ -2424,10 +2424,10 @@ window.ARCH = {
                 "27ee654984"
               ],
               "status": "done",
-              "evidence": "git 27ee6549"
+              "evidence": "git 27ee654"
             },
             {
-              "v": "62f09931",
+              "v": "62f0993",
               "date": "09-02",
               "group": "2026-09",
               "lane": "other",
@@ -2437,10 +2437,10 @@ window.ARCH = {
                 "62f0993198"
               ],
               "status": "done",
-              "evidence": "git 62f09931"
+              "evidence": "git 62f0993"
             },
             {
-              "v": "4fa2374a",
+              "v": "4fa2374",
               "date": "09-02",
               "group": "2026-09",
               "lane": "other",
@@ -2450,10 +2450,10 @@ window.ARCH = {
                 "4fa2374a58"
               ],
               "status": "done",
-              "evidence": "git 4fa2374a"
+              "evidence": "git 4fa2374"
             },
             {
-              "v": "d9e41d8d",
+              "v": "d9e41d8",
               "date": "09-02",
               "group": "2026-09",
               "lane": "other",
@@ -2463,10 +2463,10 @@ window.ARCH = {
                 "d9e41d8dd9"
               ],
               "status": "done",
-              "evidence": "git d9e41d8d"
+              "evidence": "git d9e41d8"
             },
             {
-              "v": "75005753",
+              "v": "7500575",
               "date": "09-02",
               "group": "2026-09",
               "lane": "other",
@@ -2476,10 +2476,10 @@ window.ARCH = {
                 "75005753e4"
               ],
               "status": "done",
-              "evidence": "git 75005753"
+              "evidence": "git 7500575"
             },
             {
-              "v": "dd07f247",
+              "v": "dd07f24",
               "date": "09-03",
               "group": "2026-09",
               "lane": "other",
@@ -2489,10 +2489,10 @@ window.ARCH = {
                 "dd07f2474b"
               ],
               "status": "done",
-              "evidence": "git dd07f247"
+              "evidence": "git dd07f24"
             },
             {
-              "v": "98c22eed",
+              "v": "98c22ee",
               "date": "09-03",
               "group": "2026-09",
               "lane": "other",
@@ -2502,10 +2502,10 @@ window.ARCH = {
                 "98c22eed5d"
               ],
               "status": "done",
-              "evidence": "git 98c22eed"
+              "evidence": "git 98c22ee"
             },
             {
-              "v": "27e1925d",
+              "v": "27e1925",
               "date": "09-03",
               "group": "2026-09",
               "lane": "other",
@@ -2515,10 +2515,10 @@ window.ARCH = {
                 "27e1925dc5"
               ],
               "status": "done",
-              "evidence": "git 27e1925d"
+              "evidence": "git 27e1925"
             },
             {
-              "v": "776f1eaa",
+              "v": "776f1ea",
               "date": "09-03",
               "group": "2026-09",
               "lane": "other",
@@ -2528,10 +2528,10 @@ window.ARCH = {
                 "776f1eaae4"
               ],
               "status": "done",
-              "evidence": "git 776f1eaa"
+              "evidence": "git 776f1ea"
             },
             {
-              "v": "33104549",
+              "v": "3310454",
               "date": "09-03",
               "group": "2026-09",
               "lane": "other",
@@ -2541,10 +2541,10 @@ window.ARCH = {
                 "331045494e"
               ],
               "status": "done",
-              "evidence": "git 33104549"
+              "evidence": "git 3310454"
             },
             {
-              "v": "bee79756",
+              "v": "bee7975",
               "date": "09-03",
               "group": "2026-09",
               "lane": "other",
@@ -2554,10 +2554,10 @@ window.ARCH = {
                 "bee79756ee"
               ],
               "status": "done",
-              "evidence": "git bee79756"
+              "evidence": "git bee7975"
             },
             {
-              "v": "e9320930",
+              "v": "e932093",
               "date": "09-03",
               "group": "2026-09",
               "lane": "other",
@@ -2567,10 +2567,10 @@ window.ARCH = {
                 "e932093030"
               ],
               "status": "done",
-              "evidence": "git e9320930"
+              "evidence": "git e932093"
             },
             {
-              "v": "34d8ccb0",
+              "v": "34d8ccb",
               "date": "09-04",
               "group": "2026-09",
               "lane": "other",
@@ -2580,10 +2580,10 @@ window.ARCH = {
                 "34d8ccb0b4"
               ],
               "status": "done",
-              "evidence": "git 34d8ccb0"
+              "evidence": "git 34d8ccb"
             },
             {
-              "v": "8e3b733c",
+              "v": "8e3b733",
               "date": "09-04",
               "group": "2026-09",
               "lane": "other",
@@ -2593,10 +2593,10 @@ window.ARCH = {
                 "8e3b733cd8"
               ],
               "status": "done",
-              "evidence": "git 8e3b733c"
+              "evidence": "git 8e3b733"
             },
             {
-              "v": "49ed23ce",
+              "v": "49ed23c",
               "date": "09-04",
               "group": "2026-09",
               "lane": "other",
@@ -2606,10 +2606,10 @@ window.ARCH = {
                 "49ed23ce8f"
               ],
               "status": "done",
-              "evidence": "git 49ed23ce"
+              "evidence": "git 49ed23c"
             },
             {
-              "v": "2efa017e",
+              "v": "2efa017",
               "date": "09-04",
               "group": "2026-09",
               "lane": "other",
@@ -2619,10 +2619,10 @@ window.ARCH = {
                 "2efa017efb"
               ],
               "status": "done",
-              "evidence": "git 2efa017e"
+              "evidence": "git 2efa017"
             },
             {
-              "v": "8a9c680a",
+              "v": "8a9c680",
               "date": "09-04",
               "group": "2026-09",
               "lane": "other",
@@ -2632,10 +2632,10 @@ window.ARCH = {
                 "8a9c680af8"
               ],
               "status": "done",
-              "evidence": "git 8a9c680a"
+              "evidence": "git 8a9c680"
             },
             {
-              "v": "0aeb082f",
+              "v": "0aeb082",
               "date": "09-04",
               "group": "2026-09",
               "lane": "other",
@@ -2645,10 +2645,10 @@ window.ARCH = {
                 "0aeb082f95"
               ],
               "status": "done",
-              "evidence": "git 0aeb082f"
+              "evidence": "git 0aeb082"
             },
             {
-              "v": "0d8cf43d",
+              "v": "0d8cf43",
               "date": "09-07",
               "group": "2026-09",
               "lane": "other",
@@ -2658,10 +2658,10 @@ window.ARCH = {
                 "0d8cf43d3d"
               ],
               "status": "done",
-              "evidence": "git 0d8cf43d"
+              "evidence": "git 0d8cf43"
             },
             {
-              "v": "5d8c926f",
+              "v": "5d8c926",
               "date": "09-07",
               "group": "2026-09",
               "lane": "other",
@@ -2671,10 +2671,10 @@ window.ARCH = {
                 "5d8c926ffb"
               ],
               "status": "done",
-              "evidence": "git 5d8c926f"
+              "evidence": "git 5d8c926"
             },
             {
-              "v": "0d7ddef5",
+              "v": "0d7ddef",
               "date": "09-07",
               "group": "2026-09",
               "lane": "other",
@@ -2684,10 +2684,10 @@ window.ARCH = {
                 "0d7ddef5a6"
               ],
               "status": "done",
-              "evidence": "git 0d7ddef5"
+              "evidence": "git 0d7ddef"
             },
             {
-              "v": "2782db36",
+              "v": "2782db3",
               "date": "09-07",
               "group": "2026-09",
               "lane": "other",
@@ -2697,10 +2697,10 @@ window.ARCH = {
                 "2782db366e"
               ],
               "status": "done",
-              "evidence": "git 2782db36"
+              "evidence": "git 2782db3"
             },
             {
-              "v": "c65d7f11",
+              "v": "c65d7f1",
               "date": "09-07",
               "group": "2026-09",
               "lane": "other",
@@ -2710,10 +2710,10 @@ window.ARCH = {
                 "c65d7f11dd"
               ],
               "status": "done",
-              "evidence": "git c65d7f11"
+              "evidence": "git c65d7f1"
             },
             {
-              "v": "fb09ca24",
+              "v": "fb09ca2",
               "date": "09-07",
               "group": "2026-09",
               "lane": "other",
@@ -2723,10 +2723,10 @@ window.ARCH = {
                 "fb09ca2479"
               ],
               "status": "done",
-              "evidence": "git fb09ca24"
+              "evidence": "git fb09ca2"
             },
             {
-              "v": "0cc94773",
+              "v": "0cc9477",
               "date": "09-07",
               "group": "2026-09",
               "lane": "other",
@@ -2736,10 +2736,10 @@ window.ARCH = {
                 "0cc94773dd"
               ],
               "status": "done",
-              "evidence": "git 0cc94773"
+              "evidence": "git 0cc9477"
             },
             {
-              "v": "824ac8fc",
+              "v": "824ac8f",
               "date": "09-07",
               "group": "2026-09",
               "lane": "other",
@@ -2749,10 +2749,10 @@ window.ARCH = {
                 "824ac8fcc8"
               ],
               "status": "done",
-              "evidence": "git 824ac8fc"
+              "evidence": "git 824ac8f"
             },
             {
-              "v": "60e3ce61",
+              "v": "60e3ce6",
               "date": "09-08",
               "group": "2026-09",
               "lane": "other",
@@ -2762,10 +2762,10 @@ window.ARCH = {
                 "60e3ce6159"
               ],
               "status": "done",
-              "evidence": "git 60e3ce61"
+              "evidence": "git 60e3ce6"
             },
             {
-              "v": "51b1da7b",
+              "v": "51b1da7",
               "date": "09-08",
               "group": "2026-09",
               "lane": "other",
@@ -2775,10 +2775,10 @@ window.ARCH = {
                 "51b1da7b2f"
               ],
               "status": "done",
-              "evidence": "git 51b1da7b"
+              "evidence": "git 51b1da7"
             },
             {
-              "v": "4b626e1b",
+              "v": "4b626e1",
               "date": "09-08",
               "group": "2026-09",
               "lane": "other",
@@ -2788,10 +2788,10 @@ window.ARCH = {
                 "4b626e1b20"
               ],
               "status": "done",
-              "evidence": "git 4b626e1b"
+              "evidence": "git 4b626e1"
             },
             {
-              "v": "1159d8b4",
+              "v": "1159d8b",
               "date": "09-08",
               "group": "2026-09",
               "lane": "other",
@@ -2801,10 +2801,10 @@ window.ARCH = {
                 "1159d8b460"
               ],
               "status": "done",
-              "evidence": "git 1159d8b4"
+              "evidence": "git 1159d8b"
             },
             {
-              "v": "dce95c7c",
+              "v": "dce95c7",
               "date": "09-08",
               "group": "2026-09",
               "lane": "other",
@@ -2814,10 +2814,10 @@ window.ARCH = {
                 "dce95c7c40"
               ],
               "status": "done",
-              "evidence": "git dce95c7c"
+              "evidence": "git dce95c7"
             },
             {
-              "v": "ea22a9eb",
+              "v": "ea22a9e",
               "date": "09-08",
               "group": "2026-09",
               "lane": "other",
@@ -2827,10 +2827,10 @@ window.ARCH = {
                 "ea22a9ebe8"
               ],
               "status": "done",
-              "evidence": "git ea22a9eb"
+              "evidence": "git ea22a9e"
             },
             {
-              "v": "7a079e98",
+              "v": "7a079e9",
               "date": "09-09",
               "group": "2026-09",
               "lane": "other",
@@ -2840,10 +2840,10 @@ window.ARCH = {
                 "7a079e98de"
               ],
               "status": "done",
-              "evidence": "git 7a079e98"
+              "evidence": "git 7a079e9"
             },
             {
-              "v": "64d1b814",
+              "v": "64d1b81",
               "date": "09-09",
               "group": "2026-09",
               "lane": "other",
@@ -2853,10 +2853,10 @@ window.ARCH = {
                 "64d1b81414"
               ],
               "status": "done",
-              "evidence": "git 64d1b814"
+              "evidence": "git 64d1b81"
             },
             {
-              "v": "5ac5da0f",
+              "v": "5ac5da0",
               "date": "09-09",
               "group": "2026-09",
               "lane": "other",
@@ -2866,10 +2866,10 @@ window.ARCH = {
                 "5ac5da0fbb"
               ],
               "status": "done",
-              "evidence": "git 5ac5da0f"
+              "evidence": "git 5ac5da0"
             },
             {
-              "v": "e27d7ef3",
+              "v": "e27d7ef",
               "date": "09-09",
               "group": "2026-09",
               "lane": "other",
@@ -2879,10 +2879,10 @@ window.ARCH = {
                 "e27d7ef38c"
               ],
               "status": "done",
-              "evidence": "git e27d7ef3"
+              "evidence": "git e27d7ef"
             },
             {
-              "v": "b62b9162",
+              "v": "b62b916",
               "date": "09-10",
               "group": "2026-09",
               "lane": "other",
@@ -2892,10 +2892,10 @@ window.ARCH = {
                 "b62b9162b8"
               ],
               "status": "done",
-              "evidence": "git b62b9162"
+              "evidence": "git b62b916"
             },
             {
-              "v": "9ea30451",
+              "v": "9ea3045",
               "date": "09-10",
               "group": "2026-09",
               "lane": "other",
@@ -2905,10 +2905,10 @@ window.ARCH = {
                 "9ea3045104"
               ],
               "status": "done",
-              "evidence": "git 9ea30451"
+              "evidence": "git 9ea3045"
             },
             {
-              "v": "3e5171c8",
+              "v": "3e5171c",
               "date": "09-10",
               "group": "2026-09",
               "lane": "other",
@@ -2918,10 +2918,10 @@ window.ARCH = {
                 "3e5171c8ad"
               ],
               "status": "done",
-              "evidence": "git 3e5171c8"
+              "evidence": "git 3e5171c"
             },
             {
-              "v": "1e0580ab",
+              "v": "1e0580a",
               "date": "09-10",
               "group": "2026-09",
               "lane": "other",
@@ -2931,10 +2931,10 @@ window.ARCH = {
                 "1e0580ab2f"
               ],
               "status": "done",
-              "evidence": "git 1e0580ab"
+              "evidence": "git 1e0580a"
             },
             {
-              "v": "400dbf04",
+              "v": "400dbf0",
               "date": "09-10",
               "group": "2026-09",
               "lane": "other",
@@ -2944,10 +2944,10 @@ window.ARCH = {
                 "400dbf040d"
               ],
               "status": "done",
-              "evidence": "git 400dbf04"
+              "evidence": "git 400dbf0"
             },
             {
-              "v": "6ed11135",
+              "v": "6ed1113",
               "date": "09-10",
               "group": "2026-09",
               "lane": "other",
@@ -2957,10 +2957,10 @@ window.ARCH = {
                 "6ed1113507"
               ],
               "status": "done",
-              "evidence": "git 6ed11135"
+              "evidence": "git 6ed1113"
             },
             {
-              "v": "5e3380f5",
+              "v": "5e3380f",
               "date": "09-10",
               "group": "2026-09",
               "lane": "other",
@@ -2970,10 +2970,10 @@ window.ARCH = {
                 "5e3380f5b3"
               ],
               "status": "done",
-              "evidence": "git 5e3380f5"
+              "evidence": "git 5e3380f"
             },
             {
-              "v": "369ca27e",
+              "v": "369ca27",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -2983,10 +2983,10 @@ window.ARCH = {
                 "369ca27e21"
               ],
               "status": "done",
-              "evidence": "git 369ca27e"
+              "evidence": "git 369ca27"
             },
             {
-              "v": "e9c575b0",
+              "v": "e9c575b",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -2996,10 +2996,10 @@ window.ARCH = {
                 "e9c575b096"
               ],
               "status": "done",
-              "evidence": "git e9c575b0"
+              "evidence": "git e9c575b"
             },
             {
-              "v": "d4ec6c18",
+              "v": "d4ec6c1",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3009,10 +3009,10 @@ window.ARCH = {
                 "d4ec6c18e0"
               ],
               "status": "done",
-              "evidence": "git d4ec6c18"
+              "evidence": "git d4ec6c1"
             },
             {
-              "v": "7d0d6b2b",
+              "v": "7d0d6b2",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3022,10 +3022,10 @@ window.ARCH = {
                 "7d0d6b2b56"
               ],
               "status": "done",
-              "evidence": "git 7d0d6b2b"
+              "evidence": "git 7d0d6b2"
             },
             {
-              "v": "081e42c8",
+              "v": "081e42c",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3035,10 +3035,10 @@ window.ARCH = {
                 "081e42c867"
               ],
               "status": "done",
-              "evidence": "git 081e42c8"
+              "evidence": "git 081e42c"
             },
             {
-              "v": "0bb8c2c3",
+              "v": "0bb8c2c",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3048,10 +3048,10 @@ window.ARCH = {
                 "0bb8c2c304"
               ],
               "status": "done",
-              "evidence": "git 0bb8c2c3"
+              "evidence": "git 0bb8c2c"
             },
             {
-              "v": "1a1928e9",
+              "v": "1a1928e",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3061,10 +3061,10 @@ window.ARCH = {
                 "1a1928e95d"
               ],
               "status": "done",
-              "evidence": "git 1a1928e9"
+              "evidence": "git 1a1928e"
             },
             {
-              "v": "7af80313",
+              "v": "7af8031",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3074,10 +3074,10 @@ window.ARCH = {
                 "7af8031324"
               ],
               "status": "done",
-              "evidence": "git 7af80313"
+              "evidence": "git 7af8031"
             },
             {
-              "v": "2e96086c",
+              "v": "2e96086",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3087,10 +3087,10 @@ window.ARCH = {
                 "2e96086c67"
               ],
               "status": "done",
-              "evidence": "git 2e96086c"
+              "evidence": "git 2e96086"
             },
             {
-              "v": "40621cef",
+              "v": "40621ce",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3100,10 +3100,10 @@ window.ARCH = {
                 "40621cef93"
               ],
               "status": "done",
-              "evidence": "git 40621cef"
+              "evidence": "git 40621ce"
             },
             {
-              "v": "9b679266",
+              "v": "9b67926",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3113,10 +3113,10 @@ window.ARCH = {
                 "9b67926658"
               ],
               "status": "done",
-              "evidence": "git 9b679266"
+              "evidence": "git 9b67926"
             },
             {
-              "v": "ce7c7f3e",
+              "v": "ce7c7f3",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3126,10 +3126,10 @@ window.ARCH = {
                 "ce7c7f3e6e"
               ],
               "status": "done",
-              "evidence": "git ce7c7f3e"
+              "evidence": "git ce7c7f3"
             },
             {
-              "v": "3d77e0a2",
+              "v": "3d77e0a",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3139,10 +3139,10 @@ window.ARCH = {
                 "3d77e0a242"
               ],
               "status": "done",
-              "evidence": "git 3d77e0a2"
+              "evidence": "git 3d77e0a"
             },
             {
-              "v": "b11d6464",
+              "v": "b11d646",
               "date": "09-11",
               "group": "2026-09",
               "lane": "other",
@@ -3152,10 +3152,10 @@ window.ARCH = {
                 "b11d6464d6"
               ],
               "status": "done",
-              "evidence": "git b11d6464"
+              "evidence": "git b11d646"
             },
             {
-              "v": "c42a8623",
+              "v": "c42a862",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3165,10 +3165,10 @@ window.ARCH = {
                 "c42a862351"
               ],
               "status": "done",
-              "evidence": "git c42a8623"
+              "evidence": "git c42a862"
             },
             {
-              "v": "e70a26e9",
+              "v": "e70a26e",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3178,10 +3178,10 @@ window.ARCH = {
                 "e70a26e9b8"
               ],
               "status": "done",
-              "evidence": "git e70a26e9"
+              "evidence": "git e70a26e"
             },
             {
-              "v": "c0e369f0",
+              "v": "c0e369f",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3191,10 +3191,10 @@ window.ARCH = {
                 "c0e369f0ed"
               ],
               "status": "done",
-              "evidence": "git c0e369f0"
+              "evidence": "git c0e369f"
             },
             {
-              "v": "4728fdd0",
+              "v": "4728fdd",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3204,10 +3204,10 @@ window.ARCH = {
                 "4728fdd058"
               ],
               "status": "done",
-              "evidence": "git 4728fdd0"
+              "evidence": "git 4728fdd"
             },
             {
-              "v": "45906be2",
+              "v": "45906be",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3217,10 +3217,10 @@ window.ARCH = {
                 "45906be2f8"
               ],
               "status": "done",
-              "evidence": "git 45906be2"
+              "evidence": "git 45906be"
             },
             {
-              "v": "45e078f0",
+              "v": "45e078f",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3230,10 +3230,10 @@ window.ARCH = {
                 "45e078f073"
               ],
               "status": "done",
-              "evidence": "git 45e078f0"
+              "evidence": "git 45e078f"
             },
             {
-              "v": "91800434",
+              "v": "9180043",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3243,10 +3243,10 @@ window.ARCH = {
                 "9180043406"
               ],
               "status": "done",
-              "evidence": "git 91800434"
+              "evidence": "git 9180043"
             },
             {
-              "v": "0ea704de",
+              "v": "0ea704d",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3256,10 +3256,10 @@ window.ARCH = {
                 "0ea704dea5"
               ],
               "status": "done",
-              "evidence": "git 0ea704de"
+              "evidence": "git 0ea704d"
             },
             {
-              "v": "3252e3bb",
+              "v": "3252e3b",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3269,10 +3269,10 @@ window.ARCH = {
                 "3252e3bb81"
               ],
               "status": "done",
-              "evidence": "git 3252e3bb"
+              "evidence": "git 3252e3b"
             },
             {
-              "v": "c8ff1123",
+              "v": "c8ff112",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3282,10 +3282,10 @@ window.ARCH = {
                 "c8ff1123e7"
               ],
               "status": "done",
-              "evidence": "git c8ff1123"
+              "evidence": "git c8ff112"
             },
             {
-              "v": "f4621895",
+              "v": "f462189",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3295,10 +3295,10 @@ window.ARCH = {
                 "f462189507"
               ],
               "status": "done",
-              "evidence": "git f4621895"
+              "evidence": "git f462189"
             },
             {
-              "v": "4b85cffc",
+              "v": "4b85cff",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3308,10 +3308,10 @@ window.ARCH = {
                 "4b85cffc02"
               ],
               "status": "done",
-              "evidence": "git 4b85cffc"
+              "evidence": "git 4b85cff"
             },
             {
-              "v": "4256446c",
+              "v": "4256446",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3321,10 +3321,10 @@ window.ARCH = {
                 "4256446c2f"
               ],
               "status": "done",
-              "evidence": "git 4256446c"
+              "evidence": "git 4256446"
             },
             {
-              "v": "e6018c5e",
+              "v": "e6018c5",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3334,10 +3334,10 @@ window.ARCH = {
                 "e6018c5ebe"
               ],
               "status": "done",
-              "evidence": "git e6018c5e"
+              "evidence": "git e6018c5"
             },
             {
-              "v": "5b63e797",
+              "v": "5b63e79",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3347,10 +3347,10 @@ window.ARCH = {
                 "5b63e7977d"
               ],
               "status": "done",
-              "evidence": "git 5b63e797"
+              "evidence": "git 5b63e79"
             },
             {
-              "v": "4567fe31",
+              "v": "4567fe3",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3360,10 +3360,10 @@ window.ARCH = {
                 "4567fe317d"
               ],
               "status": "done",
-              "evidence": "git 4567fe31"
+              "evidence": "git 4567fe3"
             },
             {
-              "v": "a3a8974c",
+              "v": "a3a8974",
               "date": "09-12",
               "group": "2026-09",
               "lane": "other",
@@ -3373,10 +3373,10 @@ window.ARCH = {
                 "a3a8974cba"
               ],
               "status": "done",
-              "evidence": "git a3a8974c"
+              "evidence": "git a3a8974"
             },
             {
-              "v": "ce097882",
+              "v": "ce09788",
               "date": "09-14",
               "group": "2026-09",
               "lane": "other",
@@ -3386,10 +3386,10 @@ window.ARCH = {
                 "ce097882af"
               ],
               "status": "done",
-              "evidence": "git ce097882"
+              "evidence": "git ce09788"
             },
             {
-              "v": "a9f91a90",
+              "v": "a9f91a9",
               "date": "09-14",
               "group": "2026-09",
               "lane": "other",
@@ -3399,10 +3399,10 @@ window.ARCH = {
                 "a9f91a90ca"
               ],
               "status": "done",
-              "evidence": "git a9f91a90"
+              "evidence": "git a9f91a9"
             },
             {
-              "v": "cbe5ec21",
+              "v": "cbe5ec2",
               "date": "09-14",
               "group": "2026-09",
               "lane": "other",
@@ -3412,10 +3412,10 @@ window.ARCH = {
                 "cbe5ec2148"
               ],
               "status": "done",
-              "evidence": "git cbe5ec21"
+              "evidence": "git cbe5ec2"
             },
             {
-              "v": "5811d86c",
+              "v": "5811d86",
               "date": "09-14",
               "group": "2026-09",
               "lane": "other",
@@ -3425,10 +3425,10 @@ window.ARCH = {
                 "5811d86c3d"
               ],
               "status": "done",
-              "evidence": "git 5811d86c"
+              "evidence": "git 5811d86"
             },
             {
-              "v": "995392a8",
+              "v": "995392a",
               "date": "09-14",
               "group": "2026-09",
               "lane": "other",
@@ -3438,10 +3438,10 @@ window.ARCH = {
                 "995392a8c9"
               ],
               "status": "done",
-              "evidence": "git 995392a8"
+              "evidence": "git 995392a"
             },
             {
-              "v": "cc2649de",
+              "v": "cc2649d",
               "date": "09-14",
               "group": "2026-09",
               "lane": "other",
@@ -3451,10 +3451,10 @@ window.ARCH = {
                 "cc2649ded6"
               ],
               "status": "done",
-              "evidence": "git cc2649de"
+              "evidence": "git cc2649d"
             },
             {
-              "v": "ac400d37",
+              "v": "ac400d3",
               "date": "09-14",
               "group": "2026-09",
               "lane": "other",
@@ -3464,10 +3464,10 @@ window.ARCH = {
                 "ac400d3721"
               ],
               "status": "done",
-              "evidence": "git ac400d37"
+              "evidence": "git ac400d3"
             },
             {
-              "v": "9e303a6d",
+              "v": "9e303a6",
               "date": "09-14",
               "group": "2026-09",
               "lane": "other",
@@ -3477,10 +3477,10 @@ window.ARCH = {
                 "9e303a6d9f"
               ],
               "status": "done",
-              "evidence": "git 9e303a6d"
+              "evidence": "git 9e303a6"
             },
             {
-              "v": "7b81395c",
+              "v": "7b81395",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3490,10 +3490,10 @@ window.ARCH = {
                 "7b81395c15"
               ],
               "status": "done",
-              "evidence": "git 7b81395c"
+              "evidence": "git 7b81395"
             },
             {
-              "v": "907ceea2",
+              "v": "907ceea",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3503,10 +3503,10 @@ window.ARCH = {
                 "907ceea2f6"
               ],
               "status": "done",
-              "evidence": "git 907ceea2"
+              "evidence": "git 907ceea"
             },
             {
-              "v": "62b733ad",
+              "v": "62b733a",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3516,10 +3516,10 @@ window.ARCH = {
                 "62b733adb8"
               ],
               "status": "done",
-              "evidence": "git 62b733ad"
+              "evidence": "git 62b733a"
             },
             {
-              "v": "f7dd2c33",
+              "v": "f7dd2c3",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3529,10 +3529,10 @@ window.ARCH = {
                 "f7dd2c33b5"
               ],
               "status": "done",
-              "evidence": "git f7dd2c33"
+              "evidence": "git f7dd2c3"
             },
             {
-              "v": "503f809b",
+              "v": "503f809",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3542,10 +3542,10 @@ window.ARCH = {
                 "503f809bd9"
               ],
               "status": "done",
-              "evidence": "git 503f809b"
+              "evidence": "git 503f809"
             },
             {
-              "v": "99b98666",
+              "v": "99b9866",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3555,10 +3555,10 @@ window.ARCH = {
                 "99b98666c3"
               ],
               "status": "done",
-              "evidence": "git 99b98666"
+              "evidence": "git 99b9866"
             },
             {
-              "v": "3ed3efef",
+              "v": "3ed3efe",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3568,10 +3568,10 @@ window.ARCH = {
                 "3ed3efef90"
               ],
               "status": "done",
-              "evidence": "git 3ed3efef"
+              "evidence": "git 3ed3efe"
             },
             {
-              "v": "ac927398",
+              "v": "ac92739",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3581,10 +3581,10 @@ window.ARCH = {
                 "ac92739877"
               ],
               "status": "done",
-              "evidence": "git ac927398"
+              "evidence": "git ac92739"
             },
             {
-              "v": "d233015d",
+              "v": "d233015",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3594,10 +3594,10 @@ window.ARCH = {
                 "d233015ddc"
               ],
               "status": "done",
-              "evidence": "git d233015d"
+              "evidence": "git d233015"
             },
             {
-              "v": "87cc69b7",
+              "v": "87cc69b",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3607,10 +3607,10 @@ window.ARCH = {
                 "87cc69b72e"
               ],
               "status": "done",
-              "evidence": "git 87cc69b7"
+              "evidence": "git 87cc69b"
             },
             {
-              "v": "ca18d8e8",
+              "v": "ca18d8e",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3620,10 +3620,10 @@ window.ARCH = {
                 "ca18d8e84c"
               ],
               "status": "done",
-              "evidence": "git ca18d8e8"
+              "evidence": "git ca18d8e"
             },
             {
-              "v": "5a82de69",
+              "v": "5a82de6",
               "date": "09-15",
               "group": "2026-09",
               "lane": "other",
@@ -3633,10 +3633,10 @@ window.ARCH = {
                 "5a82de6920"
               ],
               "status": "done",
-              "evidence": "git 5a82de69"
+              "evidence": "git 5a82de6"
             },
             {
-              "v": "3245ce67",
+              "v": "3245ce6",
               "date": "09-16",
               "group": "2026-09",
               "lane": "other",
@@ -3646,10 +3646,10 @@ window.ARCH = {
                 "3245ce6787"
               ],
               "status": "done",
-              "evidence": "git 3245ce67"
+              "evidence": "git 3245ce6"
             },
             {
-              "v": "aab4008f",
+              "v": "aab4008",
               "date": "09-16",
               "group": "2026-09",
               "lane": "other",
@@ -3659,10 +3659,10 @@ window.ARCH = {
                 "aab4008f3c"
               ],
               "status": "done",
-              "evidence": "git aab4008f"
+              "evidence": "git aab4008"
             },
             {
-              "v": "0c93d002",
+              "v": "0c93d00",
               "date": "09-16",
               "group": "2026-09",
               "lane": "other",
@@ -3672,10 +3672,10 @@ window.ARCH = {
                 "0c93d00257"
               ],
               "status": "done",
-              "evidence": "git 0c93d002"
+              "evidence": "git 0c93d00"
             },
             {
-              "v": "9150ebf9",
+              "v": "9150ebf",
               "date": "09-16",
               "group": "2026-09",
               "lane": "other",
@@ -3685,10 +3685,10 @@ window.ARCH = {
                 "9150ebf9c6"
               ],
               "status": "done",
-              "evidence": "git 9150ebf9"
+              "evidence": "git 9150ebf"
             },
             {
-              "v": "19dc17f4",
+              "v": "19dc17f",
               "date": "09-16",
               "group": "2026-09",
               "lane": "other",
@@ -3698,10 +3698,10 @@ window.ARCH = {
                 "19dc17f40b"
               ],
               "status": "done",
-              "evidence": "git 19dc17f4"
+              "evidence": "git 19dc17f"
             },
             {
-              "v": "bed005c5",
+              "v": "bed005c",
               "date": "09-16",
               "group": "2026-09",
               "lane": "other",
@@ -3711,10 +3711,10 @@ window.ARCH = {
                 "bed005c597"
               ],
               "status": "done",
-              "evidence": "git bed005c5"
+              "evidence": "git bed005c"
             },
             {
-              "v": "780eb6de",
+              "v": "780eb6d",
               "date": "09-16",
               "group": "2026-09",
               "lane": "other",
@@ -3724,10 +3724,10 @@ window.ARCH = {
                 "780eb6de4e"
               ],
               "status": "done",
-              "evidence": "git 780eb6de"
+              "evidence": "git 780eb6d"
             },
             {
-              "v": "21abfff0",
+              "v": "21abfff",
               "date": "09-16",
               "group": "2026-09",
               "lane": "other",
@@ -3737,10 +3737,10 @@ window.ARCH = {
                 "21abfff02f"
               ],
               "status": "done",
-              "evidence": "git 21abfff0"
+              "evidence": "git 21abfff"
             },
             {
-              "v": "b904cbcd",
+              "v": "b904cbc",
               "date": "09-16",
               "group": "2026-09",
               "lane": "other",
@@ -3750,10 +3750,10 @@ window.ARCH = {
                 "b904cbcd6f"
               ],
               "status": "done",
-              "evidence": "git b904cbcd"
+              "evidence": "git b904cbc"
             },
             {
-              "v": "5bc3bd02",
+              "v": "5bc3bd0",
               "date": "09-16",
               "group": "2026-09",
               "lane": "other",
@@ -3763,10 +3763,10 @@ window.ARCH = {
                 "5bc3bd028a"
               ],
               "status": "done",
-              "evidence": "git 5bc3bd02"
+              "evidence": "git 5bc3bd0"
             },
             {
-              "v": "9c5971a0",
+              "v": "9c5971a",
               "date": "09-17",
               "group": "2026-09",
               "lane": "other",
@@ -3776,10 +3776,10 @@ window.ARCH = {
                 "9c5971a02e"
               ],
               "status": "done",
-              "evidence": "git 9c5971a0"
+              "evidence": "git 9c5971a"
             },
             {
-              "v": "1c80ca4f",
+              "v": "1c80ca4",
               "date": "09-17",
               "group": "2026-09",
               "lane": "other",
@@ -3789,10 +3789,10 @@ window.ARCH = {
                 "1c80ca4fef"
               ],
               "status": "done",
-              "evidence": "git 1c80ca4f"
+              "evidence": "git 1c80ca4"
             },
             {
-              "v": "d59c9bb1",
+              "v": "d59c9bb",
               "date": "09-17",
               "group": "2026-09",
               "lane": "other",
@@ -3802,10 +3802,10 @@ window.ARCH = {
                 "d59c9bb180"
               ],
               "status": "done",
-              "evidence": "git d59c9bb1"
+              "evidence": "git d59c9bb"
             },
             {
-              "v": "d5be2e07",
+              "v": "d5be2e0",
               "date": "09-17",
               "group": "2026-09",
               "lane": "other",
@@ -3815,10 +3815,10 @@ window.ARCH = {
                 "d5be2e07b9"
               ],
               "status": "done",
-              "evidence": "git d5be2e07"
+              "evidence": "git d5be2e0"
             },
             {
-              "v": "9bcf9ffa",
+              "v": "9bcf9ff",
               "date": "09-18",
               "group": "2026-09",
               "lane": "other",
@@ -3828,10 +3828,10 @@ window.ARCH = {
                 "9bcf9ffa48"
               ],
               "status": "done",
-              "evidence": "git 9bcf9ffa"
+              "evidence": "git 9bcf9ff"
             },
             {
-              "v": "457e7361",
+              "v": "457e736",
               "date": "09-18",
               "group": "2026-09",
               "lane": "other",
@@ -3841,10 +3841,10 @@ window.ARCH = {
                 "457e736189"
               ],
               "status": "done",
-              "evidence": "git 457e7361"
+              "evidence": "git 457e736"
             },
             {
-              "v": "091c34a7",
+              "v": "091c34a",
               "date": "09-18",
               "group": "2026-09",
               "lane": "other",
@@ -3854,10 +3854,10 @@ window.ARCH = {
                 "091c34a70a"
               ],
               "status": "done",
-              "evidence": "git 091c34a7"
+              "evidence": "git 091c34a"
             },
             {
-              "v": "7206d18b",
+              "v": "7206d18",
               "date": "09-18",
               "group": "2026-09",
               "lane": "other",
@@ -3867,10 +3867,10 @@ window.ARCH = {
                 "7206d18bc2"
               ],
               "status": "done",
-              "evidence": "git 7206d18b"
+              "evidence": "git 7206d18"
             },
             {
-              "v": "28b608ac",
+              "v": "28b608a",
               "date": "09-18",
               "group": "2026-09",
               "lane": "other",
@@ -3880,10 +3880,10 @@ window.ARCH = {
                 "28b608ac43"
               ],
               "status": "done",
-              "evidence": "git 28b608ac"
+              "evidence": "git 28b608a"
             },
             {
-              "v": "bc92feea",
+              "v": "bc92fee",
               "date": "09-18",
               "group": "2026-09",
               "lane": "other",
@@ -3893,10 +3893,10 @@ window.ARCH = {
                 "bc92feea78"
               ],
               "status": "done",
-              "evidence": "git bc92feea"
+              "evidence": "git bc92fee"
             },
             {
-              "v": "d713a537",
+              "v": "d713a53",
               "date": "09-18",
               "group": "2026-09",
               "lane": "other",
@@ -3906,10 +3906,10 @@ window.ARCH = {
                 "d713a5376c"
               ],
               "status": "done",
-              "evidence": "git d713a537"
+              "evidence": "git d713a53"
             },
             {
-              "v": "82df1c5a",
+              "v": "82df1c5",
               "date": "09-20",
               "group": "2026-09",
               "lane": "other",
@@ -3919,10 +3919,10 @@ window.ARCH = {
                 "82df1c5ade"
               ],
               "status": "done",
-              "evidence": "git 82df1c5a"
+              "evidence": "git 82df1c5"
             },
             {
-              "v": "432ba217",
+              "v": "432ba21",
               "date": "09-20",
               "group": "2026-09",
               "lane": "other",
@@ -3932,10 +3932,10 @@ window.ARCH = {
                 "432ba21786"
               ],
               "status": "done",
-              "evidence": "git 432ba217"
+              "evidence": "git 432ba21"
             },
             {
-              "v": "e18ff371",
+              "v": "e18ff37",
               "date": "09-20",
               "group": "2026-09",
               "lane": "other",
@@ -3945,10 +3945,10 @@ window.ARCH = {
                 "e18ff37150"
               ],
               "status": "done",
-              "evidence": "git e18ff371"
+              "evidence": "git e18ff37"
             },
             {
-              "v": "ca018e17",
+              "v": "ca018e1",
               "date": "09-20",
               "group": "2026-09",
               "lane": "other",
@@ -3958,10 +3958,10 @@ window.ARCH = {
                 "ca018e177d"
               ],
               "status": "done",
-              "evidence": "git ca018e17"
+              "evidence": "git ca018e1"
             },
             {
-              "v": "2d52881b",
+              "v": "2d52881",
               "date": "09-20",
               "group": "2026-09",
               "lane": "other",
@@ -3971,10 +3971,10 @@ window.ARCH = {
                 "2d52881b3c"
               ],
               "status": "done",
-              "evidence": "git 2d52881b"
+              "evidence": "git 2d52881"
             },
             {
-              "v": "cfc1c777",
+              "v": "cfc1c77",
               "date": "09-20",
               "group": "2026-09",
               "lane": "other",
@@ -3984,10 +3984,10 @@ window.ARCH = {
                 "cfc1c777e3"
               ],
               "status": "done",
-              "evidence": "git cfc1c777"
+              "evidence": "git cfc1c77"
             },
             {
-              "v": "d8b7f756",
+              "v": "d8b7f75",
               "date": "09-20",
               "group": "2026-09",
               "lane": "other",
@@ -3997,10 +3997,10 @@ window.ARCH = {
                 "d8b7f756a6"
               ],
               "status": "done",
-              "evidence": "git d8b7f756"
+              "evidence": "git d8b7f75"
             },
             {
-              "v": "a8652e5f",
+              "v": "a8652e5",
               "date": "09-20",
               "group": "2026-09",
               "lane": "other",
@@ -4010,10 +4010,10 @@ window.ARCH = {
                 "a8652e5f65"
               ],
               "status": "done",
-              "evidence": "git a8652e5f"
+              "evidence": "git a8652e5"
             },
             {
-              "v": "55768bd4",
+              "v": "55768bd",
               "date": "09-21",
               "group": "2026-09",
               "lane": "other",
@@ -4023,10 +4023,10 @@ window.ARCH = {
                 "55768bd444"
               ],
               "status": "done",
-              "evidence": "git 55768bd4"
+              "evidence": "git 55768bd"
             },
             {
-              "v": "78c9cfba",
+              "v": "78c9cfb",
               "date": "09-21",
               "group": "2026-09",
               "lane": "other",
@@ -4036,10 +4036,10 @@ window.ARCH = {
                 "78c9cfba48"
               ],
               "status": "done",
-              "evidence": "git 78c9cfba"
+              "evidence": "git 78c9cfb"
             },
             {
-              "v": "35ab8b0d",
+              "v": "35ab8b0",
               "date": "09-21",
               "group": "2026-09",
               "lane": "other",
@@ -4049,10 +4049,10 @@ window.ARCH = {
                 "35ab8b0d84"
               ],
               "status": "done",
-              "evidence": "git 35ab8b0d"
+              "evidence": "git 35ab8b0"
             },
             {
-              "v": "4e5881e6",
+              "v": "4e5881e",
               "date": "09-22",
               "group": "2026-09",
               "lane": "other",
@@ -4062,10 +4062,10 @@ window.ARCH = {
                 "4e5881e6b2"
               ],
               "status": "done",
-              "evidence": "git 4e5881e6"
+              "evidence": "git 4e5881e"
             },
             {
-              "v": "b2fbb15c",
+              "v": "b2fbb15",
               "date": "09-22",
               "group": "2026-09",
               "lane": "other",
@@ -4075,10 +4075,10 @@ window.ARCH = {
                 "b2fbb15c3b"
               ],
               "status": "done",
-              "evidence": "git b2fbb15c"
+              "evidence": "git b2fbb15"
             },
             {
-              "v": "816df8a3",
+              "v": "816df8a",
               "date": "09-22",
               "group": "2026-09",
               "lane": "other",
@@ -4088,10 +4088,10 @@ window.ARCH = {
                 "816df8a333"
               ],
               "status": "done",
-              "evidence": "git 816df8a3"
+              "evidence": "git 816df8a"
             },
             {
-              "v": "e809ebb1",
+              "v": "e809ebb",
               "date": "09-22",
               "group": "2026-09",
               "lane": "other",
@@ -4101,10 +4101,10 @@ window.ARCH = {
                 "e809ebb1e0"
               ],
               "status": "done",
-              "evidence": "git e809ebb1"
+              "evidence": "git e809ebb"
             },
             {
-              "v": "b13d5652",
+              "v": "b13d565",
               "date": "09-22",
               "group": "2026-09",
               "lane": "other",
@@ -4114,10 +4114,10 @@ window.ARCH = {
                 "b13d56525d"
               ],
               "status": "done",
-              "evidence": "git b13d5652"
+              "evidence": "git b13d565"
             },
             {
-              "v": "48261fcb",
+              "v": "48261fc",
               "date": "09-22",
               "group": "2026-09",
               "lane": "other",
@@ -4127,10 +4127,10 @@ window.ARCH = {
                 "48261fcb3a"
               ],
               "status": "done",
-              "evidence": "git 48261fcb"
+              "evidence": "git 48261fc"
             },
             {
-              "v": "3a44f47c",
+              "v": "3a44f47",
               "date": "09-23",
               "group": "2026-09",
               "lane": "other",
@@ -4140,10 +4140,10 @@ window.ARCH = {
                 "3a44f47c9a"
               ],
               "status": "done",
-              "evidence": "git 3a44f47c"
+              "evidence": "git 3a44f47"
             },
             {
-              "v": "ddc2f4bb",
+              "v": "ddc2f4b",
               "date": "09-23",
               "group": "2026-09",
               "lane": "other",
@@ -4153,10 +4153,10 @@ window.ARCH = {
                 "ddc2f4bb88"
               ],
               "status": "done",
-              "evidence": "git ddc2f4bb"
+              "evidence": "git ddc2f4b"
             },
             {
-              "v": "a8acef04",
+              "v": "a8acef0",
               "date": "09-23",
               "group": "2026-09",
               "lane": "other",
@@ -4166,10 +4166,10 @@ window.ARCH = {
                 "a8acef04a5"
               ],
               "status": "done",
-              "evidence": "git a8acef04"
+              "evidence": "git a8acef0"
             },
             {
-              "v": "7e026ff3",
+              "v": "7e026ff",
               "date": "09-23",
               "group": "2026-09",
               "lane": "other",
@@ -4179,10 +4179,10 @@ window.ARCH = {
                 "7e026ff304"
               ],
               "status": "done",
-              "evidence": "git 7e026ff3"
+              "evidence": "git 7e026ff"
             },
             {
-              "v": "9954e137",
+              "v": "9954e13",
               "date": "09-23",
               "group": "2026-09",
               "lane": "other",
@@ -4192,10 +4192,10 @@ window.ARCH = {
                 "9954e137c5"
               ],
               "status": "done",
-              "evidence": "git 9954e137"
+              "evidence": "git 9954e13"
             },
             {
-              "v": "5a58995f",
+              "v": "5a58995",
               "date": "09-23",
               "group": "2026-09",
               "lane": "other",
@@ -4205,10 +4205,10 @@ window.ARCH = {
                 "5a58995ffb"
               ],
               "status": "done",
-              "evidence": "git 5a58995f"
+              "evidence": "git 5a58995"
             },
             {
-              "v": "ffbf99a1",
+              "v": "ffbf99a",
               "date": "09-23",
               "group": "2026-09",
               "lane": "other",
@@ -4218,10 +4218,10 @@ window.ARCH = {
                 "ffbf99a1b6"
               ],
               "status": "done",
-              "evidence": "git ffbf99a1"
+              "evidence": "git ffbf99a"
             },
             {
-              "v": "60d5e8c7",
+              "v": "60d5e8c",
               "date": "09-23",
               "group": "2026-09",
               "lane": "other",
@@ -4231,10 +4231,10 @@ window.ARCH = {
                 "60d5e8c79e"
               ],
               "status": "done",
-              "evidence": "git 60d5e8c7"
+              "evidence": "git 60d5e8c"
             },
             {
-              "v": "8c54ead6",
+              "v": "8c54ead",
               "date": "09-24",
               "group": "2026-09",
               "lane": "other",
@@ -4244,10 +4244,10 @@ window.ARCH = {
                 "8c54ead664"
               ],
               "status": "done",
-              "evidence": "git 8c54ead6"
+              "evidence": "git 8c54ead"
             },
             {
-              "v": "7172b755",
+              "v": "7172b75",
               "date": "09-24",
               "group": "2026-09",
               "lane": "other",
@@ -4257,10 +4257,10 @@ window.ARCH = {
                 "7172b755bf"
               ],
               "status": "done",
-              "evidence": "git 7172b755"
+              "evidence": "git 7172b75"
             },
             {
-              "v": "892a00f7",
+              "v": "892a00f",
               "date": "09-25",
               "group": "2026-09",
               "lane": "other",
@@ -4270,10 +4270,10 @@ window.ARCH = {
                 "892a00f7fc"
               ],
               "status": "done",
-              "evidence": "git 892a00f7"
+              "evidence": "git 892a00f"
             },
             {
-              "v": "66aac1eb",
+              "v": "66aac1e",
               "date": "09-25",
               "group": "2026-09",
               "lane": "other",
@@ -4283,10 +4283,10 @@ window.ARCH = {
                 "66aac1eb48"
               ],
               "status": "done",
-              "evidence": "git 66aac1eb"
+              "evidence": "git 66aac1e"
             },
             {
-              "v": "5b374a3f",
+              "v": "5b374a3",
               "date": "09-27",
               "group": "2026-09",
               "lane": "other",
@@ -4296,10 +4296,10 @@ window.ARCH = {
                 "5b374a3ff6"
               ],
               "status": "done",
-              "evidence": "git 5b374a3f"
+              "evidence": "git 5b374a3"
             },
             {
-              "v": "6da95b2b",
+              "v": "6da95b2",
               "date": "09-28",
               "group": "2026-09",
               "lane": "other",
@@ -4309,10 +4309,10 @@ window.ARCH = {
                 "6da95b2ba3"
               ],
               "status": "done",
-              "evidence": "git 6da95b2b"
+              "evidence": "git 6da95b2"
             },
             {
-              "v": "bbe3a0e6",
+              "v": "bbe3a0e",
               "date": "09-28",
               "group": "2026-09",
               "lane": "other",
@@ -4322,10 +4322,10 @@ window.ARCH = {
                 "bbe3a0e66e"
               ],
               "status": "done",
-              "evidence": "git bbe3a0e6"
+              "evidence": "git bbe3a0e"
             },
             {
-              "v": "0a90288b",
+              "v": "0a90288",
               "date": "09-28",
               "group": "2026-09",
               "lane": "other",
@@ -4335,10 +4335,10 @@ window.ARCH = {
                 "0a90288b18"
               ],
               "status": "done",
-              "evidence": "git 0a90288b"
+              "evidence": "git 0a90288"
             },
             {
-              "v": "17428b04",
+              "v": "17428b0",
               "date": "09-28",
               "group": "2026-09",
               "lane": "other",
@@ -4348,10 +4348,10 @@ window.ARCH = {
                 "17428b040b"
               ],
               "status": "done",
-              "evidence": "git 17428b04"
+              "evidence": "git 17428b0"
             },
             {
-              "v": "64864522",
+              "v": "6486452",
               "date": "09-28",
               "group": "2026-09",
               "lane": "other",
@@ -4361,10 +4361,10 @@ window.ARCH = {
                 "6486452293"
               ],
               "status": "done",
-              "evidence": "git 64864522"
+              "evidence": "git 6486452"
             },
             {
-              "v": "31eeebbd",
+              "v": "31eeebb",
               "date": "09-28",
               "group": "2026-09",
               "lane": "other",
@@ -4374,10 +4374,10 @@ window.ARCH = {
                 "31eeebbd7a"
               ],
               "status": "done",
-              "evidence": "git 31eeebbd"
+              "evidence": "git 31eeebb"
             },
             {
-              "v": "5a749b8c",
+              "v": "5a749b8",
               "date": "09-28",
               "group": "2026-09",
               "lane": "other",
@@ -4387,10 +4387,10 @@ window.ARCH = {
                 "5a749b8ce5"
               ],
               "status": "done",
-              "evidence": "git 5a749b8c"
+              "evidence": "git 5a749b8"
             },
             {
-              "v": "949d2608",
+              "v": "949d260",
               "date": "09-28",
               "group": "2026-09",
               "lane": "other",
@@ -4400,10 +4400,10 @@ window.ARCH = {
                 "949d26083d"
               ],
               "status": "done",
-              "evidence": "git 949d2608"
+              "evidence": "git 949d260"
             },
             {
-              "v": "678f05c6",
+              "v": "678f05c",
               "date": "09-28",
               "group": "2026-09",
               "lane": "other",
@@ -4413,10 +4413,10 @@ window.ARCH = {
                 "678f05c656"
               ],
               "status": "done",
-              "evidence": "git 678f05c6"
+              "evidence": "git 678f05c"
             },
             {
-              "v": "e4ebf323",
+              "v": "e4ebf32",
               "date": "09-29",
               "group": "2026-09",
               "lane": "other",
@@ -4426,10 +4426,10 @@ window.ARCH = {
                 "e4ebf32398"
               ],
               "status": "done",
-              "evidence": "git e4ebf323"
+              "evidence": "git e4ebf32"
             },
             {
-              "v": "d000c716",
+              "v": "d000c71",
               "date": "09-29",
               "group": "2026-09",
               "lane": "other",
@@ -4439,10 +4439,10 @@ window.ARCH = {
                 "d000c716ae"
               ],
               "status": "done",
-              "evidence": "git d000c716"
+              "evidence": "git d000c71"
             },
             {
-              "v": "001831f6",
+              "v": "001831f",
               "date": "09-29",
               "group": "2026-09",
               "lane": "other",
@@ -4452,10 +4452,10 @@ window.ARCH = {
                 "001831f65f"
               ],
               "status": "done",
-              "evidence": "git 001831f6"
+              "evidence": "git 001831f"
             },
             {
-              "v": "fb057ed3",
+              "v": "fb057ed",
               "date": "09-29",
               "group": "2026-09",
               "lane": "other",
@@ -4465,10 +4465,10 @@ window.ARCH = {
                 "fb057ed38f"
               ],
               "status": "done",
-              "evidence": "git fb057ed3"
+              "evidence": "git fb057ed"
             },
             {
-              "v": "5226b947",
+              "v": "5226b94",
               "date": "09-29",
               "group": "2026-09",
               "lane": "other",
@@ -4478,10 +4478,10 @@ window.ARCH = {
                 "5226b94720"
               ],
               "status": "done",
-              "evidence": "git 5226b947"
+              "evidence": "git 5226b94"
             },
             {
-              "v": "2ad0cea8",
+              "v": "2ad0cea",
               "date": "09-29",
               "group": "2026-09",
               "lane": "other",
@@ -4491,10 +4491,10 @@ window.ARCH = {
                 "2ad0cea822"
               ],
               "status": "done",
-              "evidence": "git 2ad0cea8"
+              "evidence": "git 2ad0cea"
             },
             {
-              "v": "4c3d3379",
+              "v": "4c3d337",
               "date": "09-29",
               "group": "2026-09",
               "lane": "other",
@@ -4504,10 +4504,10 @@ window.ARCH = {
                 "4c3d3379a6"
               ],
               "status": "done",
-              "evidence": "git 4c3d3379"
+              "evidence": "git 4c3d337"
             },
             {
-              "v": "97446e8f",
+              "v": "97446e8",
               "date": "09-29",
               "group": "2026-09",
               "lane": "other",
@@ -4517,10 +4517,10 @@ window.ARCH = {
                 "97446e8ffb"
               ],
               "status": "done",
-              "evidence": "git 97446e8f"
+              "evidence": "git 97446e8"
             },
             {
-              "v": "c55ea445",
+              "v": "c55ea44",
               "date": "09-30",
               "group": "2026-09",
               "lane": "other",
@@ -4530,10 +4530,10 @@ window.ARCH = {
                 "c55ea44579"
               ],
               "status": "done",
-              "evidence": "git c55ea445"
+              "evidence": "git c55ea44"
             },
             {
-              "v": "8ffa0207",
+              "v": "8ffa020",
               "date": "09-30",
               "group": "2026-09",
               "lane": "other",
@@ -4543,10 +4543,10 @@ window.ARCH = {
                 "8ffa0207ac"
               ],
               "status": "done",
-              "evidence": "git 8ffa0207"
+              "evidence": "git 8ffa020"
             },
             {
-              "v": "136f286a",
+              "v": "136f286",
               "date": "09-30",
               "group": "2026-09",
               "lane": "other",
@@ -4556,10 +4556,10 @@ window.ARCH = {
                 "136f286a60"
               ],
               "status": "done",
-              "evidence": "git 136f286a"
+              "evidence": "git 136f286"
             },
             {
-              "v": "f5210ae7",
+              "v": "f5210ae",
               "date": "09-30",
               "group": "2026-09",
               "lane": "other",
@@ -4569,10 +4569,10 @@ window.ARCH = {
                 "f5210ae7bb"
               ],
               "status": "done",
-              "evidence": "git f5210ae7"
+              "evidence": "git f5210ae"
             },
             {
-              "v": "2a0ea73e",
+              "v": "2a0ea73",
               "date": "09-30",
               "group": "2026-09",
               "lane": "other",
@@ -4582,10 +4582,10 @@ window.ARCH = {
                 "2a0ea73e13"
               ],
               "status": "done",
-              "evidence": "git 2a0ea73e"
+              "evidence": "git 2a0ea73"
             },
             {
-              "v": "6ab8990a",
+              "v": "6ab8990",
               "date": "09-30",
               "group": "2026-09",
               "lane": "other",
@@ -4595,10 +4595,10 @@ window.ARCH = {
                 "6ab8990acd"
               ],
               "status": "done",
-              "evidence": "git 6ab8990a"
+              "evidence": "git 6ab8990"
             },
             {
-              "v": "4e832034",
+              "v": "4e83203",
               "date": "09-30",
               "group": "2026-09",
               "lane": "other",
@@ -4608,10 +4608,10 @@ window.ARCH = {
                 "4e8320342d"
               ],
               "status": "done",
-              "evidence": "git 4e832034"
+              "evidence": "git 4e83203"
             },
             {
-              "v": "31c2a9b7",
+              "v": "31c2a9b",
               "date": "09-30",
               "group": "2026-09",
               "lane": "other",
@@ -4621,10 +4621,10 @@ window.ARCH = {
                 "31c2a9b719"
               ],
               "status": "done",
-              "evidence": "git 31c2a9b7"
+              "evidence": "git 31c2a9b"
             },
             {
-              "v": "7fc94967",
+              "v": "7fc9496",
               "date": "09-30",
               "group": "2026-09",
               "lane": "other",
@@ -4634,10 +4634,10 @@ window.ARCH = {
                 "7fc9496746"
               ],
               "status": "done",
-              "evidence": "git 7fc94967"
+              "evidence": "git 7fc9496"
             },
             {
-              "v": "20c07e0e",
+              "v": "20c07e0",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4647,10 +4647,10 @@ window.ARCH = {
                 "20c07e0ed1"
               ],
               "status": "done",
-              "evidence": "git 20c07e0e"
+              "evidence": "git 20c07e0"
             },
             {
-              "v": "ba3bfbc1",
+              "v": "ba3bfbc",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4660,10 +4660,10 @@ window.ARCH = {
                 "ba3bfbc1ec"
               ],
               "status": "done",
-              "evidence": "git ba3bfbc1"
+              "evidence": "git ba3bfbc"
             },
             {
-              "v": "7d324ca8",
+              "v": "7d324ca",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4673,10 +4673,10 @@ window.ARCH = {
                 "7d324ca8ae"
               ],
               "status": "done",
-              "evidence": "git 7d324ca8"
+              "evidence": "git 7d324ca"
             },
             {
-              "v": "cffb096a",
+              "v": "cffb096",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4686,10 +4686,10 @@ window.ARCH = {
                 "cffb096a60"
               ],
               "status": "done",
-              "evidence": "git cffb096a"
+              "evidence": "git cffb096"
             },
             {
-              "v": "2667b7e5",
+              "v": "2667b7e",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4699,10 +4699,10 @@ window.ARCH = {
                 "2667b7e514"
               ],
               "status": "done",
-              "evidence": "git 2667b7e5"
+              "evidence": "git 2667b7e"
             },
             {
-              "v": "4c0fdf47",
+              "v": "4c0fdf4",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4712,10 +4712,10 @@ window.ARCH = {
                 "4c0fdf47f3"
               ],
               "status": "done",
-              "evidence": "git 4c0fdf47"
+              "evidence": "git 4c0fdf4"
             },
             {
-              "v": "2b86be88",
+              "v": "2b86be8",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4725,10 +4725,10 @@ window.ARCH = {
                 "2b86be88d6"
               ],
               "status": "done",
-              "evidence": "git 2b86be88"
+              "evidence": "git 2b86be8"
             },
             {
-              "v": "be6dad31",
+              "v": "be6dad3",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4738,10 +4738,10 @@ window.ARCH = {
                 "be6dad3164"
               ],
               "status": "done",
-              "evidence": "git be6dad31"
+              "evidence": "git be6dad3"
             },
             {
-              "v": "cbc7f605",
+              "v": "cbc7f60",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4751,10 +4751,10 @@ window.ARCH = {
                 "cbc7f6056c"
               ],
               "status": "done",
-              "evidence": "git cbc7f605"
+              "evidence": "git cbc7f60"
             },
             {
-              "v": "fbaf1a05",
+              "v": "fbaf1a0",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4764,10 +4764,10 @@ window.ARCH = {
                 "fbaf1a05e3"
               ],
               "status": "done",
-              "evidence": "git fbaf1a05"
+              "evidence": "git fbaf1a0"
             },
             {
-              "v": "24999a5f",
+              "v": "24999a5",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4777,10 +4777,10 @@ window.ARCH = {
                 "24999a5f41"
               ],
               "status": "done",
-              "evidence": "git 24999a5f"
+              "evidence": "git 24999a5"
             },
             {
-              "v": "39ef1e1e",
+              "v": "39ef1e1",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4790,10 +4790,10 @@ window.ARCH = {
                 "39ef1e1ec2"
               ],
               "status": "done",
-              "evidence": "git 39ef1e1e"
+              "evidence": "git 39ef1e1"
             },
             {
-              "v": "0887264c",
+              "v": "0887264",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4803,10 +4803,10 @@ window.ARCH = {
                 "0887264c59"
               ],
               "status": "done",
-              "evidence": "git 0887264c"
+              "evidence": "git 0887264"
             },
             {
-              "v": "e04a2ff6",
+              "v": "e04a2ff",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4816,10 +4816,10 @@ window.ARCH = {
                 "e04a2ff6e9"
               ],
               "status": "done",
-              "evidence": "git e04a2ff6"
+              "evidence": "git e04a2ff"
             },
             {
-              "v": "cb3cb0c3",
+              "v": "cb3cb0c",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4829,10 +4829,10 @@ window.ARCH = {
                 "cb3cb0c357"
               ],
               "status": "done",
-              "evidence": "git cb3cb0c3"
+              "evidence": "git cb3cb0c"
             },
             {
-              "v": "75fbda11",
+              "v": "75fbda1",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4842,10 +4842,10 @@ window.ARCH = {
                 "75fbda1130"
               ],
               "status": "done",
-              "evidence": "git 75fbda11"
+              "evidence": "git 75fbda1"
             },
             {
-              "v": "c761a34d",
+              "v": "c761a34",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4855,10 +4855,10 @@ window.ARCH = {
                 "c761a34d41"
               ],
               "status": "done",
-              "evidence": "git c761a34d"
+              "evidence": "git c761a34"
             },
             {
-              "v": "967fc8ba",
+              "v": "967fc8b",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4868,10 +4868,10 @@ window.ARCH = {
                 "967fc8ba60"
               ],
               "status": "done",
-              "evidence": "git 967fc8ba"
+              "evidence": "git 967fc8b"
             },
             {
-              "v": "1b57ff02",
+              "v": "1b57ff0",
               "date": "10-01",
               "group": "2026-10",
               "lane": "other",
@@ -4881,10 +4881,10 @@ window.ARCH = {
                 "1b57ff02a0"
               ],
               "status": "done",
-              "evidence": "git 1b57ff02"
+              "evidence": "git 1b57ff0"
             },
             {
-              "v": "cd1242b1",
+              "v": "cd1242b",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -4894,10 +4894,10 @@ window.ARCH = {
                 "cd1242b14c"
               ],
               "status": "done",
-              "evidence": "git cd1242b1"
+              "evidence": "git cd1242b"
             },
             {
-              "v": "652c81ea",
+              "v": "652c81e",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -4907,10 +4907,10 @@ window.ARCH = {
                 "652c81ea1c"
               ],
               "status": "done",
-              "evidence": "git 652c81ea"
+              "evidence": "git 652c81e"
             },
             {
-              "v": "e6057ac8",
+              "v": "e6057ac",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -4920,10 +4920,10 @@ window.ARCH = {
                 "e6057ac89c"
               ],
               "status": "done",
-              "evidence": "git e6057ac8"
+              "evidence": "git e6057ac"
             },
             {
-              "v": "786c3bd7",
+              "v": "786c3bd",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -4933,10 +4933,10 @@ window.ARCH = {
                 "786c3bd74c"
               ],
               "status": "done",
-              "evidence": "git 786c3bd7"
+              "evidence": "git 786c3bd"
             },
             {
-              "v": "a9d2b0ff",
+              "v": "a9d2b0f",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -4946,10 +4946,10 @@ window.ARCH = {
                 "a9d2b0ffa1"
               ],
               "status": "done",
-              "evidence": "git a9d2b0ff"
+              "evidence": "git a9d2b0f"
             },
             {
-              "v": "1b725422",
+              "v": "1b72542",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -4959,10 +4959,10 @@ window.ARCH = {
                 "1b72542274"
               ],
               "status": "done",
-              "evidence": "git 1b725422"
+              "evidence": "git 1b72542"
             },
             {
-              "v": "c5b7d0e1",
+              "v": "c5b7d0e",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -4972,10 +4972,10 @@ window.ARCH = {
                 "c5b7d0e1e3"
               ],
               "status": "done",
-              "evidence": "git c5b7d0e1"
+              "evidence": "git c5b7d0e"
             },
             {
-              "v": "85d6131f",
+              "v": "85d6131",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -4985,10 +4985,10 @@ window.ARCH = {
                 "85d6131f9f"
               ],
               "status": "done",
-              "evidence": "git 85d6131f"
+              "evidence": "git 85d6131"
             },
             {
-              "v": "4fb5ccea",
+              "v": "4fb5cce",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -4998,10 +4998,10 @@ window.ARCH = {
                 "4fb5cceac1"
               ],
               "status": "done",
-              "evidence": "git 4fb5ccea"
+              "evidence": "git 4fb5cce"
             },
             {
-              "v": "82895d46",
+              "v": "82895d4",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5011,10 +5011,10 @@ window.ARCH = {
                 "82895d46f7"
               ],
               "status": "done",
-              "evidence": "git 82895d46"
+              "evidence": "git 82895d4"
             },
             {
-              "v": "bde23ccf",
+              "v": "bde23cc",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5024,10 +5024,10 @@ window.ARCH = {
                 "bde23ccf02"
               ],
               "status": "done",
-              "evidence": "git bde23ccf"
+              "evidence": "git bde23cc"
             },
             {
-              "v": "a2485c8e",
+              "v": "a2485c8",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5037,10 +5037,10 @@ window.ARCH = {
                 "a2485c8e48"
               ],
               "status": "done",
-              "evidence": "git a2485c8e"
+              "evidence": "git a2485c8"
             },
             {
-              "v": "2dc6e7c9",
+              "v": "2dc6e7c",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5050,10 +5050,10 @@ window.ARCH = {
                 "2dc6e7c926"
               ],
               "status": "done",
-              "evidence": "git 2dc6e7c9"
+              "evidence": "git 2dc6e7c"
             },
             {
-              "v": "44bd0f6e",
+              "v": "44bd0f6",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5063,10 +5063,10 @@ window.ARCH = {
                 "44bd0f6e3b"
               ],
               "status": "done",
-              "evidence": "git 44bd0f6e"
+              "evidence": "git 44bd0f6"
             },
             {
-              "v": "faf3f18b",
+              "v": "faf3f18",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5076,10 +5076,10 @@ window.ARCH = {
                 "faf3f18b85"
               ],
               "status": "done",
-              "evidence": "git faf3f18b"
+              "evidence": "git faf3f18"
             },
             {
-              "v": "4c42d5fd",
+              "v": "4c42d5f",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5089,10 +5089,10 @@ window.ARCH = {
                 "4c42d5fd83"
               ],
               "status": "done",
-              "evidence": "git 4c42d5fd"
+              "evidence": "git 4c42d5f"
             },
             {
-              "v": "6e10ea63",
+              "v": "6e10ea6",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5102,10 +5102,10 @@ window.ARCH = {
                 "6e10ea63dd"
               ],
               "status": "done",
-              "evidence": "git 6e10ea63"
+              "evidence": "git 6e10ea6"
             },
             {
-              "v": "168f175d",
+              "v": "168f175",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5115,10 +5115,10 @@ window.ARCH = {
                 "168f175dae"
               ],
               "status": "done",
-              "evidence": "git 168f175d"
+              "evidence": "git 168f175"
             },
             {
-              "v": "0b164b0c",
+              "v": "0b164b0",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5128,10 +5128,10 @@ window.ARCH = {
                 "0b164b0c8b"
               ],
               "status": "done",
-              "evidence": "git 0b164b0c"
+              "evidence": "git 0b164b0"
             },
             {
-              "v": "13d09e20",
+              "v": "13d09e2",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5141,10 +5141,10 @@ window.ARCH = {
                 "13d09e20db"
               ],
               "status": "done",
-              "evidence": "git 13d09e20"
+              "evidence": "git 13d09e2"
             },
             {
-              "v": "331ea874",
+              "v": "331ea87",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5154,10 +5154,10 @@ window.ARCH = {
                 "331ea87482"
               ],
               "status": "done",
-              "evidence": "git 331ea874"
+              "evidence": "git 331ea87"
             },
             {
-              "v": "e44a9642",
+              "v": "e44a964",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5167,10 +5167,10 @@ window.ARCH = {
                 "e44a96423d"
               ],
               "status": "done",
-              "evidence": "git e44a9642"
+              "evidence": "git e44a964"
             },
             {
-              "v": "a3d45f30",
+              "v": "a3d45f3",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5180,10 +5180,10 @@ window.ARCH = {
                 "a3d45f306a"
               ],
               "status": "done",
-              "evidence": "git a3d45f30"
+              "evidence": "git a3d45f3"
             },
             {
-              "v": "4e7fb0b3",
+              "v": "4e7fb0b",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5193,10 +5193,10 @@ window.ARCH = {
                 "4e7fb0b3fe"
               ],
               "status": "done",
-              "evidence": "git 4e7fb0b3"
+              "evidence": "git 4e7fb0b"
             },
             {
-              "v": "3b6496f8",
+              "v": "3b6496f",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5206,10 +5206,10 @@ window.ARCH = {
                 "3b6496f8f0"
               ],
               "status": "done",
-              "evidence": "git 3b6496f8"
+              "evidence": "git 3b6496f"
             },
             {
-              "v": "1242195e",
+              "v": "1242195",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5219,10 +5219,10 @@ window.ARCH = {
                 "1242195e87"
               ],
               "status": "done",
-              "evidence": "git 1242195e"
+              "evidence": "git 1242195"
             },
             {
-              "v": "10345737",
+              "v": "1034573",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5232,10 +5232,10 @@ window.ARCH = {
                 "1034573723"
               ],
               "status": "done",
-              "evidence": "git 10345737"
+              "evidence": "git 1034573"
             },
             {
-              "v": "ddb747a3",
+              "v": "ddb747a",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5245,10 +5245,10 @@ window.ARCH = {
                 "ddb747a3c3"
               ],
               "status": "done",
-              "evidence": "git ddb747a3"
+              "evidence": "git ddb747a"
             },
             {
-              "v": "6a93d4e4",
+              "v": "6a93d4e",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5258,10 +5258,10 @@ window.ARCH = {
                 "6a93d4e4d1"
               ],
               "status": "done",
-              "evidence": "git 6a93d4e4"
+              "evidence": "git 6a93d4e"
             },
             {
-              "v": "3c4804d5",
+              "v": "3c4804d",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5271,10 +5271,10 @@ window.ARCH = {
                 "3c4804d5ce"
               ],
               "status": "done",
-              "evidence": "git 3c4804d5"
+              "evidence": "git 3c4804d"
             },
             {
-              "v": "f7bb40cc",
+              "v": "f7bb40c",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5284,10 +5284,10 @@ window.ARCH = {
                 "f7bb40ccb1"
               ],
               "status": "done",
-              "evidence": "git f7bb40cc"
+              "evidence": "git f7bb40c"
             },
             {
-              "v": "2179be01",
+              "v": "2179be0",
               "date": "10-02",
               "group": "2026-10",
               "lane": "other",
@@ -5297,10 +5297,10 @@ window.ARCH = {
                 "2179be013a"
               ],
               "status": "done",
-              "evidence": "git 2179be01"
+              "evidence": "git 2179be0"
             },
             {
-              "v": "7477ceb2",
+              "v": "7477ceb",
               "date": "10-03",
               "group": "2026-10",
               "lane": "other",
@@ -5310,10 +5310,10 @@ window.ARCH = {
                 "7477ceb295"
               ],
               "status": "done",
-              "evidence": "git 7477ceb2"
+              "evidence": "git 7477ceb"
             },
             {
-              "v": "253347f2",
+              "v": "253347f",
               "date": "10-03",
               "group": "2026-10",
               "lane": "other",
@@ -5323,10 +5323,10 @@ window.ARCH = {
                 "253347f22f"
               ],
               "status": "done",
-              "evidence": "git 253347f2"
+              "evidence": "git 253347f"
             },
             {
-              "v": "e05515d8",
+              "v": "e05515d",
               "date": "10-03",
               "group": "2026-10",
               "lane": "other",
@@ -5336,10 +5336,10 @@ window.ARCH = {
                 "e05515d8d4"
               ],
               "status": "done",
-              "evidence": "git e05515d8"
+              "evidence": "git e05515d"
             },
             {
-              "v": "7c4e4b94",
+              "v": "7c4e4b9",
               "date": "10-03",
               "group": "2026-10",
               "lane": "other",
@@ -5349,10 +5349,10 @@ window.ARCH = {
                 "7c4e4b94f8"
               ],
               "status": "done",
-              "evidence": "git 7c4e4b94"
+              "evidence": "git 7c4e4b9"
             },
             {
-              "v": "c4064d12",
+              "v": "c4064d1",
               "date": "10-03",
               "group": "2026-10",
               "lane": "other",
@@ -5362,10 +5362,10 @@ window.ARCH = {
                 "c4064d12fd"
               ],
               "status": "done",
-              "evidence": "git c4064d12"
+              "evidence": "git c4064d1"
             },
             {
-              "v": "dcbcb793",
+              "v": "dcbcb79",
               "date": "10-03",
               "group": "2026-10",
               "lane": "other",
@@ -5375,10 +5375,10 @@ window.ARCH = {
                 "dcbcb79332"
               ],
               "status": "done",
-              "evidence": "git dcbcb793"
+              "evidence": "git dcbcb79"
             },
             {
-              "v": "93f82af8",
+              "v": "93f82af",
               "date": "10-03",
               "group": "2026-10",
               "lane": "other",
@@ -5388,10 +5388,10 @@ window.ARCH = {
                 "93f82af88d"
               ],
               "status": "done",
-              "evidence": "git 93f82af8"
+              "evidence": "git 93f82af"
             },
             {
-              "v": "c85ac917",
+              "v": "c85ac91",
               "date": "10-03",
               "group": "2026-10",
               "lane": "other",
@@ -5401,10 +5401,10 @@ window.ARCH = {
                 "c85ac91740"
               ],
               "status": "done",
-              "evidence": "git c85ac917"
+              "evidence": "git c85ac91"
             },
             {
-              "v": "7180db92",
+              "v": "7180db9",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5414,10 +5414,10 @@ window.ARCH = {
                 "7180db9229"
               ],
               "status": "done",
-              "evidence": "git 7180db92"
+              "evidence": "git 7180db9"
             },
             {
-              "v": "186b4292",
+              "v": "186b429",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5427,10 +5427,10 @@ window.ARCH = {
                 "186b4292a3"
               ],
               "status": "done",
-              "evidence": "git 186b4292"
+              "evidence": "git 186b429"
             },
             {
-              "v": "f4a95254",
+              "v": "f4a9525",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5440,10 +5440,10 @@ window.ARCH = {
                 "f4a95254d3"
               ],
               "status": "done",
-              "evidence": "git f4a95254"
+              "evidence": "git f4a9525"
             },
             {
-              "v": "79ce0ee8",
+              "v": "79ce0ee",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5453,10 +5453,10 @@ window.ARCH = {
                 "79ce0ee8a1"
               ],
               "status": "done",
-              "evidence": "git 79ce0ee8"
+              "evidence": "git 79ce0ee"
             },
             {
-              "v": "b8e31af9",
+              "v": "b8e31af",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5466,10 +5466,10 @@ window.ARCH = {
                 "b8e31af9e8"
               ],
               "status": "done",
-              "evidence": "git b8e31af9"
+              "evidence": "git b8e31af"
             },
             {
-              "v": "ecd1c89e",
+              "v": "ecd1c89",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5479,10 +5479,10 @@ window.ARCH = {
                 "ecd1c89e93"
               ],
               "status": "done",
-              "evidence": "git ecd1c89e"
+              "evidence": "git ecd1c89"
             },
             {
-              "v": "cafd110e",
+              "v": "cafd110",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5492,10 +5492,10 @@ window.ARCH = {
                 "cafd110eb5"
               ],
               "status": "done",
-              "evidence": "git cafd110e"
+              "evidence": "git cafd110"
             },
             {
-              "v": "67ea79bd",
+              "v": "67ea79b",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5505,10 +5505,10 @@ window.ARCH = {
                 "67ea79bde3"
               ],
               "status": "done",
-              "evidence": "git 67ea79bd"
+              "evidence": "git 67ea79b"
             },
             {
-              "v": "fd283ca9",
+              "v": "fd283ca",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5518,10 +5518,10 @@ window.ARCH = {
                 "fd283ca9c6"
               ],
               "status": "done",
-              "evidence": "git fd283ca9"
+              "evidence": "git fd283ca"
             },
             {
-              "v": "ec52cb6c",
+              "v": "ec52cb6",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5531,10 +5531,10 @@ window.ARCH = {
                 "ec52cb6c21"
               ],
               "status": "done",
-              "evidence": "git ec52cb6c"
+              "evidence": "git ec52cb6"
             },
             {
-              "v": "685d1090",
+              "v": "685d109",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5544,10 +5544,10 @@ window.ARCH = {
                 "685d1090a5"
               ],
               "status": "done",
-              "evidence": "git 685d1090"
+              "evidence": "git 685d109"
             },
             {
-              "v": "beb0629e",
+              "v": "beb0629",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5557,10 +5557,10 @@ window.ARCH = {
                 "beb0629ece"
               ],
               "status": "done",
-              "evidence": "git beb0629e"
+              "evidence": "git beb0629"
             },
             {
-              "v": "6c479178",
+              "v": "6c47917",
               "date": "10-04",
               "group": "2026-10",
               "lane": "other",
@@ -5570,10 +5570,10 @@ window.ARCH = {
                 "6c47917804"
               ],
               "status": "done",
-              "evidence": "git 6c479178"
+              "evidence": "git 6c47917"
             },
             {
-              "v": "d124c8b3",
+              "v": "d124c8b",
               "date": "10-05",
               "group": "2026-10",
               "lane": "other",
@@ -5583,10 +5583,10 @@ window.ARCH = {
                 "d124c8b31b"
               ],
               "status": "done",
-              "evidence": "git d124c8b3"
+              "evidence": "git d124c8b"
             },
             {
-              "v": "f0926d3e",
+              "v": "f0926d3",
               "date": "10-05",
               "group": "2026-10",
               "lane": "other",
@@ -5596,10 +5596,10 @@ window.ARCH = {
                 "f0926d3e7a"
               ],
               "status": "done",
-              "evidence": "git f0926d3e"
+              "evidence": "git f0926d3"
             },
             {
-              "v": "bf93da6e",
+              "v": "bf93da6",
               "date": "10-05",
               "group": "2026-10",
               "lane": "other",
@@ -5609,10 +5609,10 @@ window.ARCH = {
                 "bf93da6e67"
               ],
               "status": "done",
-              "evidence": "git bf93da6e"
+              "evidence": "git bf93da6"
             },
             {
-              "v": "87cacc5d",
+              "v": "87cacc5",
               "date": "10-05",
               "group": "2026-10",
               "lane": "other",
@@ -5622,10 +5622,10 @@ window.ARCH = {
                 "87cacc5de6"
               ],
               "status": "done",
-              "evidence": "git 87cacc5d"
+              "evidence": "git 87cacc5"
             },
             {
-              "v": "4b0a8cbd",
+              "v": "4b0a8cb",
               "date": "10-05",
               "group": "2026-10",
               "lane": "other",
@@ -5635,10 +5635,10 @@ window.ARCH = {
                 "4b0a8cbddb"
               ],
               "status": "done",
-              "evidence": "git 4b0a8cbd"
+              "evidence": "git 4b0a8cb"
             },
             {
-              "v": "fea22b81",
+              "v": "fea22b8",
               "date": "10-05",
               "group": "2026-10",
               "lane": "other",
@@ -5648,10 +5648,10 @@ window.ARCH = {
                 "fea22b810b"
               ],
               "status": "done",
-              "evidence": "git fea22b81"
+              "evidence": "git fea22b8"
             },
             {
-              "v": "df3af4f5",
+              "v": "df3af4f",
               "date": "10-05",
               "group": "2026-10",
               "lane": "other",
@@ -5661,10 +5661,10 @@ window.ARCH = {
                 "df3af4f5c2"
               ],
               "status": "done",
-              "evidence": "git df3af4f5"
+              "evidence": "git df3af4f"
             },
             {
-              "v": "24cb4f2b",
+              "v": "24cb4f2",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5674,10 +5674,10 @@ window.ARCH = {
                 "24cb4f2be1"
               ],
               "status": "done",
-              "evidence": "git 24cb4f2b"
+              "evidence": "git 24cb4f2"
             },
             {
-              "v": "c96a8549",
+              "v": "c96a854",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5687,10 +5687,10 @@ window.ARCH = {
                 "c96a85493b"
               ],
               "status": "done",
-              "evidence": "git c96a8549"
+              "evidence": "git c96a854"
             },
             {
-              "v": "948439ef",
+              "v": "948439e",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5700,10 +5700,10 @@ window.ARCH = {
                 "948439eff4"
               ],
               "status": "done",
-              "evidence": "git 948439ef"
+              "evidence": "git 948439e"
             },
             {
-              "v": "8235bf55",
+              "v": "8235bf5",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5713,10 +5713,10 @@ window.ARCH = {
                 "8235bf559e"
               ],
               "status": "done",
-              "evidence": "git 8235bf55"
+              "evidence": "git 8235bf5"
             },
             {
-              "v": "9b40e407",
+              "v": "9b40e40",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5726,10 +5726,10 @@ window.ARCH = {
                 "9b40e40718"
               ],
               "status": "done",
-              "evidence": "git 9b40e407"
+              "evidence": "git 9b40e40"
             },
             {
-              "v": "f5217726",
+              "v": "f521772",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5739,10 +5739,10 @@ window.ARCH = {
                 "f52177264a"
               ],
               "status": "done",
-              "evidence": "git f5217726"
+              "evidence": "git f521772"
             },
             {
-              "v": "be4542a3",
+              "v": "be4542a",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5752,10 +5752,10 @@ window.ARCH = {
                 "be4542a321"
               ],
               "status": "done",
-              "evidence": "git be4542a3"
+              "evidence": "git be4542a"
             },
             {
-              "v": "fc569176",
+              "v": "fc56917",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5765,10 +5765,10 @@ window.ARCH = {
                 "fc56917674"
               ],
               "status": "done",
-              "evidence": "git fc569176"
+              "evidence": "git fc56917"
             },
             {
-              "v": "e69e1379",
+              "v": "e69e137",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5778,10 +5778,10 @@ window.ARCH = {
                 "e69e1379db"
               ],
               "status": "done",
-              "evidence": "git e69e1379"
+              "evidence": "git e69e137"
             },
             {
-              "v": "2db2c169",
+              "v": "2db2c16",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5791,10 +5791,10 @@ window.ARCH = {
                 "2db2c1692d"
               ],
               "status": "done",
-              "evidence": "git 2db2c169"
+              "evidence": "git 2db2c16"
             },
             {
-              "v": "c848ee91",
+              "v": "c848ee9",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5804,10 +5804,10 @@ window.ARCH = {
                 "c848ee91a4"
               ],
               "status": "done",
-              "evidence": "git c848ee91"
+              "evidence": "git c848ee9"
             },
             {
-              "v": "bb69da6c",
+              "v": "bb69da6",
               "date": "10-06",
               "group": "2026-10",
               "lane": "other",
@@ -5817,10 +5817,10 @@ window.ARCH = {
                 "bb69da6c9d"
               ],
               "status": "done",
-              "evidence": "git bb69da6c"
+              "evidence": "git bb69da6"
             },
             {
-              "v": "8ca976ef",
+              "v": "8ca976e",
               "date": "10-07",
               "group": "2026-10",
               "lane": "other",
@@ -5830,10 +5830,10 @@ window.ARCH = {
                 "8ca976efb5"
               ],
               "status": "done",
-              "evidence": "git 8ca976ef"
+              "evidence": "git 8ca976e"
             },
             {
-              "v": "c5a11fa2",
+              "v": "c5a11fa",
               "date": "10-07",
               "group": "2026-10",
               "lane": "other",
@@ -5843,10 +5843,10 @@ window.ARCH = {
                 "c5a11fa255"
               ],
               "status": "done",
-              "evidence": "git c5a11fa2"
+              "evidence": "git c5a11fa"
             },
             {
-              "v": "1d91351b",
+              "v": "1d91351",
               "date": "10-07",
               "group": "2026-10",
               "lane": "other",
@@ -5856,10 +5856,10 @@ window.ARCH = {
                 "1d91351b2d"
               ],
               "status": "done",
-              "evidence": "git 1d91351b"
+              "evidence": "git 1d91351"
             },
             {
-              "v": "4fda141b",
+              "v": "4fda141",
               "date": "10-07",
               "group": "2026-10",
               "lane": "other",
@@ -5869,10 +5869,10 @@ window.ARCH = {
                 "4fda141b94"
               ],
               "status": "done",
-              "evidence": "git 4fda141b"
+              "evidence": "git 4fda141"
             },
             {
-              "v": "b9f8ddc8",
+              "v": "b9f8ddc",
               "date": "10-07",
               "group": "2026-10",
               "lane": "other",
@@ -5882,10 +5882,10 @@ window.ARCH = {
                 "b9f8ddc856"
               ],
               "status": "done",
-              "evidence": "git b9f8ddc8"
+              "evidence": "git b9f8ddc"
             },
             {
-              "v": "648fc2e5",
+              "v": "648fc2e",
               "date": "10-08",
               "group": "2026-10",
               "lane": "other",
@@ -5895,10 +5895,10 @@ window.ARCH = {
                 "648fc2e5c7"
               ],
               "status": "done",
-              "evidence": "git 648fc2e5"
+              "evidence": "git 648fc2e"
             },
             {
-              "v": "4096c2d7",
+              "v": "4096c2d",
               "date": "10-08",
               "group": "2026-10",
               "lane": "other",
@@ -5908,10 +5908,10 @@ window.ARCH = {
                 "4096c2d774"
               ],
               "status": "done",
-              "evidence": "git 4096c2d7"
+              "evidence": "git 4096c2d"
             },
             {
-              "v": "b9cf8fc0",
+              "v": "b9cf8fc",
               "date": "10-08",
               "group": "2026-10",
               "lane": "other",
@@ -5921,10 +5921,10 @@ window.ARCH = {
                 "b9cf8fc07d"
               ],
               "status": "done",
-              "evidence": "git b9cf8fc0"
+              "evidence": "git b9cf8fc"
             },
             {
-              "v": "5cc74b8f",
+              "v": "5cc74b8",
               "date": "10-08",
               "group": "2026-10",
               "lane": "other",
@@ -5934,10 +5934,10 @@ window.ARCH = {
                 "5cc74b8f72"
               ],
               "status": "done",
-              "evidence": "git 5cc74b8f"
+              "evidence": "git 5cc74b8"
             },
             {
-              "v": "50f9bc93",
+              "v": "50f9bc9",
               "date": "10-08",
               "group": "2026-10",
               "lane": "other",
@@ -5947,10 +5947,10 @@ window.ARCH = {
                 "50f9bc935e"
               ],
               "status": "done",
-              "evidence": "git 50f9bc93"
+              "evidence": "git 50f9bc9"
             },
             {
-              "v": "973514f6",
+              "v": "973514f",
               "date": "10-08",
               "group": "2026-10",
               "lane": "other",
@@ -5960,10 +5960,10 @@ window.ARCH = {
                 "973514f6a8"
               ],
               "status": "done",
-              "evidence": "git 973514f6"
+              "evidence": "git 973514f"
             },
             {
-              "v": "852a2525",
+              "v": "852a252",
               "date": "10-08",
               "group": "2026-10",
               "lane": "other",
@@ -5973,10 +5973,10 @@ window.ARCH = {
                 "852a25254d"
               ],
               "status": "done",
-              "evidence": "git 852a2525"
+              "evidence": "git 852a252"
             },
             {
-              "v": "eca75ce8",
+              "v": "eca75ce",
               "date": "10-08",
               "group": "2026-10",
               "lane": "other",
@@ -5986,10 +5986,10 @@ window.ARCH = {
                 "eca75ce84e"
               ],
               "status": "done",
-              "evidence": "git eca75ce8"
+              "evidence": "git eca75ce"
             },
             {
-              "v": "91dbed6c",
+              "v": "91dbed6",
               "date": "10-08",
               "group": "2026-10",
               "lane": "other",
@@ -5999,10 +5999,10 @@ window.ARCH = {
                 "91dbed6c5e"
               ],
               "status": "done",
-              "evidence": "git 91dbed6c"
+              "evidence": "git 91dbed6"
             },
             {
-              "v": "df9e30c0",
+              "v": "df9e30c",
               "date": "10-09",
               "group": "2026-10",
               "lane": "other",
@@ -6012,10 +6012,10 @@ window.ARCH = {
                 "df9e30c0dc"
               ],
               "status": "done",
-              "evidence": "git df9e30c0"
+              "evidence": "git df9e30c"
             },
             {
-              "v": "8d520068",
+              "v": "8d52006",
               "date": "10-09",
               "group": "2026-10",
               "lane": "other",
@@ -6025,10 +6025,10 @@ window.ARCH = {
                 "8d520068e8"
               ],
               "status": "done",
-              "evidence": "git 8d520068"
+              "evidence": "git 8d52006"
             },
             {
-              "v": "af0c5cad",
+              "v": "af0c5ca",
               "date": "10-09",
               "group": "2026-10",
               "lane": "other",
@@ -6038,10 +6038,10 @@ window.ARCH = {
                 "af0c5cad38"
               ],
               "status": "done",
-              "evidence": "git af0c5cad"
+              "evidence": "git af0c5ca"
             },
             {
-              "v": "f8b10e98",
+              "v": "f8b10e9",
               "date": "10-09",
               "group": "2026-10",
               "lane": "other",
@@ -6051,10 +6051,10 @@ window.ARCH = {
                 "f8b10e98a9"
               ],
               "status": "done",
-              "evidence": "git f8b10e98"
+              "evidence": "git f8b10e9"
             },
             {
-              "v": "19dbfa21",
+              "v": "19dbfa2",
               "date": "10-09",
               "group": "2026-10",
               "lane": "other",
@@ -6064,10 +6064,10 @@ window.ARCH = {
                 "19dbfa2197"
               ],
               "status": "done",
-              "evidence": "git 19dbfa21"
+              "evidence": "git 19dbfa2"
             },
             {
-              "v": "98e89df5",
+              "v": "98e89df",
               "date": "10-09",
               "group": "2026-10",
               "lane": "other",
@@ -6077,10 +6077,10 @@ window.ARCH = {
                 "98e89df55a"
               ],
               "status": "done",
-              "evidence": "git 98e89df5"
+              "evidence": "git 98e89df"
             },
             {
-              "v": "d952d96a",
+              "v": "d952d96",
               "date": "10-09",
               "group": "2026-10",
               "lane": "other",
@@ -6090,10 +6090,10 @@ window.ARCH = {
                 "d952d96a54"
               ],
               "status": "done",
-              "evidence": "git d952d96a"
+              "evidence": "git d952d96"
             },
             {
-              "v": "1c217bb9",
+              "v": "1c217bb",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6103,10 +6103,10 @@ window.ARCH = {
                 "1c217bb912"
               ],
               "status": "done",
-              "evidence": "git 1c217bb9"
+              "evidence": "git 1c217bb"
             },
             {
-              "v": "9af2d0b6",
+              "v": "9af2d0b",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6116,10 +6116,10 @@ window.ARCH = {
                 "9af2d0b6b3"
               ],
               "status": "done",
-              "evidence": "git 9af2d0b6"
+              "evidence": "git 9af2d0b"
             },
             {
-              "v": "f21dec42",
+              "v": "f21dec4",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6129,10 +6129,10 @@ window.ARCH = {
                 "f21dec42f4"
               ],
               "status": "done",
-              "evidence": "git f21dec42"
+              "evidence": "git f21dec4"
             },
             {
-              "v": "b2b5c620",
+              "v": "b2b5c62",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6142,10 +6142,10 @@ window.ARCH = {
                 "b2b5c620ef"
               ],
               "status": "done",
-              "evidence": "git b2b5c620"
+              "evidence": "git b2b5c62"
             },
             {
-              "v": "8da72140",
+              "v": "8da7214",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6155,10 +6155,10 @@ window.ARCH = {
                 "8da721401f"
               ],
               "status": "done",
-              "evidence": "git 8da72140"
+              "evidence": "git 8da7214"
             },
             {
-              "v": "f631fc64",
+              "v": "f631fc6",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6168,10 +6168,10 @@ window.ARCH = {
                 "f631fc64f9"
               ],
               "status": "done",
-              "evidence": "git f631fc64"
+              "evidence": "git f631fc6"
             },
             {
-              "v": "f43f4276",
+              "v": "f43f427",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6181,10 +6181,10 @@ window.ARCH = {
                 "f43f427654"
               ],
               "status": "done",
-              "evidence": "git f43f4276"
+              "evidence": "git f43f427"
             },
             {
-              "v": "454d19ed",
+              "v": "454d19e",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6194,10 +6194,10 @@ window.ARCH = {
                 "454d19ed69"
               ],
               "status": "done",
-              "evidence": "git 454d19ed"
+              "evidence": "git 454d19e"
             },
             {
-              "v": "1ea44749",
+              "v": "1ea4474",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6207,10 +6207,10 @@ window.ARCH = {
                 "1ea4474930"
               ],
               "status": "done",
-              "evidence": "git 1ea44749"
+              "evidence": "git 1ea4474"
             },
             {
-              "v": "5523f357",
+              "v": "5523f35",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6220,10 +6220,10 @@ window.ARCH = {
                 "5523f35798"
               ],
               "status": "done",
-              "evidence": "git 5523f357"
+              "evidence": "git 5523f35"
             },
             {
-              "v": "2954ff7b",
+              "v": "2954ff7",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6233,10 +6233,10 @@ window.ARCH = {
                 "2954ff7bfd"
               ],
               "status": "done",
-              "evidence": "git 2954ff7b"
+              "evidence": "git 2954ff7"
             },
             {
-              "v": "71947448",
+              "v": "7194744",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6246,10 +6246,10 @@ window.ARCH = {
                 "71947448f5"
               ],
               "status": "done",
-              "evidence": "git 71947448"
+              "evidence": "git 7194744"
             },
             {
-              "v": "646268c0",
+              "v": "646268c",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6259,10 +6259,10 @@ window.ARCH = {
                 "646268c04b"
               ],
               "status": "done",
-              "evidence": "git 646268c0"
+              "evidence": "git 646268c"
             },
             {
-              "v": "57917fe7",
+              "v": "57917fe",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6272,10 +6272,10 @@ window.ARCH = {
                 "57917fe748"
               ],
               "status": "done",
-              "evidence": "git 57917fe7"
+              "evidence": "git 57917fe"
             },
             {
-              "v": "752f2985",
+              "v": "752f298",
               "date": "10-10",
               "group": "2026-10",
               "lane": "other",
@@ -6285,10 +6285,10 @@ window.ARCH = {
                 "752f298598"
               ],
               "status": "done",
-              "evidence": "git 752f2985"
+              "evidence": "git 752f298"
             },
             {
-              "v": "95780365",
+              "v": "9578036",
               "date": "10-11",
               "group": "2026-10",
               "lane": "other",
@@ -6298,10 +6298,10 @@ window.ARCH = {
                 "957803651a"
               ],
               "status": "done",
-              "evidence": "git 95780365"
+              "evidence": "git 9578036"
             },
             {
-              "v": "e99e3c86",
+              "v": "e99e3c8",
               "date": "10-11",
               "group": "2026-10",
               "lane": "other",
@@ -6311,10 +6311,10 @@ window.ARCH = {
                 "e99e3c8650"
               ],
               "status": "done",
-              "evidence": "git e99e3c86"
+              "evidence": "git e99e3c8"
             },
             {
-              "v": "64198fa5",
+              "v": "64198fa",
               "date": "10-11",
               "group": "2026-10",
               "lane": "other",
@@ -6324,10 +6324,10 @@ window.ARCH = {
                 "64198fa5e5"
               ],
               "status": "done",
-              "evidence": "git 64198fa5"
+              "evidence": "git 64198fa"
             },
             {
-              "v": "44f5105d",
+              "v": "44f5105",
               "date": "10-11",
               "group": "2026-10",
               "lane": "other",
@@ -6337,10 +6337,10 @@ window.ARCH = {
                 "44f5105d9b"
               ],
               "status": "done",
-              "evidence": "git 44f5105d"
+              "evidence": "git 44f5105"
             },
             {
-              "v": "b824646d",
+              "v": "b824646",
               "date": "10-11",
               "group": "2026-10",
               "lane": "other",
@@ -6350,10 +6350,10 @@ window.ARCH = {
                 "b824646dc1"
               ],
               "status": "done",
-              "evidence": "git b824646d"
+              "evidence": "git b824646"
             },
             {
-              "v": "c3f14358",
+              "v": "c3f1435",
               "date": "10-11",
               "group": "2026-10",
               "lane": "other",
@@ -6363,10 +6363,10 @@ window.ARCH = {
                 "c3f143585e"
               ],
               "status": "done",
-              "evidence": "git c3f14358"
+              "evidence": "git c3f1435"
             },
             {
-              "v": "0410d473",
+              "v": "0410d47",
               "date": "10-11",
               "group": "2026-10",
               "lane": "other",
@@ -6376,10 +6376,10 @@ window.ARCH = {
                 "0410d47339"
               ],
               "status": "done",
-              "evidence": "git 0410d473"
+              "evidence": "git 0410d47"
             },
             {
-              "v": "f04c9b8d",
+              "v": "f04c9b8",
               "date": "10-12",
               "group": "2026-10",
               "lane": "other",
@@ -6389,10 +6389,10 @@ window.ARCH = {
                 "f04c9b8d94"
               ],
               "status": "done",
-              "evidence": "git f04c9b8d"
+              "evidence": "git f04c9b8"
             },
             {
-              "v": "05c8f562",
+              "v": "05c8f56",
               "date": "10-12",
               "group": "2026-10",
               "lane": "other",
@@ -6402,10 +6402,10 @@ window.ARCH = {
                 "05c8f562fd"
               ],
               "status": "done",
-              "evidence": "git 05c8f562"
+              "evidence": "git 05c8f56"
             },
             {
-              "v": "dc5c3bbb",
+              "v": "dc5c3bb",
               "date": "10-12",
               "group": "2026-10",
               "lane": "other",
@@ -6415,10 +6415,10 @@ window.ARCH = {
                 "dc5c3bbb3c"
               ],
               "status": "done",
-              "evidence": "git dc5c3bbb"
+              "evidence": "git dc5c3bb"
             },
             {
-              "v": "24c5b715",
+              "v": "24c5b71",
               "date": "10-12",
               "group": "2026-10",
               "lane": "other",
@@ -6428,10 +6428,10 @@ window.ARCH = {
                 "24c5b715b3"
               ],
               "status": "done",
-              "evidence": "git 24c5b715"
+              "evidence": "git 24c5b71"
             },
             {
-              "v": "183318e1",
+              "v": "183318e",
               "date": "10-12",
               "group": "2026-10",
               "lane": "other",
@@ -6441,10 +6441,10 @@ window.ARCH = {
                 "183318e123"
               ],
               "status": "done",
-              "evidence": "git 183318e1"
+              "evidence": "git 183318e"
             },
             {
-              "v": "f9a30749",
+              "v": "f9a3074",
               "date": "10-12",
               "group": "2026-10",
               "lane": "other",
@@ -6454,10 +6454,10 @@ window.ARCH = {
                 "f9a3074977"
               ],
               "status": "done",
-              "evidence": "git f9a30749"
+              "evidence": "git f9a3074"
             },
             {
-              "v": "99284013",
+              "v": "9928401",
               "date": "10-12",
               "group": "2026-10",
               "lane": "fix",
@@ -6467,10 +6467,10 @@ window.ARCH = {
                 "99284013c6"
               ],
               "status": "done",
-              "evidence": "git 99284013"
+              "evidence": "git 9928401"
             },
             {
-              "v": "4d69539b",
+              "v": "4d69539",
               "date": "10-12",
               "group": "2026-10",
               "lane": "other",
@@ -6480,10 +6480,10 @@ window.ARCH = {
                 "4d69539b82"
               ],
               "status": "done",
-              "evidence": "git 4d69539b"
+              "evidence": "git 4d69539"
             },
             {
-              "v": "57f57655",
+              "v": "57f5765",
               "date": "10-12",
               "group": "2026-10",
               "lane": "other",
@@ -6493,10 +6493,10 @@ window.ARCH = {
                 "57f5765582"
               ],
               "status": "done",
-              "evidence": "git 57f57655"
+              "evidence": "git 57f5765"
             },
             {
-              "v": "7aaf8b3b",
+              "v": "7aaf8b3",
               "date": "10-13",
               "group": "2026-10",
               "lane": "other",
@@ -6506,10 +6506,10 @@ window.ARCH = {
                 "7aaf8b3bfe"
               ],
               "status": "done",
-              "evidence": "git 7aaf8b3b"
+              "evidence": "git 7aaf8b3"
             },
             {
-              "v": "0fc77715",
+              "v": "0fc7771",
               "date": "10-13",
               "group": "2026-10",
               "lane": "other",
@@ -6519,10 +6519,10 @@ window.ARCH = {
                 "0fc77715d2"
               ],
               "status": "done",
-              "evidence": "git 0fc77715"
+              "evidence": "git 0fc7771"
             },
             {
-              "v": "50c2fb8f",
+              "v": "50c2fb8",
               "date": "10-13",
               "group": "2026-10",
               "lane": "other",
@@ -6532,10 +6532,10 @@ window.ARCH = {
                 "50c2fb8f76"
               ],
               "status": "done",
-              "evidence": "git 50c2fb8f"
+              "evidence": "git 50c2fb8"
             },
             {
-              "v": "90d5774d",
+              "v": "90d5774",
               "date": "10-13",
               "group": "2026-10",
               "lane": "other",
@@ -6545,10 +6545,10 @@ window.ARCH = {
                 "90d5774df9"
               ],
               "status": "done",
-              "evidence": "git 90d5774d"
+              "evidence": "git 90d5774"
             },
             {
-              "v": "f1a0d178",
+              "v": "f1a0d17",
               "date": "10-13",
               "group": "2026-10",
               "lane": "other",
@@ -6558,10 +6558,10 @@ window.ARCH = {
                 "f1a0d1787e"
               ],
               "status": "done",
-              "evidence": "git f1a0d178"
+              "evidence": "git f1a0d17"
             },
             {
-              "v": "71fae5c9",
+              "v": "71fae5c",
               "date": "10-13",
               "group": "2026-10",
               "lane": "other",
@@ -6571,10 +6571,10 @@ window.ARCH = {
                 "71fae5c9a5"
               ],
               "status": "done",
-              "evidence": "git 71fae5c9"
+              "evidence": "git 71fae5c"
             },
             {
-              "v": "7fb7ab7d",
+              "v": "7fb7ab7",
               "date": "10-13",
               "group": "2026-10",
               "lane": "other",
@@ -6584,10 +6584,10 @@ window.ARCH = {
                 "7fb7ab7d1e"
               ],
               "status": "done",
-              "evidence": "git 7fb7ab7d"
+              "evidence": "git 7fb7ab7"
             },
             {
-              "v": "7d4a0f02",
+              "v": "7d4a0f0",
               "date": "10-14",
               "group": "2026-10",
               "lane": "other",
@@ -6597,10 +6597,10 @@ window.ARCH = {
                 "7d4a0f021d"
               ],
               "status": "done",
-              "evidence": "git 7d4a0f02"
+              "evidence": "git 7d4a0f0"
             },
             {
-              "v": "4b3f0c48",
+              "v": "4b3f0c4",
               "date": "10-14",
               "group": "2026-10",
               "lane": "other",
@@ -6610,10 +6610,10 @@ window.ARCH = {
                 "4b3f0c48ee"
               ],
               "status": "done",
-              "evidence": "git 4b3f0c48"
+              "evidence": "git 4b3f0c4"
             },
             {
-              "v": "aeb8b5be",
+              "v": "aeb8b5b",
               "date": "10-14",
               "group": "2026-10",
               "lane": "other",
@@ -6623,10 +6623,10 @@ window.ARCH = {
                 "aeb8b5be4d"
               ],
               "status": "done",
-              "evidence": "git aeb8b5be"
+              "evidence": "git aeb8b5b"
             },
             {
-              "v": "4951ad94",
+              "v": "4951ad9",
               "date": "10-14",
               "group": "2026-10",
               "lane": "other",
@@ -6636,10 +6636,10 @@ window.ARCH = {
                 "4951ad9415"
               ],
               "status": "done",
-              "evidence": "git 4951ad94"
+              "evidence": "git 4951ad9"
             },
             {
-              "v": "8c26d24b",
+              "v": "8c26d24",
               "date": "10-14",
               "group": "2026-10",
               "lane": "other",
@@ -6649,10 +6649,10 @@ window.ARCH = {
                 "8c26d24b8d"
               ],
               "status": "done",
-              "evidence": "git 8c26d24b"
+              "evidence": "git 8c26d24"
             },
             {
-              "v": "8ed267ca",
+              "v": "8ed267c",
               "date": "10-14",
               "group": "2026-10",
               "lane": "other",
@@ -6662,10 +6662,10 @@ window.ARCH = {
                 "8ed267caa4"
               ],
               "status": "done",
-              "evidence": "git 8ed267ca"
+              "evidence": "git 8ed267c"
             },
             {
-              "v": "46171bb2",
+              "v": "46171bb",
               "date": "10-14",
               "group": "2026-10",
               "lane": "other",
@@ -6675,10 +6675,10 @@ window.ARCH = {
                 "46171bb225"
               ],
               "status": "done",
-              "evidence": "git 46171bb2"
+              "evidence": "git 46171bb"
             },
             {
-              "v": "8d45a8e0",
+              "v": "8d45a8e",
               "date": "10-14",
               "group": "2026-10",
               "lane": "other",
@@ -6688,10 +6688,10 @@ window.ARCH = {
                 "8d45a8e012"
               ],
               "status": "done",
-              "evidence": "git 8d45a8e0"
+              "evidence": "git 8d45a8e"
             },
             {
-              "v": "95978d41",
+              "v": "95978d4",
               "date": "10-14",
               "group": "2026-10",
               "lane": "other",
@@ -6701,10 +6701,10 @@ window.ARCH = {
                 "95978d41d6"
               ],
               "status": "done",
-              "evidence": "git 95978d41"
+              "evidence": "git 95978d4"
             },
             {
-              "v": "2aedf941",
+              "v": "2aedf94",
               "date": "10-14",
               "group": "2026-10",
               "lane": "other",
@@ -6714,10 +6714,10 @@ window.ARCH = {
                 "2aedf941b1"
               ],
               "status": "done",
-              "evidence": "git 2aedf941"
+              "evidence": "git 2aedf94"
             },
             {
-              "v": "a135fd04",
+              "v": "a135fd0",
               "date": "10-15",
               "group": "2026-10",
               "lane": "other",
@@ -6727,10 +6727,10 @@ window.ARCH = {
                 "a135fd041d"
               ],
               "status": "done",
-              "evidence": "git a135fd04"
+              "evidence": "git a135fd0"
             },
             {
-              "v": "aa2b4042",
+              "v": "aa2b404",
               "date": "10-15",
               "group": "2026-10",
               "lane": "chore",
@@ -6740,10 +6740,10 @@ window.ARCH = {
                 "aa2b4042e9"
               ],
               "status": "done",
-              "evidence": "git aa2b4042"
+              "evidence": "git aa2b404"
             },
             {
-              "v": "8a54e786",
+              "v": "8a54e78",
               "date": "10-15",
               "group": "2026-10",
               "lane": "other",
@@ -6753,10 +6753,10 @@ window.ARCH = {
                 "8a54e786ba"
               ],
               "status": "done",
-              "evidence": "git 8a54e786"
+              "evidence": "git 8a54e78"
             },
             {
-              "v": "097fea0d",
+              "v": "097fea0",
               "date": "10-15",
               "group": "2026-10",
               "lane": "other",
@@ -6766,10 +6766,10 @@ window.ARCH = {
                 "097fea0de0"
               ],
               "status": "done",
-              "evidence": "git 097fea0d"
+              "evidence": "git 097fea0"
             },
             {
-              "v": "8b5b2090",
+              "v": "8b5b209",
               "date": "10-15",
               "group": "2026-10",
               "lane": "other",
@@ -6779,10 +6779,10 @@ window.ARCH = {
                 "8b5b209097"
               ],
               "status": "done",
-              "evidence": "git 8b5b2090"
+              "evidence": "git 8b5b209"
             },
             {
-              "v": "48463d06",
+              "v": "48463d0",
               "date": "10-15",
               "group": "2026-10",
               "lane": "other",
@@ -6792,10 +6792,10 @@ window.ARCH = {
                 "48463d0618"
               ],
               "status": "done",
-              "evidence": "git 48463d06"
+              "evidence": "git 48463d0"
             },
             {
-              "v": "76e0b017",
+              "v": "76e0b01",
               "date": "10-16",
               "group": "2026-10",
               "lane": "other",
@@ -6805,10 +6805,10 @@ window.ARCH = {
                 "76e0b01738"
               ],
               "status": "done",
-              "evidence": "git 76e0b017"
+              "evidence": "git 76e0b01"
             },
             {
-              "v": "06a3088b",
+              "v": "06a3088",
               "date": "10-16",
               "group": "2026-10",
               "lane": "other",
@@ -6818,10 +6818,10 @@ window.ARCH = {
                 "06a3088bc9"
               ],
               "status": "done",
-              "evidence": "git 06a3088b"
+              "evidence": "git 06a3088"
             },
             {
-              "v": "31276577",
+              "v": "3127657",
               "date": "10-16",
               "group": "2026-10",
               "lane": "other",
@@ -6831,10 +6831,10 @@ window.ARCH = {
                 "31276577ea"
               ],
               "status": "done",
-              "evidence": "git 31276577"
+              "evidence": "git 3127657"
             },
             {
-              "v": "0c40527c",
+              "v": "0c40527",
               "date": "10-16",
               "group": "2026-10",
               "lane": "other",
@@ -6844,10 +6844,10 @@ window.ARCH = {
                 "0c40527c58"
               ],
               "status": "done",
-              "evidence": "git 0c40527c"
+              "evidence": "git 0c40527"
             },
             {
-              "v": "9399c19b",
+              "v": "9399c19",
               "date": "10-16",
               "group": "2026-10",
               "lane": "other",
@@ -6857,10 +6857,10 @@ window.ARCH = {
                 "9399c19bf0"
               ],
               "status": "done",
-              "evidence": "git 9399c19b"
+              "evidence": "git 9399c19"
             },
             {
-              "v": "c8fb64a9",
+              "v": "c8fb64a",
               "date": "10-17",
               "group": "2026-10",
               "lane": "other",
@@ -6870,10 +6870,10 @@ window.ARCH = {
                 "c8fb64a9f3"
               ],
               "status": "done",
-              "evidence": "git c8fb64a9"
+              "evidence": "git c8fb64a"
             },
             {
-              "v": "8f92a24f",
+              "v": "8f92a24",
               "date": "10-17",
               "group": "2026-10",
               "lane": "other",
@@ -6883,10 +6883,10 @@ window.ARCH = {
                 "8f92a24ffd"
               ],
               "status": "done",
-              "evidence": "git 8f92a24f"
+              "evidence": "git 8f92a24"
             },
             {
-              "v": "252c19db",
+              "v": "252c19d",
               "date": "10-17",
               "group": "2026-10",
               "lane": "other",
@@ -6896,10 +6896,10 @@ window.ARCH = {
                 "252c19db41"
               ],
               "status": "done",
-              "evidence": "git 252c19db"
+              "evidence": "git 252c19d"
             },
             {
-              "v": "3c6e704c",
+              "v": "3c6e704",
               "date": "10-18",
               "group": "2026-10",
               "lane": "other",
@@ -6909,10 +6909,10 @@ window.ARCH = {
                 "3c6e704ca9"
               ],
               "status": "done",
-              "evidence": "git 3c6e704c"
+              "evidence": "git 3c6e704"
             },
             {
-              "v": "19aceae4",
+              "v": "19aceae",
               "date": "10-18",
               "group": "2026-10",
               "lane": "other",
@@ -6922,10 +6922,10 @@ window.ARCH = {
                 "19aceae4e7"
               ],
               "status": "done",
-              "evidence": "git 19aceae4"
+              "evidence": "git 19aceae"
             },
             {
-              "v": "aff1a2a7",
+              "v": "aff1a2a",
               "date": "10-18",
               "group": "2026-10",
               "lane": "other",
@@ -6935,10 +6935,10 @@ window.ARCH = {
                 "aff1a2a7f0"
               ],
               "status": "done",
-              "evidence": "git aff1a2a7"
+              "evidence": "git aff1a2a"
             },
             {
-              "v": "4abfa50f",
+              "v": "4abfa50",
               "date": "10-18",
               "group": "2026-10",
               "lane": "other",
@@ -6948,10 +6948,10 @@ window.ARCH = {
                 "4abfa50f16"
               ],
               "status": "done",
-              "evidence": "git 4abfa50f"
+              "evidence": "git 4abfa50"
             },
             {
-              "v": "135e6a14",
+              "v": "135e6a1",
               "date": "10-18",
               "group": "2026-10",
               "lane": "other",
@@ -6961,10 +6961,10 @@ window.ARCH = {
                 "135e6a1496"
               ],
               "status": "done",
-              "evidence": "git 135e6a14"
+              "evidence": "git 135e6a1"
             },
             {
-              "v": "24f11b6b",
+              "v": "24f11b6",
               "date": "10-19",
               "group": "2026-10",
               "lane": "other",
@@ -6974,10 +6974,10 @@ window.ARCH = {
                 "24f11b6be6"
               ],
               "status": "done",
-              "evidence": "git 24f11b6b"
+              "evidence": "git 24f11b6"
             },
             {
-              "v": "083f7ce9",
+              "v": "083f7ce",
               "date": "10-19",
               "group": "2026-10",
               "lane": "other",
@@ -6987,10 +6987,10 @@ window.ARCH = {
                 "083f7ce924"
               ],
               "status": "done",
-              "evidence": "git 083f7ce9"
+              "evidence": "git 083f7ce"
             },
             {
-              "v": "b9eee12d",
+              "v": "b9eee12",
               "date": "10-19",
               "group": "2026-10",
               "lane": "fix",
@@ -7000,10 +7000,10 @@ window.ARCH = {
                 "b9eee12d1d"
               ],
               "status": "done",
-              "evidence": "git b9eee12d"
+              "evidence": "git b9eee12"
             },
             {
-              "v": "a251f842",
+              "v": "a251f84",
               "date": "10-19",
               "group": "2026-10",
               "lane": "other",
@@ -7013,10 +7013,10 @@ window.ARCH = {
                 "a251f84241"
               ],
               "status": "done",
-              "evidence": "git a251f842"
+              "evidence": "git a251f84"
             },
             {
-              "v": "42502c23",
+              "v": "42502c2",
               "date": "10-19",
               "group": "2026-10",
               "lane": "other",
@@ -7026,10 +7026,10 @@ window.ARCH = {
                 "42502c23b7"
               ],
               "status": "done",
-              "evidence": "git 42502c23"
+              "evidence": "git 42502c2"
             },
             {
-              "v": "c0b4728a",
+              "v": "c0b4728",
               "date": "10-20",
               "group": "2026-10",
               "lane": "other",
@@ -7039,10 +7039,10 @@ window.ARCH = {
                 "c0b4728aa1"
               ],
               "status": "done",
-              "evidence": "git c0b4728a"
+              "evidence": "git c0b4728"
             },
             {
-              "v": "06b560d5",
+              "v": "06b560d",
               "date": "10-20",
               "group": "2026-10",
               "lane": "other",
@@ -7052,10 +7052,10 @@ window.ARCH = {
                 "06b560d5c8"
               ],
               "status": "done",
-              "evidence": "git 06b560d5"
+              "evidence": "git 06b560d"
             },
             {
-              "v": "d288b008",
+              "v": "d288b00",
               "date": "10-20",
               "group": "2026-10",
               "lane": "other",
@@ -7065,10 +7065,10 @@ window.ARCH = {
                 "d288b0088e"
               ],
               "status": "done",
-              "evidence": "git d288b008"
+              "evidence": "git d288b00"
             },
             {
-              "v": "7e26a93e",
+              "v": "7e26a93",
               "date": "10-20",
               "group": "2026-10",
               "lane": "other",
@@ -7078,10 +7078,10 @@ window.ARCH = {
                 "7e26a93ee8"
               ],
               "status": "done",
-              "evidence": "git 7e26a93e"
+              "evidence": "git 7e26a93"
             },
             {
-              "v": "40a7925c",
+              "v": "40a7925",
               "date": "10-20",
               "group": "2026-10",
               "lane": "other",
@@ -7091,10 +7091,10 @@ window.ARCH = {
                 "40a7925c48"
               ],
               "status": "done",
-              "evidence": "git 40a7925c"
+              "evidence": "git 40a7925"
             },
             {
-              "v": "942d9a37",
+              "v": "942d9a3",
               "date": "10-20",
               "group": "2026-10",
               "lane": "other",
@@ -7104,10 +7104,10 @@ window.ARCH = {
                 "942d9a378f"
               ],
               "status": "done",
-              "evidence": "git 942d9a37"
+              "evidence": "git 942d9a3"
             },
             {
-              "v": "4b8cbd37",
+              "v": "4b8cbd3",
               "date": "10-20",
               "group": "2026-10",
               "lane": "other",
@@ -7117,10 +7117,10 @@ window.ARCH = {
                 "4b8cbd3784"
               ],
               "status": "done",
-              "evidence": "git 4b8cbd37"
+              "evidence": "git 4b8cbd3"
             },
             {
-              "v": "947efdc4",
+              "v": "947efdc",
               "date": "10-20",
               "group": "2026-10",
               "lane": "other",
@@ -7130,10 +7130,10 @@ window.ARCH = {
                 "947efdc4be"
               ],
               "status": "done",
-              "evidence": "git 947efdc4"
+              "evidence": "git 947efdc"
             },
             {
-              "v": "277cf97a",
+              "v": "277cf97",
               "date": "10-21",
               "group": "2026-10",
               "lane": "other",
@@ -7143,10 +7143,10 @@ window.ARCH = {
                 "277cf97abd"
               ],
               "status": "done",
-              "evidence": "git 277cf97a"
+              "evidence": "git 277cf97"
             },
             {
-              "v": "d640ea07",
+              "v": "d640ea0",
               "date": "10-21",
               "group": "2026-10",
               "lane": "other",
@@ -7156,10 +7156,10 @@ window.ARCH = {
                 "d640ea0780"
               ],
               "status": "done",
-              "evidence": "git d640ea07"
+              "evidence": "git d640ea0"
             },
             {
-              "v": "04c37081",
+              "v": "04c3708",
               "date": "10-21",
               "group": "2026-10",
               "lane": "other",
@@ -7169,10 +7169,10 @@ window.ARCH = {
                 "04c37081ce"
               ],
               "status": "done",
-              "evidence": "git 04c37081"
+              "evidence": "git 04c3708"
             },
             {
-              "v": "89e2da2d",
+              "v": "89e2da2",
               "date": "10-21",
               "group": "2026-10",
               "lane": "other",
@@ -7182,10 +7182,10 @@ window.ARCH = {
                 "89e2da2de1"
               ],
               "status": "done",
-              "evidence": "git 89e2da2d"
+              "evidence": "git 89e2da2"
             },
             {
-              "v": "5f95f4a1",
+              "v": "5f95f4a",
               "date": "10-21",
               "group": "2026-10",
               "lane": "other",
@@ -7195,10 +7195,10 @@ window.ARCH = {
                 "5f95f4a1cb"
               ],
               "status": "done",
-              "evidence": "git 5f95f4a1"
+              "evidence": "git 5f95f4a"
             },
             {
-              "v": "015f241d",
+              "v": "015f241",
               "date": "10-21",
               "group": "2026-10",
               "lane": "other",
@@ -7208,10 +7208,10 @@ window.ARCH = {
                 "015f241dd0"
               ],
               "status": "done",
-              "evidence": "git 015f241d"
+              "evidence": "git 015f241"
             },
             {
-              "v": "9cf613db",
+              "v": "9cf613d",
               "date": "10-21",
               "group": "2026-10",
               "lane": "other",
@@ -7221,10 +7221,10 @@ window.ARCH = {
                 "9cf613db77"
               ],
               "status": "done",
-              "evidence": "git 9cf613db"
+              "evidence": "git 9cf613d"
             },
             {
-              "v": "d7c4735d",
+              "v": "d7c4735",
               "date": "10-21",
               "group": "2026-10",
               "lane": "other",
@@ -7234,10 +7234,10 @@ window.ARCH = {
                 "d7c4735d57"
               ],
               "status": "done",
-              "evidence": "git d7c4735d"
+              "evidence": "git d7c4735"
             },
             {
-              "v": "1d00553e",
+              "v": "1d00553",
               "date": "10-21",
               "group": "2026-10",
               "lane": "other",
@@ -7247,10 +7247,10 @@ window.ARCH = {
                 "1d00553e13"
               ],
               "status": "done",
-              "evidence": "git 1d00553e"
+              "evidence": "git 1d00553"
             },
             {
-              "v": "4143d19b",
+              "v": "4143d19",
               "date": "10-22",
               "group": "2026-10",
               "lane": "other",
@@ -7260,10 +7260,10 @@ window.ARCH = {
                 "4143d19bf8"
               ],
               "status": "done",
-              "evidence": "git 4143d19b"
+              "evidence": "git 4143d19"
             },
             {
-              "v": "7718cbe6",
+              "v": "7718cbe",
               "date": "10-22",
               "group": "2026-10",
               "lane": "other",
@@ -7273,10 +7273,10 @@ window.ARCH = {
                 "7718cbe633"
               ],
               "status": "done",
-              "evidence": "git 7718cbe6"
+              "evidence": "git 7718cbe"
             },
             {
-              "v": "f40c224a",
+              "v": "f40c224",
               "date": "10-22",
               "group": "2026-10",
               "lane": "other",
@@ -7286,10 +7286,10 @@ window.ARCH = {
                 "f40c224a0f"
               ],
               "status": "done",
-              "evidence": "git f40c224a"
+              "evidence": "git f40c224"
             },
             {
-              "v": "8fbf8fe0",
+              "v": "8fbf8fe",
               "date": "10-23",
               "group": "2026-10",
               "lane": "other",
@@ -7299,10 +7299,10 @@ window.ARCH = {
                 "8fbf8fe0a3"
               ],
               "status": "done",
-              "evidence": "git 8fbf8fe0"
+              "evidence": "git 8fbf8fe"
             },
             {
-              "v": "152c0ad8",
+              "v": "152c0ad",
               "date": "10-25",
               "group": "2026-10",
               "lane": "other",
@@ -7312,10 +7312,10 @@ window.ARCH = {
                 "152c0ad88a"
               ],
               "status": "done",
-              "evidence": "git 152c0ad8"
+              "evidence": "git 152c0ad"
             },
             {
-              "v": "df540273",
+              "v": "df54027",
               "date": "10-30",
               "group": "2026-10",
               "lane": "other",
@@ -7325,10 +7325,10 @@ window.ARCH = {
                 "df54027315"
               ],
               "status": "done",
-              "evidence": "git df540273"
+              "evidence": "git df54027"
             },
             {
-              "v": "05afccc6",
+              "v": "05afccc",
               "date": "10-30",
               "group": "2026-10",
               "lane": "other",
@@ -7338,10 +7338,10 @@ window.ARCH = {
                 "05afccc65c"
               ],
               "status": "done",
-              "evidence": "git 05afccc6"
+              "evidence": "git 05afccc"
             },
             {
-              "v": "4a175acc",
+              "v": "4a175ac",
               "date": "10-30",
               "group": "2026-10",
               "lane": "other",
@@ -7351,10 +7351,10 @@ window.ARCH = {
                 "4a175acc7d"
               ],
               "status": "done",
-              "evidence": "git 4a175acc"
+              "evidence": "git 4a175ac"
             },
             {
-              "v": "80dc4d41",
+              "v": "80dc4d4",
               "date": "10-30",
               "group": "2026-10",
               "lane": "other",
@@ -7364,10 +7364,10 @@ window.ARCH = {
                 "80dc4d41e3"
               ],
               "status": "done",
-              "evidence": "git 80dc4d41"
+              "evidence": "git 80dc4d4"
             },
             {
-              "v": "782bf246",
+              "v": "782bf24",
               "date": "11-02",
               "group": "2026-11",
               "lane": "other",
@@ -7377,10 +7377,10 @@ window.ARCH = {
                 "782bf246e1"
               ],
               "status": "done",
-              "evidence": "git 782bf246"
+              "evidence": "git 782bf24"
             },
             {
-              "v": "7a06bd0e",
+              "v": "7a06bd0",
               "date": "11-02",
               "group": "2026-11",
               "lane": "other",
@@ -7390,10 +7390,10 @@ window.ARCH = {
                 "7a06bd0e01"
               ],
               "status": "done",
-              "evidence": "git 7a06bd0e"
+              "evidence": "git 7a06bd0"
             },
             {
-              "v": "6019d4d2",
+              "v": "6019d4d",
               "date": "11-02",
               "group": "2026-11",
               "lane": "other",
@@ -7403,10 +7403,10 @@ window.ARCH = {
                 "6019d4d27f"
               ],
               "status": "done",
-              "evidence": "git 6019d4d2"
+              "evidence": "git 6019d4d"
             },
             {
-              "v": "b0245755",
+              "v": "b024575",
               "date": "11-02",
               "group": "2026-11",
               "lane": "other",
@@ -7416,10 +7416,10 @@ window.ARCH = {
                 "b0245755fa"
               ],
               "status": "done",
-              "evidence": "git b0245755"
+              "evidence": "git b024575"
             },
             {
-              "v": "79562465",
+              "v": "7956246",
               "date": "11-02",
               "group": "2026-11",
               "lane": "other",
@@ -7429,10 +7429,10 @@ window.ARCH = {
                 "795624657d"
               ],
               "status": "done",
-              "evidence": "git 79562465"
+              "evidence": "git 7956246"
             },
             {
-              "v": "db5a5a96",
+              "v": "db5a5a9",
               "date": "11-02",
               "group": "2026-11",
               "lane": "other",
@@ -7442,10 +7442,10 @@ window.ARCH = {
                 "db5a5a96ab"
               ],
               "status": "done",
-              "evidence": "git db5a5a96"
+              "evidence": "git db5a5a9"
             },
             {
-              "v": "5b034cb7",
+              "v": "5b034cb",
               "date": "11-02",
               "group": "2026-11",
               "lane": "other",
@@ -7455,10 +7455,10 @@ window.ARCH = {
                 "5b034cb78e"
               ],
               "status": "done",
-              "evidence": "git 5b034cb7"
+              "evidence": "git 5b034cb"
             },
             {
-              "v": "f8be4181",
+              "v": "f8be418",
               "date": "11-02",
               "group": "2026-11",
               "lane": "other",
@@ -7468,10 +7468,10 @@ window.ARCH = {
                 "f8be418152"
               ],
               "status": "done",
-              "evidence": "git f8be4181"
+              "evidence": "git f8be418"
             },
             {
-              "v": "cfb18908",
+              "v": "cfb1890",
               "date": "11-03",
               "group": "2026-11",
               "lane": "other",
@@ -7481,10 +7481,10 @@ window.ARCH = {
                 "cfb18908e5"
               ],
               "status": "done",
-              "evidence": "git cfb18908"
+              "evidence": "git cfb1890"
             },
             {
-              "v": "8dfdd413",
+              "v": "8dfdd41",
               "date": "11-03",
               "group": "2026-11",
               "lane": "other",
@@ -7494,10 +7494,10 @@ window.ARCH = {
                 "8dfdd413ba"
               ],
               "status": "done",
-              "evidence": "git 8dfdd413"
+              "evidence": "git 8dfdd41"
             },
             {
-              "v": "5c4460a3",
+              "v": "5c4460a",
               "date": "11-03",
               "group": "2026-11",
               "lane": "other",
@@ -7507,10 +7507,10 @@ window.ARCH = {
                 "5c4460a37d"
               ],
               "status": "done",
-              "evidence": "git 5c4460a3"
+              "evidence": "git 5c4460a"
             },
             {
-              "v": "afc9ec85",
+              "v": "afc9ec8",
               "date": "11-03",
               "group": "2026-11",
               "lane": "other",
@@ -7520,10 +7520,10 @@ window.ARCH = {
                 "afc9ec8536"
               ],
               "status": "done",
-              "evidence": "git afc9ec85"
+              "evidence": "git afc9ec8"
             },
             {
-              "v": "edc98af8",
+              "v": "edc98af",
               "date": "11-03",
               "group": "2026-11",
               "lane": "other",
@@ -7533,10 +7533,10 @@ window.ARCH = {
                 "edc98af817"
               ],
               "status": "done",
-              "evidence": "git edc98af8"
+              "evidence": "git edc98af"
             },
             {
-              "v": "2016da64",
+              "v": "2016da6",
               "date": "11-03",
               "group": "2026-11",
               "lane": "other",
@@ -7546,10 +7546,10 @@ window.ARCH = {
                 "2016da6453"
               ],
               "status": "done",
-              "evidence": "git 2016da64"
+              "evidence": "git 2016da6"
             },
             {
-              "v": "558d76ae",
+              "v": "558d76a",
               "date": "11-04",
               "group": "2026-11",
               "lane": "other",
@@ -7559,10 +7559,10 @@ window.ARCH = {
                 "558d76ae5f"
               ],
               "status": "done",
-              "evidence": "git 558d76ae"
+              "evidence": "git 558d76a"
             },
             {
-              "v": "78af11a3",
+              "v": "78af11a",
               "date": "11-04",
               "group": "2026-11",
               "lane": "other",
@@ -7572,10 +7572,10 @@ window.ARCH = {
                 "78af11a312"
               ],
               "status": "done",
-              "evidence": "git 78af11a3"
+              "evidence": "git 78af11a"
             },
             {
-              "v": "c7706326",
+              "v": "c770632",
               "date": "11-04",
               "group": "2026-11",
               "lane": "other",
@@ -7585,10 +7585,10 @@ window.ARCH = {
                 "c77063265e"
               ],
               "status": "done",
-              "evidence": "git c7706326"
+              "evidence": "git c770632"
             },
             {
-              "v": "aededec9",
+              "v": "aededec",
               "date": "11-04",
               "group": "2026-11",
               "lane": "other",
@@ -7598,10 +7598,10 @@ window.ARCH = {
                 "aededec9af"
               ],
               "status": "done",
-              "evidence": "git aededec9"
+              "evidence": "git aededec"
             },
             {
-              "v": "2ebd5ba8",
+              "v": "2ebd5ba",
               "date": "11-05",
               "group": "2026-11",
               "lane": "other",
@@ -7611,10 +7611,10 @@ window.ARCH = {
                 "2ebd5ba8e3"
               ],
               "status": "done",
-              "evidence": "git 2ebd5ba8"
+              "evidence": "git 2ebd5ba"
             },
             {
-              "v": "ea83ae7e",
+              "v": "ea83ae7",
               "date": "11-05",
               "group": "2026-11",
               "lane": "other",
@@ -7624,10 +7624,10 @@ window.ARCH = {
                 "ea83ae7e7e"
               ],
               "status": "done",
-              "evidence": "git ea83ae7e"
+              "evidence": "git ea83ae7"
             },
             {
-              "v": "6f80dc71",
+              "v": "6f80dc7",
               "date": "11-06",
               "group": "2026-11",
               "lane": "other",
@@ -7637,10 +7637,10 @@ window.ARCH = {
                 "6f80dc71b4"
               ],
               "status": "done",
-              "evidence": "git 6f80dc71"
+              "evidence": "git 6f80dc7"
             },
             {
-              "v": "c910ae4a",
+              "v": "c910ae4",
               "date": "11-06",
               "group": "2026-11",
               "lane": "other",
@@ -7650,10 +7650,10 @@ window.ARCH = {
                 "c910ae4a41"
               ],
               "status": "done",
-              "evidence": "git c910ae4a"
+              "evidence": "git c910ae4"
             },
             {
-              "v": "0482988f",
+              "v": "0482988",
               "date": "11-07",
               "group": "2026-11",
               "lane": "other",
@@ -7663,10 +7663,10 @@ window.ARCH = {
                 "0482988fb3"
               ],
               "status": "done",
-              "evidence": "git 0482988f"
+              "evidence": "git 0482988"
             },
             {
-              "v": "d7ed0df4",
+              "v": "d7ed0df",
               "date": "11-07",
               "group": "2026-11",
               "lane": "other",
@@ -7676,10 +7676,10 @@ window.ARCH = {
                 "d7ed0df485"
               ],
               "status": "done",
-              "evidence": "git d7ed0df4"
+              "evidence": "git d7ed0df"
             },
             {
-              "v": "8009e528",
+              "v": "8009e52",
               "date": "11-07",
               "group": "2026-11",
               "lane": "other",
@@ -7689,10 +7689,10 @@ window.ARCH = {
                 "8009e528a1"
               ],
               "status": "done",
-              "evidence": "git 8009e528"
+              "evidence": "git 8009e52"
             },
             {
-              "v": "b92cfdd5",
+              "v": "b92cfdd",
               "date": "11-07",
               "group": "2026-11",
               "lane": "other",
@@ -7702,10 +7702,10 @@ window.ARCH = {
                 "b92cfdd57d"
               ],
               "status": "done",
-              "evidence": "git b92cfdd5"
+              "evidence": "git b92cfdd"
             },
             {
-              "v": "6ce436ea",
+              "v": "6ce436e",
               "date": "11-07",
               "group": "2026-11",
               "lane": "other",
@@ -7715,10 +7715,10 @@ window.ARCH = {
                 "6ce436ea4f"
               ],
               "status": "done",
-              "evidence": "git 6ce436ea"
+              "evidence": "git 6ce436e"
             },
             {
-              "v": "a8e5c319",
+              "v": "a8e5c31",
               "date": "11-07",
               "group": "2026-11",
               "lane": "other",
@@ -7728,10 +7728,10 @@ window.ARCH = {
                 "a8e5c31984"
               ],
               "status": "done",
-              "evidence": "git a8e5c319"
+              "evidence": "git a8e5c31"
             },
             {
-              "v": "a0d5e6c0",
+              "v": "a0d5e6c",
               "date": "11-07",
               "group": "2026-11",
               "lane": "other",
@@ -7741,10 +7741,10 @@ window.ARCH = {
                 "a0d5e6c0c9"
               ],
               "status": "done",
-              "evidence": "git a0d5e6c0"
+              "evidence": "git a0d5e6c"
             },
             {
-              "v": "52596efc",
+              "v": "52596ef",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7754,10 +7754,10 @@ window.ARCH = {
                 "52596efc9d"
               ],
               "status": "done",
-              "evidence": "git 52596efc"
+              "evidence": "git 52596ef"
             },
             {
-              "v": "dab49de6",
+              "v": "dab49de",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7767,10 +7767,10 @@ window.ARCH = {
                 "dab49de6a6"
               ],
               "status": "done",
-              "evidence": "git dab49de6"
+              "evidence": "git dab49de"
             },
             {
-              "v": "cc1beae8",
+              "v": "cc1beae",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7780,10 +7780,10 @@ window.ARCH = {
                 "cc1beae87b"
               ],
               "status": "done",
-              "evidence": "git cc1beae8"
+              "evidence": "git cc1beae"
             },
             {
-              "v": "78c8ba16",
+              "v": "78c8ba1",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7793,10 +7793,10 @@ window.ARCH = {
                 "78c8ba1653"
               ],
               "status": "done",
-              "evidence": "git 78c8ba16"
+              "evidence": "git 78c8ba1"
             },
             {
-              "v": "64b8d11f",
+              "v": "64b8d11",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7806,10 +7806,10 @@ window.ARCH = {
                 "64b8d11ffd"
               ],
               "status": "done",
-              "evidence": "git 64b8d11f"
+              "evidence": "git 64b8d11"
             },
             {
-              "v": "31ca1492",
+              "v": "31ca149",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7819,10 +7819,10 @@ window.ARCH = {
                 "31ca149293"
               ],
               "status": "done",
-              "evidence": "git 31ca1492"
+              "evidence": "git 31ca149"
             },
             {
-              "v": "0bd4c5e6",
+              "v": "0bd4c5e",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7832,10 +7832,10 @@ window.ARCH = {
                 "0bd4c5e6d4"
               ],
               "status": "done",
-              "evidence": "git 0bd4c5e6"
+              "evidence": "git 0bd4c5e"
             },
             {
-              "v": "e0dbdb7b",
+              "v": "e0dbdb7",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7845,10 +7845,10 @@ window.ARCH = {
                 "e0dbdb7b44"
               ],
               "status": "done",
-              "evidence": "git e0dbdb7b"
+              "evidence": "git e0dbdb7"
             },
             {
-              "v": "c67ac879",
+              "v": "c67ac87",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7858,10 +7858,10 @@ window.ARCH = {
                 "c67ac879f8"
               ],
               "status": "done",
-              "evidence": "git c67ac879"
+              "evidence": "git c67ac87"
             },
             {
-              "v": "91fe3d17",
+              "v": "91fe3d1",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7871,10 +7871,10 @@ window.ARCH = {
                 "91fe3d174e"
               ],
               "status": "done",
-              "evidence": "git 91fe3d17"
+              "evidence": "git 91fe3d1"
             },
             {
-              "v": "923cd3a8",
+              "v": "923cd3a",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7884,10 +7884,10 @@ window.ARCH = {
                 "923cd3a83a"
               ],
               "status": "done",
-              "evidence": "git 923cd3a8"
+              "evidence": "git 923cd3a"
             },
             {
-              "v": "f0060660",
+              "v": "f006066",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7897,10 +7897,10 @@ window.ARCH = {
                 "f006066017"
               ],
               "status": "done",
-              "evidence": "git f0060660"
+              "evidence": "git f006066"
             },
             {
-              "v": "b588a727",
+              "v": "b588a72",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7910,10 +7910,10 @@ window.ARCH = {
                 "b588a727ad"
               ],
               "status": "done",
-              "evidence": "git b588a727"
+              "evidence": "git b588a72"
             },
             {
-              "v": "2fa4e627",
+              "v": "2fa4e62",
               "date": "11-08",
               "group": "2026-11",
               "lane": "other",
@@ -7923,10 +7923,10 @@ window.ARCH = {
                 "2fa4e627e6"
               ],
               "status": "done",
-              "evidence": "git 2fa4e627"
+              "evidence": "git 2fa4e62"
             },
             {
-              "v": "8266b6fc",
+              "v": "8266b6f",
               "date": "11-09",
               "group": "2026-11",
               "lane": "other",
@@ -7936,10 +7936,10 @@ window.ARCH = {
                 "8266b6fc89"
               ],
               "status": "done",
-              "evidence": "git 8266b6fc"
+              "evidence": "git 8266b6f"
             },
             {
-              "v": "17ec2ad6",
+              "v": "17ec2ad",
               "date": "11-09",
               "group": "2026-11",
               "lane": "other",
@@ -7949,10 +7949,10 @@ window.ARCH = {
                 "17ec2ad640"
               ],
               "status": "done",
-              "evidence": "git 17ec2ad6"
+              "evidence": "git 17ec2ad"
             },
             {
-              "v": "ffe543cf",
+              "v": "ffe543c",
               "date": "11-09",
               "group": "2026-11",
               "lane": "other",
@@ -7962,10 +7962,10 @@ window.ARCH = {
                 "ffe543cf5a"
               ],
               "status": "done",
-              "evidence": "git ffe543cf"
+              "evidence": "git ffe543c"
             },
             {
-              "v": "6334f352",
+              "v": "6334f35",
               "date": "11-09",
               "group": "2026-11",
               "lane": "other",
@@ -7975,10 +7975,10 @@ window.ARCH = {
                 "6334f3524b"
               ],
               "status": "done",
-              "evidence": "git 6334f352"
+              "evidence": "git 6334f35"
             },
             {
-              "v": "ea0bf0ab",
+              "v": "ea0bf0a",
               "date": "11-09",
               "group": "2026-11",
               "lane": "other",
@@ -7988,10 +7988,10 @@ window.ARCH = {
                 "ea0bf0ab1f"
               ],
               "status": "done",
-              "evidence": "git ea0bf0ab"
+              "evidence": "git ea0bf0a"
             },
             {
-              "v": "4e8cc066",
+              "v": "4e8cc06",
               "date": "11-09",
               "group": "2026-11",
               "lane": "other",
@@ -8001,10 +8001,10 @@ window.ARCH = {
                 "4e8cc06601"
               ],
               "status": "done",
-              "evidence": "git 4e8cc066"
+              "evidence": "git 4e8cc06"
             },
             {
-              "v": "62df679c",
+              "v": "62df679",
               "date": "11-09",
               "group": "2026-11",
               "lane": "other",
@@ -8014,10 +8014,10 @@ window.ARCH = {
                 "62df679c95"
               ],
               "status": "done",
-              "evidence": "git 62df679c"
+              "evidence": "git 62df679"
             },
             {
-              "v": "e587ad9d",
+              "v": "e587ad9",
               "date": "11-09",
               "group": "2026-11",
               "lane": "other",
@@ -8027,10 +8027,10 @@ window.ARCH = {
                 "e587ad9d2a"
               ],
               "status": "done",
-              "evidence": "git e587ad9d"
+              "evidence": "git e587ad9"
             },
             {
-              "v": "4c7a5c19",
+              "v": "4c7a5c1",
               "date": "11-09",
               "group": "2026-11",
               "lane": "other",
@@ -8040,10 +8040,10 @@ window.ARCH = {
                 "4c7a5c191f"
               ],
               "status": "done",
-              "evidence": "git 4c7a5c19"
+              "evidence": "git 4c7a5c1"
             },
             {
-              "v": "feee31f9",
+              "v": "feee31f",
               "date": "11-10",
               "group": "2026-11",
               "lane": "other",
@@ -8053,10 +8053,10 @@ window.ARCH = {
                 "feee31f91f"
               ],
               "status": "done",
-              "evidence": "git feee31f9"
+              "evidence": "git feee31f"
             },
             {
-              "v": "8a72e851",
+              "v": "8a72e85",
               "date": "11-10",
               "group": "2026-11",
               "lane": "other",
@@ -8066,10 +8066,10 @@ window.ARCH = {
                 "8a72e851bd"
               ],
               "status": "done",
-              "evidence": "git 8a72e851"
+              "evidence": "git 8a72e85"
             },
             {
-              "v": "4cc03b60",
+              "v": "4cc03b6",
               "date": "11-10",
               "group": "2026-11",
               "lane": "other",
@@ -8079,10 +8079,10 @@ window.ARCH = {
                 "4cc03b60b0"
               ],
               "status": "done",
-              "evidence": "git 4cc03b60"
+              "evidence": "git 4cc03b6"
             },
             {
-              "v": "bab6bd92",
+              "v": "bab6bd9",
               "date": "11-10",
               "group": "2026-11",
               "lane": "other",
@@ -8092,10 +8092,10 @@ window.ARCH = {
                 "bab6bd9296"
               ],
               "status": "done",
-              "evidence": "git bab6bd92"
+              "evidence": "git bab6bd9"
             },
             {
-              "v": "d4b76e76",
+              "v": "d4b76e7",
               "date": "11-10",
               "group": "2026-11",
               "lane": "other",
@@ -8105,10 +8105,10 @@ window.ARCH = {
                 "d4b76e76ef"
               ],
               "status": "done",
-              "evidence": "git d4b76e76"
+              "evidence": "git d4b76e7"
             },
             {
-              "v": "da1df2a0",
+              "v": "da1df2a",
               "date": "11-10",
               "group": "2026-11",
               "lane": "other",
@@ -8118,10 +8118,10 @@ window.ARCH = {
                 "da1df2a08c"
               ],
               "status": "done",
-              "evidence": "git da1df2a0"
+              "evidence": "git da1df2a"
             },
             {
-              "v": "4337f0ff",
+              "v": "4337f0f",
               "date": "11-10",
               "group": "2026-11",
               "lane": "other",
@@ -8131,10 +8131,10 @@ window.ARCH = {
                 "4337f0ffbc"
               ],
               "status": "done",
-              "evidence": "git 4337f0ff"
+              "evidence": "git 4337f0f"
             },
             {
-              "v": "b9ac1aac",
+              "v": "b9ac1aa",
               "date": "11-11",
               "group": "2026-11",
               "lane": "other",
@@ -8144,10 +8144,10 @@ window.ARCH = {
                 "b9ac1aac33"
               ],
               "status": "done",
-              "evidence": "git b9ac1aac"
+              "evidence": "git b9ac1aa"
             },
             {
-              "v": "2d2499c0",
+              "v": "2d2499c",
               "date": "11-11",
               "group": "2026-11",
               "lane": "other",
@@ -8157,10 +8157,10 @@ window.ARCH = {
                 "2d2499c029"
               ],
               "status": "done",
-              "evidence": "git 2d2499c0"
+              "evidence": "git 2d2499c"
             },
             {
-              "v": "82750cbc",
+              "v": "82750cb",
               "date": "11-12",
               "group": "2026-11",
               "lane": "other",
@@ -8170,10 +8170,10 @@ window.ARCH = {
                 "82750cbce5"
               ],
               "status": "done",
-              "evidence": "git 82750cbc"
+              "evidence": "git 82750cb"
             },
             {
-              "v": "e5d16d4e",
+              "v": "e5d16d4",
               "date": "11-12",
               "group": "2026-11",
               "lane": "other",
@@ -8183,10 +8183,10 @@ window.ARCH = {
                 "e5d16d4e14"
               ],
               "status": "done",
-              "evidence": "git e5d16d4e"
+              "evidence": "git e5d16d4"
             },
             {
-              "v": "daa72d8c",
+              "v": "daa72d8",
               "date": "11-13",
               "group": "2026-11",
               "lane": "other",
@@ -8196,10 +8196,10 @@ window.ARCH = {
                 "daa72d8cbe"
               ],
               "status": "done",
-              "evidence": "git daa72d8c"
+              "evidence": "git daa72d8"
             },
             {
-              "v": "dd0febe2",
+              "v": "dd0febe",
               "date": "11-13",
               "group": "2026-11",
               "lane": "other",
@@ -8209,7 +8209,20 @@ window.ARCH = {
                 "dd0febe222"
               ],
               "status": "done",
-              "evidence": "git dd0febe2"
+              "evidence": "git dd0febe"
+            },
+            {
+              "v": "68e79a4",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "1.8.266 .gitignore 增 /raw/（基线参考区不入库，避免 raw 1.41 GB 混入正用仓）",
+              "items": [
+                "Rushiera",
+                "68e79a4925"
+              ],
+              "status": "done",
+              "evidence": "git 68e79a4"
             }
           ]
         }

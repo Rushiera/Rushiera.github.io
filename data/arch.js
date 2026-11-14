@@ -2,7 +2,7 @@ window.ARCH = {
  "meta": {
   "project": "rushiera-public",
   "title": "Rushiera",
-  "sub": "21 个项目 · 5 层 · 按工程域划分",
+  "sub": "18 个项目 · 5 层 · 按工程域划分",
   "ver": "v1",
   "updated": "2026-11-14",
   "roleLabels": true,
@@ -64,63 +64,12 @@ window.ARCH = {
        "evidence": "Project/Akasha/project.md"
       },
       {
-       "id": "p-CH3",
-       "label": "CH3",
-       "sub": "多智能体操作系统",
-       "kind": "core",
-       "status": "done",
-       "col": 1,
-       "row": 0,
-       "tags": [
-        "Coder",
-        "CSharp",
-        "Godot",
-        "GodotTscn"
-       ],
-       "note": "v2.4 · 待办 16",
-       "evidence": "Project/CH3/project.md"
-      },
-      {
-       "id": "p-CH4",
-       "label": "CH4",
-       "sub": "Mau 自举循环宿主（多智能体 OS 能力后置）",
-       "kind": "core",
-       "status": "done",
-       "col": 2,
-       "row": 0,
-       "tags": [
-        "Coder",
-        "CSharp",
-        "Mau",
-        "Html",
-        "WinForms"
-       ],
-       "note": "1.8.266 · 待办 2",
-       "evidence": "Project/CH4/project.md"
-      },
-      {
-       "id": "p-CatHome2.0",
-       "label": "CatHome2.0",
-       "sub": "多智能体操作系统·维护中（当前运行 v2.2.4）",
-       "kind": "core",
-       "status": "done",
-       "col": 3,
-       "row": 0,
-       "tags": [
-        "Coder",
-        "CSharp",
-        "Git"
-       ],
-       "note": "v4.13 | 创建：2026-06-17 | 更新：2026-11-04 · 待办 9",
-       "evidence": "Project/CatHome2.0/project.md"
-      },
-      {
        "id": "p-FileSync",
        "label": "FileSync",
        "sub": "跨设备文件同步（手机 → PC 单向自动投递）",
        "kind": "core",
        "status": "done",
-       "col": 4,
+       "col": 1,
        "row": 0,
        "tags": [
         "Majordomo"
@@ -131,10 +80,10 @@ window.ARCH = {
       {
        "id": "p-Mau",
        "label": "Mau",
-       "sub": "Mau 地基区块——CH4 自举工具箱（私人方言）",
+       "sub": "唯一正用仓库——CH4 自举工具箱（私人方言 / 自检仪 / 工具箱）",
        "kind": "core",
        "status": "done",
-       "col": 0,
+       "col": 2,
        "row": 0,
        "tags": [
         "Coder",
@@ -142,7 +91,7 @@ window.ARCH = {
         "Mau",
         "Git"
        ],
-       "note": "1.8.266 · 待办 6",
+       "note": "1.8.266 · 待办 8",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -151,7 +100,7 @@ window.ARCH = {
        "sub": "跨项目并发调度 + 项目档案索引平台（工具层）",
        "kind": "core",
        "status": "done",
-       "col": 1,
+       "col": 3,
        "row": 0,
        "tags": [
         "Majordomo",
@@ -430,43 +379,17 @@ window.ARCH = {
      ],
      "entries": [
       {
-       "v": "07-21",
-       "date": "",
-       "group": "2026-07",
-       "lane": "host",
-       "title": "CH3 · 多智能体操作系统",
-       "items": [
-        "v2.4",
-        "待办 16"
-       ],
-       "status": "partial",
-       "evidence": "Project/CH3/project.md"
-      },
-      {
        "v": "08-03",
        "date": "",
        "group": "2026-08",
        "lane": "host",
-       "title": "Mau · Mau 地基区块——CH4 自举工具箱（私人方言）",
+       "title": "Mau · 唯一正用仓库——CH4 自举工具箱（私人方言 / 自检仪 / 工具箱）",
        "items": [
         "1.8.266",
-        "待办 6"
+        "待办 8"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"
-      },
-      {
-       "v": "08-14",
-       "date": "",
-       "group": "2026-08",
-       "lane": "host",
-       "title": "CH4 · Mau 自举循环宿主（多智能体 OS 能力后置）",
-       "items": [
-        "1.8.266",
-        "待办 2"
-       ],
-       "status": "partial",
-       "evidence": "Project/CH4/project.md"
       },
       {
        "v": "09-25",
@@ -675,19 +598,6 @@ window.ARCH = {
        ],
        "status": "partial",
        "evidence": "Project/Akasha/project.md"
-      },
-      {
-       "v": "—",
-       "date": "",
-       "group": "未记起点",
-       "lane": "host",
-       "title": "CatHome2.0 · 多智能体操作系统·维护中（当前运行 v2.2.4）",
-       "items": [
-        "v4.13 | 创建：2026-06-17 | 更新：2026-11-04",
-        "待办 9"
-       ],
-       "status": "partial",
-       "evidence": "Project/CatHome2.0/project.md"
       },
       {
        "v": "—",

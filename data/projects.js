@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-14 13:38",
+ "generatedAt": "2026-11-14 14:38",
  "public": true,
- "count": 21,
+ "count": 18,
  "stats": {
-  "focus": 2,
+  "focus": 3,
   "todoZone": 5,
-  "active": 7,
-  "versions": 1658
+  "active": 8,
+  "versions": 1337
  },
  "items": [
   {
@@ -72,57 +72,6 @@ window.PROJECTS = {
    "todo": 5,
    "changelog": 43,
    "purpose": "可参与协作的外部工程",
-   "archived": false
-  },
-  {
-   "pid": "CH3",
-   "layer": "host",
-   "type": "多智能体操作系统",
-   "version": "v2.4",
-   "worker": "Coder",
-   "jobs": [
-    "CSharp",
-    "Godot",
-    "GodotTscn"
-   ],
-   "created": "2026-07-21",
-   "todo": 16,
-   "changelog": 9,
-   "purpose": "Mod 驱动的插件生态",
-   "archived": false
-  },
-  {
-   "pid": "CH4",
-   "layer": "host",
-   "type": "Mau 自举循环宿主（多智能体 OS 能力后置）",
-   "version": "1.8.266",
-   "worker": "Coder",
-   "jobs": [
-    "CSharp",
-    "Mau",
-    "Html",
-    "WinForms"
-   ],
-   "created": "2026-08-14",
-   "todo": 2,
-   "changelog": 204,
-   "purpose": "CH4 = Mau 自举循环的宿主。",
-   "archived": false
-  },
-  {
-   "pid": "CatHome2.0",
-   "layer": "host",
-   "type": "多智能体操作系统·维护中（当前运行 v2.2.4）",
-   "version": "v4.13 | 创建：2026-06-17 | 更新：2026-11-04",
-   "worker": "Coder",
-   "jobs": [
-    "CSharp",
-    "Git"
-   ],
-   "created": "",
-   "todo": 9,
-   "changelog": 0,
-   "purpose": "Mod/DLL 热拔插架构",
    "archived": false
   },
   {
@@ -266,7 +215,7 @@ window.PROJECTS = {
   {
    "pid": "Mau",
    "layer": "host",
-   "type": "Mau 地基区块——CH4 自举工具箱（私人方言）",
+   "type": "唯一正用仓库——CH4 自举工具箱（私人方言 / 自检仪 / 工具箱）",
    "version": "1.8.266",
    "worker": "Coder",
    "jobs": [
@@ -275,8 +224,8 @@ window.PROJECTS = {
     "Git"
    ],
    "created": "2026-08-03",
-   "todo": 6,
-   "changelog": 110,
+   "todo": 8,
+   "changelog": 2,
    "purpose": "Mau = CH4 进行自举的工具箱。",
    "archived": false
   },
