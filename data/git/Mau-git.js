@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "35 次提交 · 2026-11 → 2026-11",
-    "ver": "04a7d15",
+    "sub": "37 次提交 · 2026-11 → 2026-11",
+    "ver": "79f46b0",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -527,6 +527,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 04a7d15"
+            },
+            {
+              "v": "2e7466a",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.3 修「停止本轮」不生效：每猫端口 cat.pause / cat.continue 无参形式按本地猫控执行（对齐 C# InputRoutes RoutePause/RouteContinue + LocalCatControlOnly）；主入口裸形式仍归管理族报用法；带 key 形式不受影响；+1 单测",
+              "items": [
+                "Rushiera",
+                "2e7466acbf"
+              ],
+              "status": "done",
+              "evidence": "git 2e7466a"
+            },
+            {
+              "v": "79f46b0",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.3 修面板「重启宿主」不生效：重启 target 为空时回落当前实例所在目录（无 mauout5 根的实例此前一律报「缺少目标运行区」撤销重启态）",
+              "items": [
+                "Rushiera",
+                "79f46b0d57"
+              ],
+              "status": "done",
+              "evidence": "git 79f46b0"
             }
           ]
         }
