@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "66 次提交 · 2026-11 → 2026-11",
-    "ver": "923b876",
+    "sub": "67 次提交 · 2026-11 → 2026-11",
+    "ver": "020a641",
     "updated": "2026-11-14",
     "contract": {
       "views": [
@@ -930,6 +930,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 923b876"
+            },
+            {
+              "v": "020a641",
+              "date": "11-14",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.295: 见证者弹层瘦身（趋势面移出）+ archkit view 内嵌模式（?embed=1）",
+              "items": [
+                "Rushiera",
+                "020a64143d"
+              ],
+              "status": "done",
+              "evidence": "git 020a641"
             }
           ]
         }
