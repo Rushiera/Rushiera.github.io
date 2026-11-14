@@ -813,11 +813,6 @@ const witCaps = (wit.capabilities || []).map((c) => ({
   lines: c.lines || null
 }));
 
-const checkOf = (id) => {
-  const c = witCaps.find((x) => x.id === id);
-  return c && c.check ? c.check : null;
-};
-
 /* ---------- 四、组装 ---------- */
 const overview = {
   projects: idx.total || (idx.items || []).length,
