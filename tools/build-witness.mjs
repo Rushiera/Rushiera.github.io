@@ -98,6 +98,23 @@ async function getJson(p) {
   }
 }
 
+/** 端点 POST 取数（整理面按 pids 批量问）：失败同样进 errors，不产半份冒充完整。 */
+async function postJson(p, body) {
+  try {
+    const r = await fetch(PANEL + p, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body || {}),
+      signal: AbortSignal.timeout(20000)
+    });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return await r.json();
+  } catch (e) {
+    errors.push('端点 POST ' + p + ' 取数失败：' + e.message);
+    return null;
+  }
+}
+
 const t0 = Date.now();
 
 /* ---------- 一、面板端点（见证者的运行时真身） ---------- */
@@ -134,8 +151,14 @@ const watch = [];
 if (exists(watchDir)) {
   for (const e of fs.readdirSync(watchDir, { withFileTypes: true })) {
     if (!e.isDirectory()) continue;
-    const s = walkStat(path.join(watchDir, e.name));
-    if (s) watch.push({ group: e.name, files: s.files, bytes: s.bytes, lastAt: s.lastAt });
+    const dir = path.join(watchDir, e.name);
+    const s = walkStat(dir);
+    if (s) {
+      /* 每组带最近 8 件文件名——「想查源文本」时从这里直接找得到具体版本文件 */
+      const recent = recentFiles(dir, 8, (f) => /\.(md|jsonl|txt)$/i.test(f))
+        .map((f) => ({ name: f.name, at: stamp(new Date(f.st.mtimeMs)), bytes: f.st.size }));
+      watch.push({ group: e.name, files: s.files, bytes: s.bytes, lastAt: s.lastAt, recent });
+    }
   }
   watch.sort((a, b) => b.files - a.files);
 } else warns.push('原件归档目录不存在：' + watchDir);
@@ -160,22 +183,38 @@ const snap = (() => {
   const dir = path.join(HIST, 'snapshots');
   const s = walkStat(dir);
   if (!s) return null;
-  const entries = fs.readdirSync(dir, { withFileTypes: true }).filter((e) => e.isDirectory()).length;
-  const snaps = [];
+  const items = [];
+  let sets = 0;
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     if (!e.isDirectory()) continue;
-    const sub = fs.readdirSync(path.join(dir, e.name), { withFileTypes: true }).filter((x) => x.isDirectory()).length;
-    snaps.push(sub);
+    const p = path.join(dir, e.name);
+    const sub = fs.readdirSync(p, { withFileTypes: true }).filter((x) => x.isDirectory).length;
+    const ws = walkStat(p);
+    sets += sub;
+    items.push({ pid: e.name, sets: sub, files: ws ? ws.files : 0, bytes: ws ? ws.bytes : 0, lastAt: ws ? ws.lastAt : '' });
   }
-  return { projects: entries, sets: snaps.reduce((n, x) => n + x, 0), files: s.files, bytes: s.bytes, lastAt: s.lastAt };
+  items.sort((a, b) => String(b.lastAt).localeCompare(String(a.lastAt)));
+  return { projects: items.length, sets, files: s.files, bytes: s.bytes, lastAt: s.lastAt, items };
 })();
 
 const handover = (() => {
   const dir = path.join(HIST, 'handover');
   const s = walkStat(dir);
   if (!s) return null;
-  const entries = fs.readdirSync(dir, { withFileTypes: true }).filter((e) => e.isDirectory()).length;
-  return { projects: entries, files: s.files, bytes: s.bytes, lastAt: s.lastAt };
+  const items = [];
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (!e.isDirectory()) continue;
+    const p = path.join(dir, e.name);
+    const ws = walkStat(p);
+    const files = fs.readdirSync(p, { withFileTypes: true }).filter((x) => x.isFile() && /\.md$/i.test(x.name)).length;
+    const recent = recentFiles(p, 1, (f) => f.endsWith('.md'));
+    items.push({
+      pid: e.name, files, bytes: ws ? ws.bytes : 0, lastAt: ws ? ws.lastAt : '',
+      latest: recent[0] ? { name: recent[0].name, at: stamp(new Date(recent[0].st.mtimeMs)), bytes: recent[0].st.size } : null
+    });
+  }
+  items.sort((a, b) => String(b.lastAt).localeCompare(String(a.lastAt)));
+  return { projects: items.length, files: s.files, bytes: s.bytes, lastAt: s.lastAt, items };
 })();
 
 const entrustCards = (() => {
@@ -357,6 +396,83 @@ const taskStat = taskArr ? {
   }))
 } : null;
 
+/* 2.9 整理面（verify）——卡解析兼容层的运行实况。
+   `/api/work/verify/list` 一次问全部在档项目：判据状态 + 卡类 + 解析自证（parseGap / reportSignals /
+   parserProfile）+ 条目数 / 报告段数 + 卡文件（源文本入口）。这是「兼容层有没有把卡切成条目」的现算面：
+     · parseGap > 0     = 卡里有条目形态却没切成条目（应切未切）；
+     · reportSignals ≥2 = 报告段里疑似条目（只进 shared、页面上看不到）；
+     · parserProfile    = 命中的起点形态编号（1 行首数字加粗 / 2 行首加粗编号 / 3 列表 Q·W / 4 H2 / 5 H3）。
+   只在构建期取一次——页面是快照，不实时。 */
+const allPids = (idx.items || []).map((x) => x.pid).filter(Boolean);
+const vlist = await postJson('/api/work/verify/list', { pids: allPids.join(',') });
+const verifyCards = [];
+let verifyGap = 0, verifySignals = 0, verifyItems = 0, verifyShared = 0;
+const verifyKinds = {}, verifyProfiles = {};
+if (vlist && Array.isArray(vlist.items)) {
+  for (const v of vlist.items) {
+    const itemsN = Array.isArray(v.items) ? v.items.length : 0;
+    const sharedN = Array.isArray(v.shared) ? v.shared.length : 0;
+    const gap = v.parseGap || 0;
+    const sig = v.reportSignals || 0;
+    const kind = v.cardKind || 'none';
+    const prof = Array.isArray(v.parserProfile) ? v.parserProfile : [];
+    verifyItems += itemsN;
+    verifyShared += sharedN;
+    verifyGap += gap;
+    verifySignals += sig;
+    verifyKinds[kind] = (verifyKinds[kind] || 0) + 1;
+    for (const pf of prof) verifyProfiles[pf] = (verifyProfiles[pf] || 0) + 1;
+    verifyCards.push({
+      pid: v.pid, code: v.code || '', label: clip(v.label || '', 40), state: v.state || '',
+      cat: v.cat || '', tokens: v.tokens || 0, elapsed: v.elapsed || 0,
+      baselineAt: v.baselineAt || '', doneAt: v.doneAt || '',
+      kind, items: itemsN, shared: sharedN, gap, signals: sig, profiles: prof,
+      note: clip(v.note || '', 80),
+      card: v.verifyPath ? path.relative(CCBP, v.verifyPath).replace(/\\/g, '/') : ''
+    });
+  }
+  verifyCards.sort((a, b) => (b.gap - a.gap) || (b.signals - a.signals)
+    || String(b.baselineAt).localeCompare(String(a.baselineAt)));
+} else {
+  warns.push('整理解析（POST /api/work/verify/list）未取到——整理与解析段按空集渲染');
+}
+const verifyOut = {
+  total: verifyCards.length,
+  withCard: verifyCards.filter((x) => x.card).length,
+  items: verifyItems,
+  shared: verifyShared,
+  gap: verifyGap,
+  signals: verifySignals,
+  kinds: verifyKinds,
+  profiles: verifyProfiles,
+  states: tidyStat.states,
+  taskKinds: tidyStat.kinds,
+  taskTotal: tidyStat.total,
+  cards: verifyCards
+};
+
+/* 2.10 模块明细（细微模块的现算面）——按项目问 /api/trends/modules?pid=，
+   只留名称 / 状态 / 版本数 / 首末 / 设计文档（含行号）/ 最近版本 / staleDays。
+   recent 摘要是长文本（单项目可到 60 KB），不进站点；每个项目最多列 20 个模块，其余给 more 计数。 */
+const moduleDetails = [];
+for (const m of (mods.projects || [])) {
+  const d = await getJson('/api/trends/modules?pid=' + encodeURIComponent(m.pid));
+  if (!d || !Array.isArray(d.modules)) continue;
+  moduleDetails.push({
+    pid: m.pid,
+    generatedAt: d.generatedAt || '',
+    modules: d.modules.slice(0, 20).map((x) => ({
+      name: clip(x.name || '', 48), status: x.status, versions: x.versions || 0,
+      first: String(x.first || '').slice(0, 10), last: String(x.last || '').slice(0, 10),
+      doc: clip(x.doc || '', 44), line: x.line || 0,
+      recentVersion: clip(x.recentVersion || '', 16),
+      staleDays: x.staleDays == null ? null : x.staleDays
+    })),
+    more: Math.max(0, d.modules.length - 20)
+  });
+}
+moduleDetails.sort((a, b) => (b.modules.length - a.modules.length) || a.pid.localeCompare(b.pid));
+
 /* ---------- 三、投影与瘦身（页面只画展示需要的字段；原始面保真，不发散） ---------- */
 const life = trends.life || {};
 const lifeProjects = (life.projects || []).map((p) => {
@@ -442,6 +558,7 @@ const overview = {
   dispatchTotal,
   verifyTotal,
   tasks: taskStat ? { total: taskStat.total, bySource: taskStat.bySource } : null,
+  verify: { cards: verifyOut.withCard, items: verifyOut.items, shared: verifyOut.shared, gap: verifyOut.gap, signals: verifyOut.signals },
   watchFiles: watch.reduce((n, x) => n + x.files, 0),
   watchBytes: watch.reduce((n, x) => n + x.bytes, 0),
   arch: { total: archItems.length, skeleton: archSkeleton }
@@ -526,7 +643,7 @@ const data = {
     },
     git: trends.git || null
   },
-  modules: { generatedAt: mods.generatedAt || '', total: mods.total || 0, projects: mods.projects || [] },
+  modules: { generatedAt: mods.generatedAt || '', total: mods.total || 0, projects: mods.projects || [], details: moduleDetails },
   entrust: {
     phaseSummary: entrust.phaseSummary || {},
     summary: entrust.summary || {},
@@ -534,6 +651,7 @@ const data = {
     derived: entrustDerived,
     orders: entrustOrders
   },
+  verify: verifyOut,
   board: {
     knobs, order: orderOut,
     site: site || null,
@@ -564,6 +682,8 @@ if (DRY) {
     + ' · 能力 ' + witCaps.length + ' · 版本 ' + (witCaps.find((c) => c.id === 'releases') || {}).releases?.length
     + ' · 委托 ' + entrustOrders.length + ' · 项目 ' + overview.projects
     + ' · 起点 ' + homeFeed.length
+    + ' · 整理卡 ' + verifyOut.withCard + '（gap ' + verifyOut.gap + ' · 信号 ' + verifyOut.signals + '）'
+    + ' · 模块明细 ' + moduleDetails.length
     + (warns.length ? ' · WARN ' + warns.length : ''));
 } else {
   fs.mkdirSync(OUT, { recursive: true });
@@ -573,6 +693,8 @@ if (DRY) {
   console.log('[build-witness] OK · ' + (js.length / 1024).toFixed(1) + ' KB'
     + ' · 能力 ' + witCaps.length + ' · 委托 ' + entrustOrders.length + ' · 项目 ' + overview.projects
     + ' · 起点 ' + homeFeed.length
+    + ' · 整理卡 ' + verifyOut.withCard + '（gap ' + verifyOut.gap + ' · 信号 ' + verifyOut.signals + '）'
+    + ' · 模块明细 ' + moduleDetails.length
     + ' · → ' + path.relative(SITE, OUT).replace(/\\/g, '/'));
   if (warns.length) warns.forEach((w) => console.log('  WARN ' + w));
   if (errors.length) errors.forEach((w) => console.log('  ERR ' + w));
