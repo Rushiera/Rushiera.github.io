@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15 15:23",
+  "generatedAt": "2026-11-15 15:53",
   "public": true,
   "count": 18,
   "stats": {
@@ -241,7 +241,7 @@
         "Git"
       ],
       "created": "2026-10-21",
-      "todo": 12,
+      "todo": 13,
       "changelog": 65,
       "purpose": "本支可改、可验、可自持的逆向工程底座",
       "archived": false
