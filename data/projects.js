@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-15 20:26",
+ "generatedAt": "2026-11-15 20:57",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 4,
   "todoZone": 3,
   "active": 7,
-  "versions": 1435
+  "versions": 1436
  },
  "items": [
   {
@@ -138,7 +138,7 @@ window.PROJECTS = {
    "pid": "ECC",
    "layer": "agent",
    "type": "可移植的 Agent 工作流层（reusable workflow layer）+ 二…",
-   "version": "v0.33",
+   "version": "v0.34",
    "worker": "Majordomo",
    "jobs": [
     "ECC；工具面 = `…",
@@ -147,7 +147,7 @@ window.PROJECTS = {
    ],
    "created": "2026-11-01",
    "todo": 0,
-   "changelog": 33,
+   "changelog": 34,
    "purpose": "可读、可引用、可改造",
    "archived": false
   },
@@ -290,7 +290,7 @@ window.PROJECTS = {
     "CatHome"
    ],
    "created": "",
-   "todo": 34,
+   "todo": 35,
    "changelog": 363,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false

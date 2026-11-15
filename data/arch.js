@@ -107,7 +107,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.335 · 待办 34",
+       "note": "v0.335 · 待办 35",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -158,7 +158,7 @@ window.ARCH = {
         "file-*",
         "powershell`…"
        ],
-       "note": "v0.33 · 待办 0",
+       "note": "v0.34 · 待办 0",
        "evidence": "Project/ECC/project.md"
       },
       {
@@ -581,7 +581,7 @@ window.ARCH = {
        "lane": "agent",
        "title": "ECC · 可移植的 Agent 工作流层（reusable workflow layer）+ 二…",
        "items": [
-        "v0.33",
+        "v0.34",
         "待办 0"
        ],
        "status": "done",
@@ -608,7 +608,7 @@ window.ARCH = {
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
         "v0.335",
-        "待办 34"
+        "待办 35"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"
