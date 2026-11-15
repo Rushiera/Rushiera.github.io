@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-15 17:54",
+  "generatedAt": "2026-11-15 18:25",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 3,
     "todoZone": 3,
     "active": 6,
-    "versions": 1414
+    "versions": 1417
   },
   "items": [
     {
@@ -226,7 +226,7 @@
       ],
       "created": "2026-08-03",
       "todo": 22,
-      "changelog": 36,
+      "changelog": 37,
       "purpose": "Mau 仓 = CatHome5 的施工仓。",
       "archived": false
     },
@@ -242,7 +242,7 @@
       ],
       "created": "2026-10-21",
       "todo": 12,
-      "changelog": 68,
+      "changelog": 69,
       "purpose": "本支可改、可验、可自持的逆向工程底座",
       "archived": false
     },
@@ -283,7 +283,7 @@
       "pid": "并发协议",
       "layer": "host",
       "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-      "version": "v0.320",
+      "version": "v0.321",
       "worker": "Majordomo",
       "jobs": [
         "CSharp",
@@ -291,7 +291,7 @@
       ],
       "created": "",
       "todo": 32,
-      "changelog": 348,
+      "changelog": 349,
       "purpose": "两件事，一条主线：让自主推进有据可依。",
       "archived": false
     }
