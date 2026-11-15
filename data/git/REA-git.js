@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "56 次提交 · 2026-10 → 2026-11",
-    "ver": "40ceb71",
+    "sub": "57 次提交 · 2026-10 → 2026-11",
+    "ver": "7af3de7",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -800,6 +800,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 40ceb71"
+            },
+            {
+              "v": "7af3de7",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.64: Ghidra 本体改类实证（ReaProbe marker 反射）+ ghidra-patches 补丁集",
+              "items": [
+                "Rushiera",
+                "7af3de773b"
+              ],
+              "status": "done",
+              "evidence": "git 7af3de7"
             }
           ]
         }
