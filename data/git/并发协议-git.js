@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "76 次提交 · 2026-11 → 2026-11",
-    "ver": "830e2fe",
+    "sub": "77 次提交 · 2026-11 → 2026-11",
+    "ver": "72758f8",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -1060,6 +1060,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 830e2fe"
+            },
+            {
+              "v": "72758f8",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.339b 应用挂载到工作区（Program.cs 含此前未提交的 0.314-0.322 面快照）",
+              "items": [
+                "Rushiera",
+                "72758f8168"
+              ],
+              "status": "done",
+              "evidence": "git 72758f8"
             }
           ]
         }

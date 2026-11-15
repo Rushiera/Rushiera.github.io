@@ -4,7 +4,7 @@ window.ARCH = {
   "title": "Rushiera",
   "sub": "18 个项目 · 5 层 · 按工程域划分",
   "ver": "v1",
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "roleLabels": true,
   "fit": "width"
  },
@@ -107,7 +107,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.339 · 待办 36",
+       "note": "v0.339c · 待办 37",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -607,8 +607,8 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.339",
-        "待办 36"
+        "v0.339c",
+        "待办 37"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"
