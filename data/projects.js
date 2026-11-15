@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-15 12:52",
+ "generatedAt": "2026-11-15 13:22",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 4,
   "todoZone": 3,
   "active": 7,
-  "versions": 1385
+  "versions": 1389
  },
  "items": [
   {
@@ -225,8 +225,8 @@ window.PROJECTS = {
     "Git"
    ],
    "created": "2026-08-03",
-   "todo": 18,
-   "changelog": 22,
+   "todo": 19,
+   "changelog": 23,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },
@@ -234,7 +234,7 @@ window.PROJECTS = {
    "pid": "REA",
    "layer": "agent",
    "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-   "version": "v0.57 · 上游基线 `c8d5413d0`",
+   "version": "v0.59 · 上游基线 `c8d5413d0`",
    "worker": "Coder",
    "jobs": [
     "Node",
@@ -242,7 +242,7 @@ window.PROJECTS = {
    ],
    "created": "2026-10-21",
    "todo": 12,
-   "changelog": 59,
+   "changelog": 61,
    "purpose": "本支可改、可验、可自持的逆向工程底座",
    "archived": false
   },
@@ -283,7 +283,7 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.314",
+   "version": "v0.315",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
@@ -291,7 +291,7 @@ window.PROJECTS = {
    ],
    "created": "",
    "todo": 33,
-   "changelog": 342,
+   "changelog": 343,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   }

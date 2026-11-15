@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "45 次提交 · 2026-11 → 2026-11",
-    "ver": "66b0bd3",
+    "sub": "46 次提交 · 2026-11 → 2026-11",
+    "ver": "ee4ce2b",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -657,6 +657,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 66b0bd3"
+            },
+            {
+              "v": "ee4ce2b",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8 前文防爆四项（入前文限幅 / 请求体超限拒发 / pack 与 http 上限）· 未部署",
+              "items": [
+                "Rushiera",
+                "ee4ce2b72c"
+              ],
+              "status": "done",
+              "evidence": "git ee4ce2b"
             }
           ]
         }

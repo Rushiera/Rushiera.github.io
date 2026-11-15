@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "50 次提交 · 2026-10 → 2026-11",
-    "ver": "d832287",
+    "sub": "51 次提交 · 2026-10 → 2026-11",
+    "ver": "cc09683",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -722,6 +722,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git d832287"
+            },
+            {
+              "v": "cc09683",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.59: Gradle jar 扩展空壳与校验脚本",
+              "items": [
+                "Rushiera",
+                "cc096831c1"
+              ],
+              "status": "done",
+              "evidence": "git cc09683"
             }
           ]
         }
