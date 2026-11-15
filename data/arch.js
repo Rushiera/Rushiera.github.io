@@ -91,7 +91,7 @@ window.ARCH = {
         "Go",
         "Git"
        ],
-       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 22:25:02）——视图全档回滚 / 编辑 + 回滚截断修复（v9），见 `CHANGELOG.md` 首行） · 待办 22",
+       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 01:17:19 · incr）——复活猫 B 方案（`cacheKey` 项目级缓存域），见 `CHANGELOG.md` 首行） · 待办 23",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -107,7 +107,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.339c · 待办 37",
+       "note": "v0.342 · 待办 37",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -174,7 +174,7 @@ window.ARCH = {
         "Node",
         "Git"
        ],
-       "note": "v0.68 · 上游基线 `c8d5413d0` · 待办 12",
+       "note": "v0.68 · 上游基线 `c8d5413d0` · 待办 13",
        "evidence": "Project/REA/project.md"
       },
       {
@@ -202,7 +202,7 @@ window.ARCH = {
        "tags": [
         "Coder"
        ],
-       "note": "v0.7 · 待办 5",
+       "note": "v0.8 · 待办 6",
        "evidence": "Project/CloudDrive2/project.md"
       },
       {
@@ -386,8 +386,8 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
-        "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 22:25:02）——视图全档回滚 / 编辑 + 回滚截断修复（v9），见 `CHANGELOG.md` 首行）",
-        "待办 22"
+        "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 01:17:19 · incr）——复活猫 B 方案（`cacheKey` 项目级缓存域），见 `CHANGELOG.md` 首行）",
+        "待办 23"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"
@@ -464,8 +464,8 @@ window.ARCH = {
        "lane": "game",
        "title": "CloudDrive2 · 第三方安卓 APK —— 二次开发（备份可靠性：后台自动备份 + 同步 bug）",
        "items": [
-        "v0.7",
-        "待办 5"
+        "v0.8",
+        "待办 6"
        ],
        "status": "partial",
        "evidence": "Project/CloudDrive2/project.md"
@@ -478,7 +478,7 @@ window.ARCH = {
        "title": "REA · 逆向工程 MCP server + CLI（TypeScript / Node 24）",
        "items": [
         "v0.68 · 上游基线 `c8d5413d0`",
-        "待办 12"
+        "待办 13"
        ],
        "status": "partial",
        "evidence": "Project/REA/project.md"
@@ -607,7 +607,7 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.339c",
+        "v0.342",
         "待办 37"
        ],
        "status": "partial",

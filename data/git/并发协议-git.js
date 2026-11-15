@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "77 次提交 · 2026-11 → 2026-11",
-    "ver": "72758f8",
+    "sub": "79 次提交 · 2026-11 → 2026-11",
+    "ver": "b4530ae",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -1073,6 +1073,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 72758f8"
+            },
+            {
+              "v": "ad968f6",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.340 工作页分类块占半行（两列瀑布）+ 工具细分 5 类（主排序 7 块）；含此前未提交的运行面快照",
+              "items": [
+                "Rushiera",
+                "ad968f674d"
+              ],
+              "status": "done",
+              "evidence": "git ad968f6"
+            },
+            {
+              "v": "b4530ae",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.341 工具按工具链分四类（通用/编辑/KK/取证）+ 排序缓存键补 projects-meta",
+              "items": [
+                "Rushiera",
+                "b4530ae0ad"
+              ],
+              "status": "done",
+              "evidence": "git b4530ae"
             }
           ]
         }

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-16 00:28",
+  "generatedAt": "2026-11-16 01:29",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 4,
     "todoZone": 3,
     "active": 7,
-    "versions": 1452
+    "versions": 1457
   },
   "items": [
     {
@@ -92,12 +92,12 @@
       "pid": "CloudDrive2",
       "layer": "game",
       "type": "第三方安卓 APK —— 二次开发（备份可靠性：后台自动备份 + 同步 bug）",
-      "version": "v0.7",
+      "version": "v0.8",
       "worker": "Coder",
       "jobs": [],
       "created": "2026-10-06",
-      "todo": 5,
-      "changelog": 13,
+      "todo": 6,
+      "changelog": 14,
       "purpose": "既有目的（上游自带）：",
       "archived": false
     },
@@ -217,7 +217,7 @@
       "pid": "Mau",
       "layer": "host",
       "type": "唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
-      "version": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 22:25:02）——视图全档回滚 / 编辑 + 回滚截断修复（v9），见 `CHANGELOG.md` 首行）",
+      "version": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 01:17:19 · incr）——复活猫 B 方案（`cacheKey` 项目级缓存域），见 `CHANGELOG.md` 首行）",
       "worker": "Coder",
       "jobs": [
         "Mau",
@@ -225,8 +225,8 @@
         "Git"
       ],
       "created": "2026-08-03",
-      "todo": 22,
-      "changelog": 41,
+      "todo": 23,
+      "changelog": 42,
       "purpose": "Mau 仓 = CatHome5 的施工仓。",
       "archived": false
     },
@@ -241,7 +241,7 @@
         "Git"
       ],
       "created": "2026-10-21",
-      "todo": 12,
+      "todo": 13,
       "changelog": 71,
       "purpose": "本支可改、可验、可自持的逆向工程底座",
       "archived": false
@@ -283,7 +283,7 @@
       "pid": "并发协议",
       "layer": "host",
       "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-      "version": "v0.339c",
+      "version": "v0.342",
       "worker": "Majordomo",
       "jobs": [
         "CSharp",
@@ -291,7 +291,7 @@
       ],
       "created": "",
       "todo": 37,
-      "changelog": 376,
+      "changelog": 379,
       "purpose": "两件事，一条主线：让自主推进有据可依。",
       "archived": false
     }
