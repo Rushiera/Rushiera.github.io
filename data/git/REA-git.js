@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "52 次提交 · 2026-10 → 2026-11",
-    "ver": "e298f1c",
+    "sub": "54 次提交 · 2026-10 → 2026-11",
+    "ver": "8ab8d03",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -748,6 +748,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git e298f1c"
+            },
+            {
+              "v": "4bf60b7",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.58.1 E5 第二条装配链（ext/ghidra-plugin + Gradle 9.9.1 最小项目）+ StarlitSeason PDB 取证报告 + surf.mjs（v0.56 遗留）",
+              "items": [
+                "Rushiera",
+                "4bf60b7246"
+              ],
+              "status": "done",
+              "evidence": "git 4bf60b7"
+            },
+            {
+              "v": "8ab8d03",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.58.1 忘记 .gitignore：ext/ghidra-plugin 剔除 .gradle/ 与 build/（缓存与产物不入库）",
+              "items": [
+                "Rushiera",
+                "8ab8d031ec"
+              ],
+              "status": "done",
+              "evidence": "git 8ab8d03"
             }
           ]
         }

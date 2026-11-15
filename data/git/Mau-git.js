@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "48 次提交 · 2026-11 → 2026-11",
-    "ver": "0b55ee6",
+    "sub": "49 次提交 · 2026-11 → 2026-11",
+    "ver": "1b211c8",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -696,6 +696,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 0b55ee6"
+            },
+            {
+              "v": "1b211c8",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8 思考流上移 + 暂停落前文：sealReasonStream 落块后 live 归空（防同段双份）；纯思考暂停落 assistant(content=\"\")+reasoning（继续时带上一段思考）；OnAssistantTextWith 空 content 不派生 text 块",
+              "items": [
+                "Rushiera",
+                "1b211c8700"
+              ],
+              "status": "done",
+              "evidence": "git 1b211c8"
             }
           ]
         }

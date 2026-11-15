@@ -91,7 +91,7 @@ window.ARCH = {
         "Go",
         "Git"
        ],
-       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 13:23:25）——G23 图片回执可见性轮（含 G20 前文防爆四项 · 13:14 部署），验证见 `CHANGELOG.md`） · 待办 19",
+       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 13:51:14）——think 持久化 + 暂停保留轮，验证见 `CHANGELOG.md`） · 待办 20",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -107,7 +107,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.316 · 待办 34",
+       "note": "v0.318 · 待办 33",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -386,8 +386,8 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
-        "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 13:23:25）——G23 图片回执可见性轮（含 G20 前文防爆四项 · 13:14 部署），验证见 `CHANGELOG.md`）",
-        "待办 19"
+        "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 13:51:14）——think 持久化 + 暂停保留轮，验证见 `CHANGELOG.md`）",
+        "待办 20"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"
@@ -607,8 +607,8 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.316",
-        "待办 34"
+        "v0.318",
+        "待办 33"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"
