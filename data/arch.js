@@ -88,9 +88,10 @@ window.ARCH = {
        "tags": [
         "Coder",
         "Mau",
+        "Go",
         "Git"
        ],
-       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 00:39:45）——全节点回滚 + 编辑轮，验证见 todo G21） · 待办 18",
+       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 00:39:45）——全节点回滚 + 编辑轮，验证见 todo G21） · 待办 19",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -106,7 +107,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.312 · 待办 34",
+       "note": "v0.313 · 待办 33",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -386,7 +387,7 @@ window.ARCH = {
        "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
         "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 00:39:45）——全节点回滚 + 编辑轮，验证见 todo G21）",
-        "待办 18"
+        "待办 19"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"
@@ -606,8 +607,8 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.312",
-        "待办 34"
+        "v0.313",
+        "待办 33"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"

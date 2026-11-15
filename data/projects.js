@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-15 08:19",
+ "generatedAt": "2026-11-15 11:21",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 5,
   "todoZone": 2,
   "active": 7,
-  "versions": 1378
+  "versions": 1380
  },
  "items": [
   {
@@ -221,10 +221,11 @@ window.PROJECTS = {
    "worker": "Coder",
    "jobs": [
     "Mau",
+    "Go",
     "Git"
    ],
    "created": "2026-08-03",
-   "todo": 18,
+   "todo": 19,
    "changelog": 19,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
@@ -241,7 +242,7 @@ window.PROJECTS = {
    ],
    "created": "2026-10-21",
    "todo": 8,
-   "changelog": 57,
+   "changelog": 58,
    "purpose": "本支可改、可验、可自持的逆向工程底座",
    "archived": false
   },
@@ -282,15 +283,15 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.312",
+   "version": "v0.313",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
     "CatHome"
    ],
    "created": "",
-   "todo": 34,
-   "changelog": 340,
+   "todo": 33,
+   "changelog": 341,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   }
