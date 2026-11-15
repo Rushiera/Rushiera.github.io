@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-15 22:27",
+ "generatedAt": "2026-11-15 22:57",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 4,
   "todoZone": 3,
   "active": 7,
-  "versions": 1440
+  "versions": 1441
  },
  "items": [
   {
@@ -217,7 +217,7 @@ window.PROJECTS = {
    "pid": "Mau",
    "layer": "host",
    "type": "唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
-   "version": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 13:51:14）——think 持久化 + 暂停保留轮，验证见 `CHANGELOG.md`）",
+   "version": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 22:25:02）——视图全档回滚 / 编辑 + 回滚截断修复（v9），见 `CHANGELOG.md` 首行）",
    "worker": "Coder",
    "jobs": [
     "Mau",
@@ -225,7 +225,7 @@ window.PROJECTS = {
     "Git"
    ],
    "created": "2026-08-03",
-   "todo": 23,
+   "todo": 22,
    "changelog": 40,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
@@ -283,15 +283,15 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.337",
+   "version": "v0.337b",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
     "CatHome"
    ],
    "created": "",
-   "todo": 37,
-   "changelog": 365,
+   "todo": 36,
+   "changelog": 366,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   }
