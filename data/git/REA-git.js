@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "54 次提交 · 2026-10 → 2026-11",
-    "ver": "8ab8d03",
+    "sub": "56 次提交 · 2026-10 → 2026-11",
+    "ver": "40ceb71",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -774,6 +774,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 8ab8d03"
+            },
+            {
+              "v": "6b22d07",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.63 Ghidra 本体：基线解耦（双入口指向 raw 基线，dev 版独立）",
+              "items": [
+                "Rushiera",
+                "6b22d071b0"
+              ],
+              "status": "done",
+              "evidence": "git 6b22d07"
+            },
+            {
+              "v": "40ceb71",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.62 第七档 trace 导入模式 + 复验入口（E6 工具化）",
+              "items": [
+                "Rushiera",
+                "40ceb711b1"
+              ],
+              "status": "done",
+              "evidence": "git 40ceb71"
             }
           ]
         }
