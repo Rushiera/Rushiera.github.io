@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "44 次提交 · 2026-11 → 2026-11",
-    "ver": "89169ba",
+    "sub": "45 次提交 · 2026-11 → 2026-11",
+    "ver": "66b0bd3",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -644,6 +644,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 89169ba"
+            },
+            {
+              "v": "66b0bd3",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8（重启链彻底解决）：服务清扫 + 切换前复扫 + rename 归因 + intent 单一来源 + 重启前置检查 + proc cwd 修复 + 两次全链验收",
+              "items": [
+                "Rushiera",
+                "66b0bd31d8"
+              ],
+              "status": "done",
+              "evidence": "git 66b0bd3"
             }
           ]
         }

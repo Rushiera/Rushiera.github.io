@@ -91,7 +91,7 @@ window.ARCH = {
         "Go",
         "Git"
        ],
-       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 00:39:45）——全节点回滚 + 编辑轮，验证见 todo G21） · 待办 19",
+       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 00:39:45）——全节点回滚 + 编辑轮，验证见 todo G21） · 待办 18",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -107,7 +107,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.313 · 待办 32",
+       "note": "v0.314 · 待办 33",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -174,7 +174,7 @@ window.ARCH = {
         "Node",
         "Git"
        ],
-       "note": "v0.56 · 上游基线 `c8d5413d0` · 待办 9",
+       "note": "v0.57 · 上游基线 `c8d5413d0` · 待办 12",
        "evidence": "Project/REA/project.md"
       },
       {
@@ -387,7 +387,7 @@ window.ARCH = {
        "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
         "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 00:39:45）——全节点回滚 + 编辑轮，验证见 todo G21）",
-        "待办 19"
+        "待办 18"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"
@@ -477,8 +477,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "REA · 逆向工程 MCP server + CLI（TypeScript / Node 24）",
        "items": [
-        "v0.56 · 上游基线 `c8d5413d0`",
-        "待办 9"
+        "v0.57 · 上游基线 `c8d5413d0`",
+        "待办 12"
        ],
        "status": "partial",
        "evidence": "Project/REA/project.md"
@@ -607,8 +607,8 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.313",
-        "待办 32"
+        "v0.314",
+        "待办 33"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"

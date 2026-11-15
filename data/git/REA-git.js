@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "49 次提交 · 2026-10 → 2026-11",
-    "ver": "37e490b",
+    "sub": "50 次提交 · 2026-10 → 2026-11",
+    "ver": "d832287",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -709,6 +709,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 37e490b"
+            },
+            {
+              "v": "d832287",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.57 Ghidra 12.2 升级 · ext 第七档直连 · Extension 预研",
+              "items": [
+                "Rushiera",
+                "d832287595"
+              ],
+              "status": "done",
+              "evidence": "git d832287"
             }
           ]
         }
