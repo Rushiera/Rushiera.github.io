@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "46 次提交 · 2026-11 → 2026-11",
-    "ver": "ee4ce2b",
+    "sub": "48 次提交 · 2026-11 → 2026-11",
+    "ver": "0b55ee6",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -670,6 +670,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git ee4ce2b"
+            },
+            {
+              "v": "796e583",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8 G23 图片回执可见性：image-inject 回执带预算提示 + 请求体预算摘图时向会话推 systemauto（Client.OnImagesDropped，张数不变不重复刷）；vision_test 的 want 改用共享常量",
+              "items": [
+                "Rushiera",
+                "796e5832f1"
+              ],
+              "status": "done",
+              "evidence": "git 796e583"
+            },
+            {
+              "v": "0b55ee6",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8: think 持久化 + 暂停保留（离开 think 态即落 reason 块 / 不写 live empty / 暂停保留已生成内容 / 纯思考轮不重试）",
+              "items": [
+                "Rushiera",
+                "0b55ee61e6"
+              ],
+              "status": "done",
+              "evidence": "git 0b55ee6"
             }
           ]
         }

@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "51 次提交 · 2026-10 → 2026-11",
-    "ver": "cc09683",
+    "sub": "52 次提交 · 2026-10 → 2026-11",
+    "ver": "e298f1c",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -735,6 +735,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git cc09683"
+            },
+            {
+              "v": "e298f1c",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.60: E6 PIN→TENET 前置——pintool 构建入口与说明",
+              "items": [
+                "Rushiera",
+                "e298f1c892"
+              ],
+              "status": "done",
+              "evidence": "git e298f1c"
             }
           ]
         }

@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-15 13:22",
+ "generatedAt": "2026-11-15 13:52",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 4,
   "todoZone": 3,
   "active": 7,
-  "versions": 1389
+  "versions": 1394
  },
  "items": [
   {
@@ -217,7 +217,7 @@ window.PROJECTS = {
    "pid": "Mau",
    "layer": "host",
    "type": "唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
-   "version": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 00:39:45）——全节点回滚 + 编辑轮，验证见 todo G21）",
+   "version": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-15 13:23:25）——G23 图片回执可见性轮（含 G20 前文防爆四项 · 13:14 部署），验证见 `CHANGELOG.md`）",
    "worker": "Coder",
    "jobs": [
     "Mau",
@@ -226,7 +226,7 @@ window.PROJECTS = {
    ],
    "created": "2026-08-03",
    "todo": 19,
-   "changelog": 23,
+   "changelog": 25,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },
@@ -234,7 +234,7 @@ window.PROJECTS = {
    "pid": "REA",
    "layer": "agent",
    "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-   "version": "v0.59 · 上游基线 `c8d5413d0`",
+   "version": "v0.60 · 上游基线 `c8d5413d0`",
    "worker": "Coder",
    "jobs": [
     "Node",
@@ -242,7 +242,7 @@ window.PROJECTS = {
    ],
    "created": "2026-10-21",
    "todo": 12,
-   "changelog": 61,
+   "changelog": 63,
    "purpose": "本支可改、可验、可自持的逆向工程底座",
    "archived": false
   },
@@ -283,15 +283,15 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.315",
+   "version": "v0.316",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
     "CatHome"
    ],
    "created": "",
-   "todo": 33,
-   "changelog": 343,
+   "todo": 34,
+   "changelog": 344,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   }
