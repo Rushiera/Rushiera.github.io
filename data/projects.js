@@ -1,5 +1,5 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-15 11:21",
+ "generatedAt": "2026-11-15 11:52",
  "public": true,
  "count": 18,
  "stats": {
@@ -234,14 +234,14 @@ window.PROJECTS = {
    "pid": "REA",
    "layer": "agent",
    "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-   "version": "v0.55 · 上游基线 `c8d5413d0`",
+   "version": "v0.56 · 上游基线 `c8d5413d0`",
    "worker": "Coder",
    "jobs": [
     "Node",
     "Git"
    ],
    "created": "2026-10-21",
-   "todo": 8,
+   "todo": 9,
    "changelog": 58,
    "purpose": "本支可改、可验、可自持的逆向工程底座",
    "archived": false
@@ -290,7 +290,7 @@ window.PROJECTS = {
     "CatHome"
    ],
    "created": "",
-   "todo": 33,
+   "todo": 32,
    "changelog": 341,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
