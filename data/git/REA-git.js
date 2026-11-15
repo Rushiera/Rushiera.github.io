@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "57 次提交 · 2026-10 → 2026-11",
-    "ver": "7af3de7",
+    "sub": "58 次提交 · 2026-10 → 2026-11",
+    "ver": "69e2629",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -813,6 +813,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 7af3de7"
+            },
+            {
+              "v": "69e2629",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.67 Ghidra 状态视图 + 断点 CLI 等价（--write / E6BreakpointProbe / GhidraStateView）",
+              "items": [
+                "Rushiera",
+                "69e2629887"
+              ],
+              "status": "done",
+              "evidence": "git 69e2629"
             }
           ]
         }
