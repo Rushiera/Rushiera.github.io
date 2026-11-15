@@ -107,7 +107,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.335 · 待办 35",
+       "note": "v0.336 · 待办 36",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -174,7 +174,7 @@ window.ARCH = {
         "Node",
         "Git"
        ],
-       "note": "v0.67 · 上游基线 `c8d5413d0` · 待办 12",
+       "note": "v0.68 · 上游基线 `c8d5413d0` · 待办 12",
        "evidence": "Project/REA/project.md"
       },
       {
@@ -477,7 +477,7 @@ window.ARCH = {
        "lane": "agent",
        "title": "REA · 逆向工程 MCP server + CLI（TypeScript / Node 24）",
        "items": [
-        "v0.67 · 上游基线 `c8d5413d0`",
+        "v0.68 · 上游基线 `c8d5413d0`",
         "待办 12"
        ],
        "status": "partial",
@@ -607,8 +607,8 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.335",
-        "待办 35"
+        "v0.336",
+        "待办 36"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"

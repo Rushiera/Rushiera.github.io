@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "58 次提交 · 2026-10 → 2026-11",
-    "ver": "69e2629",
+    "sub": "59 次提交 · 2026-10 → 2026-11",
+    "ver": "effe08b",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -826,6 +826,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 69e2629"
+            },
+            {
+              "v": "effe08b",
+              "date": "11-15",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.68: doctor 门禁（allowlist + gate）+ 计数收口 10 处 + tools 免责",
+              "items": [
+                "Rushiera",
+                "effe08b325"
+              ],
+              "status": "done",
+              "evidence": "git effe08b"
             }
           ]
         }
