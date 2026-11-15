@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "50 次提交 · 2026-11 → 2026-11",
-    "ver": "97a041d",
+    "sub": "51 次提交 · 2026-11 → 2026-11",
+    "ver": "a0d966b",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -722,6 +722,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 97a041d"
+            },
+            {
+              "v": "a0d966b",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8 复活猫 B 方案：cacheKey 项目级缓存域（宿主 5 处 + 面板 + 验收 a–d 全过）",
+              "items": [
+                "Rushiera",
+                "a0d966bb3e"
+              ],
+              "status": "done",
+              "evidence": "git a0d966b"
             }
           ]
         }

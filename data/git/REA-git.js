@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "59 次提交 · 2026-10 → 2026-11",
-    "ver": "effe08b",
+    "sub": "60 次提交 · 2026-10 → 2026-11",
+    "ver": "dfad8ac",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -839,6 +839,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git effe08b"
+            },
+            {
+              "v": "dfad8ac",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "REA v0.69：CloudDrive2 1.1.3 Windows 安装器静态取证（C1 核销）——报告 + evidence",
+              "items": [
+                "Rushiera",
+                "dfad8ac7ab"
+              ],
+              "status": "done",
+              "evidence": "git dfad8ac"
             }
           ]
         }

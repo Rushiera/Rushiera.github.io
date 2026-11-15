@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-16 01:29",
+ "generatedAt": "2026-11-16 01:59",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 4,
   "todoZone": 3,
   "active": 7,
-  "versions": 1457
+  "versions": 1459
  },
  "items": [
   {
@@ -234,15 +234,15 @@ window.PROJECTS = {
    "pid": "REA",
    "layer": "agent",
    "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-   "version": "v0.68 · 上游基线 `c8d5413d0`",
+   "version": "v0.69 · 上游基线 `c8d5413d0`",
    "worker": "Coder",
    "jobs": [
     "Node",
     "Git"
    ],
    "created": "2026-10-21",
-   "todo": 13,
-   "changelog": 71,
+   "todo": 12,
+   "changelog": 72,
    "purpose": "本支可改、可验、可自持的逆向工程底座",
    "archived": false
   },
@@ -283,7 +283,7 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.342",
+   "version": "v0.343",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
@@ -291,7 +291,7 @@ window.PROJECTS = {
    ],
    "created": "",
    "todo": 37,
-   "changelog": 379,
+   "changelog": 380,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   }

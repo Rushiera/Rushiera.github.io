@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "79 次提交 · 2026-11 → 2026-11",
-    "ver": "b4530ae",
+    "sub": "80 次提交 · 2026-11 → 2026-11",
+    "ver": "be5d07f",
     "updated": "2026-11-15",
     "contract": {
       "views": [
@@ -1099,6 +1099,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git b4530ae"
+            },
+            {
+              "v": "be5d07f",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.343 建猫后写 cacheKey=proj-pid（复活猫 B）",
+              "items": [
+                "Rushiera",
+                "be5d07fbc4"
+              ],
+              "status": "done",
+              "evidence": "git be5d07f"
             }
           ]
         }
