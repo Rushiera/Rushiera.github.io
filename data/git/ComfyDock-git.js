@@ -4,7 +4,7 @@ window.ARCH = {
     "title": "ComfyDock 提交时间线",
     "sub": "41 次提交 · 2026-09 → 2026-11",
     "ver": "31641ab",
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "contract": {
       "views": [
         "git"
