@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "56 次提交 · 2026-11 → 2026-11",
-    "ver": "a8aa47a",
+    "sub": "57 次提交 · 2026-11 → 2026-11",
+    "ver": "b7af203",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -800,6 +800,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git a8aa47a"
+            },
+            {
+              "v": "b7af203",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9 多猫跟随自动独立 + 零工具语义（toolsEmpty / 模板未变不广播 / 注入报告无工具段）",
+              "items": [
+                "Rushiera",
+                "b7af203bd9"
+              ],
+              "status": "done",
+              "evidence": "git b7af203"
             }
           ]
         }
