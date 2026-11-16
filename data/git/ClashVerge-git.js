@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "4 次提交 · 2026-11 → 2026-11",
-    "ver": "ef92df7",
+    "sub": "5 次提交 · 2026-11 → 2026-11",
+    "ver": "85c8f18",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -124,6 +124,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git ef92df7"
+            },
+            {
+              "v": "85c8f18",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.74 工程迁入 tools/work/ClashVerge：junction 重建 + 服务 ImagePath 改指 + 引用同帧改",
+              "items": [
+                "Rushiera",
+                "85c8f18a42"
+              ],
+              "status": "done",
+              "evidence": "git 85c8f18"
             }
           ]
         }

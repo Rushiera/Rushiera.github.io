@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "60 次提交 · 2026-10 → 2026-11",
-    "ver": "dfad8ac",
+    "sub": "61 次提交 · 2026-10 → 2026-11",
+    "ver": "89e3dea",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -852,6 +852,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git dfad8ac"
+            },
+            {
+              "v": "89e3dea",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.70: HS2 静态分析报告 + config 路径收口（tools/work/REA）",
+              "items": [
+                "Rushiera",
+                "89e3deaa72"
+              ],
+              "status": "done",
+              "evidence": "git 89e3dea"
             }
           ]
         }
