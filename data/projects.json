@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-16 17:07",
+  "generatedAt": "2026-11-16 17:38",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 4,
     "todoZone": 4,
     "active": 8,
-    "versions": 1468
+    "versions": 1469
   },
   "items": [
     {
@@ -96,8 +96,8 @@
       "worker": "Coder",
       "jobs": [],
       "created": "2026-10-06",
-      "todo": 6,
-      "changelog": 14,
+      "todo": 7,
+      "changelog": 15,
       "purpose": "既有目的（上游自带）：",
       "archived": false
     },

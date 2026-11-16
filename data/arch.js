@@ -202,7 +202,7 @@ window.ARCH = {
        "tags": [
         "Coder"
        ],
-       "note": "v0.8 · 待办 6",
+       "note": "v0.8 · 待办 7",
        "evidence": "Project/CloudDrive2/project.md"
       },
       {
@@ -465,7 +465,7 @@ window.ARCH = {
        "title": "CloudDrive2 · 第三方安卓 APK —— 二次开发（备份可靠性：后台自动备份 + 同步 bug）",
        "items": [
         "v0.8",
-        "待办 6"
+        "待办 7"
        ],
        "status": "partial",
        "evidence": "Project/CloudDrive2/project.md"
