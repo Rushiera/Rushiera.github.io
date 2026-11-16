@@ -107,7 +107,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.347 · 待办 40",
+       "note": "v0.348 · 待办 41",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -202,7 +202,7 @@ window.ARCH = {
        "tags": [
         "Coder"
        ],
-       "note": "v0.8 · 待办 7",
+       "note": "v0.8 · 待办 9",
        "evidence": "Project/CloudDrive2/project.md"
       },
       {
@@ -465,7 +465,7 @@ window.ARCH = {
        "title": "CloudDrive2 · 第三方安卓 APK —— 二次开发（备份可靠性：后台自动备份 + 同步 bug）",
        "items": [
         "v0.8",
-        "待办 7"
+        "待办 9"
        ],
        "status": "partial",
        "evidence": "Project/CloudDrive2/project.md"
@@ -607,8 +607,8 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.347",
-        "待办 40"
+        "v0.348",
+        "待办 41"
        ],
        "status": "partial",
        "evidence": "Project/并发协议/project.md"
