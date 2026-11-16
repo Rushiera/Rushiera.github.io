@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-16 17:38",
+ "generatedAt": "2026-11-16 18:08",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 4,
   "todoZone": 4,
   "active": 8,
-  "versions": 1469
+  "versions": 1473
  },
  "items": [
   {
@@ -97,7 +97,7 @@ window.PROJECTS = {
    "jobs": [],
    "created": "2026-10-06",
    "todo": 7,
-   "changelog": 15,
+   "changelog": 18,
    "purpose": "既有目的（上游自带）：",
    "archived": false
   },
@@ -225,8 +225,8 @@ window.PROJECTS = {
     "Git"
    ],
    "created": "2026-08-03",
-   "todo": 23,
-   "changelog": 42,
+   "todo": 25,
+   "changelog": 43,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },

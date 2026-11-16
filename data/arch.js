@@ -91,7 +91,7 @@ window.ARCH = {
         "Go",
         "Git"
        ],
-       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 01:17:19 · incr）——复活猫 B 方案（`cacheKey` 项目级缓存域），见 `CHANGELOG.md` 首行） · 待办 23",
+       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 01:17:19 · incr）——复活猫 B 方案（`cacheKey` 项目级缓存域），见 `CHANGELOG.md` 首行） · 待办 25",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -387,7 +387,7 @@ window.ARCH = {
        "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
         "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 01:17:19 · incr）——复活猫 B 方案（`cacheKey` 项目级缓存域），见 `CHANGELOG.md` 首行）",
-        "待办 23"
+        "待办 25"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"
