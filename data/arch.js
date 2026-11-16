@@ -158,7 +158,7 @@ window.ARCH = {
         "file-*",
         "powershell`…"
        ],
-       "note": "v0.34 · 待办 0",
+       "note": "v0.35 · 待办 0",
        "evidence": "Project/ECC/project.md"
       },
       {
@@ -581,7 +581,7 @@ window.ARCH = {
        "lane": "agent",
        "title": "ECC · 可移植的 Agent 工作流层（reusable workflow layer）+ 二…",
        "items": [
-        "v0.34",
+        "v0.35",
         "待办 0"
        ],
        "status": "done",
