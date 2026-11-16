@@ -1,7 +1,7 @@
 window.GIT_TIMELINES = {
- "generatedAt": "2026-11-16 08:02",
+ "generatedAt": "2026-11-16 10:34",
  "public": true,
- "count": 17,
+ "count": 16,
  "items": [
   {
    "pid": "并发协议",
@@ -30,16 +30,6 @@ window.GIT_TIMELINES = {
    "from": "2026-10",
    "to": "2026-11",
    "file": "ApiSiteAnalyzer-git.js",
-   "public": true,
-   "source": "repo"
-  },
-  {
-   "pid": "CGSE_CORE",
-   "shown": 317,
-   "total": 317,
-   "from": "2026-09",
-   "to": "2026-11",
-   "file": "CGSE_CORE-git.js",
    "public": true,
    "source": "repo"
   },

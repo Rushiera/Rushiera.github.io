@@ -10,11 +10,11 @@ window.ARCH = {
         "git"
       ]
     },
-    "repo": "D:\\Mau\\WorkSpace\\tools\\ECC\\raw",
+    "repo": "D:\\Mau\\WorkSpace\\tools\\work\\ECC\\raw",
     "sources": [
       {
         "label": "数据源：git log（--reverse，含提交人）",
-        "path": "D:\\Mau\\WorkSpace\\tools\\ECC\\raw (branch main)"
+        "path": "D:\\Mau\\WorkSpace\\tools\\work\\ECC\\raw (branch main)"
       }
     ]
   },
