@@ -60,7 +60,7 @@ window.ARCH = {
         "Majordomo",
         "Akasha"
        ],
-       "note": "v1.93 · 待办 2",
+       "note": "v1.94 · 待办 2",
        "evidence": "Project/Akasha/project.md"
       },
       {
@@ -594,7 +594,7 @@ window.ARCH = {
        "lane": "host",
        "title": "Akasha · 知识数据库 + CCBP 维护工作台",
        "items": [
-        "v1.93",
+        "v1.94",
         "待办 2"
        ],
        "status": "partial",
