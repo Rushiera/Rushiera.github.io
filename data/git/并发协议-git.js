@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "84 次提交 · 2026-11 → 2026-11",
-    "ver": "c26ad86",
+    "sub": "86 次提交 · 2026-11 → 2026-11",
+    "ver": "68c037c",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -1164,6 +1164,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git c26ad86"
+            },
+            {
+              "v": "6718090",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.350 OrderCacheKey 补索引卡名单（项目增删即失效）",
+              "items": [
+                "Rushiera",
+                "67180909ab"
+              ],
+              "status": "done",
+              "evidence": "git 6718090"
+            },
+            {
+              "v": "68c037c",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.351 整理猫名 +整理 · 有回复即删 · 空闲整理猫/无台账临时猫纳入自动删猫（面板）",
+              "items": [
+                "Rushiera",
+                "68c037c4e8"
+              ],
+              "status": "done",
+              "evidence": "git 68c037c"
             }
           ]
         }
