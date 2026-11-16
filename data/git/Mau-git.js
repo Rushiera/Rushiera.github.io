@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "55 次提交 · 2026-11 → 2026-11",
-    "ver": "6310eb2",
+    "sub": "56 次提交 · 2026-11 → 2026-11",
+    "ver": "a8aa47a",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -787,6 +787,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 6310eb2"
+            },
+            {
+              "v": "a8aa47a",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9 建猫链提速：指令回执带 result + 挂载回执带 rebuilt（单只 2.85s→0.18s）",
+              "items": [
+                "Rushiera",
+                "a8aa47a316"
+              ],
+              "status": "done",
+              "evidence": "git a8aa47a"
             }
           ]
         }
