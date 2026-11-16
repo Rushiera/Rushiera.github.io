@@ -91,7 +91,7 @@ window.ARCH = {
         "Go",
         "Git"
        ],
-       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 20:13:12 · incr · pid 46580）——部署链黑框修复（控制台子进程统一 CREATE_NO_WINDOW + `TestSpawnHidesConsole` 门禁），见 `CHANGELOG.md` 首行） · 待办 26",
+       "note": "0.36.9（`version.txt` 单点；运行区 0.36.9 已部署（2026-11-16 20:53:44 · incr · pid 换代）——排空闸门（重启登记后冻结其它会话的轮、等 OA 在途自然跑完、上限 300s、撤销自动解冻），见 `CHANGELOG.md` 首行） · 待办 26",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -386,7 +386,7 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
-        "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 20:13:12 · incr · pid 46580）——部署链黑框修复（控制台子进程统一 CREATE_NO_WINDOW + `TestSpawnHidesConsole` 门禁），见 `CHANGELOG.md` 首行）",
+        "0.36.9（`version.txt` 单点；运行区 0.36.9 已部署（2026-11-16 20:53:44 · incr · pid 换代）——排空闸门（重启登记后冻结其它会话的轮、等 OA 在途自然跑完、上限 300s、撤销自动解冻），见 `CHANGELOG.md` 首行）",
         "待办 26"
        ],
        "status": "partial",

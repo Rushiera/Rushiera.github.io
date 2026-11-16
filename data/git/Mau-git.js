@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "54 次提交 · 2026-11 → 2026-11",
-    "ver": "8f218b2",
+    "sub": "55 次提交 · 2026-11 → 2026-11",
+    "ver": "6310eb2",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -774,6 +774,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 8f218b2"
+            },
+            {
+              "v": "6310eb2",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9: 排空闸门（重启冻结新工作 + 等在途 OA 跑完；G34 误诊纠正为 owner 号段碰撞）",
+              "items": [
+                "Rushiera",
+                "6310eb2017"
+              ],
+              "status": "done",
+              "evidence": "git 6310eb2"
             }
           ]
         }

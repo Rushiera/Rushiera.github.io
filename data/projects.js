@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-16 20:40",
+ "generatedAt": "2026-11-16 21:11",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 4,
   "todoZone": 4,
   "active": 8,
-  "versions": 1479
+  "versions": 1480
  },
  "items": [
   {
@@ -217,7 +217,7 @@ window.PROJECTS = {
    "pid": "Mau",
    "layer": "host",
    "type": "唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
-   "version": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 20:13:12 · incr · pid 46580）——部署链黑框修复（控制台子进程统一 CREATE_NO_WINDOW + `TestSpawnHidesConsole` 门禁），见 `CHANGELOG.md` 首行）",
+   "version": "0.36.9（`version.txt` 单点；运行区 0.36.9 已部署（2026-11-16 20:53:44 · incr · pid 换代）——排空闸门（重启登记后冻结其它会话的轮、等 OA 在途自然跑完、上限 300s、撤销自动解冻），见 `CHANGELOG.md` 首行）",
    "worker": "Coder",
    "jobs": [
     "Mau",
@@ -226,7 +226,7 @@ window.PROJECTS = {
    ],
    "created": "2026-08-03",
    "todo": 26,
-   "changelog": 45,
+   "changelog": 46,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },
