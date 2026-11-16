@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "51 次提交 · 2026-11 → 2026-11",
-    "ver": "a0d966b",
+    "sub": "53 次提交 · 2026-11 → 2026-11",
+    "ver": "6f59fbe",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -735,6 +735,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git a0d966b"
+            },
+            {
+              "v": "202c3ff",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8 G32 incr 重启假绿修复：自启判据按切换时刻分界（CreatedAt 取证 / 陈旧清退 / 复扫接手 / 自启自检）",
+              "items": [
+                "Rushiera",
+                "202c3ff6d0"
+              ],
+              "status": "done",
+              "evidence": "git 202c3ff"
+            },
+            {
+              "v": "6f59fbe",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8 BrowserCat 三修与依赖探针 flaky 修复入库（已部署件；mountintent 注释更正）",
+              "items": [
+                "Rushiera",
+                "6f59fbe472"
+              ],
+              "status": "done",
+              "evidence": "git 6f59fbe"
             }
           ]
         }

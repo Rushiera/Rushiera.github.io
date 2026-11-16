@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "82 次提交 · 2026-11 → 2026-11",
-    "ver": "5bec3ea",
+    "sub": "83 次提交 · 2026-11 → 2026-11",
+    "ver": "bc7c74d",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -1138,6 +1138,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 5bec3ea"
+            },
+            {
+              "v": "bc7c74d",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.348 修交接收工预填：复用 iframe 时带 draft 重载",
+              "items": [
+                "Rushiera",
+                "bc7c74de19"
+              ],
+              "status": "done",
+              "evidence": "git bc7c74d"
             }
           ]
         }
