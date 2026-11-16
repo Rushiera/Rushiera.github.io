@@ -124,7 +124,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "v0.90.2 · 待办 8",
+       "note": "v0.90.2 · 待办 9",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -556,7 +556,7 @@ window.ARCH = {
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
         "v0.90.2",
-        "待办 8"
+        "待办 9"
        ],
        "status": "partial",
        "evidence": "Project/ACS/project.md"

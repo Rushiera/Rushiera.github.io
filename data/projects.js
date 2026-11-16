@@ -1,5 +1,5 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-16 11:34",
+ "generatedAt": "2026-11-16 15:06",
  "public": true,
  "count": 18,
  "stats": {
@@ -21,7 +21,7 @@ window.PROJECTS = {
     "CSharp"
    ],
    "created": "2026-11-01",
-   "todo": 8,
+   "todo": 9,
    "changelog": 132,
    "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
    "archived": false
