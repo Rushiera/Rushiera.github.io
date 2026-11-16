@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "80 次提交 · 2026-11 → 2026-11",
-    "ver": "be5d07f",
+    "sub": "82 次提交 · 2026-11 → 2026-11",
+    "ver": "5bec3ea",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -1112,6 +1112,32 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git be5d07f"
+            },
+            {
+              "v": "78697bb",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.344 工作页项目区不显示已归档项目的卡（meta 出声已隐藏 N）",
+              "items": [
+                "Rushiera",
+                "78697bb2b7"
+              ],
+              "status": "done",
+              "evidence": "git 78697bb"
+            },
+            {
+              "v": "5bec3ea",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.346b 面板 AppLife 加 portFile（launch-time 端口按 runtime 文件现读）+ 运行页声明改读 portal.json + README 声明面同步",
+              "items": [
+                "Rushiera",
+                "5bec3ea16d"
+              ],
+              "status": "done",
+              "evidence": "git 5bec3ea"
             }
           ]
         }
