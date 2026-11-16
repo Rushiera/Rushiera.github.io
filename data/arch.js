@@ -91,7 +91,7 @@ window.ARCH = {
         "Go",
         "Git"
        ],
-       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 18:19:48 · incr · pid 20888）——G32 自启判据（切换时刻分界），见 `CHANGELOG.md` 首行） · 待办 25",
+       "note": "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 20:13:12 · incr · pid 46580）——部署链黑框修复（控制台子进程统一 CREATE_NO_WINDOW + `TestSpawnHidesConsole` 门禁），见 `CHANGELOG.md` 首行） · 待办 26",
        "evidence": "Project/Mau/project.md"
       },
       {
@@ -386,8 +386,8 @@ window.ARCH = {
        "lane": "host",
        "title": "Mau · 唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
        "items": [
-        "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 18:19:48 · incr · pid 20888）——G32 自启判据（切换时刻分界），见 `CHANGELOG.md` 首行）",
-        "待办 25"
+        "0.36.8（`version.txt` 单点；运行区 0.36.8 已部署（2026-11-16 20:13:12 · incr · pid 46580）——部署链黑框修复（控制台子进程统一 CREATE_NO_WINDOW + `TestSpawnHidesConsole` 门禁），见 `CHANGELOG.md` 首行）",
+        "待办 26"
        ],
        "status": "partial",
        "evidence": "Project/Mau/project.md"

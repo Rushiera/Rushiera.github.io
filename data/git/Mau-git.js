@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "53 次提交 · 2026-11 → 2026-11",
-    "ver": "6f59fbe",
+    "sub": "54 次提交 · 2026-11 → 2026-11",
+    "ver": "8f218b2",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -761,6 +761,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 6f59fbe"
+            },
+            {
+              "v": "8f218b2",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.8 部署链黑框修复：控制台子进程统一 CREATE_NO_WINDOW + TestSpawnHidesConsole 门禁",
+              "items": [
+                "Rushiera",
+                "8f218b2a1a"
+              ],
+              "status": "done",
+              "evidence": "git 8f218b2"
             }
           ]
         }
