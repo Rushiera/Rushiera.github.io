@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "83 次提交 · 2026-11 → 2026-11",
-    "ver": "bc7c74d",
+    "sub": "84 次提交 · 2026-11 → 2026-11",
+    "ver": "c26ad86",
     "updated": "2026-11-16",
     "contract": {
       "views": [
@@ -1151,6 +1151,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git bc7c74d"
+            },
+            {
+              "v": "c26ad86",
+              "date": "11-16",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.349 整理提示词多套：verifySets 存多套 + 模板弹层加套/删套 + 登记整理切换 tpl",
+              "items": [
+                "Rushiera",
+                "c26ad86d4e"
+              ],
+              "status": "done",
+              "evidence": "git c26ad86"
             }
           ]
         }
