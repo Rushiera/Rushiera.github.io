@@ -188,7 +188,7 @@ window.ARCH = {
        "tags": [
         "Coder"
        ],
-       "note": "v1.74（v1.74：工程迁入 `workspace:tools/work/ClashVerge/`——同卷 rename + 两 AppData junction 重建 + 服务 `ImagePath` 改指；ccbp 引用改写 29 文件 / 96 处。v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min）。v1.73：`unity.com` 走专用组 `unity-出网`——地域重定向（直连与香港均 302 `unity.cn` + `location=HK`；日本 307 `api.unity.com` + `location=JP`），旁路表 `bypass-geo-redirect`，接管面 31 → 32） · 待办 35",
+       "note": "v1.75（v1.75：新增 `dmm-出网` 组 + `DOMAIN-SUFFIX,dmm.com` 接管（接管面 32 → 33）——DMM GamePlayer 的 `v5/startup` 业务码按出口地区判定（直连 `result_code 801` / 日本出口 `100`），组内只放实测能通该接口的日本 cdn 节点；顺带修 `dmmgameplayer://` 协议注册表断链（HKLM 仍指旧 `GakumasUnlock` 路径 → HKCU 覆盖到 `Gakumas`）。v1.74：工程迁入 `workspace:tools/work/ClashVerge/`——同卷 rename + 两 AppData junction 重建 + 服务 `ImagePath` 改指；ccbp 引用改写 29 文件 / 96 处。v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min）。v1.73：`unity.com` 走专用组 `unity-出网`——地域重定向（直连与香港均 302 `unity.cn` + `location=HK`；日本 307 `api.unity.com` + `location=JP`），旁路表 `bypass-geo-redirect`，接管面 31 → 32） · 待办 35",
        "evidence": "Project/ClashVerge/project.md"
       },
       {
@@ -516,7 +516,7 @@ window.ARCH = {
        "lane": "game",
        "title": "ClashVerge · 本机 Clash Verge Rev 的接管与二次开发——把安装产物与用户数据全部收进…",
        "items": [
-        "v1.74（v1.74：工程迁入 `workspace:tools/work/ClashVerge/`——同卷 rename + 两 AppData junction 重建 + 服务 `ImagePath` 改指；ccbp 引用改写 29 文件 / 96 处。v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min）。v1.73：`unity.com` 走专用组 `unity-出网`——地域重定向（直连与香港均 302 `unity.cn` + `location=HK`；日本 307 `api.unity.com` + `location=JP`），旁路表 `bypass-geo-redirect`，接管面 31 → 32）",
+        "v1.75（v1.75：新增 `dmm-出网` 组 + `DOMAIN-SUFFIX,dmm.com` 接管（接管面 32 → 33）——DMM GamePlayer 的 `v5/startup` 业务码按出口地区判定（直连 `result_code 801` / 日本出口 `100`），组内只放实测能通该接口的日本 cdn 节点；顺带修 `dmmgameplayer://` 协议注册表断链（HKLM 仍指旧 `GakumasUnlock` 路径 → HKCU 覆盖到 `Gakumas`）。v1.74：工程迁入 `workspace:tools/work/ClashVerge/`——同卷 rename + 两 AppData junction 重建 + 服务 `ImagePath` 改指；ccbp 引用改写 29 文件 / 96 处。v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min）。v1.73：`unity.com` 走专用组 `unity-出网`——地域重定向（直连与香港均 302 `unity.cn` + `location=HK`；日本 307 `api.unity.com` + `location=JP`），旁路表 `bypass-geo-redirect`，接管面 31 → 32）",
         "待办 35"
        ],
        "status": "partial",
