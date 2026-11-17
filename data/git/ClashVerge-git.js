@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "13 次提交 · 2026-11 → 2026-11",
-    "ver": "e81a353",
+    "sub": "14 次提交 · 2026-11 → 2026-11",
+    "ver": "2030380",
     "updated": "2026-11-17",
     "contract": {
       "views": [
@@ -241,6 +241,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git e81a353"
+            },
+            {
+              "v": "2030380",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.81 TLS 画像回归解除（phase2 诊断内核：dispatcher 三处 [Sniffer] 日志）+ 补丁集同步（dispatcher patchedSha256 44F8D427）+ netlog 新件（probe-self / logs-reload / probe-logs 登记）；并入 v1.79/v1.80 未提交面（probe-alpn / probe-ech / apply-patches / patches / mihomo v1.19.34 同步）",
+              "items": [
+                "Rushiera",
+                "20303806ee"
+              ],
+              "status": "done",
+              "evidence": "git 2030380"
             }
           ]
         }

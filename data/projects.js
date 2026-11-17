@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-17 23:24",
+ "generatedAt": "2026-11-17 23:54",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 2,
   "todoZone": 6,
   "active": 8,
-  "versions": 1495
+  "versions": 1496
  },
  "items": [
   {
@@ -79,12 +79,12 @@ window.PROJECTS = {
    "pid": "ClashVerge",
    "layer": "game",
    "type": "本机 Clash Verge Rev 的接管与二次开发——把安装产物与用户数据全部收进…",
-   "version": "v1.80（v1.80：补丁重放三件建成 + mihomo 升级 v1.19.34（TLS 画像回归待修）——重放三件连跑两次全 `already`（幂等实证）；上游 v1.19.32→v1.19.34 未碰 6 个改动文件（冲突面 0）；重放 6 文件全 `applied`；产物 84,172,800 B；`GET /version` = `v1.19.34-phase1`；🔴 TLS 画像回归（`sniffHost` 空、HTTP path 正常），fix1 已排除「数据不完整」→ 交接 §三-1。v1.79：协议层 Phase 1 取数面全通——内核 `v1.19.32-phase1`（JA3 / TLS 版本 / SNI / ECH / ALPN 落库，`conn` 28 列）；ALPN 两条样本（`h2` / `http/1.1`）、`ech=1`、JA3 与 `tls.peet.ws` 第三方逐字节一致、`sni` 两态；curl 8.10.1 无 HTTP2 → 新增 `netlog/probe-alpn.mjs` 真实客户端；ECH 用 Go `crypto/tls` 真实客户端（`netlog/probe-ech/main.go`）。v1.78：SCSP 游戏 API 域名族显式直连（`bypass-scsp-localhost-api` · 接管面 36 → 37）。v1.77：协议层 Phase 0——`sniffer` 从「域名提取器」扩成「协议画像」（ALPN / 明文 method+path / ECH / 预留指纹），代码 6 文件已编译，产物自报 `v1.19.32-phase0`；部署被服务模式挡住 → 管理员停服务替换 `cores\\*` 四份副本生效（判据 1/2/3 全过）。v1.76：FANZA 族并入 `dmm-出网`（旁路表 2 → 4 条后缀，`assert-routes` 37 PASS / FAIL 0）。v1.75：`dmm-出网` 组 + `DOMAIN-SUFFIX,dmm.com` 接管。v1.74：工程迁入 `tools/work/ClashVerge`。v1.73：`unity-出网`。v1.72：`gofile-出网` `interval` 120。v1.71：`raw` 口径纠错 + 30.72 GB 可重建产物清理。v1.70：`short` 门禁两护栏。v1.69：`+.gofile.io` 国内 DoH）",
+   "version": "v1.81（v1.81：TLS 画像回归解除——phase2 诊断内核（`TCPSniff` 两处早退 + `NewDispatcher` 一行，均 `[Sniffer]` 前缀）上线：`sniffers=3` 证明 TLS/HTTP/QUIC 三段全部解析成功 · `forceDomain=1` 是 4 条 `force-domain` 合并成单个 domain-set matcher（`parseDomain` 实现，不是配置丢失）· 大量 `shouldOverride=false` 是「非 force-domain 域名不嗅探」的设计行为；实测 `www.cloudflare.com` / `tls-ech.dev` 画像全字段（`alpn=h2 · src=tls · fp=ja3:d67b0948… · ver=1.3`）与 HTTP `path=/foo` 正常，`probe-schema` alpn 11→19 · tls_fp 9→17 · tls_version 9→17 · sni 9→17 → v1.80 的「TLS 画像回归」判据作废（观测对象不在 force-domain 内 + `/connections` 快照读取与连接存活期错位）；#63 核销、补丁集同步到诊断版（`44F8D427…`）· v1.80：补丁重放三件建成 + mihomo 升级 v1.19.34（TLS 画像回归待修）——重放三件连跑两次全 `already`（幂等实证）；上游 v1.19.32→v1.19.34 未碰 6 个改动文件（冲突面 0）；重放 6 文件全 `applied`；产物 84,172,800 B；`GET /version` = `v1.19.34-phase1`；🔴 TLS 画像回归（`sniffHost` 空、HTTP path 正常），fix1 已排除「数据不完整」→ 交接 §三-1。v1.79：协议层 Phase 1 取数面全通——内核 `v1.19.32-phase1`（JA3 / TLS 版本 / SNI / ECH / ALPN 落库，`conn` 28 列）；ALPN 两条样本（`h2` / `http/1.1`）、`ech=1`、JA3 与 `tls.peet.ws` 第三方逐字节一致、`sni` 两态；curl 8.10.1 无 HTTP2 → 新增 `netlog/probe-alpn.mjs` 真实客户端；ECH 用 Go `crypto/tls` 真实客户端（`netlog/probe-ech/main.go`）。v1.78：SCSP 游戏 API 域名族显式直连（`bypass-scsp-localhost-api` · 接管面 36 → 37）。v1.77：协议层 Phase 0——`sniffer` 从「域名提取器」扩成「协议画像」（ALPN / 明文 method+path / ECH / 预留指纹），代码 6 文件已编译，产物自报 `v1.19.32-phase0`；部署被服务模式挡住 → 管理员停服务替换 `cores\\*` 四份副本生效（判据 1/2/3 全过）。v1.76：FANZA 族并入 `dmm-出网`（旁路表 2 → 4 条后缀，`assert-routes` 37 PASS / FAIL 0）。v1.75：`dmm-出网` 组 + `DOMAIN-SUFFIX,dmm.com` 接管。v1.74：工程迁入 `tools/work/ClashVerge`。v1.73：`unity-出网`。v1.72：`gofile-出网` `interval` 120。v1.71：`raw` 口径纠错 + 30.72 GB 可重建产物清理。v1.70：`short` 门禁两护栏。v1.69：`+.gofile.io` 国内 DoH）",
    "worker": "Coder",
    "jobs": [],
    "created": "2026-10-30",
-   "todo": 38,
-   "changelog": 90,
+   "todo": 37,
+   "changelog": 91,
    "purpose": "Clash Verge Rev 2.5.8 装进 C:\\Program Files\\Clash Verge，用户数据按 Tauri 约定落在 %APPDATA% 与 %LOCALAPPDAT…",
    "archived": false
   },
