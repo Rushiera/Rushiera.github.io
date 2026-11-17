@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "86 次提交 · 2026-11 → 2026-11",
-    "ver": "68c037c",
+    "sub": "87 次提交 · 2026-11 → 2026-11",
+    "ver": "b100460",
     "updated": "2026-11-17",
     "contract": {
       "views": [
@@ -1190,6 +1190,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 68c037c"
+            },
+            {
+              "v": "b100460",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.352 运行页拖入判五形态 + 重拖继承（auto 不冲）+ 登记应用.cmd + 领航员登记 8790",
+              "items": [
+                "Rushiera",
+                "b100460ccb"
+              ],
+              "status": "done",
+              "evidence": "git b100460"
             }
           ]
         }
