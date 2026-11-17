@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "14 次提交 · 2026-11 → 2026-11",
-    "ver": "2030380",
+    "sub": "15 次提交 · 2026-11 → 2026-11",
+    "ver": "a948962",
     "updated": "2026-11-17",
     "contract": {
       "views": [
@@ -254,6 +254,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 2030380"
+            },
+            {
+              "v": "a948962",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.82 QUIC-ALPN（h3）接字段 + ECH 样本 · 补丁集 7 文件（新增 quic_sniffer）",
+              "items": [
+                "Rushiera",
+                "a948962502"
+              ],
+              "status": "done",
+              "evidence": "git a948962"
             }
           ]
         }
