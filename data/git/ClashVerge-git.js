@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "18 次提交 · 2026-11 → 2026-11",
-    "ver": "c3183d6",
+    "sub": "19 次提交 · 2026-11 → 2026-11",
+    "ver": "0c2cf27",
     "updated": "2026-11-17",
     "contract": {
       "views": [
@@ -306,6 +306,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git c3183d6"
+            },
+            {
+              "v": "0c2cf27",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.86 PATH-REGEX 规则接入（内核 phase7 产物 · 补丁集 22 文件 · 换核待 UAC）",
+              "items": [
+                "Rushiera",
+                "0c2cf27633"
+              ],
+              "status": "done",
+              "evidence": "git 0c2cf27"
             }
           ]
         }
