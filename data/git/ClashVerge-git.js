@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "15 次提交 · 2026-11 → 2026-11",
-    "ver": "a948962",
+    "sub": "16 次提交 · 2026-11 → 2026-11",
+    "ver": "912df4d",
     "updated": "2026-11-17",
     "contract": {
       "views": [
@@ -267,6 +267,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git a948962"
+            },
+            {
+              "v": "912df4d",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.83 Phase 2 首例：ALPN 规则接入（内核 v1.19.34-phase4 · 补丁集 11 文件 · 目录改名 kernel-patches + mode=create）",
+              "items": [
+                "Rushiera",
+                "912df4d847"
+              ],
+              "status": "done",
+              "evidence": "git 912df4d"
             }
           ]
         }
