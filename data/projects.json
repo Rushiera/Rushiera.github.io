@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-17 22:54",
+  "generatedAt": "2026-11-17 23:24",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 2,
     "todoZone": 6,
     "active": 8,
-    "versions": 1493
+    "versions": 1495
   },
   "items": [
     {
@@ -79,12 +79,12 @@
       "pid": "ClashVerge",
       "layer": "game",
       "type": "本机 Clash Verge Rev 的接管与二次开发——把安装产物与用户数据全部收进…",
-      "version": "v1.77（v1.77：协议层升级 Phase 0——`sniffer` 从「域名提取器」扩成「协议画像」（ALPN / 明文 method+path / ECH / 预留指纹），代码 6 文件已编译，产物自报 `v1.19.32-phase0`；部署被服务模式挡住：`clash_verge_service` 持私有目录 `C:\\ProgramData\\clash-verge-service`（普通用户 os error 5），内核从私有副本运行，替换 `app` 文件与改 `clash_core` 都不构成 stage → 已由管理员停服务替换 `cores\\*` 四份副本生效（内核 `v1.19.32-phase0`，判据 1/2/3 全过：`alpn=1` · `path=1` · `sniff_source=2`，对照域零画像）；v1.76：FANZA 族并入 `dmm-出网`——旁路表 `bypass-dmm` 由 2 条扩到 4 条（新增 `DOMAIN-SUFFIX,dmm.co.jp` + `DOMAIN-SUFFIX,fanza.jp`），规则 23 → 25，`assert-routes` 37 PASS / FAIL 0；FANZA 真实主域名是 `fanza.jp`（`www.dmm.co.jp` 301 指向它），两条后缀缺一不可。v1.75：新增 `dmm-出网` 组 + `DOMAIN-SUFFIX,dmm.com` 接管（接管面 32 → 33）——DMM GamePlayer 的 `v5/startup` 业务码按出口地区判定（直连 `result_code 801` / 日本出口 `100`），组内只放实测能通该接口的日本 cdn 节点；顺带修 `dmmgameplayer://` 协议注册表断链（HKLM 仍指旧 `GakumasUnlock` 路径 → HKCU 覆盖到 `Gakumas`）。v1.74：工程迁入 `workspace:tools/work/ClashVerge/`——同卷 rename + 两 AppData junction 重建 + 服务 `ImagePath` 改指；ccbp 引用改写 29 文件 / 96 处。v1.69：`+.gofile.io` 走国内 DoH——`fallback-filter` 把 geo-DNS 应答判污染后解析到死 IP。v1.70：`short` 升级门禁补两道护栏 + `dbg-host` 两个观测位点。v1.71：`raw` 口径纠错（工作副本非只读）+ `target/` 30.72 GB 可重建产物清入回收站。v1.72：`gofile-出网` 健康检查 `interval` 300 → 120（#59 核销，死窗口 ≤5 min → ≤2 min）。v1.73：`unity.com` 走专用组 `unity-出网`——地域重定向（直连与香港均 302 `unity.cn` + `location=HK`；日本 307 `api.unity.com` + `location=JP`），旁路表 `bypass-geo-redirect`，接管面 31 → 32）",
+      "version": "v1.80（v1.80：补丁重放三件建成 + mihomo 升级 v1.19.34（TLS 画像回归待修）——重放三件连跑两次全 `already`（幂等实证）；上游 v1.19.32→v1.19.34 未碰 6 个改动文件（冲突面 0）；重放 6 文件全 `applied`；产物 84,172,800 B；`GET /version` = `v1.19.34-phase1`；🔴 TLS 画像回归（`sniffHost` 空、HTTP path 正常），fix1 已排除「数据不完整」→ 交接 §三-1。v1.79：协议层 Phase 1 取数面全通——内核 `v1.19.32-phase1`（JA3 / TLS 版本 / SNI / ECH / ALPN 落库，`conn` 28 列）；ALPN 两条样本（`h2` / `http/1.1`）、`ech=1`、JA3 与 `tls.peet.ws` 第三方逐字节一致、`sni` 两态；curl 8.10.1 无 HTTP2 → 新增 `netlog/probe-alpn.mjs` 真实客户端；ECH 用 Go `crypto/tls` 真实客户端（`netlog/probe-ech/main.go`）。v1.78：SCSP 游戏 API 域名族显式直连（`bypass-scsp-localhost-api` · 接管面 36 → 37）。v1.77：协议层 Phase 0——`sniffer` 从「域名提取器」扩成「协议画像」（ALPN / 明文 method+path / ECH / 预留指纹），代码 6 文件已编译，产物自报 `v1.19.32-phase0`；部署被服务模式挡住 → 管理员停服务替换 `cores\\*` 四份副本生效（判据 1/2/3 全过）。v1.76：FANZA 族并入 `dmm-出网`（旁路表 2 → 4 条后缀，`assert-routes` 37 PASS / FAIL 0）。v1.75：`dmm-出网` 组 + `DOMAIN-SUFFIX,dmm.com` 接管。v1.74：工程迁入 `tools/work/ClashVerge`。v1.73：`unity-出网`。v1.72：`gofile-出网` `interval` 120。v1.71：`raw` 口径纠错 + 30.72 GB 可重建产物清理。v1.70：`short` 门禁两护栏。v1.69：`+.gofile.io` 国内 DoH）",
       "worker": "Coder",
       "jobs": [],
       "created": "2026-10-30",
-      "todo": 11,
-      "changelog": 88,
+      "todo": 38,
+      "changelog": 90,
       "purpose": "Clash Verge Rev 2.5.8 装进 C:\\Program Files\\Clash Verge，用户数据按 Tauri 约定落在 %APPDATA% 与 %LOCALAPPDAT…",
       "archived": false
     },
