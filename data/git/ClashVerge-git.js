@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "17 次提交 · 2026-11 → 2026-11",
-    "ver": "1e882e3",
+    "sub": "18 次提交 · 2026-11 → 2026-11",
+    "ver": "c3183d6",
     "updated": "2026-11-17",
     "contract": {
       "views": [
@@ -293,6 +293,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 1e882e3"
+            },
+            {
+              "v": "c3183d6",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.85 协议层 Phase 2 第三类：FINGERPRINT 规则接入（内核 v1.19.34-phase6）",
+              "items": [
+                "Rushiera",
+                "c3183d6803"
+              ],
+              "status": "done",
+              "evidence": "git c3183d6"
             }
           ]
         }
