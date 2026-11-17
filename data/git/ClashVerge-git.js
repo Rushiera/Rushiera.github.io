@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "5 次提交 · 2026-11 → 2026-11",
-    "ver": "85c8f18",
+    "sub": "13 次提交 · 2026-11 → 2026-11",
+    "ver": "e81a353",
     "updated": "2026-11-17",
     "contract": {
       "views": [
@@ -137,6 +137,110 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 85c8f18"
+            },
+            {
+              "v": "623d768",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.77 Phase 0: sniffer 协议画像（alpn/path/ech）+ 服务模式部署脚本 + netlog 跟踪面",
+              "items": [
+                "Rushiera",
+                "623d768c6c"
+              ],
+              "status": "done",
+              "evidence": "git 623d768"
+            },
+            {
+              "v": "928a146",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.77 netlog 工具层入库（#55 处置：白名单放行 *.mjs / *.md，库与数据仍排除）",
+              "items": [
+                "Rushiera",
+                "928a1464f3"
+              ],
+              "status": "done",
+              "evidence": "git 928a146"
+            },
+            {
+              "v": "7c235c7",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.77 Phase 0: netlog conn 扩列（alpn/path/ech/sniff_source）+ 采集器写入",
+              "items": [
+                "Rushiera",
+                "7c235c7897"
+              ],
+              "status": "done",
+              "evidence": "git 7c235c7"
+            },
+            {
+              "v": "7a1b353",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.77 Phase 0: probe-schema 库面判据（conn 画像列 + 非空计数）",
+              "items": [
+                "Rushiera",
+                "7a1b3533b3"
+              ],
+              "status": "done",
+              "evidence": "git 7a1b353"
+            },
+            {
+              "v": "5193e9d",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.77 elevate-swap-kernel: 加 trap（停服务后异常必拉回服务）",
+              "items": [
+                "Rushiera",
+                "5193e9da02"
+              ],
+              "status": "done",
+              "evidence": "git 5193e9d"
+            },
+            {
+              "v": "07d953f",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.78 旁路表加 bypass-scsp-localhost-api（bn765.com → DIRECT）",
+              "items": [
+                "Rushiera",
+                "07d953f62d"
+              ],
+              "status": "done",
+              "evidence": "git 07d953f"
+            },
+            {
+              "v": "53c195b",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.77 Phase 0: reload-config（payload 通道重载，204 实测）+ 强制嗅探钩子",
+              "items": [
+                "Rushiera",
+                "53c195b61d"
+              ],
+              "status": "done",
+              "evidence": "git 53c195b"
+            },
+            {
+              "v": "e81a353",
+              "date": "11-17",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.77 Phase 0 验收：接续板更新（ALPN/明文 path 落库 · 服务模式换内核判据）",
+              "items": [
+                "Rushiera",
+                "e81a353a00"
+              ],
+              "status": "done",
+              "evidence": "git e81a353"
             }
           ]
         }
