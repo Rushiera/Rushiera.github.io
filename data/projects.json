@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-18 21:05",
+  "generatedAt": "2026-11-18 21:35",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 4,
     "todoZone": 4,
     "active": 8,
-    "versions": 1517
+    "versions": 1518
   },
   "items": [
     {
@@ -84,7 +84,7 @@
       "jobs": [],
       "created": "2026-10-30",
       "todo": 35,
-      "changelog": 103,
+      "changelog": 104,
       "purpose": "Clash Verge Rev 2.5.8 装进 C:\\Program Files\\Clash Verge，用户数据按 Tauri 约定落在 %APPDATA% 与 %LOCALAPPDAT…",
       "archived": false
     },
