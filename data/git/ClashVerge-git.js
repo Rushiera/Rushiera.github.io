@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "21 次提交 · 2026-11 → 2026-11",
-    "ver": "593104f",
+    "sub": "22 次提交 · 2026-11 → 2026-11",
+    "ver": "c8424da",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -345,6 +345,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 593104f"
+            },
+            {
+              "v": "c8424da",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.90 Phase3第三项 ECH规则类型：内核phase8 + 补丁集25文件 + 规则生成器/断言器",
+              "items": [
+                "Rushiera",
+                "c8424da8b9"
+              ],
+              "status": "done",
+              "evidence": "git c8424da"
             }
           ]
         }
