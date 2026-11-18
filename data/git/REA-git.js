@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "62 次提交 · 2026-10 → 2026-11",
-    "ver": "0b07037",
+    "sub": "63 次提交 · 2026-10 → 2026-11",
+    "ver": "b597965",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -878,6 +878,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 0b07037"
+            },
+            {
+              "v": "b597965",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.73: turing-sdk 判据单变量对照（rejected）+ 假 token 生成器",
+              "items": [
+                "Rushiera",
+                "b5979655be"
+              ],
+              "status": "done",
+              "evidence": "git b597965"
             }
           ]
         }

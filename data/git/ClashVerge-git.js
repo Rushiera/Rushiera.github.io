@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "19 次提交 · 2026-11 → 2026-11",
-    "ver": "0c2cf27",
+    "sub": "20 次提交 · 2026-11 → 2026-11",
+    "ver": "cd38cfe",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -319,6 +319,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 0c2cf27"
+            },
+            {
+              "v": "cd38cfe",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.88 netlog: 连接详情面板 panel.mjs + probe-self --hold（面板值==CLI 值）",
+              "items": [
+                "Rushiera",
+                "cd38cfee7e"
+              ],
+              "status": "done",
+              "evidence": "git cd38cfe"
             }
           ]
         }
