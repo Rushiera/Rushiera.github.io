@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "60 次提交 · 2026-11 → 2026-11",
-    "ver": "4b5b5be",
+    "sub": "61 次提交 · 2026-11 → 2026-11",
+    "ver": "85907e4",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -852,6 +852,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 4b5b5be"
+            },
+            {
+              "v": "85907e4",
+              "date": "11-19",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9 放开纯文本请求体3MB本地拒发：CONTEXT_TOO_LARGE取消，3MB只约束图片预算",
+              "items": [
+                "Rushiera",
+                "85907e4c2d"
+              ],
+              "status": "done",
+              "evidence": "git 85907e4"
             }
           ]
         }
