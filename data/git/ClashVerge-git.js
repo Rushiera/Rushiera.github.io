@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "24 次提交 · 2026-11 → 2026-11",
-    "ver": "5894d3c",
+    "sub": "25 次提交 · 2026-11 → 2026-11",
+    "ver": "435beee",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -384,6 +384,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 5894d3c"
+            },
+            {
+              "v": "435beee",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.93 Phase5四要素代码层：nat-cs 增 --images/--white-file/--ledger（白名单/热更新/台账）+ mode-contract 状态",
+              "items": [
+                "Rushiera",
+                "435beeeb6a"
+              ],
+              "status": "done",
+              "evidence": "git 435beee"
             }
           ]
         }
