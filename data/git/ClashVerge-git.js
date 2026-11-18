@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "25 次提交 · 2026-11 → 2026-11",
-    "ver": "435beee",
+    "sub": "26 次提交 · 2026-11 → 2026-11",
+    "ver": "bbfb274",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -397,6 +397,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 435beee"
+            },
+            {
+              "v": "bbfb274",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.94 Phase5 #58核销：三消费点明文echo全过，加--seed-target诊断参数+phase5消费点编排脚本",
+              "items": [
+                "Rushiera",
+                "bbfb274dda"
+              ],
+              "status": "done",
+              "evidence": "git bbfb274"
             }
           ]
         }
