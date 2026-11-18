@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-18 20:05",
+ "generatedAt": "2026-11-18 20:35",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 4,
   "todoZone": 4,
   "active": 8,
-  "versions": 1515
+  "versions": 1517
  },
  "items": [
   {
@@ -226,7 +226,7 @@ window.PROJECTS = {
    ],
    "created": "2026-08-03",
    "todo": 28,
-   "changelog": 52,
+   "changelog": 53,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },
@@ -234,7 +234,7 @@ window.PROJECTS = {
    "pid": "REA",
    "layer": "agent",
    "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-   "version": "v0.73 · 上游基线 `c8d5413d0`",
+   "version": "v0.74 · 上游基线 `c8d5413d0`",
    "worker": "Coder",
    "jobs": [
     "Node",
@@ -242,7 +242,7 @@ window.PROJECTS = {
    ],
    "created": "2026-10-21",
    "todo": 13,
-   "changelog": 75,
+   "changelog": 76,
    "purpose": "本支可改、可验、可自持的逆向工程底座",
    "archived": false
   },
