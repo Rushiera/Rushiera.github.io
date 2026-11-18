@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "58 次提交 · 2026-11 → 2026-11",
-    "ver": "986039b",
+    "sub": "59 次提交 · 2026-11 → 2026-11",
+    "ver": "66726b9",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -826,6 +826,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 986039b"
+            },
+            {
+              "v": "66726b9",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9（配置页挂载设置全局默认 mount.level）——新增 host/config/mountlevel.go 全局回落投影（atomic）；ResolveMountLevel 优先级改为每猫显式→全局 mount.level→兼容位；SetChecked 即时投影 + 启动 SyncDefaultMountLevelFromStore；Entry/configItem 下发 values 支持枚举配置通用下拉。go test 21 包 + vitest 35 文件/515 例全绿；真链路四绿（配置页下拉位置/写盘落值/preview 档位随全局变）",
+              "items": [
+                "Rushiera",
+                "66726b92c8"
+              ],
+              "status": "done",
+              "evidence": "git 66726b9"
             }
           ]
         }
