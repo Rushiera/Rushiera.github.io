@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "88 次提交 · 2026-11 → 2026-11",
-    "ver": "d667943",
+    "sub": "89 次提交 · 2026-11 → 2026-11",
+    "ver": "4137d4b",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -1216,6 +1216,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git d667943"
+            },
+            {
+              "v": "4137d4b",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.354 整理弹层加普通/专家/精通挂载模式选择，前文预览与投递按所选档位",
+              "items": [
+                "Rushiera",
+                "4137d4bfac"
+              ],
+              "status": "done",
+              "evidence": "git 4137d4b"
             }
           ]
         }

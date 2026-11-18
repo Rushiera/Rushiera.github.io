@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "23 次提交 · 2026-11 → 2026-11",
-    "ver": "62cd25a",
+    "sub": "24 次提交 · 2026-11 → 2026-11",
+    "ver": "5894d3c",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -371,6 +371,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 62cd25a"
+            },
+            {
+              "v": "5894d3c",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.92 Phase3第四项：quota.mjs 流量配额账本（计量落地+主动整形转触发式）+ netlog/README 登记",
+              "items": [
+                "Rushiera",
+                "5894d3cfc2"
+              ],
+              "status": "done",
+              "evidence": "git 5894d3c"
             }
           ]
         }
