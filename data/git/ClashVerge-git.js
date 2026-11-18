@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "20 次提交 · 2026-11 → 2026-11",
-    "ver": "cd38cfe",
+    "sub": "21 次提交 · 2026-11 → 2026-11",
+    "ver": "593104f",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -332,6 +332,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git cd38cfe"
+            },
+            {
+              "v": "593104f",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.89 阶段：ALPN 分流模板（组生成 + 断言精化 + probe-quic 参数）",
+              "items": [
+                "Rushiera",
+                "593104fdc0"
+              ],
+              "status": "done",
+              "evidence": "git 593104f"
             }
           ]
         }
