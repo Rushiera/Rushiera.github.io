@@ -137,9 +137,7 @@ window.ARCH = {
        "row": 1,
        "tags": [
         "Coder",
-        "CGSE_CORE`—…",
-        "powershell",
-        "py-run"
+        "CGSE_CORE"
        ],
        "note": "v0.43 · 待办 5",
        "evidence": "Project/CGSE_CORE/project.md"

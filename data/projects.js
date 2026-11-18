@@ -1,5 +1,5 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-19 01:38",
+ "generatedAt": "2026-11-19 02:38",
  "public": true,
  "count": 18,
  "stats": {
@@ -65,9 +65,7 @@ window.PROJECTS = {
    "version": "v0.43",
    "worker": "Coder",
    "jobs": [
-    "CGSE_CORE`—…",
-    "powershell",
-    "py-run"
+    "CGSE_CORE"
    ],
    "created": "2026-11-01",
    "todo": 5,
