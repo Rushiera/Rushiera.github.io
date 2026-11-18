@@ -174,7 +174,7 @@ window.ARCH = {
         "Node",
         "Git"
        ],
-       "note": "v0.69 · 上游基线 `c8d5413d0` · 待办 12",
+       "note": "v0.71 · 上游基线 `c8d5413d0` · 待办 12",
        "evidence": "Project/REA/project.md"
       },
       {
@@ -477,7 +477,7 @@ window.ARCH = {
        "lane": "agent",
        "title": "REA · 逆向工程 MCP server + CLI（TypeScript / Node 24）",
        "items": [
-        "v0.69 · 上游基线 `c8d5413d0`",
+        "v0.71 · 上游基线 `c8d5413d0`",
         "待办 12"
        ],
        "status": "partial",

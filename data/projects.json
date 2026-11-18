@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-18 08:29",
+  "generatedAt": "2026-11-18 15:02",
   "public": true,
   "count": 18,
   "stats": {
-    "focus": 2,
-    "todoZone": 6,
+    "focus": 1,
+    "todoZone": 7,
     "active": 8,
     "versions": 1501
   },
@@ -234,7 +234,7 @@
       "pid": "REA",
       "layer": "agent",
       "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-      "version": "v0.69 · 上游基线 `c8d5413d0`",
+      "version": "v0.71 · 上游基线 `c8d5413d0`",
       "worker": "Coder",
       "jobs": [
         "Node",

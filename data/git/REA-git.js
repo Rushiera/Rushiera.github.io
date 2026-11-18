@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "61 次提交 · 2026-10 → 2026-11",
-    "ver": "89e3dea",
+    "sub": "62 次提交 · 2026-10 → 2026-11",
+    "ver": "0b07037",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -865,6 +865,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 89e3dea"
+            },
+            {
+              "v": "0b07037",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.71: turing-sdk 设备令牌取证报告（X-Device-Token 三段形态 + 身份输入源九类 + 三目录对照）+ 三份可复跑脚本",
+              "items": [
+                "Rushiera",
+                "0b070370dd"
+              ],
+              "status": "done",
+              "evidence": "git 0b07037"
             }
           ]
         }
