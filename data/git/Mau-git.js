@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "57 次提交 · 2026-11 → 2026-11",
-    "ver": "b7af203",
+    "sub": "58 次提交 · 2026-11 → 2026-11",
+    "ver": "986039b",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -813,6 +813,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git b7af203"
+            },
+            {
+              "v": "986039b",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9（项目挂载三档：普通/专家/精通 + skill 仅本目录 + 精通显示+k）——CatCfg.projectMountLevel 三档 + ResolveMountLevel 读面单点；buildInjectListWithMount 三档（普通 L3 readme / 专家整目录 / 精通 L3 递归全文件 + skill package 本目录 35 件）；expandSpecFilesFlat 仅本目录不递归；measureMountExtraBytes + mountLevelText 三档 +k；MountModeText normal/expert/master；注入报告/preview 加 mountLevel；前端 inject-report.js 三档循环按钮 + irExtraK + 精通 +k；兼容旧 expert 布尔。go test 21 包 + vitest 34 文件/511 例全绿，两轮部署真链路已验",
+              "items": [
+                "Rushiera",
+                "986039be45"
+              ],
+              "status": "done",
+              "evidence": "git 986039b"
             }
           ]
         }

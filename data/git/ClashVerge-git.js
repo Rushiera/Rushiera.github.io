@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "22 次提交 · 2026-11 → 2026-11",
-    "ver": "c8424da",
+    "sub": "23 次提交 · 2026-11 → 2026-11",
+    "ver": "62cd25a",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -358,6 +358,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git c8424da"
+            },
+            {
+              "v": "62cd25a",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v1.91 #42 拆块：netlog-both → both-a/both-b（gen-rules 奇偶切 + out-route.table RULE-SET 两行 + README）",
+              "items": [
+                "Rushiera",
+                "62cd25a751"
+              ],
+              "status": "done",
+              "evidence": "git 62cd25a"
             }
           ]
         }
