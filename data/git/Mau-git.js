@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "59 次提交 · 2026-11 → 2026-11",
-    "ver": "66726b9",
+    "sub": "60 次提交 · 2026-11 → 2026-11",
+    "ver": "4b5b5be",
     "updated": "2026-11-18",
     "contract": {
       "views": [
@@ -839,6 +839,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 66726b9"
+            },
+            {
+              "v": "4b5b5be",
+              "date": "11-18",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9（max_tokens 去掉 131072 硬上界——填多少传多少，真实上限交服务端）：client.go 删 maxMaxTokens 常量、maxTokens() 判据放宽为 parsed>0（defaultMaxTokens 保留作空值兜底）；新增 TestClient_MaxTokensUnbounded 与 TestConfigPostMaxTokensUnbounded。go build/vet/gofmt/test 21 包全绿；deploy prepare 9 步绿 + restart-incr 落地，实测填 255000 成功",
+              "items": [
+                "Rushiera",
+                "4b5b5be0ea"
+              ],
+              "status": "done",
+              "evidence": "git 4b5b5be"
             }
           ]
         }
