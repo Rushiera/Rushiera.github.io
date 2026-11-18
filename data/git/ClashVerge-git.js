@@ -4,7 +4,7 @@ window.ARCH = {
     "title": "ClashVerge 提交时间线",
     "sub": "19 次提交 · 2026-11 → 2026-11",
     "ver": "0c2cf27",
-    "updated": "2026-11-17",
+    "updated": "2026-11-18",
     "contract": {
       "views": [
         "git"
