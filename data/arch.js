@@ -107,7 +107,7 @@ window.ARCH = {
         "CSharp",
         "CatHome"
        ],
-       "note": "v0.363 · 待办 43",
+       "note": "v0.364 · 待办 43",
        "evidence": "Project/并发协议/project.md"
       },
       {
@@ -605,7 +605,7 @@ window.ARCH = {
        "lane": "host",
        "title": "并发协议 · 跨项目并发调度 + 项目档案索引平台（工具层）",
        "items": [
-        "v0.363",
+        "v0.364",
         "待办 43"
        ],
        "status": "partial",
