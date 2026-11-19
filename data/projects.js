@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-20 00:18",
+ "generatedAt": "2026-11-20 01:19",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 2,
   "todoZone": 3,
   "active": 5,
-  "versions": 1538
+  "versions": 1539
  },
  "items": [
   {
@@ -341,7 +341,7 @@ window.PROJECTS = {
    "pid": "并发协议",
    "layer": "host",
    "type": "跨项目并发调度 + 项目档案索引平台（工具层）",
-   "version": "v0.368",
+   "version": "v0.369",
    "worker": "Majordomo",
    "jobs": [
     "CSharp",
@@ -352,8 +352,8 @@ window.PROJECTS = {
     ".NET"
    ],
    "created": "",
-   "todo": 43,
-   "changelog": 407,
+   "todo": 44,
+   "changelog": 408,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
   }
