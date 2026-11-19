@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-19 12:43",
+  "generatedAt": "2026-11-19 14:13",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 3,
     "todoZone": 5,
     "active": 8,
-    "versions": 1529
+    "versions": 1530
   },
   "items": [
     {
@@ -289,7 +289,7 @@
       ],
       "created": "",
       "todo": 43,
-      "changelog": 399,
+      "changelog": 400,
       "purpose": "两件事，一条主线：让自主推进有据可依。",
       "archived": false
     }
