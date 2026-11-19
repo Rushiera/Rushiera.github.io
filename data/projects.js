@@ -1,11 +1,11 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-19 17:45",
+ "generatedAt": "2026-11-19 19:46",
  "public": true,
  "count": 18,
  "stats": {
-  "focus": 3,
-  "todoZone": 4,
-  "active": 7,
+  "focus": 2,
+  "todoZone": 3,
+  "active": 5,
   "versions": 1535
  },
  "items": [
