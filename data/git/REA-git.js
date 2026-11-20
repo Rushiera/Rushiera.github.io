@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "63 次提交 · 2026-10 → 2026-11",
-    "ver": "b597965",
+    "sub": "64 次提交 · 2026-10 → 2026-11",
+    "ver": "32aa250",
     "updated": "2026-11-20",
     "contract": {
       "views": [
@@ -891,6 +891,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git b597965"
+            },
+            {
+              "v": "32aa250",
+              "date": "11-21",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.75 — reports/sideloader-18.2.0.13 静态取证（托管面；L3 证否 MessagePack 非 CSV）",
+              "items": [
+                "Rushiera",
+                "32aa25006a"
+              ],
+              "status": "done",
+              "evidence": "git 32aa250"
             }
           ]
         }

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-21 00:02",
+  "generatedAt": "2026-11-21 01:33",
   "public": true,
   "count": 18,
   "stats": {
-    "focus": 1,
-    "todoZone": 3,
+    "focus": 3,
+    "todoZone": 1,
     "active": 4,
-    "versions": 1547
+    "versions": 1548
   },
   "items": [
     {
@@ -292,7 +292,7 @@
       ],
       "created": "2026-10-21",
       "todo": 13,
-      "changelog": 76,
+      "changelog": 77,
       "purpose": "本支可改、可验、可自持的逆向工程底座",
       "archived": false
     },
