@@ -1,5 +1,5 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-21 04:35",
+ "generatedAt": "2026-11-21 05:05",
  "public": true,
  "count": 18,
  "stats": {
@@ -352,7 +352,7 @@ window.PROJECTS = {
     ".NET"
    ],
    "created": "",
-   "todo": 44,
+   "todo": 45,
    "changelog": 410,
    "purpose": "两件事，一条主线：让自主推进有据可依。",
    "archived": false
