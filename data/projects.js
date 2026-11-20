@@ -1,12 +1,12 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-20 20:00",
+ "generatedAt": "2026-11-20 21:00",
  "public": true,
  "count": 18,
  "stats": {
   "focus": 1,
   "todoZone": 3,
   "active": 4,
-  "versions": 1544
+  "versions": 1545
  },
  "items": [
   {
@@ -260,7 +260,7 @@ window.PROJECTS = {
    "pid": "Mau",
    "layer": "host",
    "type": "唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
-   "version": "0.36.9（`version.txt` 单点；运行区 0.36.9 已部署（2026-11-16 20:53:44 · incr · pid 换代）——排空闸门（重启登记后冻结其它会话的轮、等 OA 在途自然跑完、上限 300s、撤销自动解冻），见 `CHANGELOG.md` 首行）",
+   "version": "0.36.9（`version.txt` 单点；运行区 0.36.9 已部署（2026-11-20 20:06:16 · incr · pid 换代）——排空闸门（重启登记后冻结其它会话的轮、等 OA 在途自然跑完、上限 300s、撤销自动解冻），见 `CHANGELOG.md` 首行）",
    "worker": "Coder",
    "jobs": [
     "Mau",
@@ -271,8 +271,8 @@ window.PROJECTS = {
     "Go"
    ],
    "created": "2026-08-03",
-   "todo": 31,
-   "changelog": 62,
+   "todo": 29,
+   "changelog": 63,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
   },

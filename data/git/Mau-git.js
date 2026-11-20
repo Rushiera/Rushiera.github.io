@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "64 次提交 · 2026-11 → 2026-11",
-    "ver": "bdae6b1",
+    "sub": "65 次提交 · 2026-11 → 2026-11",
+    "ver": "6d02739",
     "updated": "2026-11-20",
     "contract": {
       "views": [
@@ -904,6 +904,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git bdae6b1"
+            },
+            {
+              "v": "6d02739",
+              "date": "11-20",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9 对话附件双链路：图片包裹组装接线 + 全类型文件 B 档（chat-files/cache-file/[file-open] + 前端 📎/拖拽/粘贴）",
+              "items": [
+                "Rushiera",
+                "6d02739281"
+              ],
+              "status": "done",
+              "evidence": "git 6d02739"
             }
           ]
         }
