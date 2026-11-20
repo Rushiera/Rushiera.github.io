@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "89 次提交 · 2026-11 → 2026-11",
-    "ver": "4137d4b",
+    "sub": "90 次提交 · 2026-11 → 2026-11",
+    "ver": "30831b3",
     "updated": "2026-11-20",
     "contract": {
       "views": [
@@ -1229,6 +1229,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 4137d4b"
+            },
+            {
+              "v": "30831b3",
+              "date": "11-20",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.369 委托猫可配模型/挂载档位/思考挡位：全局entrust-defaults.json+授权单覆盖，猫端口写会话模型；调度页委托配置按钮(含三档前文示例对照)；含0.355-0.369累积未提交改动",
+              "items": [
+                "Rushiera",
+                "30831b30d2"
+              ],
+              "status": "done",
+              "evidence": "git 30831b3"
             }
           ]
         }
