@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20 12:56",
+  "generatedAt": "2026-11-20 13:56",
   "public": true,
   "count": 18,
   "stats": {
@@ -271,7 +271,7 @@
         "Go"
       ],
       "created": "2026-08-03",
-      "todo": 29,
+      "todo": 30,
       "changelog": 59,
       "purpose": "Mau 仓 = CatHome5 的施工仓。",
       "archived": false
