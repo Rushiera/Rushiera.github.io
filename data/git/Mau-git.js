@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "65 次提交 · 2026-11 → 2026-11",
-    "ver": "6d02739",
+    "sub": "66 次提交 · 2026-11 → 2026-11",
+    "ver": "c45f2ee",
     "updated": "2026-11-20",
     "contract": {
       "views": [
@@ -917,6 +917,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 6d02739"
+            },
+            {
+              "v": "c45f2ee",
+              "date": "11-20",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9 会话级临时模型：关页重进保留、session.new 重置（Session.Rebuild 清覆盖 + modelOverrideHook 同步请求面 + 前端页载只读对账）",
+              "items": [
+                "Rushiera",
+                "c45f2eee10"
+              ],
+              "status": "done",
+              "evidence": "git c45f2ee"
             }
           ]
         }

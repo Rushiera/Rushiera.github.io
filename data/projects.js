@@ -1,5 +1,5 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-20 22:31",
+ "generatedAt": "2026-11-20 23:02",
  "public": true,
  "count": 18,
  "stats": {
@@ -260,7 +260,7 @@ window.PROJECTS = {
    "pid": "Mau",
    "layer": "host",
    "type": "唯一正用仓库——Go CAT5 主仓（Mau-Go + CatHome5 共仓；202…",
-   "version": "0.36.9（`version.txt` 单点；运行区 0.36.9 已部署（2026-11-20 20:06:16 · incr · pid 换代）——排空闸门（重启登记后冻结其它会话的轮、等 OA 在途自然跑完、上限 300s、撤销自动解冻），见 `CHANGELOG.md` 首行）",
+   "version": "0.36.9（`version.txt` 单点；运行区 0.36.9 已部署（2026-11-20 22:15:40 · incr · 会话级临时模型轮）——排空闸门（重启登记后冻结其它会话的轮、等 OA 在途自然跑完、上限 300s、撤销自动解冻），见 `CHANGELOG.md` 首行）",
    "worker": "Coder",
    "jobs": [
     "Mau",
