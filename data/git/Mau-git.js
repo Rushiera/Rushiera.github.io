@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "61 次提交 · 2026-11 → 2026-11",
-    "ver": "85907e4",
+    "sub": "64 次提交 · 2026-11 → 2026-11",
+    "ver": "bdae6b1",
     "updated": "2026-11-20",
     "contract": {
       "views": [
@@ -865,6 +865,45 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 85907e4"
+            },
+            {
+              "v": "cd40397",
+              "date": "11-20",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9 部署链目录收敛（11-19 轮补提交）：relay 副本收进 staging/_relay + full 链 resolveGo 补 tools/bench/go 候选 + copyTreeSkip 排除 _relay",
+              "items": [
+                "Rushiera",
+                "cd40397c38"
+              ],
+              "status": "done",
+              "evidence": "git cd40397"
+            },
+            {
+              "v": "160e0eb",
+              "date": "11-20",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9 挂载档位固化修复：applyMountLevel 三判据（挂载/取消挂载不再写每猫显式档 · level:0 清除跟随全局）+ 三层解析面 level:0 语义 + 5 例单测（真链路：7 猫清成跟随全局，grep projectMountLevel 0 命中）",
+              "items": [
+                "Rushiera",
+                "160e0eb9cd"
+              ],
+              "status": "done",
+              "evidence": "git 160e0eb"
+            },
+            {
+              "v": "bdae6b1",
+              "date": "11-20",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9 Go 时代升级候选池文档入库（11-15 产物：三条链路事实 + 候选清单）",
+              "items": [
+                "Rushiera",
+                "bdae6b1dc6"
+              ],
+              "status": "done",
+              "evidence": "git bdae6b1"
             }
           ]
         }
