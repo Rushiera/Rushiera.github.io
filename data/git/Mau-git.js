@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "67 次提交 · 2026-11 → 2026-11",
-    "ver": "1f1e03f",
+    "sub": "68 次提交 · 2026-11 → 2026-11",
+    "ver": "b5a964e",
     "updated": "2026-11-21",
     "contract": {
       "views": [
@@ -943,6 +943,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 1f1e03f"
+            },
+            {
+              "v": "b5a964e",
+              "date": "11-21",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9 CPU 空闲占用根治：contextChars 改增量累加器（2.49 核 → 0.04 核）",
+              "items": [
+                "Rushiera",
+                "b5a964e952"
+              ],
+              "status": "done",
+              "evidence": "git b5a964e"
             }
           ]
         }
