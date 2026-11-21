@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "Mau",
     "title": "Mau 提交时间线",
-    "sub": "66 次提交 · 2026-11 → 2026-11",
-    "ver": "c45f2ee",
+    "sub": "67 次提交 · 2026-11 → 2026-11",
+    "ver": "1f1e03f",
     "updated": "2026-11-21",
     "contract": {
       "views": [
@@ -930,6 +930,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git c45f2ee"
+            },
+            {
+              "v": "1f1e03f",
+              "date": "11-21",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "0.36.9（图片预算降分辨率：超 3 MB 先缩图保内容，摘图退为兜底）",
+              "items": [
+                "Rushiera",
+                "1f1e03f0c7"
+              ],
+              "status": "done",
+              "evidence": "git 1f1e03f"
             }
           ]
         }

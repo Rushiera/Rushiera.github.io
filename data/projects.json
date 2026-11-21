@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-21 11:30",
+  "generatedAt": "2026-11-21 15:34",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 2,
     "todoZone": 2,
     "active": 4,
-    "versions": 1549
+    "versions": 1550
   },
   "items": [
     {
@@ -271,8 +271,8 @@
         "Go"
       ],
       "created": "2026-08-03",
-      "todo": 30,
-      "changelog": 65,
+      "todo": 32,
+      "changelog": 66,
       "purpose": "Mau 仓 = CatHome5 的施工仓。",
       "archived": false
     },
