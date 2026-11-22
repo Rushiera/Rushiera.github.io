@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "149 次提交 · 2026-11 → 2026-11",
-    "ver": "91b7d7c",
+    "sub": "150 次提交 · 2026-11 → 2026-11",
+    "ver": "c902b62",
     "updated": "2026-11-22",
     "contract": {
       "views": [
@@ -2009,6 +2009,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 91b7d7c"
+            },
+            {
+              "v": "c902b62",
+              "date": "11-22",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.77.0: starlitseason 双模式（modes[] + byMode 双入口 + append_json_flag 解耦）",
+              "items": [
+                "Rushiera",
+                "c902b621be"
+              ],
+              "status": "done",
+              "evidence": "git c902b62"
             }
           ]
         }

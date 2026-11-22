@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-22 16:21",
+  "generatedAt": "2026-11-22 16:52",
   "public": true,
   "count": 18,
   "stats": {
     "focus": 3,
     "todoZone": 1,
     "active": 4,
-    "versions": 1557
+    "versions": 1558
   },
   "items": [
     {
       "pid": "ACS",
       "layer": "agent",
       "type": "应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
-      "version": "v0.92.0",
+      "version": "v0.93.0",
       "worker": "Coder",
       "jobs": [
         "ACS",
@@ -26,7 +26,7 @@
       ],
       "created": "2026-11-01",
       "todo": 9,
-      "changelog": 134,
+      "changelog": 135,
       "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
       "archived": false
     },
