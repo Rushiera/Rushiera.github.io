@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "64 次提交 · 2026-10 → 2026-11",
-    "ver": "32aa250",
+    "sub": "65 次提交 · 2026-10 → 2026-11",
+    "ver": "ab879cd",
     "updated": "2026-11-22",
     "contract": {
       "views": [
@@ -904,6 +904,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 32aa250"
+            },
+            {
+              "v": "ab879cd",
+              "date": "11-22",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.76 eCloud 7.4.0 静态分析（登录态/上传下载/面板/agent 通道）+ 登录态落点与技能网关形态取证",
+              "items": [
+                "Rushiera",
+                "ab879cd816"
+              ],
+              "status": "done",
+              "evidence": "git ab879cd"
             }
           ]
         }

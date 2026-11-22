@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "147 次提交 · 2026-11 → 2026-11",
-    "ver": "200acbb",
+    "sub": "148 次提交 · 2026-11 → 2026-11",
+    "ver": "a18e40e",
     "updated": "2026-11-22",
     "contract": {
       "views": [
@@ -1983,6 +1983,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 200acbb"
+            },
+            {
+              "v": "a18e40e",
+              "date": "11-22",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.91.0: CLI 中转 Break 首接（cli-transit + koikatu + break-extension）",
+              "items": [
+                "Rushiera",
+                "a18e40e31c"
+              ],
+              "status": "done",
+              "evidence": "git a18e40e"
             }
           ]
         }

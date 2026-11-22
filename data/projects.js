@@ -1,5 +1,5 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-22 14:50",
+ "generatedAt": "2026-11-22 15:21",
  "public": true,
  "count": 18,
  "stats": {
@@ -271,7 +271,7 @@ window.PROJECTS = {
     "Go"
    ],
    "created": "2026-08-03",
-   "todo": 34,
+   "todo": 35,
    "changelog": 67,
    "purpose": "Mau 仓 = CatHome5 的施工仓。",
    "archived": false
