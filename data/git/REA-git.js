@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "REA",
     "title": "REA 提交时间线",
-    "sub": "65 次提交 · 2026-10 → 2026-11",
-    "ver": "ab879cd",
+    "sub": "66 次提交 · 2026-10 → 2026-11",
+    "ver": "2372447",
     "updated": "2026-11-22",
     "contract": {
       "views": [
@@ -917,6 +917,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git ab879cd"
+            },
+            {
+              "v": "2372447",
+              "date": "11-22",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.77 eCloud 传输协议面：下载链/上传三阶段/签名 hex/上传域鉴权实测",
+              "items": [
+                "Rushiera",
+                "23724472a4"
+              ],
+              "status": "done",
+              "evidence": "git 2372447"
             }
           ]
         }
