@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ACS",
     "title": "ACS 提交时间线",
-    "sub": "148 次提交 · 2026-11 → 2026-11",
-    "ver": "a18e40e",
+    "sub": "149 次提交 · 2026-11 → 2026-11",
+    "ver": "91b7d7c",
     "updated": "2026-11-22",
     "contract": {
       "views": [
@@ -1996,6 +1996,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git a18e40e"
+            },
+            {
+              "v": "91b7d7c",
+              "date": "11-22",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "v0.92.0: CLI 中转扩面 cgss / blender（27 档案 · Run 0005/0006 EFFECTIVE）",
+              "items": [
+                "Rushiera",
+                "91b7d7c5b7"
+              ],
+              "status": "done",
+              "evidence": "git 91b7d7c"
             }
           ]
         }

@@ -1,19 +1,19 @@
 window.PROJECTS = {
- "generatedAt": "2026-11-22 15:21",
+ "generatedAt": "2026-11-22 15:51",
  "public": true,
  "count": 18,
  "stats": {
-  "focus": 2,
-  "todoZone": 2,
+  "focus": 3,
+  "todoZone": 1,
   "active": 4,
-  "versions": 1555
+  "versions": 1557
  },
  "items": [
   {
    "pid": "ACS",
    "layer": "agent",
    "type": "应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
-   "version": "v0.91.0",
+   "version": "v0.92.0",
    "worker": "Coder",
    "jobs": [
     "ACS",
@@ -26,7 +26,7 @@ window.PROJECTS = {
    ],
    "created": "2026-11-01",
    "todo": 9,
-   "changelog": 133,
+   "changelog": 134,
    "purpose": "ACS 是一个 Harness——把模型接到真实程序上、并证明接上了的那一层。",
    "archived": false
   },
@@ -280,7 +280,7 @@ window.PROJECTS = {
    "pid": "REA",
    "layer": "agent",
    "type": "逆向工程 MCP server + CLI（TypeScript / Node 24）",
-   "version": "v0.74 · 上游基线 `c8d5413d0`",
+   "version": "v0.77（2026-11-22 eCloud 传输协议面：下载链 / 上传三阶段 / 签名算法 hex 直读 / 上传域鉴权实测）· 上游基线 `c8d5413d0`",
    "worker": "Coder",
    "jobs": [
     "Node",
@@ -291,8 +291,8 @@ window.PROJECTS = {
     "Node.js"
    ],
    "created": "2026-10-21",
-   "todo": 14,
-   "changelog": 78,
+   "todo": 15,
+   "changelog": 79,
    "purpose": "本支可改、可验、可自持的逆向工程底座",
    "archived": false
   },

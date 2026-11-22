@@ -124,7 +124,7 @@ window.ARCH = {
         "Node",
         "CSharp"
        ],
-       "note": "v0.91.0 · 待办 9",
+       "note": "v0.92.0 · 待办 9",
        "evidence": "Project/ACS/project.md"
       },
       {
@@ -172,7 +172,7 @@ window.ARCH = {
         "Node",
         "Git"
        ],
-       "note": "v0.74 · 上游基线 `c8d5413d0` · 待办 14",
+       "note": "v0.77（2026-11-22 eCloud 传输协议面：下载链 / 上传三阶段 / 签名算法 hex 直读 / 上传域鉴权实测）· 上游基线 `c8d5413d0` · 待办 15",
        "evidence": "Project/REA/project.md"
       },
       {
@@ -475,8 +475,8 @@ window.ARCH = {
        "lane": "agent",
        "title": "REA · 逆向工程 MCP server + CLI（TypeScript / Node 24）",
        "items": [
-        "v0.74 · 上游基线 `c8d5413d0`",
-        "待办 14"
+        "v0.77（2026-11-22 eCloud 传输协议面：下载链 / 上传三阶段 / 签名算法 hex 直读 / 上传域鉴权实测）· 上游基线 `c8d5413d0`",
+        "待办 15"
        ],
        "status": "partial",
        "evidence": "Project/REA/project.md"
@@ -553,7 +553,7 @@ window.ARCH = {
        "lane": "agent",
        "title": "ACS · 应用控制面标准 + 实现包 + 实测语料（Node / C# 双栈）",
        "items": [
-        "v0.91.0",
+        "v0.92.0",
         "待办 9"
        ],
        "status": "partial",
