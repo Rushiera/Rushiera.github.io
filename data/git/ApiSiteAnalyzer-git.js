@@ -4,7 +4,7 @@ window.ARCH = {
     "title": "ApiSiteAnalyzer 提交时间线",
     "sub": "48 次提交 · 2026-10 → 2026-11",
     "ver": "c3f22ff",
-    "updated": "2026-11-22",
+    "updated": "2026-11-23",
     "contract": {
       "views": [
         "git"
