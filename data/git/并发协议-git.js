@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "并发协议",
     "title": "并发协议 提交时间线",
-    "sub": "90 次提交 · 2026-11 → 2026-11",
-    "ver": "30831b3",
+    "sub": "91 次提交 · 2026-11 → 2026-11",
+    "ver": "807494b",
     "updated": "2026-11-23",
     "contract": {
       "views": [
@@ -1242,6 +1242,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git 30831b3"
+            },
+            {
+              "v": "807494b",
+              "date": "11-23",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "2026-11-23 14:28: fallback snapshot",
+              "items": [
+                "Rushiera",
+                "807494b7c4"
+              ],
+              "status": "done",
+              "evidence": "git 807494b"
             }
           ]
         }
