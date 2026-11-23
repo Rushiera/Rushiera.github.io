@@ -2,8 +2,8 @@ window.ARCH = {
   "meta": {
     "project": "ClashVerge",
     "title": "ClashVerge 提交时间线",
-    "sub": "26 次提交 · 2026-11 → 2026-11",
-    "ver": "bbfb274",
+    "sub": "27 次提交 · 2026-11 → 2026-11",
+    "ver": "b3b753a",
     "updated": "2026-11-23",
     "contract": {
       "views": [
@@ -410,6 +410,19 @@ window.ARCH = {
               ],
               "status": "done",
               "evidence": "git bbfb274"
+            },
+            {
+              "v": "b3b753a",
+              "date": "11-23",
+              "group": "2026-11",
+              "lane": "other",
+              "title": "2026-11-23 17:35: fallback snapshot",
+              "items": [
+                "Rushiera",
+                "b3b753afde"
+              ],
+              "status": "done",
+              "evidence": "git b3b753a"
             }
           ]
         }
