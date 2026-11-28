@@ -4,7 +4,7 @@ window.ARCH = {
   "title": "Rushiera",
   "sub": "18 个项目 · 5 层 · 按工程域划分",
   "ver": "v1",
-  "updated": "2026-11-28",
+  "updated": "2026-11-29",
   "roleLabels": true,
   "fit": "width"
  },
